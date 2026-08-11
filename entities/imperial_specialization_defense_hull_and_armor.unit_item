@@ -1,0 +1,194 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "imperial_specialization_defense_hull_and_armor_item_unit_hud_icon",
+    "tooltip_icon": "imperial_specialization_defense_hull_and_armor_item_unit_hud_icon",
+    "name": "imperial_specialization_defense_hull_and_armor_item_unit_name",
+    "description": "imperial_specialization_defense_hull_and_armor_item_unit_description",
+    "build_time": 15.0,
+    "price": {
+        "credits": 150.0,
+        "metal": 25.0,
+        "crystal": 75.0
+    },
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "structure",
+        "starbase",
+        "titan",
+        "frigate",
+        "corvette",
+        "cruiser"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        [
+            "imperial_unlock_specialization_defense_unit_item"
+        ]
+    ],
+    "build_group_id": "defense",
+    "unit_modifiers": [
+        {
+            "modifier_type": "max_hull_points",
+            "value_behavior": "scalar",
+            "values": [0.15]
+        },
+        {
+            "modifier_type": "max_armor_points",
+            "value_behavior": "additive",
+            "values": [50],
+            "tags": [
+                "corvette"
+            ]
+        },
+        {
+            "modifier_type": "armor_strength",
+            "value_behavior": "additive",
+            "values": [15],
+            "tags": [
+                "corvette"
+            ]
+        },
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "additive",
+            "values": [0.85],
+            "tags": [
+                "corvette"
+            ]
+        },
+        {
+            "modifier_type": "max_armor_points",
+            "value_behavior": "additive",
+            "values": [100],
+            "tags": [
+                "frigate"
+            ]
+        },
+        {
+            "modifier_type": "armor_strength",
+            "value_behavior": "additive",
+            "values": [30],
+            "tags": [
+                "frigate"
+            ]
+        },
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "additive",
+            "values": [0.95],
+            "tags": [
+                "frigate"
+            ]
+        },
+        {
+            "modifier_type": "max_armor_points",
+            "value_behavior": "additive",
+            "values": [150],
+            "tags": [
+                "cruiser"
+            ]
+        },
+        {
+            "modifier_type": "armor_strength",
+            "value_behavior": "additive",
+            "values": [60],
+            "tags": [
+                "cruiser"
+            ]
+        },
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "additive",
+            "values": [1.05],
+            "tags": [
+                "cruiser"
+            ]
+        },
+        {
+            "modifier_type": "max_armor_points",
+            "value_behavior": "additive",
+            "values": [200],
+            "tags": [
+                "capital_ship"
+            ]
+        },
+        {
+            "modifier_type": "armor_strength",
+            "value_behavior": "additive",
+            "values": [90],
+            "tags": [
+                "capital_ship"
+            ]
+        },
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "scalar",
+            "values": [0.03],
+            "tags": [
+                "capital_ship"
+            ]
+        },
+        {
+            "modifier_type": "max_armor_points",
+            "value_behavior": "additive",
+            "values": [250],
+            "tags": [
+                "titan",
+                "structure",
+                "starbase"
+            ]
+        },
+        {
+            "modifier_type": "armor_strength",
+            "value_behavior": "additive",
+            "values": [120],
+            "tags": [
+                "titan",
+                "structure",
+                "starbase"
+            ]
+        },
+        {
+            "modifier_type": "armor_point_restore_rate",
+            "value_behavior": "scalar",
+            "values": [0.06],
+            "tags": [
+                "titan",
+                "structure",
+                "starbase"
+            ]
+        },
+        {
+            "modifier_type": "max_linear_speed",
+            "value_behavior": "scalar",
+            "values": [-0.05],
+            "tags": [
+                "corvette",
+                "frigate",
+                "cruiser",
+                "capital_ship",
+                "titan"
+            ]
+        },
+        {
+            "modifier_type": "max_angular_speed",
+            "value_behavior": "scalar",
+            "values": [-0.05],
+            "tags": [
+                "corvette",
+                "frigate",
+                "cruiser",
+                "capital_ship",
+                "titan"
+            ]
+        }
+    ],
+    "other_item_requirements": 
+    {
+        "mutually_exclusive_items": [
+            "imperial_specialization_defense_backup_shield_generator"
+        ]
+    }
+}

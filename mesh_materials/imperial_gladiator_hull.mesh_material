@@ -1,0 +1,9 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_gladiator_hull_clr",
+    "occlusion_roughness_metallic_texture": "imperial_gladiator_hull_orm",
+    "normal_texture": "imperial_gladiator_hull_nrm",
+    "base_color_factor": [1.0, 1.0, 1.0, 1.0],
+    "roughness_factor": 1.0,
+    "metallic_factor": 1.0
+}

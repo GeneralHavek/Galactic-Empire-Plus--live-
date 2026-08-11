@@ -1,0 +1,291 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_active_duration_value",
+            "action_value": {
+                "values": [
+                    30.0,
+                    30.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    120.0,
+                    120.0,
+                    120.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    110.0,
+                    110.0,
+                    110.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_active_interval_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_active_listener_duration_value",
+            "action_value": {
+                "values": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_active_radius_value",
+            "action_value": {
+                "values": [
+                    15000.0,
+                    15000.0,
+                    15000.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_ion_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.04,
+                    -0.08,
+                    -0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_ion_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_turbolaser_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.04,
+                    -0.08,
+                    -0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_doctrine_turbolaser_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_target_exploitation_duration_value",
+            "action_value": {
+                "values": [
+                    11.0,
+                    13.0,
+                    15.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_target_exploitation_max_stacks_value",
+            "action_value": {
+                "values": [
+                    5.0,
+                    5.0,
+                    5.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_target_exploitation_weapon_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.02,
+                    -0.025,
+                    -0.03
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_target_exploitation_weapon_tracking_value",
+            "action_value": {
+                "values": [
+                    0.04,
+                    0.045,
+                    0.05
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_target_exploitation_weapon_damage_value",
+            "action_value": {
+                "values": [
+                    0.02,
+                    0.025,
+                    0.03
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_victoryii_electronic_warfare_doctrine_allied_ship_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "self",
+                    "ally"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        },
+        {
+            "target_filter_id": "imperial_victoryii_target_exploitation_debuffed_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "composite_or",
+                        "constraints": [
+                            {
+                                "constraint_type": "has_buff",
+                                "buff": "imperial_victoryii_power_disruption",
+                                "include_pending_buffs": true
+                            },
+                            {
+                                "constraint_type": "has_buff",
+                                "buff": "imperial_victoryii_system_destabilization",
+                                "include_pending_buffs": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_electronic_warfare_doctrine_ion_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_electronic_warfare_doctrine_ion_cooldown_value",
+                "tags": [
+                    "ion"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_electronic_warfare_doctrine_ion_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_electronic_warfare_doctrine_ion_tracking_value",
+                "tags": [
+                    "ion"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_electronic_warfare_doctrine_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_electronic_warfare_doctrine_turbolaser_cooldown_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_electronic_warfare_doctrine_turbolaser_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_electronic_warfare_doctrine_turbolaser_tracking_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_target_exploitation_weapon_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_target_exploitation_weapon_cooldown_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_target_exploitation_weapon_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_target_exploitation_weapon_tracking_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_target_exploitation_weapon_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_target_exploitation_weapon_damage_value",
+                "weapon_type": "normal"
+            }
+        }
+    ]
+}

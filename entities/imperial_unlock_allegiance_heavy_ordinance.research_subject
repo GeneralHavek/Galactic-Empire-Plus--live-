@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_experimental",
+    "field_coord": [7, 3],
+    "research_time": 600.0,
+    "price":
+    {
+        "credits": 1750.0,
+        "metal": 325.0,
+        "crystal": 550.0
+    },
+    "prerequisites": [
+        ["imperial_unlock_allegiance"],
+        ["imperial_unlock_missile_guidance_computer_unit_item"]
+    ],
+    "name": "imperial_unlock_allegiance_heavy_ordinance_research_subject_name",
+    "name_uppercase": "imperial_unlock_allegiance_heavy_ordinance_research_subject_name_uppercase",
+    "description": "imperial_unlock_allegiance_heavy_ordinance_research_subject_description",
+    "hud_icon": "imperial_unlock_allegiance_heavy_ordinance_hud_icon",
+    "tooltip_picture": "imperial_unlock_allegiance_heavy_ordinance_tooltip_picture"
+}

@@ -1,0 +1,981 @@
+{
+    "races": [
+        {
+            "name": "sw_imperial",
+            "localized_name": "player_race_name.imperial",
+            "portraits": [
+                "imperial_0",
+                "imperial_1",
+                "imperial_2",
+                "imperial_3",
+                "imperial_4",
+                "imperial_5",
+                "imperial_6",
+                "imperial_7",
+                "imperial_8",
+                "imperial_9",
+                "imperial_10",
+                "imperial_11",
+                "imperial_12",
+                "imperial_13",
+                "imperial_14",
+                "imperial_15",
+                "imperial_16"
+            ],
+            "icons": [
+                "imperial_0",
+                "imperial_1",
+                "imperial_2",
+                "imperial_3",
+                "imperial_4",
+                "imperial_5",
+                "imperial_6",
+                "imperial_7",
+                "imperial_8",
+                "trader_0",
+                "trader_1",
+                "trader_2",
+                "trader_3",
+                "trader_4",
+                "trader_5",
+                "trader_6",
+                "trader_7",
+                "trader_8",
+                "trader_9"
+            ],            
+            "music": 
+            {
+                "in_game_music_pools": 
+                {
+                    "front_end": 
+		            {
+                        "first_music_track_index": 0,
+                        "exhaustive_shuffle": true,
+                        "music_tracks": [
+                            {
+                                "sound": "music_empire_intro_mix",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_intro_mix",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_asteroid_field",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "loading": 
+		            {
+                        "music_tracks": [
+                            {
+                                "sound": "music_battle_pending",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "ambient": 
+		            {
+                        "music_tracks": [
+                            {
+                                "sound": "music_approach_no_moon",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_asteroid_field",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_begin_approach",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_binary_sunset_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_boarding",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cantina_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cantina_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_dianoga",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_asteroid_field",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_dune_sea",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_forest_ambush",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_hoth",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_suite",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_attack_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_probe_droid",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_scout_scramble_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_scout_scramble_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_senate",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_tyderium_approach",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_volcanic_assault",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "early_game_neutral": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "early_game_winning": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_probe_droid",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "early_game_losing": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "mid_game_neutral": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_no_moon_troopers",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "mid_game_winning": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 2,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_senate",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "mid_game_losing": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 2,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_forest_ambush",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "late_game_neutral": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 1,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },                            
+                            {
+                                "sound": "music_tyderium_approach",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "late_game_winning": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 3,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },    
+                            {
+                                "sound": "music_no_moon_troopers",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_attack_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 3
+                            }
+                        ]
+                    },
+                    "late_game_losing": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 2,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_volcanic_assault",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 3
+                            }
+                        ]
+                    },
+                    "battle_neutral": 
+                    {
+                        "music_tracks": [
+                            {
+                                "sound": "music_attack_blockade",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_rages_on",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_destroyer_droids",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_tie_fighter_attack",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_2",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "battle_winning": 
+                    {
+                        "music_tracks": [
+                            {
+                                "sound": "music_attack_blockade",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_rages_on",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_destroyer_droids",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "battle_losing": 
+                    {
+                        "music_tracks": [
+                            {
+                                "sound": "music_attack_blockade",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_rages_on",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_destroyer_droids",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_tie_fighter_attack",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_2",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "game_won": 
+                    {
+                        "first_music_track_index": 0,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_lose",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "game_lost": 
+                    {
+                        "first_music_track_index": 0,
+                        "music_tracks": [
+                            {
+                                "sound": "music_empire_lose",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_victory",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "sw_zann",
+            "localized_name": "player_race_name.zann",
+            "portraits": [
+                "trader_1",
+                "trader_2",
+                "trader_3",
+                "trader_4",
+                "trader_5",
+                "trader_6",
+                "trader_7",
+                "trader_8",
+                "trader_9",
+                "trader_10",
+                "trader_11",
+                "trader_12",
+                "trader_13"
+            ],
+            "icons": [
+                "trader_0",
+                "trader_1",
+                "trader_2",
+                "trader_3",
+                "trader_4",
+                "trader_5",
+                "trader_6",
+                "trader_7",
+                "trader_8",
+                "trader_9",
+                "trader_10",
+                "trader_11",
+                "trader_12",
+                "trader_13"
+            ],            
+            "music": 
+            {
+                "in_game_music_pools": 
+                {
+                    "front_end": 
+		            {
+                        "first_music_track_index": 0,
+                        "exhaustive_shuffle": true,
+                        "music_tracks": [
+                            {
+                                "sound": "music_empire_intro_mix",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_intro_mix",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_asteroid_field",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "loading": 
+		            {
+                        "music_tracks": [
+                            {
+                                "sound": "music_battle_pending",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "ambient": 
+		            {
+                        "music_tracks": [
+                            {
+                                "sound": "music_approach_no_moon",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_asteroid_field",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_begin_approach",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_binary_sunset_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_boarding",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cantina_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cantina_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_dianoga",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_asteroid_field",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_dune_sea",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_forest_ambush",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_hoth",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_suite",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_attack_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_probe_droid",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_scout_scramble_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_scout_scramble_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_senate",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_tyderium_approach",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_volcanic_assault",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "early_game_neutral": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "early_game_winning": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_probe_droid",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "early_game_losing": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "mid_game_neutral": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_no_moon_troopers",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "mid_game_winning": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 2,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_senate",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "mid_game_losing": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 2,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_forest_ambush",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "late_game_neutral": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 1,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },                            
+                            {
+                                "sound": "music_tyderium_approach",
+                                "weight": 5
+                            }
+                        ]
+                    },
+                    "late_game_winning": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 3,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },    
+                            {
+                                "sound": "music_no_moon_troopers",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_attack_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_papa_palps_throne",
+                                "weight": 3
+                            }
+                        ]
+                    },
+                    "late_game_losing": 
+                    {
+                        "extra_music_tracks_pool_type": "ambient",
+                        "first_music_track_index": 2,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_volcanic_assault",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_advantage",
+                                "weight": 3
+                            }
+                        ]
+                    },
+                    "battle_neutral": 
+                    {
+                        "music_tracks": [
+                            {
+                                "sound": "music_attack_blockade",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_rages_on",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_destroyer_droids",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_tie_fighter_attack",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_2",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "battle_winning": 
+                    {
+                        "music_tracks": [
+                            {
+                                "sound": "music_attack_blockade",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_rages_on",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_destroyer_droids",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "battle_losing": 
+                    {
+                        "music_tracks": [
+                            {
+                                "sound": "music_attack_blockade",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_hoth_2",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_battle_rages_on",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_cruiser_persuit",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_destroyer_droids",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_into_trap",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_tie_fighter_attack",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_1",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_sail_barge_assault_2",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "game_won": 
+                    {
+                        "first_music_track_index": 0,
+                        "music_tracks": [
+                            {
+                                "sound": "music_imperial_march",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_lose",
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    "game_lost": 
+                    {
+                        "first_music_track_index": 0,
+                        "music_tracks": [
+                            {
+                                "sound": "music_empire_lose",
+                                "weight": 1
+                            },
+                            {
+                                "sound": "music_rebel_victory",
+                                "weight": 1
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

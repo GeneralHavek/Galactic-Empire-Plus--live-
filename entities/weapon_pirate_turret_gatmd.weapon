@@ -1,0 +1,70 @@
+{
+    "version": 0,
+    "name": "weapon_name.weapon_gatmd",
+    "pitch_speed": 25.0,
+    "yaw_speed": 25.0,
+    "pitch_firing_tolerance": 2.50,
+    "yaw_firing_tolerance": 2.50,
+    "range": 10500.0,
+    "cooldown_duration": 5.0,
+    "uniforms_target_filter_id": "mass_driver",
+    "attack_target_type_groups": [
+        "light_corvette",
+        "lrm_flak",
+        "heavy_capital",
+        "defense"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 30.0,
+    "penetration": 750.0,
+    "tags": [
+        "mass_driver",
+        "physical"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.850,
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 5500.0
+    },
+    "effects": {
+        "burst_pattern": [
+            0.0,
+            0.15,
+            0.30,
+            0.45,
+            1.00,
+            1.15,
+            1.30,
+            1.45,
+            2.00,
+            2.15,
+            2.30,
+            2.45,
+            3.00,
+            3.15,
+            3.30,
+            3.45,
+            4.00,
+            4.15,
+            4.30,
+            4.45
+        ],
+        "muzzle_effect": "pirate_mass_driver_weapon_muzzle",
+        "projectile_travel_effect": "pirate_mass_driver_weapon_projectile_travel",
+        "hit_hull_effect": "pirate_mass_driver_weapon_hit_hull",
+        "hit_shield_effect": "pirate_mass_driver_weapon_hit_shield",
+        "hit_shield_impact_radius_t": 0.350
+    },
+    "turret": {
+        "type": "biaxial",
+        "biaxial_base_mesh": "pirate_turret_gatmd_mount",
+        "biaxial_barrel_mesh": "pirate_turret_gatmd_barrel",
+        "barrel_position": [-0.000001, 8.062352, 11.527703],
+        "muzzle_positions": [
+            [7.035468, 8.081417, 82.701530],
+            [-7.212393, 8.062361, 82.701530]
+        ]
+    }
+}

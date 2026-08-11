@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_vindicator_lights_clr",
+    "normal_texture": "imperial_vindicator_lights_nrm",
+    "mask_texture": "imperial_vindicator_lights_msk",
+    "occlusion_roughness_metallic_texture": "imperial_vindicator_lights_orm",
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0,
+    "has_transparency": true
+}

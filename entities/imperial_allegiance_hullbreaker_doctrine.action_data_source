@@ -1,0 +1,206 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_duration_value",
+            "action_value": {
+                "values": [
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    70.0,
+                    70.0,
+                    70.0,
+                    70.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    70.0,
+                    70.0,
+                    70.0,
+                    70.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_internal_cooldown_value",
+            "action_value": {
+                "values": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_duration_value",
+            "action_value": {
+                "values": [
+                    25.0,
+                    25.0,
+                    25.0,
+                    25.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_max_stacks_value",
+            "action_value": {
+                "values": [
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_damage_taken_value",
+            "action_value": {
+                "values": [
+                    0.006,
+                    0.009,
+                    0.012,
+                    0.015
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_interval_value",
+            "action_value": {
+                "values": [
+                    0.25,
+                    0.25,
+                    0.25,
+                    0.25
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_radius_value",
+            "action_value": {
+                "values": [
+                    15000.0,
+                    15000.0,
+                    15000.0,
+                    15000.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_exploit_duration_value",
+            "action_value": {
+                "values": [
+                    2,
+                    2,
+                    2,
+                    2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_hullbreaker_doctrine_active_exploit_damage_taken_value",
+            "action_value": {
+                "values": [
+                    0.06,
+                    0.09,
+                    0.12,
+                    0.18
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_eligible_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan",
+                    "starbase"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint": {
+                            "constraint_type": "has_buff",
+                            "buff": "imperial_allegiance_hullbreaker_doctrine_structural_failure_gate"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "target_filter_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan",
+                    "starbase"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "has_buff",
+                        "buff": "imperial_allegiance_hullbreaker_doctrine_structural_failure"
+                    }
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_damage_taken_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_hullbreaker_doctrine_active_exploit_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_hullbreaker_doctrine_active_exploit_damage_taken_value"
+            }
+        }
+    ]
+}

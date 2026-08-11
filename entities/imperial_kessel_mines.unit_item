@@ -1,0 +1,80 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "imperial_asteroid_planet_exploitation_research_subject_hud_icon",
+    "tooltip_picture": "imperial_asteroid_planet_exploitation_research_subject_tooltip_picture",
+    "name": "imperial_kessel_mines_unit_item_name",
+    "description": "imperial_kessel_mines_unit_item_description",
+    "item_level_count": 3,
+    "item_level_source": "research_prerequisites_per_level",
+    "item_level_prerequisites":
+    [
+        [
+            ["imperial_unlock_strip_mining_unit_item"]
+        ],
+        [
+            ["imperial_improve_culture_propagation"]
+        ]
+    ],
+    "build_time": 120.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 600.0,
+        "crystal": 425.0
+    },
+    "max_count_on_unit": 1,
+    "required_planet_level": 3,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "ice_asteroid",
+            "hive_asteroid",
+            "moon",
+            "ice_moon",
+            "volcanic_moon",
+            "pirate_base",
+            "ship_graveyard"
+        ],
+        "build_prerequisites": [
+            ["imperial_unlock_asteroid_planet_exploitation"]
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "population_growth_rate",
+        "value_behavior": "additive",
+        "values": [0.08, 0.14, 0.20]
+    },
+    {
+        "modifier_type": "max_population_points",
+        "value_behavior": "scalar",
+        "values": [1.0, 1.5, 2.0]
+    },
+    {
+        "modifier_type": "commerce_track_credit_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.75, 1.0, 1.25]
+    },
+    {
+        "modifier_type": "mining_track_metal_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.5, 0.75, 1.0]
+    },
+    {
+        "modifier_type": "mining_track_crystal_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.5, 0.75, 1.0]
+    }],
+    "trade_capacity":
+    {
+        "export_points":
+        {
+            "credits": 2,
+            "crystal": 1,
+            "metal": 1
+        }
+    }
+}

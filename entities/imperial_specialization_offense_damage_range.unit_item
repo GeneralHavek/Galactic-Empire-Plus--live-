@@ -1,0 +1,73 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "imperial_unlock_specialization_unit_item_research_hud_icon",
+    "tooltip_icon": "imperial_unlock_specialization_unit_item_research_hud_icon",
+    "name": "imperial_specialization_offense_damage_range_unit_item_name",
+    "description": "imperial_specialization_offense_damage_range_unit_item_description",
+    "build_time": 10,
+    "price": {
+        "credits": 150,
+        "metal": 25,
+        "crystal": 75
+    },
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "structure",
+        "starbase",
+        "titan",
+        "corvette",
+        "frigate",
+        "cruiser"
+    ],
+    "build_prerequisites": [
+        [
+            "imperial_unlock_specialization_offense_unit_item"
+        ]
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "offense",
+    "weapon_modifiers": [
+        {
+            "modifier_type": "range",
+            "value_behavior": "scalar",
+            "values": [0.15],
+            "tags": [
+                "turbolaser",
+                "ion"
+            ]
+        },
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "values": [0.25],
+            "tags": [
+                "turbolaser",
+                "ion"
+            ]
+        },
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "values": [0.15],
+            "tags": [
+                "turbolaser",
+                "ion"
+            ]
+        }
+    ],
+    "owner_constraint": 
+   {
+       "constraint_type": "has_weapon",
+       "weapon_tag": "turbolaser"
+   },
+    "other_item_requirements": 
+    {
+        "mutually_exclusive_items":
+        [
+            "imperial_specialization_offense_firing_speed",
+            "imperial_specialization_offense_exploit_weakness"
+        ]
+    }
+}

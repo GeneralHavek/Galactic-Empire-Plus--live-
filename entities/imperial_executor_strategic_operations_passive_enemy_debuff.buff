@@ -1,0 +1,44 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "active_duration": "imperial_executor_hegemony_passive_aura_duration_value",
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_executor_strategic_passive_enemy_antimatter_regen_modifier"
+        },
+        {
+            "buff_unit_modifier_id": "imperial_executor_strategic_passive_enemy_move_speed_modifier"
+        },
+        {
+            "buff_unit_modifier_id": "imperial_executor_strategic_passive_enemy_turn_rate_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_executor_imperial_hegemony_ability_hud_icon",
+        "name": "imperial_executor_strategic_operations_enemy_debuff_name",
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_strategic_passive_enemy_antimatter_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_strategic_passive_enemy_move_speed_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_strategic_passive_enemy_turn_rate_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,189 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "make_dead_on_source_ability_released": true,
+    "make_dead_on_current_spawner_ownership_changed_from_buff_ownership": true,
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_executor_hegemony_passive_interval_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_imperial_hegemony_passive_aura",
+                                "destination_target_filter_id": "imperial_executor_hegemony_allied_ship_target_filter"
+                            }
+                        ],
+                        "constraint": {
+                            "constraint_type": "unit_passes_target_filter",
+                            "unit": {
+                                "unit_type": "current_spawner"
+                            },
+                            "target_filter_id": "imperial_executor_hegemony_no_configuration_target_filter"
+                        }
+                    },
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_operational_logistics_passive_aura",
+                                "destination_target_filter_id": "imperial_executor_hegemony_allied_ship_target_filter"
+                            }
+                        ],
+                        "constraint": {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit": {
+                                "unit_type": "current_spawner"
+                            },
+                            "unit_constraint": {
+                                "constraint_type": "has_mutation",
+                                "mutation": "imperial_executor_operational_logistics_equipped"
+                            }
+                        }
+                    },
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "current_spawner",
+                            "redirection": "current_gravity_well_primary_fixture"
+                        },
+                        "operators": [
+                            {
+                                "constraint": {
+                                    "constraint_type": "unit_passes_target_filter",
+                                    "unit": {
+                                        "unit_type": "operand_destination"
+                                    },
+                                    "target_filter_id": "imperial_executor_hegemony_friendly_planet_target_filter"
+                                },
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_operational_logistics_planet_aura"
+                            }
+                        ],
+                        "constraint": {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit": {
+                                "unit_type": "current_spawner"
+                            },
+                            "unit_constraint": {
+                                "constraint_type": "has_mutation",
+                                "mutation": "imperial_executor_operational_logistics_equipped"
+                            }
+                        }
+                    },
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_assault_operations_passive_aura",
+                                "destination_target_filter_id": "imperial_executor_hegemony_allied_ship_target_filter"
+                            }
+                        ],
+                        "constraint": {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit": {
+                                "unit_type": "current_spawner"
+                            },
+                            "unit_constraint": {
+                                "constraint_type": "has_mutation",
+                                "mutation": "imperial_executor_assault_operations_equipped"
+                            }
+                        }
+                    },
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_strategic_operations_passive_allied_aura",
+                                "destination_target_filter_id": "imperial_executor_hegemony_allied_ship_target_filter"
+                            }
+                        ],
+                        "constraint": {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit": {
+                                "unit_type": "current_spawner"
+                            },
+                            "unit_constraint": {
+                                "constraint_type": "has_mutation",
+                                "mutation": "imperial_executor_strategic_operations_equipped"
+                            }
+                        }
+                    },
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": false,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_strategic_operations_passive_enemy_debuff",
+                                "destination_target_filter_id": "imperial_executor_hegemony_enemy_ship_target_filter"
+                            }
+                        ],
+                        "constraint": {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit": {
+                                "unit_type": "current_spawner"
+                            },
+                            "unit_constraint": {
+                                "constraint_type": "has_mutation",
+                                "mutation": "imperial_executor_strategic_operations_equipped"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "trigger_event_actions": [
+        {
+            "trigger_event_type": "on_current_spawner_current_gravity_well_changed",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "make_buff_dead"
+                    }
+                ]
+            }
+        }
+    ]
+}

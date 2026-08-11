@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_industry",
+    "field_coord": [3, 4],
+    "research_time": 180.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 150.0
+    },
+    "prerequisites": [
+        ["imperial_unlock_trade_port"]
+    ],
+    "name": "imperial_unlock_strip_mining_unit_item_research_subject_name",
+    "name_uppercase": "imperial_unlock_strip_mining_unit_item_research_subject_name_uppercase",
+    "hud_icon": "imperial_strip_mining_unit_item_hud_icon",
+    "tooltip_picture": "imperial_strip_mining_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_trade"]
+}

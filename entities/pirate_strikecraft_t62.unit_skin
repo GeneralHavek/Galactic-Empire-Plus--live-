@@ -1,0 +1,139 @@
+{
+    "version": 0,
+    "skin_stages": [
+        {
+            "is_main_view_icon_visible_camera_distance": 3897.056275,
+            "min_camera_distance": 25.0,
+            "gui": {
+                "hud_icon": "pirate_strikecraft_t62_hud_icon",
+                "hud_monochrome_icon": "pirate_strikecraft_t62_main_view_icon",
+                "hud_picture": "pirate_strikecraft_t62_hud_picture",
+                "tooltip_picture": "pirate_strikecraft_t62_tooltip_picture",
+                "name": "pirate_t62_name",
+                "description": "pirate_t62_description"
+            },
+            "unit_mesh": {
+                "mesh": "ra_strikecraft_t62convor",
+                "shader": "ship",
+                "is_shadow_blocker": true
+            },
+            "main_view_icon": {
+                "group": "ship",
+                "icon": "pirate_strikecraft_t62_main_view_icon",
+                "selected_icon": "pirate_strikecraft_t62_main_view_icon_selected",
+                "sub_selected_icon": "pirate_strikecraft_t62_main_view_icon_sub_selected"
+            },
+            "effects": {
+                "exhaust_effects": {
+                    "trail_effects": [
+                        {
+                            "trail_effect": "trail_fighter_imperial_tie"
+                        }
+                    ]
+                },
+                "shield_effect": "pirate_t62",
+                "effect_alias_bindings": [
+                    {
+                        "alias_name": "imperial_missile_muzzle",
+                        "alias_binding": {
+                            "particle_effect": "javelis_torpedo_muzzle",
+                            "sounds": [
+                                "weapon_muzzle_torpedo_1",
+                                "weapon_muzzle_torpedo_2",
+                                "weapon_muzzle_torpedo_3"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_bolt_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_pd_red"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_missile",
+                        "alias_binding": {
+                            "particle_effect": "torpedo_missile_hit",
+                            "sounds": [
+                                "weapon_impact_physical_medium_hithull",
+                                "weapon_impact_physical_medium_hithull_01",
+                                "weapon_impact_physical_medium_hithull_02",
+                                "weapon_impact_physical_medium_hithull_03",
+                                "weapon_impact_physical_medium_hithull_04"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_pd_red",
+                            "sounds": [
+                                "weapon_hit_tiny_1",
+                                "weapon_hit_tiny_2",
+                                "weapon_hit_tiny_3"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_missile",
+                        "alias_binding": {
+                            "particle_effect": "torpedo_missile_hit",
+                            "sounds": [
+                                "weapon_impact_generic_medium_hitshields",
+                                "weapon_impact_generic_medium_hitshields_01",
+                                "weapon_impact_generic_medium_hitshields_02",
+                                "weapon_impact_generic_medium_hitshields_03"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_pd_red"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_pd_red",
+                            "sounds": [
+                                "weapon_muzzle_rebel_fighter"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "sounds": {
+                "move_sounds": {
+                    "engine": "effect_engine_ship_0"
+                },
+                "dialogue": {
+                    "selected": {
+                        "neutral": [
+                            "dialog_pirate_select1",
+                            "dialog_pirate_select2",
+                            "dialog_pirate_select3",
+                            "dialog_pirate_select4"
+                        ]
+                    },
+                    "order_issued": {
+                        "neutral": [
+                            "dialog_pirate_confirm1",
+                            "dialog_pirate_confirm2",
+                            "dialog_pirate_confirm3"
+                        ]
+                    },
+                    "attack_order_issued": {
+                        "neutral": [
+                            "dialog_pirate_attack1",
+                            "dialog_pirate_attack2",
+                            "dialog_pirate_attack3",
+                            "dialog_pirate_attack4"
+                        ]
+                    }
+                }
+            },
+            "death_sequence_group": "strikecraft0"
+        }
+    ]
+}

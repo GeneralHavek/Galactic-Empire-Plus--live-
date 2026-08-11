@@ -1,0 +1,164 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_active_duration_value",
+            "action_value": {
+                "values": [
+                    20.0,
+                    25.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_cooldown_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.2,
+                    0.3
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_range_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_cooldown_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.2,
+                    0.3
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_range_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_cooldown_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_tracking_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_range_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_cooldown_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_tracking_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_range_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "target_filters": [
+    {
+        "target_filter_id": "ion_blast_autocast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "composite_not",
+                "constraint":
+                {
+                    "constraint_type": "has_buff",
+                    "buff": "imperial_ion_blast",
+                    "include_pending_buffs": true
+                }
+            }]
+        }
+    },
+    {
+        "target_filter_id": "ion_blast_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "ion_blast_antimatter_cost",
+        "action_value":
+        {
+            "values": [65.0, 70.0, 75.0]
+        }
+    },
+    {
+        "action_value_id": "ion_blast_cooldown",
+        "action_value":
+        {
+            "values": [15.0, 15.0, 15.0]
+        }
+    },
+    {
+        "action_value_id": "ion_blast_duration",
+        "action_value":
+        {
+            "values": [5, 7, 9]
+        }
+    },
+    {
+        "action_value_id": "ion_blast_range",
+        "action_value":
+        {
+            "values": [4500.0, 6500, 8500]
+        }
+    }]
+}

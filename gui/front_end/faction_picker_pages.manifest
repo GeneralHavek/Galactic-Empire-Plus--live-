@@ -1,0 +1,93 @@
+{
+    "pages": [
+        {
+            "name": "player_race_name.imperial",
+            "factions": [ "sw_imperial" ],
+            "layout_gui": "sw_imperial_faction_picker_layout"
+        }
+    ],
+    "faction_portraits": [
+        { "faction": "sw_imperial", "portrait": "player_portrait_imperial_6_large" }
+    ],
+    "homeworld_brushes": [
+        { "race": "sw_imperial", "brush": "imperial_city_planet_hud_picture" }
+    ],
+    "unit_sections": [
+        {
+            "section_id": "capital_ships",
+            "race": "sw_imperial",
+            "unit_ids": [
+                "imperial_venator",
+                "imperial_victoryi",
+                "imperial_procursator",
+                "imperial_venator_mk2",
+                "imperial_victoryii",
+                "imperial_isd1",
+                "imperial_tector",
+                "imperial_isd2",
+                "imperial_allegiance",
+                "imperial_executor"
+            ]
+        },
+        {
+            "section_id": "cruisers",
+            "race": "sw_imperial",
+            "unit_ids": [
+                "imperial_acclamator",
+                "imperial_acclamator_2",
+                "imperial_dreadnought",
+                "imperial_gladiator",
+                "imperial_vindicator",
+                "imperial_immobilizer",
+                "imperial_mtc",
+                "imperial_tonfalk"
+            ]
+        },
+        {
+            "section_id": "frigates",
+            "race": "sw_imperial",
+            "unit_ids": [
+                "imperial_arquitens",
+                "imperial_pelta",
+                "imperial_lancer",
+                "imperial_velox",
+                "imperial_kontos"
+            ]
+        },
+        {
+            "section_id": "corvettes",
+            "race": "sw_imperial",
+            "unit_ids": [
+                "imperial_indictor",
+                "imperial_vigil",
+                "imperial_cr90"
+            ]
+        },
+        {
+            "section_id": "military_structures",
+            "race": "sw_imperial",
+            "unit_ids": [
+                "imperial_gunpod",
+                "imperial_golan1",
+                "imperial_starbase",
+                "imperial_death_star"
+            ]
+        },
+        {
+            "section_id": "civilian_structures",
+            "race": "sw_imperial",
+            "unit_ids": [
+                "imperial_metal_extractor_structure",
+                "imperial_crystal_extractor_structure",
+                "imperial_station_civil",
+                "imperial_station_military",
+                "imperial_exotic_factory_structure",
+                "imperial_shipyard",
+                "imperial_shipyard_heavy",
+                "imperial_culture_center_structure",
+                "imperial_trade_port_structure"
+            ]
+        }
+    ],
+    "custom_sections": []
+}

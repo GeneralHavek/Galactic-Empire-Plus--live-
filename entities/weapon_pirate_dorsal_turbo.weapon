@@ -1,0 +1,40 @@
+{
+    "version": 0,
+    "name": "weapon_name.weapon_dorsal_turbo",
+    "pitch_speed": 5.0,
+    "yaw_speed": 5.0,
+    "pitch_firing_tolerance": 2.50,
+    "yaw_firing_tolerance": 2.50,
+    "range": 9500.0,
+    "cooldown_duration": 60.0,
+    "uniforms_target_filter_id": "heavy_turbolaser",
+    "attack_target_type_groups": [
+        "capital",
+        "defense_starbase_titan"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 500.0,
+    "penetration": 1000.0,
+    "tags": [
+        "energy",
+        "turbolaser"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.850,
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects": {
+        "burst_pattern": [
+            0.0
+        ],
+        "muzzle_picking_behavior": "sequential",
+        "muzzle_effect": "weapon_bolt_plasma_turbocannon_muzzle",
+        "projectile_travel_effect": "weapon_bolt_plasma_turbocannon",
+        "hit_hull_effect": "weapon_bolt_plasma_turbocannon_impact",
+        "hit_shield_effect": "weapon_bolt_plasma_turbocannon_impact",
+        "hit_shield_impact_radius_t": 0.650
+    }
+}

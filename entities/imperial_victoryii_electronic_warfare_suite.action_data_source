@@ -1,0 +1,294 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_suite_duration_value",
+            "action_value": {
+                "values": [
+                    25.0,
+                    25.0,
+                    25.0,
+                    25.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_suite_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_electronic_warfare_suite_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    70.0,
+                    70.0,
+                    70.0,
+                    70.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_power_disruption_duration_value",
+            "action_value": {
+                "values": [
+                    13.0,
+                    14.0,
+                    15.0,
+                    16.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_power_disruption_gate_duration_value",
+            "action_value": {
+                "values": [
+                    0.25,
+                    0.25,
+                    0.25,
+                    0.25
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_power_disruption_max_stacks_value",
+            "action_value": {
+                "values": [
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_power_disruption_shield_regen_value",
+            "action_value": {
+                "values": [
+                    -0.02,
+                    -0.03,
+                    -0.04,
+                    -0.05
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_power_disruption_antimatter_regen_value",
+            "action_value": {
+                "values": [
+                    -0.03,
+                    -0.04,
+                    -0.05,
+                    -0.06
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_duration_value",
+            "action_value": {
+                "values": [
+                    15.0,
+                    16.0,
+                    17.0,
+                    18.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_gate_duration_value",
+            "action_value": {
+                "values": [
+                    0.3,
+                    0.3,
+                    0.3,
+                    0.3
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_max_stacks_value",
+            "action_value": {
+                "values": [
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_weapon_cooldown_value",
+            "action_value": {
+                "values": [
+                    0.02,
+                    0.03,
+                    0.04,
+                    0.05
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_weapon_tracking_value",
+            "action_value": {
+                "values": [
+                    -0.01,
+                    -0.02,
+                    -0.03,
+                    -0.04
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_movement_speed_value",
+            "action_value": {
+                "values": [
+                    -0.01,
+                    -0.0175,
+                    -0.025,
+                    -0.0325
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victoryii_system_destabilization_turn_rate_value",
+            "action_value": {
+                "values": [
+                    0.01,
+                    0.02,
+                    0.03,
+                    0.04
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_victoryii_power_disruption_application_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint": {
+                            "constraint_type": "has_buff",
+                            "buff": "imperial_victoryii_power_disruption_gate",
+                            "include_pending_buffs": true
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "target_filter_id": "imperial_victoryii_system_destabilization_application_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "has_buff",
+                        "buff": "imperial_victoryii_power_disruption",
+                        "include_pending_buffs": true
+                    },
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint": {
+                            "constraint_type": "has_buff",
+                            "buff": "imperial_victoryii_system_destabilization_gate",
+                            "include_pending_buffs": true
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_victoryii_power_disruption_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_power_disruption_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_victoryii_power_disruption_antimatter_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "antimatter_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_power_disruption_antimatter_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_victoryii_system_destabilization_movement_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_linear_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_system_destabilization_movement_speed_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_victoryii_system_destabilization_turn_rate_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_angular_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_system_destabilization_turn_rate_value"
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_system_destabilization_weapon_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_system_destabilization_weapon_cooldown_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victoryii_system_destabilization_weapon_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victoryii_system_destabilization_weapon_tracking_value",
+                "weapon_type": "normal"
+            }
+        }
+    ]
+}

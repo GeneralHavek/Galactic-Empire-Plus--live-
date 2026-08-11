@@ -1,0 +1,15 @@
+{
+    "base_color_texture": "imperial_station2_clr",
+    "normal_texture": "imperial_station2_nrm",
+    "mask_texture": "imperial_station2_msk",
+    "occlusion_roughness_metallic_texture": "imperial_station2_orm",
+    "emissive_hue_strength": 1,
+    "base_color_factor": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "roughness_factor": 1,
+    "metallic_factor": 1
+}

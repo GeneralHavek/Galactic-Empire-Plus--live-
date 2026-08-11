@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_arquitens_command_center",
+    "passive_actions": {
+        "persistant_buff": "imperial_arquitens_command_center"
+    },
+    "gui": {
+        "hud_icon": "imperial_arquitens_command_center_ability_hud_icon",
+        "tooltip_picture": "imperial_arquitens_command_center_ability_tooltip_picture",
+        "name": "imperial_arquitens_command_center_ability_name",
+        "description": "imperial_arquitens_command_center_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.antimatter_restore",
+                "value_id": "command_center_antimatter_restore_value",
+                "value_float_format": "percentage_one_decimal_place"
+            }
+                
+            ]
+        }
+        ]
+    }
+
+}

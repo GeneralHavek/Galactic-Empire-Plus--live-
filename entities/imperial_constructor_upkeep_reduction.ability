@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_constructor_upkeep_reduction",
+    "level_source": "unit_item",
+    "passive_actions": {
+        "persistant_buff": "imperial_constructor_upkeep_reduction"
+    },
+    "gui": {
+        "name": "unit_item_upkeep_reduction_name",
+        "description": "unit_item_upkeep_reduction_description",
+        "hud_icon": "imperial_unlock_unit_upkeep_research_subject_hud_icon",
+        "tooltip_picture": "imperial_unlock_unit_upkeep_research_subject_tooltip_picture",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.credit_upkeep",
+                        "value_id": "constructor_credit_upkeep",
+                        "value_color": "positive",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.metal_upkeep",
+                        "value_id": "constructor_metal_upkeep",
+                        "value_color": "positive",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.crystal_upkeep",
+                        "value_id": "constructor_crystal_upkeep",
+                        "value_color": "positive",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "imperial_allegiance_superstructure_clr",
+    "normal_texture": "imperial_allegiance_superstructure_nrm",
+    "occlusion_roughness_metallic_texture": "imperial_allegiance_superstructure_orm"
+}

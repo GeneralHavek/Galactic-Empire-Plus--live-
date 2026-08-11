@@ -1,0 +1,8 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_arquitens_hull_clr",
+    "occlusion_roughness_metallic_texture": "imperial_arquitens_hull_orm",
+    "normal_texture": "imperial_arquitens_hull_nrm",
+    "mask_texture": "imperial_arquitens_hull_msk",
+    "emissive_hue_strength": 1.0
+}

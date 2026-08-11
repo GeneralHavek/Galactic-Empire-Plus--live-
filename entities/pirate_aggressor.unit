@@ -1,0 +1,2798 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 803.364624,
+        "box": {
+            "center": [
+                0.0,
+                -34.249786,
+                40.581543
+            ],
+            "extents": [
+                311.222473,
+                211.313522,
+                750.0
+            ]
+        },
+        "collision_rank": 2
+    },
+    "physics": {
+        "can_move_linear": true,
+        "max_linear_speed": 650.0,
+        "time_to_max_linear_speed": 5.5,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
+        "can_move_angular": true,
+        "max_angular_speed": 20.0,
+        "time_to_max_angular_speed": 15.0,
+        "max_bank_angle": 25.0,
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
+        "linear_acceleration_angle": 90.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 165.0,
+        "time_to_strafe_max_linear_speed": 15.0,
+        "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace": {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move": {
+        "follow_distance": 2588.118896
+    },
+    "attack": {
+        "attack_pattern": {
+            "type": "stop_and_fire"
+        }
+    },
+    "ai": {
+        "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
+            "heavy_capital",
+            "defense"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft",
+            "corvette"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_pirate_turret_mddtl",
+        "auto_follow_target_priority": 5.0,
+        "pursuit": {
+            "min_target_speed": 300.0,
+            "min_distance_to_target": 4000.0
+        }
+    },
+    "ai_attack_target": {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "capital"
+    },
+    "player_ai": {
+        "max_empire_owned_count_percentage": 0.25,
+        "max_count_to_fleet_supply_ratio": 150,
+        "attack_ship_weight_scalar": 0.25
+    },
+    "user_interface": {
+        "pip_type": "capital_ship",
+        "can_ever_be_selected": true,
+        "selection_priority": 400,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_max_weapon_range_in_tactical_view": true,
+        "can_show_distance_to_plane_line": true,
+        "bar_size": "large"
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "weapon_pirate_dorsal_turbo",
+                "mesh_point": "weapon.dorsal_turbo.000",
+                "weapon_position": [
+                    -3.4e-05,
+                    67.763489,
+                    715.631042
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        -3.4e-05,
+                        67.763489,
+                        715.631042
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_dorsal_turbo",
+                "mesh_point": "weapon.dorsal_turbo.001",
+                "weapon_position": [
+                    -2.7e-05,
+                    -90.579231,
+                    715.631042
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        -2.7e-05,
+                        -90.579231,
+                        715.631042
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mdmd",
+                "mesh_point": "child.msdr.000",
+                "weapon_position": [
+                    -298.484924,
+                    -28.061609,
+                    -11.255618
+                ],
+                "forward": [
+                    -0.707107,
+                    -0.0,
+                    0.707107
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -105.0,
+                    "max_angle": 50.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 50.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mdmd",
+                "mesh_point": "child.msdr.001",
+                "weapon_position": [
+                    298.484924,
+                    -28.061583,
+                    -11.255591
+                ],
+                "forward": [
+                    0.707107,
+                    0.0,
+                    0.707107
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 105.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 50.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mdmd",
+                "mesh_point": "child.msdr.002",
+                "weapon_position": [
+                    -143.388916,
+                    -66.916641,
+                    -193.235809
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -10.0,
+                    "max_angle": 50.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mdmd",
+                "mesh_point": "child.msdr.003",
+                "weapon_position": [
+                    143.388947,
+                    -66.916626,
+                    -193.235809
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -10.0,
+                    "max_angle": 50.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.000",
+                "weapon_position": [
+                    -101.977127,
+                    -0.911854,
+                    80.446472
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.001",
+                "weapon_position": [
+                    100.157379,
+                    -0.911845,
+                    80.446487
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.002",
+                "weapon_position": [
+                    -101.977127,
+                    -0.911867,
+                    14.442542
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -70.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.003",
+                "weapon_position": [
+                    100.157379,
+                    -0.911858,
+                    14.442552
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 70.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.004",
+                "weapon_position": [
+                    -177.12207,
+                    -7.371329,
+                    -164.2202
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 100.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.005",
+                "weapon_position": [
+                    175.302338,
+                    -7.371314,
+                    -164.220169
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -100.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.006",
+                "weapon_position": [
+                    -177.122055,
+                    -7.371342,
+                    -230.224106
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.007",
+                "weapon_position": [
+                    175.302353,
+                    -7.371326,
+                    -230.224075
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.008",
+                "weapon_position": [
+                    0.045001,
+                    126.143509,
+                    -379.967346
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.009",
+                "weapon_position": [
+                    0.045009,
+                    109.283257,
+                    -548.283081
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.010",
+                "weapon_position": [
+                    100.162079,
+                    -45.989033,
+                    80.44648
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.011",
+                "weapon_position": [
+                    -101.981842,
+                    -45.98904,
+                    80.446465
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.012",
+                "weapon_position": [
+                    100.162079,
+                    -45.989052,
+                    14.44255
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -70.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.013",
+                "weapon_position": [
+                    -101.981842,
+                    -45.989059,
+                    14.44254
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 70.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.014",
+                "weapon_position": [
+                    -0.039497,
+                    -169.681351,
+                    -9.25999
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.015",
+                "weapon_position": [
+                    169.408051,
+                    -40.377647,
+                    -107.286903
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.016",
+                "weapon_position": [
+                    -171.227768,
+                    -40.377663,
+                    -107.286919
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.017",
+                "weapon_position": [
+                    175.302368,
+                    -40.377686,
+                    -283.97821
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.018",
+                "weapon_position": [
+                    -177.122055,
+                    -40.377701,
+                    -283.97821
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_mddtl",
+                "mesh_point": "child.med.019",
+                "weapon_position": [
+                    0.045018,
+                    -167.661591,
+                    -479.326599
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.000",
+                "weapon_position": [
+                    -33.795902,
+                    107.962074,
+                    539.648865
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.5,
+                    0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.001",
+                "weapon_position": [
+                    -33.795898,
+                    107.962059,
+                    432.836121
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.5,
+                    0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.002",
+                "weapon_position": [
+                    -33.795895,
+                    107.962036,
+                    326.840668
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.5,
+                    0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.003",
+                "weapon_position": [
+                    31.976103,
+                    107.962074,
+                    539.648865
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.5,
+                    0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.004",
+                "weapon_position": [
+                    31.976109,
+                    107.962059,
+                    432.836121
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.5,
+                    0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.005",
+                "weapon_position": [
+                    31.976112,
+                    107.962036,
+                    326.840668
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.5,
+                    0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.006",
+                "weapon_position": [
+                    -86.652847,
+                    -14.558307,
+                    538.986938
+                ],
+                "forward": [
+                    -0.984808,
+                    -0.173648,
+                    0.0
+                ],
+                "up": [
+                    -0.173648,
+                    0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.007",
+                "weapon_position": [
+                    -86.65284,
+                    -14.558328,
+                    433.052277
+                ],
+                "forward": [
+                    -0.984808,
+                    -0.173648,
+                    0.0
+                ],
+                "up": [
+                    -0.173648,
+                    0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.008",
+                "weapon_position": [
+                    -86.65284,
+                    -14.558348,
+                    327.146759
+                ],
+                "forward": [
+                    -0.984808,
+                    -0.173648,
+                    0.0
+                ],
+                "up": [
+                    -0.173648,
+                    0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.009",
+                "weapon_position": [
+                    84.833061,
+                    -14.558299,
+                    538.986938
+                ],
+                "forward": [
+                    0.984808,
+                    -0.173648,
+                    0.0
+                ],
+                "up": [
+                    0.173648,
+                    0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.010",
+                "weapon_position": [
+                    84.833069,
+                    -14.55832,
+                    433.052277
+                ],
+                "forward": [
+                    0.984808,
+                    -0.173648,
+                    0.0
+                ],
+                "up": [
+                    0.173648,
+                    0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.011",
+                "weapon_position": [
+                    84.833069,
+                    -14.55834,
+                    327.146759
+                ],
+                "forward": [
+                    0.984808,
+                    -0.173648,
+                    0.0
+                ],
+                "up": [
+                    0.173648,
+                    0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.012",
+                "weapon_position": [
+                    -70.614311,
+                    0.338135,
+                    137.837601
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -130.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.013",
+                "weapon_position": [
+                    68.794556,
+                    0.338141,
+                    137.837601
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 130.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.014",
+                "weapon_position": [
+                    -43.173439,
+                    106.06501,
+                    -77.895508
+                ],
+                "forward": [
+                    -0.707107,
+                    -0.0,
+                    0.707107
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 115.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.015",
+                "weapon_position": [
+                    41.353691,
+                    106.06501,
+                    -77.895508
+                ],
+                "forward": [
+                    0.707107,
+                    0.0,
+                    0.707107
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -115.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.016",
+                "weapon_position": [
+                    -63.175537,
+                    106.698349,
+                    -254.334503
+                ],
+                "forward": [
+                    -0.866025,
+                    -0.5,
+                    -0.0
+                ],
+                "up": [
+                    -0.5,
+                    0.866026,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 70.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.017",
+                "weapon_position": [
+                    -63.175533,
+                    106.698334,
+                    -307.46402
+                ],
+                "forward": [
+                    -0.866025,
+                    -0.5,
+                    -0.0
+                ],
+                "up": [
+                    -0.5,
+                    0.866026,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.018",
+                "weapon_position": [
+                    61.355801,
+                    106.698341,
+                    -254.334488
+                ],
+                "forward": [
+                    0.866025,
+                    -0.5,
+                    0.0
+                ],
+                "up": [
+                    0.5,
+                    0.866026,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -70.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.019",
+                "weapon_position": [
+                    61.355801,
+                    106.698334,
+                    -307.46402
+                ],
+                "forward": [
+                    0.866025,
+                    -0.5,
+                    0.0
+                ],
+                "up": [
+                    0.5,
+                    0.866026,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.020",
+                "weapon_position": [
+                    -53.099228,
+                    104.620728,
+                    -467.843384
+                ],
+                "forward": [
+                    -0.866025,
+                    -0.5,
+                    -0.0
+                ],
+                "up": [
+                    -0.5,
+                    0.866026,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.021",
+                "weapon_position": [
+                    51.27951,
+                    104.620728,
+                    -467.843384
+                ],
+                "forward": [
+                    0.866025,
+                    -0.5,
+                    0.0
+                ],
+                "up": [
+                    0.5,
+                    0.866026,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.022",
+                "weapon_position": [
+                    -149.533737,
+                    1.966262,
+                    -469.265839
+                ],
+                "forward": [
+                    -0.992546,
+                    -0.121869,
+                    -0.0
+                ],
+                "up": [
+                    -0.121869,
+                    0.992546,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -110.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.023",
+                "weapon_position": [
+                    147.714035,
+                    1.966275,
+                    -469.265839
+                ],
+                "forward": [
+                    0.992546,
+                    -0.121869,
+                    -0.0
+                ],
+                "up": [
+                    0.121869,
+                    0.992546,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 110.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.024",
+                "weapon_position": [
+                    -149.366409,
+                    -13.892194,
+                    -628.024841
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 150.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 15.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.025",
+                "weapon_position": [
+                    147.546722,
+                    -13.89218,
+                    -628.024841
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -150.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 15.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.026",
+                "weapon_position": [
+                    42.557259,
+                    -147.839325,
+                    540.193787
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.5,
+                    -0.866025,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.027",
+                "weapon_position": [
+                    42.557262,
+                    -147.839355,
+                    432.58197
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.5,
+                    -0.866025,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.028",
+                "weapon_position": [
+                    42.147663,
+                    -155.452805,
+                    319.055359
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.5,
+                    -0.866025,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.029",
+                "weapon_position": [
+                    -44.377037,
+                    -147.839325,
+                    540.193787
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.5,
+                    -0.866025,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.030",
+                "weapon_position": [
+                    -44.377033,
+                    -147.839355,
+                    432.58197
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.5,
+                    -0.866025,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.031",
+                "weapon_position": [
+                    -43.967426,
+                    -155.452805,
+                    319.055359
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.5,
+                    -0.866025,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.032",
+                "weapon_position": [
+                    84.934235,
+                    -32.551178,
+                    538.986938
+                ],
+                "forward": [
+                    0.984808,
+                    0.173648,
+                    -0.0
+                ],
+                "up": [
+                    0.173648,
+                    -0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -60.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.033",
+                "weapon_position": [
+                    84.934242,
+                    -32.551197,
+                    433.032867
+                ],
+                "forward": [
+                    0.984808,
+                    0.173648,
+                    -0.0
+                ],
+                "up": [
+                    0.173648,
+                    -0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.034",
+                "weapon_position": [
+                    84.934242,
+                    -32.551224,
+                    327.070282
+                ],
+                "forward": [
+                    0.984808,
+                    0.173648,
+                    -0.0
+                ],
+                "up": [
+                    0.173648,
+                    -0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -40.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.035",
+                "weapon_position": [
+                    -86.754021,
+                    -32.551186,
+                    538.986938
+                ],
+                "forward": [
+                    -0.984808,
+                    0.173648,
+                    -0.0
+                ],
+                "up": [
+                    -0.173648,
+                    -0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 60.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.036",
+                "weapon_position": [
+                    -86.754013,
+                    -32.551205,
+                    433.032867
+                ],
+                "forward": [
+                    -0.984808,
+                    0.173648,
+                    -0.0
+                ],
+                "up": [
+                    -0.173648,
+                    -0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 50.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.037",
+                "weapon_position": [
+                    -86.754013,
+                    -32.551231,
+                    327.070282
+                ],
+                "forward": [
+                    -0.984808,
+                    0.173648,
+                    -0.0
+                ],
+                "up": [
+                    -0.173648,
+                    -0.984808,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 40.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.038",
+                "weapon_position": [
+                    -54.21534,
+                    -161.174332,
+                    -51.741096
+                ],
+                "forward": [
+                    -0.866025,
+                    0.5,
+                    -0.0
+                ],
+                "up": [
+                    -0.5,
+                    -0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.039",
+                "weapon_position": [
+                    -54.215336,
+                    -161.174362,
+                    -116.960915
+                ],
+                "forward": [
+                    -0.866025,
+                    0.5,
+                    -0.0
+                ],
+                "up": [
+                    -0.5,
+                    -0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.040",
+                "weapon_position": [
+                    52.395607,
+                    -161.174332,
+                    -51.741089
+                ],
+                "forward": [
+                    0.866025,
+                    0.5,
+                    0.0
+                ],
+                "up": [
+                    0.5,
+                    -0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.041",
+                "weapon_position": [
+                    52.395611,
+                    -161.174362,
+                    -116.960915
+                ],
+                "forward": [
+                    0.866025,
+                    0.5,
+                    0.0
+                ],
+                "up": [
+                    0.5,
+                    -0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.042",
+                "weapon_position": [
+                    -77.062531,
+                    -156.921432,
+                    -251.534912
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.043",
+                "weapon_position": [
+                    -77.058083,
+                    -156.913177,
+                    -352.350586
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.044",
+                "weapon_position": [
+                    75.242821,
+                    -156.921432,
+                    -251.534912
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.045",
+                "weapon_position": [
+                    75.238388,
+                    -156.913177,
+                    -352.350586
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.046",
+                "weapon_position": [
+                    -49.707111,
+                    -161.887726,
+                    -467.571655
+                ],
+                "forward": [
+                    -0.866025,
+                    0.5,
+                    -0.0
+                ],
+                "up": [
+                    -0.5,
+                    -0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 210.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.047",
+                "weapon_position": [
+                    -149.533737,
+                    -49.123917,
+                    -469.265839
+                ],
+                "forward": [
+                    -0.992546,
+                    0.121869,
+                    0.0
+                ],
+                "up": [
+                    -0.121869,
+                    -0.992546,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 130.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.048",
+                "weapon_position": [
+                    47.887417,
+                    -161.887726,
+                    -467.571655
+                ],
+                "forward": [
+                    0.866025,
+                    0.5,
+                    0.0
+                ],
+                "up": [
+                    0.5,
+                    -0.866025,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -210.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.049",
+                "weapon_position": [
+                    147.714035,
+                    -49.123901,
+                    -469.265839
+                ],
+                "forward": [
+                    0.992546,
+                    0.121869,
+                    0.0
+                ],
+                "up": [
+                    0.121869,
+                    -0.992546,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -130.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.050",
+                "weapon_position": [
+                    -149.366409,
+                    -33.265518,
+                    -628.024841
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_turret_lqtl",
+                "mesh_point": "child.light.051",
+                "weapon_position": [
+                    147.546722,
+                    -33.265503,
+                    -628.024841
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_planet_turbolaser_aggr",
+                "mesh_point": "weapon.dorsal_turbo.000",
+                "weapon_position": [
+                    -2.7e-05,
+                    -90.579231,
+                    715.631042
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        -2.7e-05,
+                        -90.579231,
+                        715.631042
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            }
+        ],
+        "max_range_weapon_index": 2
+    },
+    "formation": {
+        "leader_priority": 2,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 3,
+                "group": 2
+            }
+        }
+    },
+    "spawn_debris": {
+        "spawn_debris_time": 5.98,
+        "generic_group_name": "trader",
+        "generic_counts": {
+            "small_debris": [
+                16,
+                28
+            ],
+            "large_debris": [
+                4,
+                7
+            ]
+        },
+        "custom_debris": [
+            {
+                "unit": "trader_large_debris",
+                "basis": {
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                }
+            }
+        ],
+        "spawn_loot": {
+            "loot_unit": "ship_loot_trader",
+            "loot_name": "pirate_aggressor_loot_name",
+            "experience_given": 200.0,
+            "exotics": [
+                {
+                    "bundles": [
+                        {
+                            "types": [
+                                "offense"
+                            ],
+                            "counts": [
+                                1,
+                                2
+                            ]
+                        }
+                    ],
+                    "weight": 1.0
+                }
+            ],
+            "assets": {
+                "credits": [
+                    250.0,
+                    750.0
+                ],
+                "metal": [
+                    75.0,
+                    225.0
+                ],
+                "crystal": [
+                    50.0,
+                    150.0
+                ]
+            }
+        }
+    },
+    "health": {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 3.95,
+        "durability": 550.0,
+        "can_ever_be_resurrected": true,
+        "levels": [
+            {
+                "max_hull_points": 3250.0,
+                "hull_point_restore_rate": 3.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.5,
+                "max_armor_points": 1250.0,
+                "armor_point_restore_rate": 3.0,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 150.0,
+                "max_shield_points": 5600.0,
+                "shield_point_restore_rate": 4.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 40.0,
+                    "restore_percentage": 0.15
+                },
+                "experience_given_on_death": 100.0
+            },
+            {
+                "max_hull_points": 3475.0,
+                "hull_point_restore_rate": 3.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.55,
+                "max_armor_points": 1375.0,
+                "armor_point_restore_rate": 3.6,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 155.0,
+                "max_shield_points": 6015.0,
+                "shield_point_restore_rate": 5.2,
+                "shield_burst_restore": {
+                    "cooldown_duration": 38.0,
+                    "restore_percentage": 0.18
+                },
+                "experience_given_on_death": 120.0
+            },
+            {
+                "max_hull_points": 3700.0,
+                "hull_point_restore_rate": 4.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.6,
+                "max_armor_points": 1500.0,
+                "armor_point_restore_rate": 4.2,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 160.0,
+                "max_shield_points": 6430.0,
+                "shield_point_restore_rate": 6.4,
+                "shield_burst_restore": {
+                    "cooldown_duration": 36.0,
+                    "restore_percentage": 0.22
+                },
+                "experience_given_on_death": 150.0
+            },
+            {
+                "max_hull_points": 3925.0,
+                "hull_point_restore_rate": 4.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.65,
+                "max_armor_points": 1625.0,
+                "armor_point_restore_rate": 4.8,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 165.0,
+                "max_shield_points": 6845.0,
+                "shield_point_restore_rate": 7.6,
+                "shield_burst_restore": {
+                    "cooldown_duration": 34.0,
+                    "restore_percentage": 0.25
+                },
+                "experience_given_on_death": 190.0
+            },
+            {
+                "max_hull_points": 4150.0,
+                "hull_point_restore_rate": 5.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.7,
+                "max_armor_points": 1750.0,
+                "armor_point_restore_rate": 5.4,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 170.0,
+                "max_shield_points": 7260.0,
+                "shield_point_restore_rate": 8.8,
+                "shield_burst_restore": {
+                    "cooldown_duration": 32.0,
+                    "restore_percentage": 0.28
+                },
+                "experience_given_on_death": 240.0
+            },
+            {
+                "max_hull_points": 4375.0,
+                "hull_point_restore_rate": 5.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.75,
+                "max_armor_points": 1875.0,
+                "armor_point_restore_rate": 6.0,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 175.0,
+                "max_shield_points": 7675.0,
+                "shield_point_restore_rate": 10.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 30.0,
+                    "restore_percentage": 0.32
+                },
+                "experience_given_on_death": 300.0
+            },
+            {
+                "max_hull_points": 4600.0,
+                "hull_point_restore_rate": 6.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.8,
+                "max_armor_points": 2000.0,
+                "armor_point_restore_rate": 6.6,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 180.0,
+                "max_shield_points": 8090.0,
+                "shield_point_restore_rate": 11.2,
+                "shield_burst_restore": {
+                    "cooldown_duration": 28.0,
+                    "restore_percentage": 0.35
+                },
+                "experience_given_on_death": 370.0
+            },
+            {
+                "max_hull_points": 4825.0,
+                "hull_point_restore_rate": 6.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.85,
+                "max_armor_points": 2125.0,
+                "armor_point_restore_rate": 7.2,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 185.0,
+                "max_shield_points": 8505.0,
+                "shield_point_restore_rate": 12.4,
+                "shield_burst_restore": {
+                    "cooldown_duration": 26.0,
+                    "restore_percentage": 0.38
+                },
+                "experience_given_on_death": 450.0
+            },
+            {
+                "max_hull_points": 5050.0,
+                "hull_point_restore_rate": 7.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.92,
+                "max_armor_points": 2250.0,
+                "armor_point_restore_rate": 7.8,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 190.0,
+                "max_shield_points": 8920.0,
+                "shield_point_restore_rate": 13.6,
+                "shield_burst_restore": {
+                    "cooldown_duration": 24.0,
+                    "restore_percentage": 0.42
+                },
+                "experience_given_on_death": 540.0
+            },
+            {
+                "max_hull_points": 5275.0,
+                "hull_point_restore_rate": 7.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 1.0,
+                "max_armor_points": 2375.0,
+                "armor_point_restore_rate": 8.4,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 195.0,
+                "max_shield_points": 9335.0,
+                "shield_point_restore_rate": 14.8,
+                "shield_burst_restore": {
+                    "cooldown_duration": 22.0,
+                    "restore_percentage": 0.45
+                },
+                "experience_given_on_death": 640.0
+            }
+        ]
+    },
+    "antimatter": {
+        "max_antimatter": 0.0,
+        "antimatter_restore_rate": 0.0
+    },
+    "levels": {
+        "type": "experience",
+        "levels": [
+            {
+                "experience_to_next_level": 200.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 270.0,
+                        "antimatter_restore_rate": 0.85,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                }
+            },
+            {
+                "experience_to_next_level": 500.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 300.0,
+                        "antimatter_restore_rate": 0.94,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.02,
+                        "cooldown_duration": -0.03
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 900.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 330.0,
+                        "antimatter_restore_rate": 1.03,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.04,
+                        "cooldown_duration": -0.06
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 1500.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 360.0,
+                        "antimatter_restore_rate": 1.12,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.06,
+                        "cooldown_duration": -0.09
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 2300.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 390.0,
+                        "antimatter_restore_rate": 1.21,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.08,
+                        "cooldown_duration": -0.12
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 3300.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 420.0,
+                        "antimatter_restore_rate": 1.3,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.1,
+                        "cooldown_duration": -0.15
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 4500.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 450.0,
+                        "antimatter_restore_rate": 1.39,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.12,
+                        "cooldown_duration": -0.18
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 6000.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 480.0,
+                        "antimatter_restore_rate": 1.48,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.14,
+                        "cooldown_duration": -0.21
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 7800.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 510.0,
+                        "antimatter_restore_rate": 1.57,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.16,
+                        "cooldown_duration": -0.24
+                    }
+                }
+            },
+            {
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 540.0,
+                        "antimatter_restore_rate": 1.66,
+                        "max_squadron_capacity": 4.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.18,
+                        "cooldown_duration": -0.27
+                    }
+                }
+            }
+        ]
+    },
+    "build": {
+        "build_time": 70.0,
+        "price": {
+            "credits": 4750.0,
+            "metal": 900.0,
+            "crystal": 600.0
+        },
+        "exotic_price": [
+            {
+                "exotic_type": "offense",
+                "count": 2
+            }
+        ],
+        "build_kind": "capital_ship",
+        "supply_cost": 55,
+        "build_group_id": "capital_ship"
+    },
+    "items": {
+        "levels": [
+            {
+                "max_ship_component_count": 4
+            }
+        ]
+    },
+    "item_builds": [
+        {
+            "build_group": [
+                "imperial_upkeep_reduction",
+                "imperial_specialization_offense_damage_range",
+                "imperial_specialization_offense_firing_speed",
+                "imperial_specialization_offense_exploit_weakness"
+            ],
+            "weight": 10.0
+        },
+        {
+            "build_group": [
+                "imperial_specialization_defense_hull_and_armor",
+                "imperial_specialization_defense_backup_shield_generator"
+            ],
+            "weight": 8.0
+        },
+        {
+            "build_group": [
+                "imperial_antimatter_engine"
+            ],
+            "weight": 5.0
+        },
+        {
+            "build_group": [
+                "imperial_missile_armor"
+            ],
+            "weight": 5.0
+        },
+        {
+            "build_group": [
+                "trader_combat_repair_system"
+            ],
+            "weight": 3.0
+        },
+        {
+            "build_group": [
+                "imperial_deploy_starbase"
+            ],
+            "weight": 3.0
+        },
+        {
+            "build_group": [
+                "trader_volatile_accelerants"
+            ],
+            "weight": 3.0
+        },
+        {
+            "build_group": [
+                "trader_war_reporter",
+                "trader_salvage_kit"
+            ]
+        },
+        {}
+    ],
+    "target_filter_unit_type": "capital_ship",
+    "tags": [
+        "capital_ship"
+    ],
+    "abilities": [],
+    "ship_roles": [
+        "attack_ship",
+        "bomb_planet"
+    ],
+    "skin_groups": [
+        {
+            "skins": [
+                "pirate_aggressor"
+            ]
+        }
+    ],
+    "action_effect_size": "large_unit",
+    "can_join_fleet": true
+}

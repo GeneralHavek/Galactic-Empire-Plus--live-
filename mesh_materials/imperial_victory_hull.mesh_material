@@ -1,0 +1,6 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_victory_hull_clr",
+    "occlusion_roughness_metallic_texture": "imperial_victory_hull_orm",
+    "normal_texture": "imperial_victory_hull_nrm"
+}

@@ -1,0 +1,12 @@
+{
+    "version": 0,
+    "tooltip_icon": "kalkite_exotic_tooltip_icon",
+    "small_icon": "kalkite_exotic_small_icon",
+    "large_icon": "kalkite_exotic_large_icon",
+    "picture": "kalkite_exotic_picture",
+    "name": "exotic.kalkite.name",
+    "description": "exotic.kalkite.description",
+    "pip_color": "#810781ff",
+    "insufficient_exotics_player_sound_id": "insufficient_generic_exotics",
+    "ai_trade_value": 0
+}

@@ -1,0 +1,6 @@
+{
+    "base_color_texture": "pirate_munificent_engine_clr",
+    "normal_texture": "pirate_munificent_engine_nrm",
+    "mask_texture": "pirate_munificent_engine_msk",
+    "occlusion_roughness_metallic_texture": "pirate_munificent_engine_orm"
+}

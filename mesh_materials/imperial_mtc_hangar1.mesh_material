@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "imperial_mtc_hangar1_clr",
+    "mask_texture": "imperial_mtc_hangar1_msk",
+    "emissive_hue_strength": 1
+}

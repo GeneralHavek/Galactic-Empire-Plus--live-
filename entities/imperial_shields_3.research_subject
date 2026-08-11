@@ -1,0 +1,44 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_engineering",
+    "field_coord": [
+        6,
+        8
+    ],
+    "research_time": 540.0,
+    "price": {
+        "credits": 1700.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "exotic_price": [
+        {
+            "exotic_type": "utility",
+            "count": 1
+        }
+    ],
+    "prerequisites": [
+        [
+            "imperial_shields_2"
+        ]
+    ],
+    "unit_modifiers": [
+        {
+            "modifier_type": "max_shield_points",
+            "value_behavior": "scalar",
+            "value": 0.24
+        },
+        {
+            "modifier_type": "shield_point_restore_rate",
+            "value_behavior": "scalar",
+            "value": 0.12
+        }
+    ],
+    "name": "imperial_shields_3_research_subject_name",
+    "name_uppercase": "imperial_shields_3_research_subject_name_uppercase",
+    "description": "imperial_shields_3_research_subject_description",
+    "hud_icon": "imperial_shields_3_research_subject_hud_icon",
+    "tooltip_picture": "imperial_shields_3_research_subject_tooltip_picture"
+}

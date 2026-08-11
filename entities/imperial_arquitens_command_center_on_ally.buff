@@ -1,0 +1,142 @@
+{
+    "version": 0,
+    "make_dead_on_parent_buff_made_dead": true,
+    "make_dead_on_distance_to_parent_buff_exceeded":
+    {
+        "distance": "command_center_radius_value"
+    },
+    "stacking_limit":
+    {
+        "stacking_limit": "command_center_max_stack_count_value",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+        {
+            "execution_interval_value": "fixed_zero",
+            "action_group": {
+                "constraint": {
+                    "constraint_type": "composite_and",
+                    "constraints": [
+                        {
+                            "constraint_type": "value_comparison",
+                            "value_a": "command_center_stack_count_value",
+                            "comparison_type": "greater_than",
+                            "value_b": "fixed_zero"
+                        },
+                        {
+                            "constraint_type": "value_comparison",
+                            "value_a": "command_center_stacks_expiry_time_value",
+                            "comparison_type": "less_than",
+                            "value_b": "common_simulation_time_value"
+                        }
+                    ]
+                },
+                "actions": [
+                {
+                    "action_type": "change_buff_memory_float_value",
+                    "float_variable": "stack_count",
+                    "math_operators": [
+                    {
+                        "operator_type": "assign",
+                        "operand_value": "fixed_zero"
+                    }]
+                },
+                {
+                    "action_type": "stop_buff_effect"
+                }]
+            }
+        }
+    ],
+    "trigger_event_actions": [
+    {
+        "trigger_event_type": "on_unit_damaged_by_current_spawner",
+        "action_group":
+        {
+            "constraint":
+            {
+                "constraint_type": "unit_passes_target_filter",
+                "unit":
+                {
+                    "unit_type": "trigger_event_destination"
+                },
+                "target_filter_id": "command_center_target_filter"
+            },
+            "actions": [
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stack_count",
+                "math_operators": [
+                    {
+                        "operator_type": "add",
+                        "operand_value": "command_center_stack_count_value"
+                    }
+                ]
+            },
+            {
+                "action_type": "change_buff_memory_float_value",
+                "float_variable": "stacks_expiry_time",
+                "math_operators": [
+                    {
+                        "operator_type":"assign",
+                        "operand_value": "common_simulation_time_value" 
+                    },
+                    {
+                        "operator_type": "add",
+                        "operand_value": "command_center_stack_duration_value"
+                    }
+                ]
+            },
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "restore_antimatter",
+                    "antimatter_restore_value": "command_center_antimatter_restore_value"
+                }]
+            },
+            {
+                "constraint": {
+                    "constraint_type": "value_comparison",
+                    "value_a": "command_center_stack_duration_value",
+                    "comparison_type": "equal_to",
+                    "value_b": "fixed_one"
+                },
+                "action_type": "start_buff_effect",
+                "effect_definition": {
+                    "binding": "unit_skin",
+                    "mesh_point": "center",
+                    "effect_by_size": 
+                    {
+                        "small_unit": "advent_carrier_capital_ship_amplify_energy_buff_on_target_small",
+                        "medium_unit": "advent_carrier_capital_ship_amplify_energy_buff_on_target_medium",
+                        "large_unit": "advent_carrier_capital_ship_amplify_energy_buff_on_target_large"
+                    }
+                }
+            }]
+        }
+    }],
+    "gui": {
+        "hud_icon": "imperial_arquitens_command_center_ability_hud_icon",
+        "name": "imperial_arquitens_command_center_ability_name",
+        "description": "imperial_arquitens_command_center_ability_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.antimatter_restore",
+                "value_id": "command_center_antimatter_restore_value",
+                "value_float_format": "percentage_one_decimal_place"
+            }   
+            ]
+        }
+        ]
+    }
+    
+}

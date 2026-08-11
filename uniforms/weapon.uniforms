@@ -1,0 +1,29 @@
+{
+    "weapon_tags": [
+        {
+            "name": "turbolaser",
+            "localized_name": "weapon_tag_name.turbolaser"
+        },
+        {
+            "name": "ion",
+            "localized_name": "weapon_tag_name.ion"
+        },
+        {
+            "name": "proton",
+            "localized_name": "weapon_tag_name.proton"
+        },
+        {
+            "name": "concussion",
+            "localized_name": "weapon_tag_name.concussion"
+        },
+        {
+            "name": "bomb",
+            "localized_name": "weapon_tag_name.bomb"
+        },
+        {
+            "name": "mass_driver",
+            "localized_name": "weapon_tag_name.mass_driver"
+        }
+    ],
+    "recently_fired_time_threshold": 10.0
+}

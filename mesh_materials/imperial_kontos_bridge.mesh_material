@@ -1,0 +1,15 @@
+{
+    "base_color_texture": "imperial_kontos_bridge_clr",
+    "normal_texture": "imperial_kontos_bridge_nrm",
+    "mask_texture": "imperial_kontos_bridge_msk",
+    "occlusion_roughness_metallic_texture": "imperial_kontos_bridge_orm",
+    "emissive_hue_strength": 1,
+    "base_color_factor": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "roughness_factor": 1,
+    "metallic_factor": 1
+}

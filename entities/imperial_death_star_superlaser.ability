@@ -1,0 +1,87 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_death_star_superlaser",
+    "level_source": "fixed_level_0",
+    "active_actions": {
+        "cooldown_time": "superlaser_cooldown",
+        "antimatter_cost": "superlaser_antimatter_cost",
+        "actions": {
+            "actions": [
+                {
+                    "constraint": {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit": {
+                            "unit_type": "target"
+                        },
+                        "target_filter_id": "superlaser_target_filter"
+                    },
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_death_star_superlaser_ability_on_self"
+                        }
+                    ]
+                }
+            ]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "superlaser_target_filter"
+        ],
+        "range": "superlaser_range",
+        "move_alignment": {
+            "type": "pitch",
+            "angle": 19.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 1.5,
+        "auto_cast": {
+            "enabled_by_default_behavior": "never",
+            "target_definitions": [
+                {
+                    "target_filter": "superlaser_target_filter"
+                }
+            ]
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_superlaser_ability_hud_icon",
+        "tooltip_icon": "imperial_superlaser_ability_hud_icon",
+        "tooltip_picture": "imperial_superlaser_ability_tooltip_picture",
+        "name": "imperial_superlaser_ability_name",
+        "description": "imperial_superlaser_ability_desc",
+        "targeting": {
+            "targeting_type": "range",
+            "values": {
+                "range": "superlaser_range"
+            }
+        },
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.range",
+                        "value_id": "superlaser_range"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.charge_duration",
+                        "value_id": "superlaser_charge_duration",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.duration",
+                        "value_id": "superlaser_beam_duration",
+                        "value_suffix": "seconds"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_acclamator_detail_clr",
+    "occlusion_roughness_metallic_texture": "imperial_acclamator_detail_orm",
+    "normal_texture": "imperial_acclamator_detail_nrm"
+}

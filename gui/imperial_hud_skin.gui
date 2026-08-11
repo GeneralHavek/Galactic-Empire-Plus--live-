@@ -1,0 +1,125 @@
+{
+    "tooltip_picture_background":
+    {
+        "brush": "tooltip_picture_background_imperial",
+        "brush_render_style": "stretched",
+        "outer_margins":
+        {
+            "top": 4,
+            "bottom": 4,
+            "left": 4,
+            "right": 4
+        }
+    },
+    "top_bar_popup_background":
+    {
+        "simple_vertical_stretched":
+        {
+            "fill_color_top": "#094c68",
+            "fill_color_bottom": "#f2051b26",
+            "fill_layout":
+            {
+                "margins":
+                {
+                    "left": 35,
+                    "top": 30,
+                    "right": 35,
+                    "bottom": 30
+                }
+            },
+            "top_offset": 14,
+            "bottom_offset": 14,
+            "top": "hud_top_bar_popout_top_imperial",
+            "middle": "hud_top_bar_popout_middle_imperial",
+            "bottom": "hud_top_bar_popout_bottom_imperial"
+        }
+    },
+    "player_victory_background":
+    {
+        "complex_tiled":
+        {
+            "fill_color_top": "f2061e2a",
+            "fill_color_bottom": "f2061e2a",
+            "fill_layout":
+            {
+                "margins":
+                {
+                    "left": 41,
+                    "top": 30,
+                    "right": 41,
+                    "bottom": 30
+                }
+            },
+            "top_left": "dialog_frame_background_top_left",
+            "top_right": "dialog_frame_background_top_right",
+            "top_center": "dialog_frame_background_top_center",
+            "bottom_right": "dialog_frame_background_bottom_right",
+            "bottom_left": "dialog_frame_background_bottom_left",
+            "bottom_center": "dialog_frame_background_bottom_center",
+            "left_tile": "dialog_frame_background_left_tile",
+            "right_tile": "dialog_frame_background_right_tile",
+            "top_stretch": "dialog_frame_background_top_stretch",
+            "bottom_stretch": "dialog_frame_background_bottom_stretch"
+        }
+    },
+    "top_bar_background": "hud_top_bar_background_imperial",
+    "top_bar_extra_overlay_when_popup_open": "hud_top_bar_extra_overlay_when_popup_open_trader",
+    "top_bar_extra_overlay_when_popup_open_layout":
+    {
+        "horizontal_alignment": "center",
+        "vertical_alignment": "top",
+        "width": 281,
+        "height": 31,
+        "margins":
+        {
+            "top": 60
+        }
+    },
+    "bottom_bar_planet_background": "hud_bottom_bar_background_imperial",
+    "bottom_bar_ship_background": "hud_bottom_bar_background_imperial",
+    "bottom_bar_primary_window_extra_content_height": 8,
+    "bottom_bar_secondary_window_background":
+    {
+        "single_row":
+        {
+            "min_bar_height": 40,
+            "content_margins":
+            {
+                "top": 45,
+                "bottom": 45
+            },
+            "background_bottom_offset_from_bar_bottom": 0,
+            "brush": "hud_bottom_bar_popup_window_background_single_row_imperial"
+        },
+        "multi_row":
+        {
+            "min_bar_height": 40,
+            "content_margins":
+            {
+                "top": 10,
+                "bottom": 10
+            },
+            "background_top_offset_from_bar_top": 10,
+            "background_bottom_offset_from_bar_bottom": 10,
+            "top": "hud_bottom_bar_popup_window_background_top_imperial",
+            "middle": "hud_bottom_bar_popup_window_background_middle_imperial",
+            "middle_render_style": "stretched_vertical",
+            "bottom": "hud_bottom_bar_popup_window_background_bottom_imperial"
+        }
+    },
+    "tooltip_background": "tooltip_background_imperial",
+    "are_secondary_bottom_bars_under_primary": false,
+    "research_window_background":
+    {
+        "outer_margins":
+        {
+            "top": 20,
+            "bottom": 20,
+            "left": 15,
+            "right": 15
+        },
+        "brush": "tooltip_background_imperial"
+    },
+    "mission_side_panel": "imperial_objectives_minimized",
+    "mission_heading": "imperial_objectives_header"
+}

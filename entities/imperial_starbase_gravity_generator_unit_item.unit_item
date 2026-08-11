@@ -1,0 +1,30 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "gravity_well_research_hud_icon",
+    "tooltip_icon": "gravity_well_research_hud_icon",
+    "name": "imperial_starbase_gravity_generator_unit_item_name",
+    "description": "imperial_starbase_gravity_generator_unit_item_description",
+    "build_time": 145.0,
+    "price":
+    {
+        "credits": 1200.0,
+        "metal": 575.0,
+        "crystal": 750.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }
+    ],
+    "required_unit_tags": [
+        "starbase"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        ["imperial_unlock_starbase_gravity_generator_unit_item"]
+    ],
+    "build_group_id": "defense",
+    "ability": "imperial_starbase_gravity_well_jump_disruption"
+}

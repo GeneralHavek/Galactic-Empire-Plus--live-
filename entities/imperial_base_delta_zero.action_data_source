@@ -1,0 +1,64 @@
+{
+    "version": 0,
+    "level_count": 2,
+    "action_values": [
+    {
+        "action_value_id": "base_delta_zero_antimatter_cost_value",
+        "action_value":
+        {
+            "values": [75.0, 75.0]
+        }
+    },
+    {
+        "action_value_id": "base_delta_zero_cooldown_time_value",
+        "action_value":
+        {
+            "values": [45, 40]
+        }
+    },
+    {
+        "action_value_id": "base_delta_zero_duration_value",
+        "action_value": {
+            "values": [35, 40]
+        }
+    },
+    {
+        "action_value_id": "weapon_damage_bonus",
+        "action_value": 
+        {
+            "values": [0.2, 0.25]
+        }
+    },
+    {
+        "action_value_id": "weapon_firing_rate",
+        "action_value": 
+        {
+            "values": [-0.2, -0.3]
+        }
+    }],
+    "buff_weapon_modifiers": [
+    {
+        "buff_weapon_modifier_id": "weapon_damage_modifier",
+        "buff_weapon_modifier": 
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "value_id": "weapon_damage_bonus",
+            "tags": [
+                "bomb"
+            ]
+        }
+    },
+    {
+        "buff_weapon_modifier_id": "weapon_cooldown_modifier",
+        "buff_weapon_modifier": 
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "value_id": "weapon_firing_rate",
+            "tags": [
+                "bomb"
+            ]
+        }
+    }]
+}

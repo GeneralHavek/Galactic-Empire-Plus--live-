@@ -1,0 +1,252 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_passive_interval_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_passive_aura_duration_value",
+            "action_value": {
+                "values": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_passive_radius_value",
+            "action_value": {
+                "values": [
+                    7500.0,
+                    7500.0,
+                    7500.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_radius_value",
+            "action_value": {
+                "values": [
+                    15000.0,
+                    15000.0,
+                    15000.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_duration_value",
+            "action_value": {
+                "values": [
+                    25.0,
+                    30.0,
+                    35.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_minimum_targets_value",
+            "action_value": {
+                "values": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_passive_antimatter_regen_value",
+            "action_value": {
+                "values": [
+                    0.5,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_passive_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.06,
+                    0.09,
+                    0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_passive_phase_charge_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_antimatter_regen_value",
+            "action_value": {
+                "values": [
+                    0.5,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.06,
+                    0.09,
+                    0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_phase_charge_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.05,
+                    -0.1,
+                    -0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_isd1_imperial_battle_doctrine_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "self",
+                    "ally"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_cooldown_value"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_tracking_value",
+                "tags": [
+                    "turbolaser",
+                    "ion"
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_passive_antimatter_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "antimatter_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_passive_antimatter_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_passive_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_passive_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_passive_phase_charge_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hyperspace_charge_time",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_passive_phase_charge_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_antimatter_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "antimatter_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_active_antimatter_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_active_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_phase_charge_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hyperspace_charge_time",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_imperial_battle_doctrine_active_phase_charge_value"
+            }
+        }
+    ]
+}

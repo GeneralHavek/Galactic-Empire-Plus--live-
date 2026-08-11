@@ -1,0 +1,53 @@
+{
+    "version": 0,
+    "active_duration": "imperial_isd2_tarkin_doctrine_active_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_tarkin_doctrine_active_damage_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_tarkin_doctrine_active_tracking_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_tarkin_doctrine_active_cooldown_modifier"
+        }
+    ],
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_isd2_tarkin_doctrine_active_damage_taken_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_isd2_tarkin_doctrine_ability_hud_icon",
+        "name": "imperial_isd2_tarkin_doctrine_active_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_tarkin_doctrine_active_damage_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_tarkin_doctrine_active_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_tarkin_doctrine_active_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_isd2_tarkin_doctrine_active_damage_taken_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

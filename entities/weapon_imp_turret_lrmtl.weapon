@@ -1,0 +1,60 @@
+{
+    "version": 0,
+    "name": "weapon_name.weapon_htl",
+    "pitch_speed": 35.0,
+    "yaw_speed": 35.0,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
+    "range": 9500.0,
+    "cooldown_duration": 8.5,
+    "uniforms_target_filter_id": "turbolaser",
+    "attack_target_type_groups": [
+        "light_corvette",
+        "lrm_flak",
+        "heavy_capital",
+        "defense"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 40,
+    "penetration": 300.0,
+    "tags": [
+        "turbolaser",
+        "energy"
+    ],
+    "acquire_target_logic": "best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.85,
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects": {
+        "burst_pattern": [
+            0.0,
+            2,
+            4,
+            6
+        ],
+        "muzzle_effect": "weapon_muzzle_htl",
+        "projectile_travel_effect": "weapon_bolt_htl",
+        "hit_hull_effect": "weapon_hit_hull_htl",
+        "hit_shield_effect": "weapon_hit_shield_htl"
+    },
+    "turret": {
+        "type": "biaxial",
+        "biaxial_base_mesh": "imperial_turret_lrmtl_mount",
+        "biaxial_barrel_mesh": "imperial_turret_lrmtl_barrel",
+        "barrel_position": [
+            0.0,
+            2.188191,
+            -5.22652
+        ],
+        "muzzle_positions": [
+            [
+                -1e-06,
+                2.027081,
+                22.58832
+            ]
+        ]
+    }
+}

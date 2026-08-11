@@ -1,0 +1,74 @@
+{
+    "version": 0,
+    "active_duration": "imperial_victoryii_electronic_warfare_doctrine_active_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_victoryii_electronic_warfare_doctrine_active_interval_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_victoryii_electronic_warfare_doctrine_active_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_victoryii_electronic_warfare_doctrine_active_damage_listener",
+                                "destination_target_filter_id": "imperial_victoryii_electronic_warfare_doctrine_allied_ship_target_filter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_victoryii_electronic_warfare_doctrine_ability_hud_icon",
+        "name": "imperial_victoryii_electronic_warfare_doctrine_active_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.radius",
+                        "value_id": "imperial_victoryii_electronic_warfare_doctrine_active_radius_value"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_bonus_duration",
+                        "value_id": "imperial_victoryii_target_exploitation_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_bonus_max_stacks",
+                        "value_id": "imperial_victoryii_target_exploitation_max_stacks_value"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_victoryii_target_exploitation_weapon_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_victoryii_target_exploitation_weapon_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_victoryii_target_exploitation_weapon_damage_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

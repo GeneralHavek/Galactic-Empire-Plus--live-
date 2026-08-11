@@ -1,0 +1,8 @@
+{
+    "sizes": {
+        "tiny": "player_portrait_imperial_13_tiny",
+        "medium": "player_portrait_imperial_13_medium",
+        "large": "player_portrait_imperial_13_large",
+        "lobby": "player_portrait_imperial_13_lobby"
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "action_values": [
+        {
+            "action_value_id": "capital_ship_credit_upkeep",
+            "action_value": {
+                "values": [10.0]
+            }
+        },
+        {
+            "action_value_id": "capital_ship_metal_upkeep",
+            "action_value": {
+                "values": [6.0]
+            }
+        },
+        {
+            "action_value_id": "capital_ship_crystal_upkeep",
+            "action_value":{
+                "values": [4]
+            }
+        }
+    ],
+    "buff_empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "capital_ship_credit_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "credit_income_rate",
+                "value_behavior": "additive",
+                "value_id": "capital_ship_credit_upkeep"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "capital_ship_metal_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "metal_income_rate",
+                "value_behavior": "additive",
+                "value_id": "capital_ship_metal_upkeep"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "capital_ship_crystal_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "crystal_income_rate",
+                "value_behavior": "additive",
+                "value_id": "capital_ship_crystal_upkeep"
+            }
+        }
+    ]
+}

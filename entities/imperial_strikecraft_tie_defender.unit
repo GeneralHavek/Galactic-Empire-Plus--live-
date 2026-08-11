@@ -1,0 +1,240 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 5.608002,
+        "box": {
+            "center": [0.0, -0.067947, -0.042827],
+            "extents": [4.570933, 3.961348, 4.599369]
+        },
+        "collision_rank": 0
+    },
+    "physics": {
+        "can_move_linear": true,
+        "max_linear_speed": 2475.0,
+        "time_to_max_linear_speed": 4.0,
+        "arrival_tolerance_spatial_radius_scalar": 2.0,
+        "death_linear_speed_range": [1.0, 2.0],
+        "can_move_angular": true,
+        "max_angular_speed": 220.0,
+        "time_to_max_angular_speed": 1.250,
+        "max_bank_angle": 90.0,
+        "death_angular_speed_range": [5.0, 10.0],
+        "linear_acceleration_angle": 180.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 715.0,
+        "time_to_strafe_max_linear_speed": 13.5,
+        "strafe_max_linear_distance_spatial_radius_scalar": 10.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "move": {
+        "follow_distance": 60.015949
+    },
+    "attack": {
+        "attack_pattern": {
+            "type": "strafe_and_pull_away",
+            "use_weapon_cooldown": true,
+            "weapon_cooldown_percent_to_start_strafe": 0.80,
+            "pull_away_angle_range": 45.0
+        }
+    },
+    "ai": {
+        "attack_target_type_groups": [
+            "strikecraft_corvette"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_tie_laser",
+        "auto_follow_target_priority": -1.0,
+        "pursuit": {
+            "min_distance_to_target": 200.0
+        }
+    },
+    "ai_attack_target": {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "strikecraft"
+    },
+    "user_interface": {
+        "pip_type": "strikecraft",
+        "can_ever_be_selected": true,
+        "selection_priority": 5,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "strikecraft",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true,
+        "skip_as_zoom_target_when_zooming_in_from_far": true
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "weapon_tie_laser",
+                "mesh_point": "weapon.light.000",
+                "weapon_position": [0.002910, -0.722847, 0.899239],
+                "non_turret_muzzle_positions": [
+                    [0.311453, -0.725030, 0.899239],
+                    [-0.305633, -0.720665, 0.899239]
+                ],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.0, 1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_tie_laser",
+                "mesh_point": "weapon.light.001",
+                "weapon_position": [-2.415135, -1.389733, 4.492716],
+                "non_turret_muzzle_positions": [
+                    [-2.801793, -0.725029, 4.492717],
+                    [-2.028477, -2.054437, 4.492716]
+                ],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.0, 1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_tie_laser",
+                "mesh_point": "weapon.light.002",
+                "weapon_position": [2.415134, -1.389733, 4.492716],
+                "non_turret_muzzle_positions": [
+                    [2.801792, -0.725029, 4.492717],
+                    [2.028477, -2.054437, 4.492716]
+                ],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.0, 1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_tie_ion",
+                "mesh_point": "weapon.ion.000",
+                "weapon_position": [-0.0, 2.784608, 4.490203],
+                "non_turret_muzzle_positions": [
+                    [0.768579, 2.784608, 4.490203],
+                    [-0.768580, 2.784608, 4.490203]
+                ],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.0, 1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_proton_torpedo_strikecraft",
+                "mesh_point": "weapon.torpedo.000",
+                "weapon_position": [-0.0, -0.0010, -0.0650],
+                "non_turret_muzzle_positions": [
+                    [-2.550001, -1.330, -0.0650],
+                    [-2.423001, -1.5430, -0.0650],
+                    [2.550001, -1.330, -0.0650],
+                    [2.423001, -1.5430, -0.0650],
+                    [0.1250, 2.870, -0.0650],
+                    [-0.1250, 2.870, -0.0650]
+                ],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.0, 1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                },
+                "pitch_arc": {
+                    "min_angle": -5.0,
+                    "max_angle": 5.0
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    },
+    "formation": {
+        "leader_priority": 0,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 1,
+                "group": 4
+            }
+        }
+    },
+    "health": {
+        "release_time_after_death": 5.0,
+        "can_collide_duration_after_death": 0.10,
+        "durability": 10.0,
+        "round_max_points_up_to_5": false,
+        "levels": [
+            {
+                "max_hull_points": 35.0,
+                "hull_point_restore_rate": 0.750,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 30.0,
+                "hull_point_restore_scalar_after_damage_taken": 0.0,
+                "max_armor_points": 35.0,
+                "armor_point_restore_rate": 1.250,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 30.0,
+                "armor_point_restore_scalar_after_damage_taken": 0.0,
+                "armor_strength": 20.0,
+                "max_shield_points": 65.0,
+                "shield_point_restore_rate": 1.75,
+                "shield_point_restore_cooldown_duration_after_damage_taken": 0.0,
+                "shield_point_restore_scalar_after_damage_taken": 0.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 10.0,
+                    "restore_percentage": 0.35
+                },
+                "experience_given_on_death": 15.0
+            }
+        ]
+    },
+    "strikecraft": {
+        "kind": "mem_custom_strikecraft2",
+        "build_time": 55.0,
+        "squadron_size": 2,
+        "launch_destination_formation_offset": {
+            "rank": 1,
+            "group": 2
+        }
+    },
+    "abilities": [
+        {
+            "abilities": [
+                "imperial_strikecraft_ability_dodge"
+            ]
+        }
+    ],
+    "target_filter_unit_type": "strikecraft",
+    "tags": [
+        "strikecraft"
+    ],
+    "virtual_supply_cost": 1,
+    "skin_groups": [
+        {
+            "skins": [
+                "imperial_strikecraft_tie_defender"
+            ]
+        }
+    ],
+    "action_effect_size": "small_unit"
+}

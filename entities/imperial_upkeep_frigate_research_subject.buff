@@ -1,0 +1,65 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "make_dead_on_current_spawner_ownership_changed_from_buff_ownership": true,
+    "empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "frigate_credit_upkeep_modifier"
+        },
+        {
+            "buff_empire_modifier_id": "frigate_metal_upkeep_modifier"
+        },
+        {
+            "buff_empire_modifier_id": "frigate_crystal_upkeep_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_unit_upkeep_hud_icon",
+        "name": "imperial_unit_upkeep_research_project_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "negative",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.credit_upkeep",
+                        "value_id": "frigate_credit_upkeep",
+                        "value_color": "negative",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.metal_upkeep",
+                        "value_id": "frigate_metal_upkeep",
+                        "value_color": "negative",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.crystal_upkeep",
+                        "value_id": "frigate_crystal_upkeep",
+                        "value_color": "negative",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "rep_venator_medium_clr",
+    "normal_texture": "rep_venator_medium_nrm",
+    "occlusion_roughness_metallic_texture": "rep_venator_medium_orm"
+}

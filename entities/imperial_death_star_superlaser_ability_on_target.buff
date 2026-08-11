@@ -1,0 +1,71 @@
+{
+    "version": 0,
+    "active_duration": "destroy_planet_time",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "provides_detection": true,
+    "trigger_event_actions": [
+        {
+            "trigger_event_type": "on_buff_started",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "start_buff_effect",
+                        "effect_definition": {
+                            "binding": "unit_skin",
+                            "mesh_point": "center",
+                            "effect": "destroy_planet"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "trigger_event_type": "on_buff_made_dead",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "destroy_planet"
+                            }
+                        ]
+                    },
+                    {
+                        "constraint": {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit": {
+                                "unit_type": "first_spawner"
+                            },
+                            "unit_constraint": {
+                                "constraint_type": "has_mutation",
+                                "mutation": "imperial_faction_victory_equipped"
+                            }
+                        },
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "first_spawner"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_death_star_on_superlaser_faction_victory"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "unit_mutations": [
+        "disable_can_be_colonized"
+    ]
+}

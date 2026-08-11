@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_annexation",
+    "field_coord": [3, 7],
+    "research_time": 150.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 125.0,
+        "crystal": 150.0
+    },
+    "prerequisites": [
+        ["imperial_upgrade_oceanic_biosphere_0"]
+    ],
+    "name": "imperial_unlock_oceanic_domes_unit_item_research_subject_name",
+    "name_uppercase": "imperial_unlock_oceanic_domes_unit_item_research_subject_name_uppercase",
+    "description": "imperial_unlock_oceanic_domes_unit_item_research_subject_description",
+    "hud_icon": "imperial_unlock_oceanic_domes_unit_item_hud_icon",
+    "tooltip_picture": "imperial_unlock_oceanic_domes_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_oceanic"]
+}

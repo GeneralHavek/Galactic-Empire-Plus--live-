@@ -1,0 +1,620 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 136.478149,
+        "box": {
+            "center": [
+                4e-06,
+                -2.705531,
+                11.232281
+            ],
+            "extents": [
+                44.367893,
+                23.310932,
+                125.003403
+            ]
+        },
+        "collision_rank": 1
+    },
+    "physics": {
+        "can_move_linear": true,
+        "max_linear_speed": 900.0,
+        "time_to_max_linear_speed": 5.5,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
+        "can_move_angular": true,
+        "max_angular_speed": 20.0,
+        "time_to_max_angular_speed": 10.0,
+        "max_bank_angle": 35.0,
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
+        "linear_acceleration_angle": 90.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 125.0,
+        "time_to_strafe_max_linear_speed": 10.0,
+        "strafe_max_linear_distance_spatial_radius_scalar": 0.5,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace": {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move": {
+        "follow_distance": 250.0
+    },
+    "attack": {
+        "attack_pattern": {
+            "type": "stop_and_fire"
+        }
+    },
+    "ai": {
+        "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
+            "heavy_capital",
+            "defense"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft",
+            "corvette"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_imp_turret_mqtl",
+        "auto_follow_target_priority": 5.0,
+        "pursuit": {
+            "min_target_speed": 100.0,
+            "min_distance_to_target": 2000.0
+        }
+    },
+    "ai_attack_target": {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "light"
+    },
+    "player_ai": {
+        "max_empire_owned_count_percentage": 0.1,
+        "max_count_to_fleet_supply_ratio": 250
+    },
+    "user_interface": {
+        "pip_type": "frigate",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.000",
+                "weapon_position": [
+                    -4e-06,
+                    11.191659,
+                    77.271965
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.001",
+                "weapon_position": [
+                    -3e-06,
+                    11.191653,
+                    51.85511
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.002",
+                "weapon_position": [
+                    -12.666702,
+                    12.369632,
+                    -37.574303
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.003",
+                "weapon_position": [
+                    12.666704,
+                    12.369634,
+                    -37.574303
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.004",
+                "weapon_position": [
+                    -5e-06,
+                    -6.524154,
+                    116.145432
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -110.0,
+                    "max_angle": 100.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.005",
+                "weapon_position": [
+                    2e-06,
+                    -24.172152,
+                    -12.333685
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -100.0,
+                    "max_angle": 110.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.006",
+                "weapon_position": [
+                    -36.926941,
+                    -3.242441,
+                    -37.52029
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.007",
+                "weapon_position": [
+                    -36.926937,
+                    -3.242443,
+                    -59.859501
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -120.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.008",
+                "weapon_position": [
+                    36.733109,
+                    -3.242437,
+                    -37.52029
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -110.0,
+                    "max_angle": 100.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.009",
+                "weapon_position": [
+                    36.733112,
+                    -3.24244,
+                    -59.907959
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -100.0,
+                    "max_angle": 110.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.010",
+                "weapon_position": [
+                    5e-06,
+                    -24.365671,
+                    -83.632278
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_mdtl",
+                "mesh_point": "child.med.011",
+                "weapon_position": [
+                    3e-06,
+                    14.436574,
+                    -84.930122
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_mining_frigate_turret_msic",
+                "mesh_point": "child.ion.000",
+                "weapon_position": [
+                    -1e-06,
+                    12.392406,
+                    17.663435
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -120.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    },
+    "formation": {
+        "leader_priority": 0,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 1,
+                "group": 0
+            }
+        }
+    },
+    "spawn_debris": {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts": {
+            "small_debris": [
+                4,
+                5
+            ]
+        }
+    },
+    "health": {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 0.8,
+        "durability": 150.0,
+        "can_ever_be_resurrected": true,
+        "levels": [
+            {
+                "max_hull_points": 1500.0,
+                "hull_point_restore_rate": 1.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "max_armor_points": 175.0,
+                "armor_point_restore_rate": 1.2,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 95.0,
+                "max_shield_points": 1650.0,
+                "shield_point_restore_rate": 1.5,
+                "shield_burst_restore": {
+                    "cooldown_duration": 20.0,
+                    "restore_percentage": 0.35
+                },
+                "experience_given_on_death": 100.0
+            }
+        ]
+    },
+    "build": {
+        "build_time": 25.0,
+        "price": {
+            "credits": 875.0,
+            "metal": 155.0,
+            "crystal": 120.0
+        },
+        "build_kind": "frigate",
+        "supply_cost": 15,
+        "build_group_id": "frigate"
+    },
+    "carrier": {
+        "base_max_squadron_capacity": 1,
+        "strikecraft_kinds": [
+            "mem_custom_strikecraft3"
+        ],
+        "launch_destination_formation": "capital_ship_strikecraft",
+        "launch_destination_formation_offset": {
+            "rank": 2,
+            "group": 0
+        },
+        "hangar_data": [
+            {
+                "launch_basis": {
+                    "position": [
+                        8.172511,
+                        -13.836342,
+                        34.472881
+                    ],
+                    "rotation": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        -0.0,
+                        1.0,
+                        0.0,
+                        -0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        8.172511,
+                        -13.836342,
+                        34.472881
+                    ],
+                    "rotation": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        -0.0,
+                        1.0,
+                        0.0,
+                        -0.0,
+                        0.0,
+                        1.0
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -8.172513,
+                        -13.836342,
+                        34.472881
+                    ],
+                    "rotation": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        -0.0,
+                        1.0,
+                        0.0,
+                        -0.0,
+                        0.0,
+                        1.0
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -8.172513,
+                        -13.836342,
+                        34.472881
+                    ],
+                    "rotation": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        -0.0,
+                        1.0,
+                        0.0,
+                        -0.0,
+                        0.0,
+                        1.0
+                    ]
+                }
+            }
+        ]
+    },
+    "target_filter_unit_type": "frigate",
+    "tags": [
+        "frigate"
+    ],
+    "abilities": [
+        {
+            "abilities": []
+        }
+    ],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+        {
+            "skins": [
+                "pirate_mining_frigate"
+            ]
+        }
+    ],
+    "action_effect_size": "small_unit",
+    "can_join_fleet": true
+}

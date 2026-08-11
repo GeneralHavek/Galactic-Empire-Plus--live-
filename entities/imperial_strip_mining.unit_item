@@ -1,0 +1,66 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "imperial_strip_mining_unit_item_hud_icon",
+    "tooltip_icon": "imperial_strip_mining_unit_item_hud_icon",
+    "tooltip_picture": "imperial_strip_mining_unit_item_tooltip_picture",
+    "name": "imperial_strip_mining_unit_item_name",
+    "description": "imperial_strip_mining_unit_item_description",
+    "build_time": 120.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 100.0,
+        "crystal": 150.0
+    },
+    "max_count_on_unit": 1,
+    "required_planet_level": 5,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "barren",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "ice",
+            "magnetic",
+            "swamp",
+            "terran",
+            "volcanic"
+        ],
+        "build_prerequisites": [
+            ["imperial_unlock_strip_mining_unit_item"]
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "mining_track_crystal_income_rate",
+        "value_behavior": "additive",
+        "values": [0.75]
+    },
+    {
+        "modifier_type": "mining_track_crystal_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.25]
+    },
+    {
+        "modifier_type": "mining_track_metal_income_rate",
+        "value_behavior": "additive",
+        "values": [0.75]
+    },
+    {
+        "modifier_type": "mining_track_metal_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.75]
+    }],
+    "trade_capacity":
+    {
+        "import_points": 1,
+        "export_points":
+        {
+            "crystal": 3,
+            "metal": 3
+        }
+    }
+}

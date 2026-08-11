@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "active_duration": "imperial_victory1_armor_fracture_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "imperial_victory1_armor_fracture_max_stacks_value",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "per_source_ability",
+    "restart_other_stacked_buffs_when_started": false,
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_victory1_armor_fracture_armor_strength_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_victory1_armor_fracture_debuff_hud_icon",
+        "name": "imperial_victory1_armor_fracture_debuff_name",
+        "visibility_scope": "negative",
+        "show_duplicate_buffs": true,
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_victory1_armor_fracture_armor_strength_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

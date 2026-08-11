@@ -1,0 +1,22 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_industry",
+    "field_coord": [5, 8],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 225.0,
+        "crystal": 350.0
+    },
+    "prerequisites": [
+        ["imperial_unlock_regional_government_unit_item"]
+    ],
+    "name": "imperial_upgrade_regional_government_office_unit_item_research_subject_name",
+    "name_uppercase": "imperial_upgrade_regional_government_office_unit_item_research_subject_name_uppercase",
+    "description": "imperial_upgrade_regional_government_office_unit_item_research_subject_description",
+    "hud_icon": "imperial_upgrade_regional_government_office_unit_item_research_subject_hud_icon",
+    "tooltip_picture": "imperial_upgrade_regional_government_office_unit_item_research_subject_tooltip_picture"
+}

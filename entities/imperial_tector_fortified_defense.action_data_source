@@ -1,0 +1,150 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_tector_fortified_defense_active_duration_value",
+            "action_value": {
+                "values": [
+                    30.0,
+                    30.0,
+                    30.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_fortified_defense_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_fortified_defense_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    80.0,
+                    80.0,
+                    80.0,
+                    80.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_duration_value",
+            "action_value": {
+                "values": [
+                    60.0,
+                    60.0,
+                    60.0,
+                    60.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_max_stack_count_value",
+            "action_value": {
+                "values": [
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_gate_duration_value",
+            "action_value": {
+                "values": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    0.5
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_damage_taken_value",
+            "action_value": {
+                "values": [
+                    -0.005,
+                    -0.007,
+                    -0.009,
+                    -0.012
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_fortified_defense_active_armor_regen_value",
+            "action_value": {
+                "values": [
+                    0.15,
+                    0.25,
+                    0.35,
+                    0.45
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_fortified_defense_active_hull_regen_value",
+            "action_value": {
+                "values": [
+                    0.2,
+                    0.35,
+                    0.5,
+                    0.65
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_fortified_defense_active_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.6,
+                    0.85,
+                    1.1,
+                    1.4
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_tector_battle_hardened_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_battle_hardened_damage_taken_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_fortified_defense_active_armor_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "armor_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_fortified_defense_active_armor_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_fortified_defense_active_hull_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hull_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_fortified_defense_active_hull_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_fortified_defense_active_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_fortified_defense_active_shield_regen_value"
+            }
+        }
+    ]
+}

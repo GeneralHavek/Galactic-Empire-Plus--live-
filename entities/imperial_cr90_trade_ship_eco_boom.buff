@@ -1,0 +1,62 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "make_dead_on_source_ability_released": true,
+    "empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "empire_credit_income_modifier"
+        },
+        {
+            "buff_empire_modifier_id": "empire_metal_income_modifier"
+        },
+        {
+            "buff_empire_modifier_id": "empire_crystal_income_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "",
+        "name": "imperial_trade_ship_eco_boom_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.credit_income",
+                        "value_id": "empire_credit_income",
+                        "value_color": "positive",
+                        "value_float_format": "two_decimal_place_with_sign"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.metal_income",
+                        "value_id": "empire_metal_income",
+                        "value_color": "positive",
+                        "value_float_format": "two_decimal_place_with_sign"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.crystal_income",
+                        "value_id": "empire_crystal_income",
+                        "value_color": "positive",
+                        "value_float_format": "two_decimal_place_with_sign"
+                    }
+                ]
+            }
+        ]
+    }
+}

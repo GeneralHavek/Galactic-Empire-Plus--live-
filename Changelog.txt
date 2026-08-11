@@ -1,0 +1,8 @@
+Version 3.4.0.2:
+
+[Unit]      Fixed the Procusator ultimate level 3 still unlocking at unit level 11;
+[Unit]      A Naval Command investigation revealed that captains assigned to Victory IIs were using illicit concussion missile munitions, these captains have been executed and their replacements selected. Long Live the Empire!!;
+[Effects]   New missile effects and various other effects thanks to the legendary KG_Sith;
+[Unit]      All Empire capital ships now have loadout files;
+[Unit]      Updated targeting logic so imperial ships should again automatically engage units with the "light" tag;
+[Victory]   Fixed issue with the victory condition causing a crash, hopefully everything works fine now (light testing says everything is good)

@@ -1,0 +1,45 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 4,
+    "field": "military_mobilization",
+    "field_coord": [8, 4],
+    "research_time": 840.0,
+    "price":
+    {
+        "credits": 2200.0,
+        "metal": 400.0,
+        "crystal": 700.0
+    },
+    "exotic_price": [
+        {
+            "exotic_type": "offense",
+            "count": 2
+        },
+        {
+            "exotic_type": "defense",
+            "count": 2
+        },
+        {
+            "exotic_type": "ultimate",
+            "count": 1
+        }
+    ],
+    "prerequisites": [
+        ["imperial_unlock_heavy_garrison"]
+    ],
+    "name": "imperial_unlock_capital_ship_garrison_research_subject_name",
+    "name_uppercase": "imperial_unlock_capital_ship_garrison_research_subject_name_uppercase",
+    "description": "imperial_unlock_capital_ship_garrison_research_subject_description",
+    "hud_icon": "trader_unlock_heavy_garrison_research_subject_hud_icon",
+    "tooltip_picture": "trader_unlock_heavy_garrison_research_subject_tooltip_picture",
+    "arbitary_research_line":
+    {
+        "upgrade_label": "tooltip.research_subject.arbitary_upgrade_label.trader_upgrade_heavy_garrison",
+        "unit_label": "tooltip.research_subject.provides_garrison_label",
+        "units_listing": [
+            "imperial_victoryi",
+            "imperial_procursator"
+        ]
+    }
+}

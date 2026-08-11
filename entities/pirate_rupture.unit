@@ -1,0 +1,504 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 192.516815,
+        "box": {
+            "center": [0.000008, -2.572546, 7.138611],
+            "extents": [75.685562, 39.202515, 185.357544]
+        },
+        "collision_rank": 1
+    },
+    "physics": {
+        "can_move_linear": true,
+        "max_linear_speed": 750.0,
+        "time_to_max_linear_speed": 5.0,
+        "arrival_tolerance_spatial_radius_scalar": 0.250,
+        "death_linear_speed_range": [1.0, 2.0],
+        "can_move_angular": true,
+        "max_angular_speed": 45.0,
+        "time_to_max_angular_speed": 8.0,
+        "max_bank_angle": 35.0,
+        "death_angular_speed_range": [5.0, 10.0],
+        "linear_acceleration_angle": 90.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 125.0,
+        "time_to_strafe_max_linear_speed": 10.0,
+        "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace": {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move": {
+        "follow_distance": 526.823059
+    },
+    "attack": {
+        "attack_pattern": {
+            "type": "stop_and_fire"
+        }
+    },
+    "ai": {
+        "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
+            "heavy_capital",
+            "defense"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft",
+            "corvette"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_pirate_rupture_turret_ldtlt",
+        "auto_follow_target_priority": 5.0,
+        "pursuit": {
+            "min_target_speed": 100.0,
+            "min_distance_to_target": 2575.0
+        }
+    },
+    "ai_attack_target": {
+        "attack_priority": 49.0,
+        "is_always_a_threat": false
+    },
+    "user_interface": {
+        "pip_type": "cruiser",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.000",
+                "weapon_position": [-13.394127, 9.801248, 92.578651],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.743145, 0.669130, -0.0],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.001",
+                "weapon_position": [-13.394124, 9.801237, 40.109051],
+                "forward": [-0.669131, -0.743145, -0.0],
+                "up": [-0.743145, 0.669131, -0.0],
+                "yaw_arc": {
+                    "min_angle": -65.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0,
+                    "initial_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.002",
+                "weapon_position": [13.394117, 9.801250, 92.578651],
+                "forward": [-0.0, -0.0, 1.0],
+                "up": [0.754710, 0.656059, -0.0],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.003",
+                "weapon_position": [13.394120, 9.801239, 40.109051],
+                "forward": [0.669131, -0.743145, 0.0],
+                "up": [0.743145, 0.669131, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 65.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0,
+                    "initial_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.004",
+                "weapon_position": [-11.413472, -20.690544, 92.578651],
+                "forward": [0.0, 0.0, 1.0],
+                "up": [-0.707107, -0.707107, 0.0],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.005",
+                "weapon_position": [-11.387341, -20.690342, 40.470753],
+                "forward": [-0.707107, 0.707107, -0.0],
+                "up": [-0.707107, -0.707107, 0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 65.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0,
+                    "initial_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.006",
+                "weapon_position": [11.413466, -20.690544, 92.578651],
+                "forward": [-0.0, -0.0, 1.0],
+                "up": [0.707107, -0.707106, 0.0],
+                "yaw_arc": {
+                    "min_angle": -140.0,
+                    "max_angle": 140.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0,
+                    "initial_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.007",
+                "weapon_position": [11.387339, -20.690342, 40.470753],
+                "forward": [0.707107, 0.707107, -0.0],
+                "up": [0.707107, -0.707107, 0.0],
+                "yaw_arc": {
+                    "min_angle": -65.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0,
+                    "initial_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.008",
+                "weapon_position": [-35.345665, -7.181226, -88.395760],
+                "forward": [-0.866025, -0.50, -0.0],
+                "up": [-0.50, 0.866026, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.009",
+                "weapon_position": [-35.345665, -7.181231, -115.251366],
+                "forward": [-0.866025, -0.50, -0.0],
+                "up": [-0.50, 0.866026, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.010",
+                "weapon_position": [35.345673, -7.181223, -88.395760],
+                "forward": [0.866025, -0.50, 0.0],
+                "up": [0.50, 0.866026, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_ldtlt",
+                "mesh_point": "child.med.011",
+                "weapon_position": [35.345673, -7.181229, -115.251366],
+                "forward": [0.866025, -0.50, 0.0],
+                "up": [0.50, 0.866026, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.000",
+                "weapon_position": [-0.000006, -9.730403, 156.933853],
+                "forward": [-0.0, 0.0, 1.0],
+                "up": [-0.0, 1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -25.0,
+                    "max_angle": 10.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.001",
+                "weapon_position": [-26.355360, 2.283161, -18.677078],
+                "forward": [-1.0, -0.0, -0.0],
+                "up": [-0.0, 1.0, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.002",
+                "weapon_position": [-26.355404, 2.283158, -45.988308],
+                "forward": [-1.0, -0.0, -0.0],
+                "up": [-0.0, 1.0, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.003",
+                "weapon_position": [26.215029, 2.283164, -18.736198],
+                "forward": [1.0, 0.0, 0.0],
+                "up": [-0.0, 1.0, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.004",
+                "weapon_position": [26.215031, 2.283160, -46.074448],
+                "forward": [1.0, 0.0, 0.0],
+                "up": [-0.0, 1.0, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.005",
+                "weapon_position": [-26.355404, -11.658314, -18.677105],
+                "forward": [-1.0, -0.0, -0.0],
+                "up": [0.0, -1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.006",
+                "weapon_position": [-26.355404, -11.658318, -45.988304],
+                "forward": [-1.0, -0.0, -0.0],
+                "up": [0.0, -1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.007",
+                "weapon_position": [26.215008, -11.658316, -46.074406],
+                "forward": [1.0, 0.0, 0.0],
+                "up": [0.0, -1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_dllc",
+                "mesh_point": "child.light.008",
+                "weapon_position": [26.215008, -11.658312, -18.736202],
+                "forward": [1.0, 0.0, 0.0],
+                "up": [0.0, -1.0, 0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_lict",
+                "mesh_point": "child.ion.000",
+                "weapon_position": [-15.703516, 4.379518, -25.714344],
+                "forward": [-1.0, -0.0, -0.0],
+                "up": [-0.0, 1.0, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_pirate_rupture_turret_lict",
+                "mesh_point": "child.ion.001",
+                "weapon_position": [15.703518, 4.379519, -25.714344],
+                "forward": [1.0, 0.0, 0.0],
+                "up": [-0.0, 1.0, -0.0],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 5.0
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    },
+    "formation": {
+        "leader_priority": 0,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 2,
+                "group": 0
+            }
+        }
+    },
+    "spawn_debris": {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts": {
+            "small_debris": [6, 8],
+            "large_debris": [1, 1]
+        }
+    },
+    "health": {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 0.80,
+        "durability": 425.0,
+        "can_ever_be_resurrected": true,
+        "levels": [
+            {
+                "max_hull_points": 1900.0,
+                "hull_point_restore_rate": 1.70,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 1.0,
+                "max_armor_points": 750.0,
+                "armor_point_restore_rate": 2.350,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 110.0,
+                "max_shield_points": 1650.0,
+                "shield_point_restore_rate": 3.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 30.0,
+                    "restore_percentage": 0.350
+                },
+                "experience_given_on_death": 70.0
+            }
+        ]
+    },
+    "build": {
+        "build_time": 35.0,
+        "price": {
+            "credits": 1150.0,
+            "metal": 560.0,
+            "crystal": 325.0
+        },
+        "build_kind": "cruiser",
+        "supply_cost": 23,
+        "build_group_id": "cruiser"
+    },
+    "target_filter_unit_type": "cruiser",
+    "tags": [
+        "cruiser"
+    ],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+        {
+            "skins": [
+                "pirate_rupture"
+            ]
+        }
+    ],
+    "action_effect_size": "small_unit",
+    "can_join_fleet": true
+}

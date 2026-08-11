@@ -1,0 +1,162 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_death_star_operations",
+    "level_source": "fixed_level_0",
+    "passive_actions": {
+        "only_if_owner_unit_operational": true,
+        "persistant_buff": "imperial_death_star_operations_controller"
+    },
+    "active_actions": {
+        "cooldown_time": "imperial_death_star_operations_cooldown_time_value",
+        "antimatter_cost": "imperial_death_star_operations_antimatter_cost_value",
+        "actions": {
+            "actions": [
+                {
+                    "constraint": {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "target_filter_id": "imperial_death_star_operations_default_filter"
+                    },
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_death_star_operational_readiness_active"
+                        }
+                    ]
+                },
+                {
+                    "constraint": {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "target_filter_id": "imperial_death_star_operations_battlestation_filter"
+                    },
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_death_star_battlestation_alert_active"
+                        }
+                    ]
+                },
+                {
+                    "constraint": {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "target_filter_id": "imperial_death_star_operations_weapons_filter"
+                    },
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_death_star_total_fire_control_active"
+                        }
+                    ]
+                },
+                {
+                    "constraint": {
+                        "constraint_type": "unit_passes_target_filter",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "target_filter_id": "imperial_death_star_operations_peacekeeping_filter"
+                    },
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_death_star_doctrine_of_fear_active"
+                        }
+                    ]
+                }
+            ]
+        },
+        "auto_cast": {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint": {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                    "constraint_type": "has_recently_been_damaged"
+                }
+            }
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_death_star_operations_ability_hud_icon",
+        "name": "imperial_death_star_operations_ability_name",
+        "description": "imperial_death_star_operations_ability_description",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "operational_readiness_passive_shield_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "operational_readiness_passive_hull_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "operational_readiness_passive_antimatter_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "operational_readiness_passive_weapon_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "operational_readiness_passive_weapon_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.active_duration",
+                        "value_id": "imperial_death_star_operations_active_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "operational_readiness_active_shield_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "operational_readiness_active_hull_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "operational_readiness_active_antimatter_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "operational_readiness_active_weapon_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "operational_readiness_active_weapon_tracking_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

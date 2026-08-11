@@ -1,0 +1,7 @@
+{
+    "base_color_texture": "weapon_turbolaser_clr",
+    "mask_texture": "weapon_turbolaser_multi_msk",
+    "emissive_factor": 100.0,
+    "emissive_hue_strength": 1,
+    "has_transparency": true
+}

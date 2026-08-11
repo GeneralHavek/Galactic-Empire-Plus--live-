@@ -1,0 +1,934 @@
+
+
+#######################################################################
+##################### Fighter Laser Cannons #####################
+#######################################################################
+
+
+        "muzzle_effect": "weapon_muzzle_fighter",
+        "projectile_travel_effect": "weapon_bolt_fighter",
+        "hit_hull_effect": "weapon_hit_hull_fighter",
+        "hit_shield_effect": "weapon_hit_shield_fighter",
+        "hit_shield_impact_radius_t": 0.1
+
+
+## Green
+{
+    "alias_name": "weapon_muzzle_fighter",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_pd_green",
+        "sounds": [
+            "weapon_muzzle_imperial_fighter_1",
+            "weapon_muzzle_imperial_fighter_2",
+            "weapon_muzzle_imperial_fighter_3"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_fighter",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_pd_green"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_fighter",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_green",
+        "sounds": [
+            "weapon_hit_tiny_1",
+            "weapon_hit_tiny_2",
+            "weapon_hit_tiny_3"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_fighter",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_green"
+    }
+},
+
+## red
+{
+    "alias_name": "weapon_muzzle_pd",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_pd_red",
+        "sounds": [
+            "weapon_muzzle_rebel_light"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_pd_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_red"
+    }
+},
+
+
+#######################################################################
+##################### Point Defense Laser Cannons #####################
+#######################################################################
+
+
+        "muzzle_effect": "weapon_muzzle_pd",
+        "projectile_travel_effect": "weapon_bolt_pd",
+        "hit_hull_effect": "weapon_hit_hull_pd",
+        "hit_shield_effect": "weapon_hit_shield_pd",
+        "hit_shield_impact_radius_t": 0.1
+
+
+## Green
+{
+    "alias_name": "weapon_muzzle_pd",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_pd_green", 
+        "sounds": [
+            "weapon_muzzle_imperial_light"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_pd_green"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_green"
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_green"
+    }
+},
+
+## red
+{
+    "alias_name": "weapon_muzzle_pd",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_pd_red",
+        "sounds": [
+            "weapon_muzzle_rebel_light"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_pd_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_pd",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_pd_red"
+    }
+},
+
+
+
+
+#######################################################################
+########################## Light Turbolasers ##########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_ltl",
+        "projectile_travel_effect": "weapon_bolt_ltl",
+        "hit_hull_effect": "weapon_hit_hull_ltl",
+        "hit_shield_effect": "weapon_hit_shield_ltl",
+        "hit_shield_impact_radius_t": 0.25
+
+## Green
+{
+    "alias_name": "weapon_muzzle_ltl",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_light_green",
+        "sounds": [
+            "weapon_muzzle_imperial_light"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_ltl",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_light_green"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_ltl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_light_green",
+        "sounds": [
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_ltl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_light_green",
+        "sounds": [
+        "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+## red
+{
+    "alias_name": "weapon_muzzle_ltl",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_light_red",
+        "sounds": [
+            "weapon_muzzle_rebel_light"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_ltl",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_light_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_ltl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_light_red",
+        "sounds": [
+        "weapon_hit_hull_1",
+        "weapon_hit_hull_2",
+        "weapon_hit_hull_3",
+        "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_ltl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_light_red",
+        "sounds": [
+        "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+
+
+
+
+#######################################################################
+########################## Medium Turbolasers #########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_mtl",
+        "projectile_travel_effect": "weapon_bolt_mtl",
+        "hit_hull_effect": "weapon_hit_hull_mtl",
+        "hit_shield_effect": "weapon_hit_shield_mtl",
+        "hit_shield_impact_radius_t": 0.35
+
+## Green
+{
+    "alias_name": "weapon_muzzle_mtl",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_medium_green",
+        "sounds": [
+            "weapon_muzzle_imperial_medium"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_mtl",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_medium_green"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_mtl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_medium_green",
+        "sounds": [
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_mtl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_medium_green",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+## red
+{
+    "alias_name": "weapon_muzzle_mtl",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_medium_red",
+        "sounds": [
+            "weapon_muzzle_rebel_medium"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_mtl",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_medium_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_mtl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_medium_red",
+        "sounds": [
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_mtl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_medium_red",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+
+
+
+
+#######################################################################
+########################## Heavy Turbolasers ##########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_htl",
+        "projectile_travel_effect": "weapon_bolt_htl",
+        "hit_hull_effect": "weapon_hit_hull_htl",
+        "hit_shield_effect": "weapon_hit_shield_htl",
+        "hit_shield_impact_radius_t": 0.65
+
+## Green
+{
+    "alias_name": "weapon_muzzle_htl",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_heavy_green",
+        "sounds": [
+            "weapon_muzzle_imperial_heavy_1",
+            "weapon_muzzle_imperial_heavy_2",
+            "weapon_muzzle_imperial_heavy_3"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_htl",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_heavy_green"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_htl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_heavy_green",
+        "sounds": [
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_htl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_heavy_green",
+        "sounds": [
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4",
+            "weapon_hit_shield_1",
+            "weapon_hit_shield_2",
+            "weapon_hit_shield_3",
+            "weapon_hit_shield_4",
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4"
+        ]
+    }
+},
+
+## red
+{
+    "alias_name": "weapon_muzzle_htl",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_heavy_red",
+        "sounds": [
+            "weapon_muzzle_rebel_heavy_1",
+            "weapon_muzzle_rebel_heavy_2",
+            "weapon_muzzle_rebel_heavy_3"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_htl",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_heavy_red"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_htl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_heavy_red",
+        "sounds": [
+            "weapon_hit_hull_1",
+            "weapon_hit_hull_2",
+            "weapon_hit_hull_3",
+            "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_htl",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_heavy_red",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+
+
+
+#######################################################################
+########################### Heavy Ion Cannons #########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_hic",
+        "projectile_travel_effect": "weapon_bolt_hic",
+        "hit_hull_effect": "weapon_hit_hull_hic",
+        "hit_shield_effect": "weapon_hit_shield_hic",
+        "hit_shield_impact_radius_t": 1.0
+
+
+{
+    "alias_name": "weapon_muzzle_hic",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_heavy_ion",
+        "sounds": [
+            "weapon_muzzle_ion_1",
+            "weapon_muzzle_ion_2"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_hic",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_heavy_ion"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_hic",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_heavy_ion",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_hic",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_heavy_ion",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+
+
+
+#######################################################################
+########################## Medium Ion Cannons #########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_mic",
+        "projectile_travel_effect": "weapon_bolt_mic",
+        "hit_hull_effect": "weapon_hit_hull_mic",
+        "hit_shield_effect": "weapon_hit_shield_mic",
+        "hit_shield_impact_radius_t": 0.75
+
+
+{
+    "alias_name": "weapon_muzzle_mic",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_medium_ion",
+        "sounds": [
+            "weapon_muzzle_ion_1",
+            "weapon_muzzle_ion_2"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_mic",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_medium_ion"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_mic",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_medium_ion",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_mic",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_medium_ion",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+
+
+
+#######################################################################
+########################## Light Ion Cannons ##########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_lic",
+        "projectile_travel_effect": "weapon_bolt_lic",
+        "hit_hull_effect": "weapon_hit_hull_lic",
+        "hit_shield_effect": "weapon_hit_shield_lic",
+        "hit_shield_impact_radius_t": 0.5
+
+
+{
+    "alias_name": "weapon_muzzle_lic",
+    "alias_binding":
+    {
+        "particle_effect": "weapon_muzzle_light_ion",
+        "sounds": [
+            "weapon_muzzle_ion_1",
+            "weapon_muzzle_ion_2"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_bolt_lic",
+    "alias_binding": {
+        "particle_effect": "weapon_bolt_light_ion"
+    }
+},
+{
+    "alias_name": "weapon_hit_hull_lic",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_light_ion",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+{
+    "alias_name": "weapon_hit_shield_lic",
+    "alias_binding": {
+        "particle_effect": "weapon_hit_shield_light_ion",
+        "sounds": [
+            "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+        ]
+    }
+},
+
+
+
+
+
+
+#######################################################################
+######################### Concussion Missiles #########################
+#######################################################################
+
+        "muzzle_effect": "imperial_missile_muzzle",
+        "hit_hull_effect": "weapon_hit_hull_missile",
+        "hit_shield_effect": "weapon_hit_shield_missile",
+        "hit_shield_impact_radius_t": 1.0
+
+
+        {
+            "alias_name": "weapon_hit_hull_missile",
+            "alias_binding":
+            {
+                "particle_effect": "torpedo_missile_hit",
+                "sounds": [
+                    "weapon_impact_physical_medium_hithull",
+                    "weapon_impact_physical_medium_hithull_01",
+                    "weapon_impact_physical_medium_hithull_02",
+                    "weapon_impact_physical_medium_hithull_03",
+                    "weapon_impact_physical_medium_hithull_04"
+                ]
+            }
+        },
+        {
+            "alias_name": "weapon_hit_shield_missile",
+            "alias_binding":
+            {
+                "particle_effect": "torpedo_missile_hit",
+                "sounds": [
+                    "weapon_impact_generic_medium_hitshields",
+                    "weapon_impact_generic_medium_hitshields_01",
+                    "weapon_impact_generic_medium_hitshields_02",
+                    "weapon_impact_generic_medium_hitshields_03"
+                ]
+            }
+        },
+        {
+            "alias_name": "imperial_missile_muzzle",
+            "alias_binding":
+            {
+                "particle_effect": "javelis_torpedo_muzzle",
+                "sounds": [
+                    "weapon_muzzle_missile_1",
+                    "weapon_muzzle_missile_2"
+                ]
+            }
+        }
+
+
+        {
+            "alias_name": "imperial_torpedo_muzzle",
+            "alias_binding":
+            {
+                "particle_effect": "javelis_torpedo_muzzle",
+                "sounds": [
+                    "weapon_muzzle_torpedo_1",
+                    "weapon_muzzle_torpedo_2",
+                    "weapon_muzzle_torpedo_3"
+                ]
+            }
+        }
+
+
+
+
+#######################################################################
+############################ Planet Bombs #############################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_planet_bomb",
+        "projectile_travel_effect": "weapon_bolt_planet_bomb",
+        "hit_hull_effect": "weapon_hit_planet_bomb",
+        "hit_shield_effect": "weapon_hit_planet_bomb",
+        "hit_shield_impact_radius_t": 0.09125
+
+
+        {
+            "alias_name": "weapon_hit_planet_bomb",
+            "alias_binding":
+            {
+                "particle_effect": "weapon_techcapitalplanetbombing_hit",
+                "sounds": [
+                    "weapon_impact_tech_planetbomb"]
+            }
+        },
+        {
+            "alias_name": "weapon_muzzle_planet_bomb",
+            "alias_binding":
+            {
+                "particle_effect": "javelis_torpedo_muzzle",
+                "sounds": [
+                    "weapon_muzzle_missile_1",
+                    "weapon_muzzle_missile_2"
+                ]
+            }
+        },
+        {
+            "alias_name": "weapon_bolt_planet_bomb",
+            "alias_binding":
+            {
+                "particle_effect": "weapon_techcapitalplanetbombing_travel"
+            }
+        }
+
+
+
+
+#######################################################################
+######################### Planet Turbolaser ###########################
+#######################################################################
+
+        "muzzle_effect": "weapon_muzzle_htl",
+        "projectile_travel_effect": "weapon_bolt_htl",
+        "hit_hull_effect": "weapon_hit_hull_htl",
+        "hit_shield_effect": "weapon_hit_shield_htl",
+        "hit_shield_impact_radius_t": 0.65
+
+        ## Green
+        {
+            "alias_name": "weapon_muzzle_htl",
+            "alias_binding":
+            {
+                "particle_effect": "weapon_muzzle_heavy_green",
+                "sounds": [
+                    "weapon_muzzle_imperial_heavy_1",
+                    "weapon_muzzle_imperial_heavy_2",
+                    "weapon_muzzle_imperial_heavy_3"
+                ]
+            }
+        },
+        {
+            "alias_name": "weapon_bolt_htl",
+            "alias_binding": {
+                "particle_effect": "weapon_bolt_heavy_green"
+            }
+        },
+        {
+            "alias_name": "weapon_hit_planet_bomb",
+            "alias_binding":
+            {
+                "particle_effect": "weapon_techcapitalplanetbombing_hit",
+                "sounds": [
+                    "weapon_impact_tech_planetbomb"]
+            }
+        },
+
+        ## red
+        {
+            "alias_name": "weapon_muzzle_htl",
+            "alias_binding":
+            {
+                "particle_effect": "weapon_muzzle_heavy_red",
+                "sounds": [
+                    "weapon_muzzle_rebel_heavy_1",
+                    "weapon_muzzle_rebel_heavy_2",
+                    "weapon_muzzle_rebel_heavy_3"
+                ]
+            }
+        },
+        {
+            "alias_name": "weapon_bolt_htl",
+            "alias_binding": {
+                "particle_effect": "weapon_bolt_heavy_red"
+            }
+        },
+        {
+            "alias_name": "weapon_hit_planet_bomb",
+            "alias_binding":
+            {
+                "particle_effect": "weapon_techcapitalplanetbombing_hit",
+                "sounds": [
+                    "weapon_impact_tech_planetbomb"]
+            }
+        }
+
+
+
+
+        #######################################################################
+        ########################### Planet Invade #############################
+        #######################################################################
+        
+                "muzzle_effect": "weapon_muzzle_planet_invade",
+                "projectile_travel_effect": "weapon_bolt_planet_invade",
+                "hit_hull_effect": "weapon_hit_planet_invade",
+                "hit_shield_effect": "weapon_hit_planet_invade",
+                "hit_shield_impact_radius_t": 0.09125
+        
+                ## Green
+                {
+                    "alias_name": "weapon_muzzle_planet_invade",
+                    "alias_binding":
+                    {
+                        "sounds": [
+                            "imperial_garrison"
+                        ]
+                    }
+                },
+                {
+                    "alias_name": "weapon_bolt_planet_invade",
+                    "alias_binding": {
+                        "particle_effect": "imperial_garrison"
+                    }
+                },
+                {
+                    "alias_name": "weapon_hit_planet_invade",
+                    "alias_binding":
+                    {
+                        "particle_effect": "weapon_hit_planet_fight",
+                        "sounds": [
+                            "weapon_invade_hit"]
+                    }
+                },

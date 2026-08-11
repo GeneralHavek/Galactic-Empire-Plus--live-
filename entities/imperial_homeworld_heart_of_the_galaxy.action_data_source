@@ -1,0 +1,119 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "buff_planet_modifiers": [
+        {
+            "buff_planet_modifier_id": "homeworld_max_population_points_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "max_population_points",
+                "value_behavior": "additive",
+                "value_id": "max_population_points_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_population_growth_rate_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "population_growth_rate",
+                "value_behavior": "additive",
+                "value_id": "population_growth_rate_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_credit_income_rate_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "commerce_track_credit_income_rate_per_population",
+                "value_behavior": "scalar",
+                "value_id": "commerce_track_credit_income_rate_per_population_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_metal_income_rate_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "mining_track_metal_income_rate_per_population",
+                "value_behavior": "scalar",
+                "value_id": "mining_track_metal_income_rate_per_population_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_crystal_income_rate_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "mining_track_crystal_income_rate_per_population",
+                "value_behavior": "scalar",
+                "value_id": "mining_track_crystal_income_rate_per_population_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_culture_rate_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "culture_rate",
+                "value_behavior": "additive",
+                "value_id": "culture_rate_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_allied_population_factor_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "max_allied_population_factor",
+                "value_behavior": "scalar",
+                "value_id": "max_allied_population_factor_value"
+            }
+        },
+        {
+            "buff_planet_modifier_id": "homeworld_population_assimulation_rate_modifier",
+            "buff_planet_modifier": {
+                "modifier_type": "neutral_population_assimilation_rate",
+                "value_behavior": "additive",
+                "value_id": "neutral_population_assimilation_rate_value"
+            }
+        }
+    ],
+    "action_values": [
+        {
+            "action_value_id": "max_population_points_value",
+            "action_value": {
+                "values": [50, 75, 125, 200, 300]
+            }
+        },
+        {
+            "action_value_id": "population_growth_rate_value",
+            "action_value": {
+                "values": [0.05, 0.1, 0.2, 0.35, 0.55]
+            }
+        },
+        {
+            "action_value_id": "commerce_track_credit_income_rate_per_population_value",
+            "action_value": {
+                "values": [0.2, 0.25, 0.35, 0.5, 0.7]
+            }
+        },
+        {
+            "action_value_id": "mining_track_metal_income_rate_per_population_value",
+            "action_value": {
+                "values": [-0.4, -0.2, 0.0, 0.2, 0.4]
+            }
+        },
+        {
+            "action_value_id": "mining_track_crystal_income_rate_per_population_value",
+            "action_value": {
+                "values": [-0.4, -0.2, 0.0, 0.2, 0.4]
+            }
+        },
+        {
+            "action_value_id": "culture_rate_value",
+            "action_value": {
+                "values": [0.006, 0.008, 0.012, 0.018, 0.026]
+            }
+        },
+        {
+            "action_value_id": "max_allied_population_factor_value",
+            "action_value": {
+                "values": [0.25, 0.40, 0.55, 0.70, 0.85]
+            }
+        },
+        {   "action_value_id": "neutral_population_assimilation_rate_value",
+            "action_value": {
+                "values": [0.30, 0.475, 0.65, 0.825, 1.0]
+            }
+        }
+    ]
+}

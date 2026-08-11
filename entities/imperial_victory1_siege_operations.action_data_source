@@ -1,0 +1,175 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_victory1_siege_operations_duration_value",
+            "action_value": {
+                "values": [
+                    30.0,
+                    35.0,
+                    40.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_operations_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    120.0,
+                    120.0,
+                    120.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_operations_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    100.0,
+                    150.0,
+                    200.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_operations_aura_interval_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_missile_guidance_coordination_duration_value",
+            "action_value": {
+                "values": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_operations_self_speed_value",
+            "action_value": {
+                "values": [
+                    -1.0,
+                    -1.0,
+                    -1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_operations_turbolaser_range_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_operations_concussion_cooldown_value",
+            "action_value": {
+                "values": [
+                    0.4,
+                    0.5,
+                    0.6
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_missile_guidance_coordination_speed_value",
+            "action_value": {
+                "values": [
+                    0.5,
+                    0.75,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_missile_guidance_coordination_turn_rate_value",
+            "action_value": {
+                "values": [
+                    0.5,
+                    0.75,
+                    1.0
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_victory1_missile_guidance_coordination_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "self",
+                    "ally"
+                ],
+                "unit_types": [
+                    "torpedo"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_victory1_siege_operations_turbolaser_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_siege_operations_turbolaser_range_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victory1_siege_operations_concussion_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_siege_operations_concussion_cooldown_value",
+                "tags": [
+                    "concussion"
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_victory1_siege_operations_self_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_linear_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_siege_operations_self_speed_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_victory1_missile_guidance_coordination_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_linear_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_missile_guidance_coordination_speed_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_victory1_missile_guidance_coordination_turn_rate_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_angular_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_missile_guidance_coordination_turn_rate_value"
+            }
+        }
+    ]
+}

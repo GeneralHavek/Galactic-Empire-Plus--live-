@@ -1,0 +1,86 @@
+{
+    "version": 0,
+    "active_duration": "imperial_allegiance_imperial_bulwark_active_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_shield_regen_modifier"
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_armor_regen_modifier"
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_hull_regen_modifier"
+        }
+    ],
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_allegiance_imperial_bulwark_active_interval_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_allegiance_imperial_bulwark_gravity_well_radius_value",
+                        "include_radius_origin_unit": false,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_allegiance_imperial_bulwark_oppressive_intent",
+                                "destination_target_filter_id": "imperial_allegiance_imperial_bulwark_enemy_ship_target_filter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_allegiance_imperial_bulwark_ability_hud_icon",
+        "name": "imperial_allegiance_imperial_bulwark_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_shield_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_armor_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_hull_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.radius",
+                        "value_id": "imperial_allegiance_imperial_bulwark_gravity_well_radius_value"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_allegiance_imperial_bulwark_oppressive_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_allegiance_imperial_bulwark_oppressive_range_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_allegiance_imperial_bulwark_oppressive_cooldown_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

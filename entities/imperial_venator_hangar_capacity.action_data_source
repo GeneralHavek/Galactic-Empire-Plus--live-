@@ -1,0 +1,100 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_venator_max_squadron_capacity_bonus_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    3.0,
+                    5.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_strikecraft_build_speed_bonus_value",
+            "action_value": {
+                "values": [
+                    -1.0,
+                    -1.5,
+                    -2.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_strikecraft_hull_regen_bonus_value",
+            "action_value": {
+                "values": [
+                    0.25,
+                    0.50,
+                    0.75
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_strikecraft_speed_bonus_value",
+            "action_value": {
+                "values": [
+                    0.10,
+                    0.15,
+                    0.20
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_strikecraft_damage_bonus_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.10,
+                    0.15
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_venator_max_squadron_capacity_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_squadron_capacity",
+                "value_behavior": "additive",
+                "value_id": "imperial_venator_max_squadron_capacity_bonus_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_venator_strikecraft_build_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "strikecraft_build_time",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_strikecraft_build_speed_bonus_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_venator_strikecraft_hull_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hull_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_strikecraft_hull_regen_bonus_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_venator_strikecraft_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_linear_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_strikecraft_speed_bonus_value"
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_venator_strikecraft_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_strikecraft_damage_bonus_value"
+            }
+        }
+    ]
+}

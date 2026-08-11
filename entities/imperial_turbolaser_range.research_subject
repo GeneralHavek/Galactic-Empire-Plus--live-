@@ -1,0 +1,32 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_armament",
+    "field_coord": [6, 2],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 1700.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "prerequisites": [
+        ["imperial_turbolaser_cooldown"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "range",
+        "value": 0.15,
+        "tags": [
+            "turbolaser",
+            "ion"
+        ]
+    }],
+    "name": "imperial_turbolaser_range_research_subject_name",
+    "name_uppercase": "imperial_turbolaser_range_research_subject_name_uppercase",
+    "description": "imperial_turbolaser_range_research_subject_description",
+    "hud_icon": "trader_improve_gauss_defense_range_research_subject_hud_icon",
+    "tooltip_picture": "trader_improve_gauss_defense_range_research_subject_tooltip_picture"
+}

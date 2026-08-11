@@ -1,0 +1,7 @@
+{
+    "is_positionable": true,
+    "is_looping": false,
+    "is_streaming": false,
+    "min_attenuation_distance": 400.0,
+    "sound_group": "hit_hull"
+}

@@ -1,0 +1,24 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_annexation",
+    "field_coord": [8, 0],
+    "research_time": 840.0,
+    "price":
+    {
+        "credits": 2200.0,
+        "metal": 400.0,
+        "crystal": 700.0
+    },
+    "prerequisites": [
+        ["imperial_unlock_gas_harvester_unit_item"]
+    ],
+    "name": "imperial_unlock_gas_crystalizer_unit_item_research_subject_name",
+    "name_uppercase": "imperial_unlock_gas_crystalizer_unit_item_research_subject_name_uppercase",
+    "hud_icon": "imperial_gas_crystalizer_unit_item_hud_icon",
+    "tooltip_picture": "imperial_gas_crystalizer_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_andvar",
+        "research_text_filter_exotic"]
+}

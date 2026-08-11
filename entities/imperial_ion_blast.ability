@@ -1,0 +1,83 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_ion_blast",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 4, 8],
+    "active_actions":
+    {
+        "cooldown_time": "ion_blast_cooldown",
+        "antimatter_cost": "ion_blast_antimatter_cost",
+        "actions":
+        {
+            "actions": [
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_target_filter",
+                    "unit":
+                    {
+                        "unit_type": "target"
+                    },
+                    "target_filter_id": "ion_blast_target_filter"
+                },
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "target"
+                },
+                "range_value": "ion_blast_range",
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "imperial_ion_blast"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "ion_blast_target_filter"
+        ],
+        "range": "ion_blast_range",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 45.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+            {
+                "target_filter": "ion_blast_autocast_target_filter"
+            }]
+        }
+    },
+    "gui":
+    {
+        "hud_icon": "ability_ion_blast_hud_icon",
+        "tooltip_icon": "ability_ion_blast_hud_icon",
+        "tooltip_picture": "ability_ion_blast_tooltip_picture",
+        "name": "ability_ion_blast_name",
+        "description": "ability_ion_blast_desc",
+        "targeting":
+        {
+            "targeting_type": "range",
+            "values":
+            {
+                "range": "ion_blast_range"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.duration",
+                "value_id": "ion_blast_duration",
+                "value_suffix": "seconds"
+            }]
+        }]
+    }
+}

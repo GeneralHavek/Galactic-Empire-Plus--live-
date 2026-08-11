@@ -1,0 +1,59 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "imperial_factional_victory_unit_item_hud_icon",
+    "tooltip_picture": "imperial_factional_victory_unit_item_tooltip_picture",
+    "name": "imperial_faction_victory_unit_item_name",
+    "description": "imperial_faction_victory_unit_item_description",
+    "build_time": 300.0,
+    "price": {
+        "credits": 150000,
+        "metal": 40000,
+        "crystal": 40000
+    },
+    "exotic_price": [
+        {
+        "exotic_type": "offense",
+        "count": 20
+        },
+        {
+        "exotic_type": "defense",
+        "count": 5
+        },
+        {
+        "exotic_type": "utility",
+        "count": 5
+        },
+        {
+        "exotic_type": "ultimate",
+        "count": 5
+        },
+        {
+        "exotic_type": "kalkite",
+        "count": 15
+        }
+    ],
+    "required_unit_tags": [
+        "death_star"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        [
+            "imperial_unlock_faction_victory_item"
+        ]
+    ],
+    "build_group_id": "offense",
+    "unit_modifiers": [
+        {
+            "modifier_type": "ability_cooldown_duration",
+            "value_behavior": "scalar",
+            "values": [
+                1.0
+            ]
+        }
+    ],
+    "unit_mutations": [
+        "imperial_faction_victory_equipped"
+    ],
+    "is_factional_victory_item": true
+}

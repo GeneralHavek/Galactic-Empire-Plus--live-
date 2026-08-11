@@ -1,0 +1,61 @@
+{
+    "version": 0,
+    "name": "normal",
+    "display_name": "start_mode.normal.name",
+    "description": "start_mode.normal.description",
+    "faction_configurations": [
+    {
+        "player_definition_id": "sw_imperial",
+        "starting_assets":
+        {
+            "credits": 4500.0,
+            "metal": 1050.0,
+            "crystal": 750.0
+        },
+        "home_planet":
+        {
+            "starting_units_in_gravity_well":
+            {},
+            "starting_units_in_formations": [
+            {
+                "required_units": [
+                {
+                    "unit": "imperial_shipyard",
+                    "count": [1, 1]
+                },
+                {
+                    "unit": "imperial_shipyard_heavy",
+                    "count": [1, 1]
+                },
+                {
+                    "unit": "imperial_indictor",
+                    "count": [2, 2]
+                }]
+            }],
+            "home_planet_track_levels":
+            {
+                "logistics": 3,
+                "defense": 2,
+                "commerce": 2,
+                "mining": 1,
+                "research": 0,
+                "focus": 0,
+                "surveying": 0
+            },
+            "starting_units_in_hyperspace":
+            {}
+        },
+        "starting_research":
+        {
+            "starting_research_subjects": []
+        },
+        "additional_starting_planets":
+        {
+            "count": 0,
+            "allowed_planet_types": [],
+            "max_jumps": 0,
+            "include_star_phase_lanes": false,
+            "include_wormhole_phase_lanes": false
+        }
+    }]
+}

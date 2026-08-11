@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "action_values": [
+        {
+            "action_value_id": "empire_credit_income",
+            "action_value": {
+                "values": [0.0015]
+            }
+        },
+        {
+            "action_value_id": "empire_metal_income",
+            "action_value": {
+                "values": [0.0015]
+            }
+        },
+        {
+            "action_value_id": "empire_crystal_income",
+            "action_value":{
+                "values": [0.0015]
+            }
+        }
+    ],
+    "buff_empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "empire_credit_income_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "credit_income_rate",
+                "value_behavior": "scalar",
+                "value_id": "empire_credit_income"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "empire_metal_income_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "metal_income_rate",
+                "value_behavior": "scalar",
+                "value_id": "empire_metal_income"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "empire_crystal_income_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "crystal_income_rate",
+                "value_behavior": "scalar",
+                "value_id": "empire_crystal_income"
+            }
+        }
+    ]
+}

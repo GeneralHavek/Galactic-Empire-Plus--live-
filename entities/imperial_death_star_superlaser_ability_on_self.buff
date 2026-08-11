@@ -1,0 +1,57 @@
+{
+    "version": 0,
+    "make_dead_on_all_finite_time_actions_done": true,
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+        {
+            "first_action_delay_time_value": "superlaser_charge_duration",
+            "execution_interval_value": "fixed_one",
+            "execution_interval_count_value": "execution_interval_count_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "target"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_death_star_superlaser_ability_on_target"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "trigger_event_actions": [
+        {
+            "trigger_event_type": "on_buff_started",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "target"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "play_weapon_effects",
+                                "effect_alias_binding": "unit_skin",
+                                "mesh_point": "ability.000",
+                                "effects": {
+                                    "charge_effect": "imperial_death_star_superlaser_muzzle",
+                                    "beam_effect": "imperial_death_star_superlaser_beam_fire"
+                                },
+                                "charge_duration": "superlaser_charge_duration",
+                                "beam_duration": "superlaser_beam_duration"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

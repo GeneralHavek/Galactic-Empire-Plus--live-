@@ -1,0 +1,84 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "defense",
+    "hud_icon": "imperial_command_bunker_unit_item_hud_icon",
+    "tooltip_icon": "imperial_command_bunker_unit_item_hud_picture",
+    "tooltip_picture": "imperial_command_bunker_unit_item_tooltip_picture",
+    "name": "imperial_command_bunker_unit_item_name",
+    "description": "imperial_command_bunker_unit_item_description",
+    "item_level_count": 2,
+    "item_level_source": "research_prerequisites_per_level",
+    "item_level_prerequisites": [
+        [
+            ["imperial_upgrade_command_bunker_unit_item"]
+        ]
+    ],
+    "build_time": 90.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 350.0,
+        "crystal": 250.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "defense",
+        "count": 1
+    }],
+    "max_count_on_unit": 1,
+    "required_planet_level": 5,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "ice_asteroid",
+            "hive_asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "ice",
+            "oceanic",
+            "swamp",
+            "terran",
+            "volcanic",
+            "pirate_base",
+            "moon",
+            "ice_moon",
+            "volcanic_moon",
+            "ship_graveyard"
+        ],
+        "build_prerequisites": [
+            ["imperial_unlock_command_bunker_unit_item"]
+        ]
+    }],
+    "other_item_requirements":
+    {
+        "mutually_exclusive_items": [
+            "imperial_regional_government_office"]
+    },
+    "planet_modifiers": [
+    {
+        "modifier_type": "max_health_points",
+        "value_behavior": "additive",
+        "values": [2500.0, 5000.0]
+    },
+    {
+        "modifier_type": "max_military_structure_slots",
+        "value_behavior": "additive",
+        "values": [7.0, 14.0]
+    },
+    {
+        "modifier_type": "bombing_damage_taken",
+        "value_behavior": "scalar",
+        "values": [-0.25, -0.50]
+    },
+    {
+        "modifier_type": "bombing_damage_taken",
+        "value_behavior": "scalar",
+        "values": [-0.50, -0.75]
+    }]
+}

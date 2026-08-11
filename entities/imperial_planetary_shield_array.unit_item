@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "hud_icon": "imperial_planetary_shield_array_hud_icon",
+    "tooltip_icon": "imperial_planetary_shield_array_hud_icon",
+    "tooltip_picture": "imperial_planetary_shield_array_tooltip_picture",
+    "name": "imperial_planetary_shield_array_unit_item_name",
+    "description": "imperial_planetary_shield_array_unit_item_description",
+    "build_time": 120.0,
+    "price":
+    {
+        "credits": 900.0,
+        "metal": 180.0,
+        "crystal": 180.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "defense",
+        "count": 1
+    }],
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "ice_asteroid",
+            "hive_asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "ice",
+            "oceanic",
+            "swamp",
+            "terran",
+            "volcanic",
+            "pirate_base",
+            "moon",
+            "ice_moon",
+            "volcanic_moon",
+            "ship_graveyard"
+        ],
+        "build_prerequisites": [
+            ["imperial_unlock_planetary_shield_array_unit_item"]
+        ]
+    }],
+    "max_count_on_unit": 1,
+    "build_group_id": "defense",
+    "ability": "imperial_planetary_shield_array",
+    "will_make_planet_invulnerable": true
+}

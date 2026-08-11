@@ -1,0 +1,91 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration":
+    {
+        "float_variable_ids": [
+            "stack_count",
+            "stacks_expiry_time"
+        ]
+    },
+    "target_filters": [
+    {
+        "target_filter_id": "command_center_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "capital_ship",
+                "super_capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "enemy"]
+        }
+    },
+    {
+        "target_filter_id": "command_center_target_ally_filter",
+        "target_filter": 
+        {
+            "unit_types": [
+                "capital_ship",
+                "super_capital_ship",
+                "corvette",
+                "cruiser",
+                "frigate",
+                "starbase",
+                "structure",
+                "titan"
+            ],
+            "ownerships": [
+                "friendly"]
+        }
+    }],
+    "action_values": [
+    {
+        "action_value_id": "command_center_max_stack_count_value",
+        "action_value": {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "command_center_stack_count_value",
+        "action_value": {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "stack_count",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "command_center_stack_duration_value",
+        "action_value": {
+            "values": [10.0]
+        }
+    },
+    {
+        "action_value_id": "command_center_stacks_expiry_time_value",
+        "action_value": {
+            "transform_type": "current_buff_memory_value",
+            "memory_float_variable_id": "stacks_expiry_time",
+            "values": [1.0]
+        }
+    },
+    {
+        "action_value_id": "command_center_antimatter_restore_value",
+        "action_value":
+        {
+            "transform_type": "per_total_resolved_damage_dealt",
+            "values": [0.05]
+        }
+    },
+    {
+        "action_value_id": "command_center_radius_value",
+        "action_value": {
+            "transform_type": "fixed",
+            "values": [2500.0]
+        }
+    }]
+}

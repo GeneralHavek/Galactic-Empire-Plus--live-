@@ -1,0 +1,6 @@
+{
+    "base_color_texture": "weapon_proton_torpedo_clr",
+    "mask_texture": "weapon_proton_torpedo_msk",
+    "emissive_factor": 5.0,
+    "emissive_hue_strength": 5
+}

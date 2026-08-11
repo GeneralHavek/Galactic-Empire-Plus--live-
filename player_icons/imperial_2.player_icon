@@ -1,0 +1,8 @@
+{
+    "sizes":
+    {
+        "medium": "player_icon_imperial_2_medium",
+        "tiny": "player_icon_imperial_2_tiny",
+        "large": "player_icon_imperial_2_large"
+    }
+}

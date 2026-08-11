@@ -1,0 +1,53 @@
+{
+    "version": 0,
+    "name": "weapon_name.weapon_mtl",
+    "pitch_speed": 40.0,
+    "yaw_speed": 40.0,
+    "pitch_firing_tolerance": 2.50,
+    "yaw_firing_tolerance": 2.50,
+    "range": 7500.0,
+    "cooldown_duration": 6.0,
+    "uniforms_target_filter_id": "turbolaser",
+    "attack_target_type_groups": [
+        "light_corvette",
+        "lrm_flak",
+        "heavy_capital",
+        "defense"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 15.0,
+    "penetration": 300.0,
+    "tags": [
+        "energy",
+        "turbolaser"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.850,
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects": {
+        "burst_pattern": [
+            0.0
+        ],
+        "muzzle_effect": "weapon_muzzle_mtl",
+        "projectile_travel_effect": "weapon_bolt_mtl",
+        "hit_hull_effect": "weapon_hit_hull_mtl",
+        "hit_shield_effect": "weapon_hit_shield_mtl",
+        "hit_shield_impact_radius_t": 0.350
+    },
+    "turret": {
+        "type": "biaxial",
+        "biaxial_base_mesh": "pirate_turret_mddtl_mount",
+        "biaxial_barrel_mesh": "pirate_turret_mddtl_barrel",
+        "barrel_position": [0.018918, 3.583160, 2.641358],
+        "muzzle_positions": [
+            [6.514247, 4.631804, 20.016022],
+            [6.512508, 3.128297, 20.036692],
+            [-6.488546, 4.646848, 20.010698],
+            [-6.490285, 3.143334, 20.031307]
+        ]
+    }
+}

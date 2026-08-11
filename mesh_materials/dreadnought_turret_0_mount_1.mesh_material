@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "base_color_texture": "dreadnought_turret_0_clr",
+    "occlusion_roughness_metallic_texture": "dreadnought_turret_0_orm",
+    "normal_texture": "dreadnought_turret_0_nrm",
+    "mask_texture": "dreadnought_turret_0_msk",
+    "base_color_factor": [1.0, 1.0, 1.0, 1.0],
+    "roughness_factor": 1.0,
+    "metallic_factor": 1.0,
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0
+}

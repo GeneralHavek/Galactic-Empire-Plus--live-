@@ -1,0 +1,6 @@
+{
+    "base_color_texture": "imperial_velox_hull_clr",
+    "normal_texture": "imperial_velox_hull_nrm",
+    "mask_texture": "imperial_velox_hull_msk",
+    "occlusion_roughness_metallic_texture": "imperial_velox_hull_orm"
+}

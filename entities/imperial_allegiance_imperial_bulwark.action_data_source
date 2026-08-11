@@ -1,0 +1,273 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_passive_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.18,
+                    0.27,
+                    0.36
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_passive_armor_regen_value",
+            "action_value": {
+                "values": [
+                    0.08,
+                    0.14,
+                    0.21,
+                    0.28
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_passive_hull_regen_value",
+            "action_value": {
+                "values": [
+                    0.08,
+                    0.14,
+                    0.21,
+                    0.28
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_duration_value",
+            "action_value": {
+                "values": [
+                    15.0,
+                    20.0,
+                    25.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    85.0,
+                    85.0,
+                    85.0,
+                    85.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_interval_value",
+            "action_value": {
+                "values": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_debuff_duration_value",
+            "action_value": {
+                "values": [
+                    2,
+                    2,
+                    2,
+                    2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_gravity_well_radius_value",
+            "action_value": {
+                "values": [
+                    15000.0,
+                    15000.0,
+                    15000.0,
+                    15000.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_armor_regen_value",
+            "action_value": {
+                "values": [
+                    0.25,
+                    0.38,
+                    0.52,
+                    0.65
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_active_hull_regen_value",
+            "action_value": {
+                "values": [
+                    0.30,
+                    0.45,
+                    0.60,
+                    0.75
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_oppressive_tracking_value",
+            "action_value": {
+                "values": [
+                    -0.1,
+                    -0.15,
+                    -0.2,
+                    -0.25
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_oppressive_range_value",
+            "action_value": {
+                "values": [
+                    -0.05,
+                    -0.08,
+                    -0.11,
+                    -0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_imperial_bulwark_oppressive_cooldown_value",
+            "action_value": {
+                "values": [
+                    0.06,
+                    0.1,
+                    0.14,
+                    0.18
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_allegiance_imperial_bulwark_enemy_ship_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_passive_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_passive_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_passive_armor_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "armor_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_passive_armor_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_passive_hull_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hull_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_passive_hull_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_active_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_armor_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "armor_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_active_armor_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_imperial_bulwark_active_hull_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hull_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_active_hull_regen_value"
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_imperial_bulwark_oppressive_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_oppressive_tracking_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_imperial_bulwark_oppressive_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_oppressive_range_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_imperial_bulwark_oppressive_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_imperial_bulwark_oppressive_cooldown_value",
+                "weapon_type": "normal"
+            }
+        }
+    ]
+}

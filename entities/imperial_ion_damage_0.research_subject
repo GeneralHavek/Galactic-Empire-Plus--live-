@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_armament",
+    "field_coord": [1, 1],
+    "research_time": 90.0,
+    "price":
+    {
+        "credits": 450.0,
+        "metal": 50.0,
+        "crystal": 75.0
+    },
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.05,
+        "tags": [
+            "ion"]
+    }],
+    "name": "imperial_ion_damage_0_research_subject_name",
+    "name_uppercase": "imperial_ion_damage_0_research_subject_name_uppercase",
+    "description": "imperial_ion_damage_0_research_subject_description",
+    "hud_icon": "advent_upgrade_laser_weapon_damage_0_research_subject_hud_icon",
+    "tooltip_icon": "advent_upgrade_laser_weapon_damage_0_research_subject_hud_icon",
+    "tooltip_picture": "advent_upgrade_laser_weapon_damage_0_research_subject_tooltip_picture"
+}

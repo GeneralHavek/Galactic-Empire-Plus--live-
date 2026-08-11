@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "imperial_common_sensor_plate_clr",
+    "normal_texture": "imperial_common_sensor_plate_nrm",
+    "occlusion_roughness_metallic_texture": "imperial_common_sensor_plate_orm"
+}

@@ -1,0 +1,65 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "make_dead_on_source_ability_released": true,
+    "empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "constructor_credit_upkeep_modifier"
+        },
+        {
+            "buff_empire_modifier_id": "constructor_metal_upkeep_modifier"
+        },
+        {
+            "buff_empire_modifier_id": "constructor_crystal_upkeep_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_unit_upkeep_hud_icon",
+        "name": "unit_item_upkeep_reduction_name",
+        "is_visible_within_unit_tooltip": true,
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.credit_upkeep",
+                        "value_id": "constructor_credit_upkeep",
+                        "value_color": "positive",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.metal_upkeep",
+                        "value_id": "constructor_metal_upkeep",
+                        "value_color": "positive",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            },
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.crystal_upkeep",
+                        "value_id": "constructor_crystal_upkeep",
+                        "value_color": "positive",
+                        "value_float_format": "three_decimal_place_with_sign",
+                        "value_suffix": "per_second"
+                    }
+                ]
+            }
+        ]
+    }
+}

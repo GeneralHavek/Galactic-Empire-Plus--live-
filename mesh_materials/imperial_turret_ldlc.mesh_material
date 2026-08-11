@@ -1,0 +1,6 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_turret_ldlc_0_clr",
+    "occlusion_roughness_metallic_texture": "imperial_turret_ldlc_0_orm",
+    "normal_texture": "imperial_turret_ldlc_0_nrm"
+}

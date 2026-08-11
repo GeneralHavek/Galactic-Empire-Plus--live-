@@ -1,0 +1,8 @@
+{
+    "texture": "sw_hangar_clr",
+    "total_frame_count": 1,
+    "column_frame_count": 1,
+    "start_top_left": [0, 0],
+    "frame_size": [1536, 1024],
+    "frame_stride": [1536, 1024]
+}

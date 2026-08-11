@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "imperial_gunpod_clr",
+    "normal_texture": "imperial_gunpod_nrm",
+    "occlusion_roughness_metallic_texture": "imperial_gunpod_orm"
+}

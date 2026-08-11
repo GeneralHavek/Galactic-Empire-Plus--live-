@@ -1,0 +1,423 @@
+{
+    "version": 0,
+    "name": {
+        "group": "capital_ship"
+    },
+    "skin_stages": [
+        {
+            "is_main_view_icon_visible_camera_distance": 45541.690122,
+            "min_camera_distance": 850.0,
+            "gui": {
+                "hud_icon": "imperial_procursator_hud_icon",
+                "hud_monochrome_icon": "imperial_procursator_main_view_icon",
+                "hud_picture": "imperial_procursator_hud_picture",
+                "tooltip_picture": "imperial_procursator_tooltip_picture",
+                "name": "imperial_procursator_name",
+                "special_operation_names": [
+                    {
+                        "kind": "garrison",
+                        "name": "imperial_procursator_name.garrison"
+                    }
+                ],
+                "description": "imperial_procursator_description",
+                "hud_selection_window_icon_offet": [-10, 0]
+            },
+            "unit_mesh": {
+                "mesh": "imperial_procursator",
+                "shader": "ship",
+                "is_shadow_blocker": true
+            },
+            "child_mesh_alias_bindings": {
+                "map": [
+                    {
+                        "mesh_alias_name": "imperial_procursator_httl_barrel",
+                        "mesh_definition": {
+                            "mesh": "imperial_procursator_httl_barrel",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    },
+                    {
+                        "mesh_alias_name": "imperial_procursator_httl_mount",
+                        "mesh_definition": {
+                            "mesh": "imperial_procursator_httl_mount",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    },
+                    {
+                        "mesh_alias_name": "imperial_turret_mqtl_barrel",
+                        "mesh_definition": {
+                            "mesh": "imperial_turret_mqtl_barrel",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    },
+                    {
+                        "mesh_alias_name": "imperial_turret_mqtl_mount",
+                        "mesh_definition": {
+                            "mesh": "imperial_turret_mqtl_mount",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    }
+                ]
+            },
+            "main_view_icon": {
+                "group": "capital_ship",
+                "icon": "imperial_procursator_main_view_icon",
+                "selected_icon": "imperial_procursator_main_view_icon_selected",
+                "sub_selected_icon": "imperial_procursator_main_view_icon_sub_selected"
+            },
+            "effects": {
+                "exhaust_effects": {
+                    "particle_effects": [
+                        {
+                            "particle_effect": "exhaust_tech_large_01"
+                        }
+                    ]
+                },
+                "hyperspace_effects": {
+                    "charge_effect": "null_effect",
+                    "charge_effect_between_stars": "null_effect",
+                    "charge_effect_destabilized": "null_effect",
+                    "travel_effect": "hyperspace_imp_capital_travel",
+                    "travel_effect_between_stars": "hyperspace_tech_capital_travel_interstellar",
+                    "travel_effect_destabilized": "hyperspace_tech_capital_travel_unstable",
+                    "exit_effect": "null_effect",
+                    "charge_sound": "null_hyperspace",
+                    "enter_sound": "effect_hyperspace_in",
+                    "exit_sound": "effect_hyperspace_out"
+                },
+                "damage_effects": {
+                    "max_damage_effect_count": 15,
+                    "damage_effects": [
+                        {
+                            "max_count": 2,
+                            "weight": 4.0,
+                            "hull_percentage_threshold": 0.990,
+                            "particle_effect": "tec_damage_embers"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 4.0,
+                            "hull_percentage_threshold": 0.990,
+                            "particle_effect": "damage_smoke_1"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 4.0,
+                            "hull_percentage_threshold": 0.990,
+                            "particle_effect": "damage_smoke_2"
+                        },
+                        {
+                            "max_count": 1,
+                            "weight": 3.0,
+                            "hull_percentage_threshold": 0.990,
+                            "particle_effect": "damage_electricity",
+                            "sound": "ambient_loop_electrical_damage"
+                        },
+                        {
+                            "max_count": 1,
+                            "weight": 2.0,
+                            "hull_percentage_threshold": 0.750,
+                            "particle_effect": "damage_electricity_2",
+                            "sound": "ambient_loop_electrical_damage_01"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 3.0,
+                            "hull_percentage_threshold": 0.750,
+                            "particle_effect": "tec_damage_plasma_sparks"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 2.0,
+                            "hull_percentage_threshold": 0.750,
+                            "particle_effect": "damage_air_decompression",
+                            "sound": "ambient_loop_airdecompression"
+                        },
+                        {
+                            "max_count": 3,
+                            "hull_percentage_threshold": 0.750,
+                            "particle_effect": "damage_fire_pillar",
+                            "sound": "ambient_loop_firepillar_damage"
+                        }
+                    ]
+                },
+                "flair_effects": [
+                    {
+                        "mesh_point_name": "center",
+                        "particle_effect": "tec_damage_cruiser",
+                        "constraint": "is_crippled"
+                    },
+                    {
+                        "mesh_point_name": "exhaust.000",
+                        "particle_effect": "exhaust_medium_01_idle"
+                    },
+                    {
+                        "mesh_point_name": "exhaust.001",
+                        "particle_effect": "exhaust_medium_01_idle"
+                    },
+                    {
+                        "mesh_point_name": "exhaust.002",
+                        "particle_effect": "exhaust_medium_01_idle"
+                    }
+                ],
+                "level_up_effect": "capitalship_levelup",
+                "level_up_sound": "effect_levelup",
+                "shield_effect": "imperial_procursator",
+                "effect_alias_bindings": [
+                    {
+                        "alias_name": "trader_carrier_capital_ship_planet_bombing_weapon_hit_hull",
+                        "alias_binding": {
+                            "particle_effect": "nuke",
+                            "sounds": [
+                                "weapon_impact_tech_planetbomb"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "trader_carrier_capital_ship_planet_bombing_weapon_hit_shield",
+                        "alias_binding": {
+                            "particle_effect": "nuke",
+                            "sounds": [
+                                "weapon_impact_tech_planetbomb"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "trader_carrier_capital_ship_planet_bombing_weapon_muzzle",
+                        "alias_binding": {
+                            "particle_effect": "weapon_techcapitalplanetbombing_muzzle",
+                            "sounds": [
+                                "weapon_muzzle_tech_planetbomb"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "trader_carrier_capital_ship_planet_bombing_weapon_projectile_travel",
+                        "alias_binding": {
+                            "particle_effect": "weapon_techcapitalplanetbombing_travel"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_bolt_httl_proc",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_heavy_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_bolt_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_medium_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_bolt_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_pd_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_htl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_heavy_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_medium_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_pd_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_planet_bomb",
+                        "alias_binding": {
+                            "particle_effect": "nuke",
+                            "sounds": [
+                                "weapon_impact_tech_planetbomb"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_htl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_heavy_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_medium_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_pd_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_httl_proc",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_heavy_green",
+                            "sounds": [
+                                "weapon_muzzle_imperial_heavy_1",
+                                "weapon_muzzle_imperial_heavy_2",
+                                "weapon_muzzle_imperial_heavy_3"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_medium_green",
+                            "sounds": [
+                                "weapon_muzzle_imperial_medium"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_pd_green",
+                            "sounds": [
+                                "weapon_muzzle_imperial_light"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "sounds": {
+                "move_sounds": {
+                    "engine": "effect_engine_star_destroyer",
+                    "hyperspace_travel": "hyperspace_travel"
+                },
+                "dialogue": {
+                    "spawned": {
+                        "neutral": [
+                            "dialog_imperial_select3",
+                            "dialog_imperial_select5"
+                        ]
+                    },
+                    "selected": {
+                        "neutral": [
+                            "dialog_imperial_select0",
+                            "dialog_imperial_select1",
+                            "dialog_imperial_select2",
+                            "dialog_imperial_select3",
+                            "dialog_imperial_select4",
+                            "dialog_imperial_select5",
+                            "dialog_imperial_select6",
+                            "dialog_imperial_select7",
+                            "dialog_imperial_select8",
+                            "dialog_imperial_select9"
+                        ]
+                    },
+                    "order_issued": {
+                        "neutral": [
+                            "dialog_imperial_move0",
+                            "dialog_imperial_move1",
+                            "dialog_imperial_move2",
+                            "dialog_imperial_move3",
+                            "dialog_imperial_move4",
+                            "dialog_imperial_move5",
+                            "dialog_imperial_move6",
+                            "dialog_imperial_move7",
+                            "dialog_imperial_move8",
+                            "dialog_imperial_move9"
+                        ]
+                    },
+                    "attack_order_issued": {
+                        "neutral": [
+                            "dialog_imperial_attack0",
+                            "dialog_imperial_attack1",
+                            "dialog_imperial_attack2",
+                            "dialog_imperial_attack3",
+                            "dialog_imperial_attack4",
+                            "dialog_imperial_attack5",
+                            "dialog_imperial_attack6",
+                            "dialog_imperial_attack7",
+                            "dialog_imperial_attack8",
+                            "dialog_imperial_attack9"
+                        ]
+                    },
+                    "hyperspace_charge_started": {
+                        "neutral": [
+                            "dialog_imperial_hyperspace1"
+                        ]
+                    },
+                    "retreat": {
+                        "scared": [
+                            "imperial_star_destroyer_retreat"
+                        ]
+                    },
+                    "cannot_hyperspace": {
+                        "scared": [
+                            "trader_carrier_capital_ship_cannot_hyperspace_scared_0"
+                        ]
+                    },
+                    "shields_down": {
+                        "scared": [
+                            "imperial_star_destroyer_shields_down",
+                            "imperial_star_destroyer_shields_down_1"
+                        ]
+                    },
+                    "armor_down": {
+                        "scared": [
+                            "effect_imperialalarm"
+                        ]
+                    }
+                }
+            },
+            "death_sequence_group": "trader_titan"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "base_color_texture": "sw_xx9_turbolaser_tower_mount_clr",
+    "normal_texture": "sw_xx9_turbolaser_tower_mount_nrm",
+    "occlusion_roughness_metallic_texture": "sw_xx9_turbolaser_tower_mount_orm",
+    "emissive_hue_strength": 1,
+    "base_color_factor": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "roughness_factor": 1,
+    "metallic_factor": 1
+}

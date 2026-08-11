@@ -1,0 +1,245 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_executor_sector_command_duration_value",
+            "action_value": {
+                "values": [
+                    15.0,
+                    20.0,
+                    25.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    120.0,
+                    120.0,
+                    120.0,
+                    120.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    100.0,
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_gravity_well_radius_value",
+            "action_value": {
+                "values": [
+                    25000,
+                    25000,
+                    25000,
+                    25000
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_minimum_enemy_targets_value",
+            "action_value": {
+                "values": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_allied_weapon_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.04,
+                    -0.06,
+                    -0.08,
+                    -0.1
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_allied_weapon_tracking_value",
+            "action_value": {
+                "values": [
+                    0.15,
+                    0.25,
+                    0.35,
+                    0.45
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_allied_move_speed_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_allied_turn_rate_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_enemy_antimatter_regen_value",
+            "action_value": {
+                "values": [
+                    -0.15,
+                    -0.25,
+                    -0.35,
+                    -0.45
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_enemy_move_speed_value",
+            "action_value": {
+                "values": [
+                    -0.05,
+                    -0.1,
+                    -0.15,
+                    -0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_executor_sector_command_enemy_turn_rate_value",
+            "action_value": {
+                "values": [
+                    -0.05,
+                    -0.1,
+                    -0.15,
+                    -0.2
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_executor_sector_command_allied_ship_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "self",
+                    "ally"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        },
+        {
+            "target_filter_id": "imperial_executor_sector_command_enemy_ship_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_executor_sector_command_allied_weapon_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_allied_weapon_cooldown_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_executor_sector_command_allied_weapon_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_allied_weapon_tracking_value",
+                "weapon_type": "normal"
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_executor_sector_command_allied_move_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_linear_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_allied_move_speed_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_executor_sector_command_allied_turn_rate_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_angular_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_allied_turn_rate_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_executor_sector_command_enemy_antimatter_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "antimatter_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_enemy_antimatter_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_executor_sector_command_enemy_move_speed_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_linear_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_enemy_move_speed_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_executor_sector_command_enemy_turn_rate_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "max_angular_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_executor_sector_command_enemy_turn_rate_value"
+            }
+        }
+    ]
+}

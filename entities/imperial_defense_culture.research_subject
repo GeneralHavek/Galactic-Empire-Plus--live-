@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_policy",
+    "field_coord": [6, 3],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 1700.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "utility",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["imperial_culture_rate_0"]
+    ],
+    "name": "imperial_defense_culture_research_subject_name",
+    "name_uppercase": "imperial_defense_culture_research_subject_name_uppercase",
+    "description": "imperial_defense_culture_research_subject_description",
+    "hud_icon": "imperial_defense_culture_research_subject_hud_icon",
+    "tooltip_picture": "imperial_defense_culture_research_subject_tooltip_picture"
+}

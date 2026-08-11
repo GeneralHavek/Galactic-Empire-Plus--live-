@@ -1,0 +1,4823 @@
+{
+    "version": 0,
+    "spatial": {
+        "radius": 1172.272583,
+        "box": {
+            "center": [
+                0.0,
+                -38.887321,
+                318.542786
+            ],
+            "extents": [
+                465.602356,
+                210.214508,
+                849.999939
+            ]
+        },
+        "collision_rank": 2
+    },
+    "physics": {
+        "can_move_linear": true,
+        "max_linear_speed": 625.0,
+        "time_to_max_linear_speed": 5.25,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
+        "can_move_angular": true,
+        "max_angular_speed": 22.0,
+        "time_to_max_angular_speed": 17.0,
+        "max_bank_angle": 25.0,
+        "death_angular_speed_range": [
+            2.0,
+            4.0
+        ],
+        "linear_acceleration_angle": 90.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 150.0,
+        "time_to_strafe_max_linear_speed": 15.0,
+        "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
+    },
+    "hyperspace": {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
+    },
+    "move": {
+        "follow_distance": 2588.118896
+    },
+    "attack": {
+        "attack_pattern": {
+            "type": "stop_and_fire",
+            "alignment": {
+                "type": "yaw",
+                "angle": 90.0,
+                "allow_opposite_angle": true
+            }
+        }
+    },
+    "ai": {
+        "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
+            "heavy_capital",
+            "defense"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft",
+            "corvette"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_pir_turret_mqtl",
+        "auto_follow_target_priority": 5.0,
+        "pursuit": {
+            "min_distance_to_target": 5000.0
+        }
+    },
+    "ai_attack_target": {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "capital"
+    },
+    "user_interface": {
+        "pip_type": "capital_ship",
+        "can_ever_be_selected": true,
+        "selection_priority": 400,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_max_weapon_range_in_tactical_view": true,
+        "can_show_distance_to_plane_line": true,
+        "bar_size": "large"
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.000",
+                "weapon_position": [
+                    -9e-06,
+                    132.477371,
+                    75.84494
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.001",
+                "weapon_position": [
+                    157.389359,
+                    28.746849,
+                    249.613647
+                ],
+                "forward": [
+                    -0.0,
+                    -0.061048,
+                    0.998135
+                ],
+                "up": [
+                    -0.0,
+                    0.998135,
+                    0.061048
+                ],
+                "yaw_arc": {
+                    "min_angle": -15.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.002",
+                "weapon_position": [
+                    -157.389389,
+                    28.746834,
+                    249.613647
+                ],
+                "forward": [
+                    -0.0,
+                    -0.061048,
+                    0.998135
+                ],
+                "up": [
+                    -0.0,
+                    0.998135,
+                    0.061048
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 15.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.003",
+                "weapon_position": [
+                    219.265549,
+                    28.738495,
+                    205.121933
+                ],
+                "forward": [
+                    0.762518,
+                    -0.095846,
+                    0.639828
+                ],
+                "up": [
+                    0.073422,
+                    0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -55.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.004",
+                "weapon_position": [
+                    -219.265579,
+                    28.738476,
+                    205.121902
+                ],
+                "forward": [
+                    -0.762518,
+                    -0.095846,
+                    0.639828
+                ],
+                "up": [
+                    -0.073422,
+                    0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 55.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.005",
+                "weapon_position": [
+                    257.870941,
+                    28.728073,
+                    160.646347
+                ],
+                "forward": [
+                    0.762518,
+                    -0.095846,
+                    0.639828
+                ],
+                "up": [
+                    0.073422,
+                    0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -55.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.006",
+                "weapon_position": [
+                    -257.870941,
+                    28.72805,
+                    160.646317
+                ],
+                "forward": [
+                    -0.762518,
+                    -0.095846,
+                    0.639828
+                ],
+                "up": [
+                    -0.073422,
+                    0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 55.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.007",
+                "weapon_position": [
+                    296.4552,
+                    28.719032,
+                    116.160004
+                ],
+                "forward": [
+                    0.762518,
+                    -0.095846,
+                    0.639828
+                ],
+                "up": [
+                    0.073422,
+                    0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -35.0,
+                    "max_angle": 100.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.008",
+                "weapon_position": [
+                    -296.4552,
+                    28.719006,
+                    116.159973
+                ],
+                "forward": [
+                    -0.762518,
+                    -0.095846,
+                    0.639828
+                ],
+                "up": [
+                    -0.073422,
+                    0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -100.0,
+                    "max_angle": 35.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.009",
+                "weapon_position": [
+                    335.071106,
+                    28.707899,
+                    22.149157
+                ],
+                "forward": [
+                    0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.010",
+                "weapon_position": [
+                    -335.071106,
+                    28.707869,
+                    22.149126
+                ],
+                "forward": [
+                    -0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    -0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.011",
+                "weapon_position": [
+                    335.071106,
+                    28.707874,
+                    -37.486191
+                ],
+                "forward": [
+                    0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.012",
+                "weapon_position": [
+                    -335.071106,
+                    28.707844,
+                    -37.486221
+                ],
+                "forward": [
+                    -0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    -0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.013",
+                "weapon_position": [
+                    359.460175,
+                    24.764666,
+                    -168.154938
+                ],
+                "forward": [
+                    0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.014",
+                "weapon_position": [
+                    -359.460175,
+                    24.764635,
+                    -168.154968
+                ],
+                "forward": [
+                    -0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    -0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.015",
+                "weapon_position": [
+                    359.460175,
+                    24.764652,
+                    -231.821793
+                ],
+                "forward": [
+                    0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.016",
+                "weapon_position": [
+                    -359.460175,
+                    24.764622,
+                    -231.821823
+                ],
+                "forward": [
+                    -0.989016,
+                    -0.147809,
+                    -0.0
+                ],
+                "up": [
+                    -0.14781,
+                    0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.017",
+                "weapon_position": [
+                    -157.389389,
+                    -20.660839,
+                    249.613647
+                ],
+                "forward": [
+                    -0.0,
+                    0.061048,
+                    0.998135
+                ],
+                "up": [
+                    0.0,
+                    -0.998135,
+                    0.061049
+                ],
+                "yaw_arc": {
+                    "min_angle": -15.0,
+                    "max_angle": 110.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.018",
+                "weapon_position": [
+                    157.389359,
+                    -20.660824,
+                    249.613647
+                ],
+                "forward": [
+                    -0.0,
+                    0.061048,
+                    0.998135
+                ],
+                "up": [
+                    0.0,
+                    -0.998135,
+                    0.061049
+                ],
+                "yaw_arc": {
+                    "min_angle": -110.0,
+                    "max_angle": 15.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.019",
+                "weapon_position": [
+                    -219.265579,
+                    -20.65251,
+                    205.121902
+                ],
+                "forward": [
+                    -0.762518,
+                    0.095846,
+                    0.639828
+                ],
+                "up": [
+                    -0.073422,
+                    -0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -35.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.020",
+                "weapon_position": [
+                    219.265549,
+                    -20.652491,
+                    205.121933
+                ],
+                "forward": [
+                    0.762518,
+                    0.095846,
+                    0.639828
+                ],
+                "up": [
+                    0.073422,
+                    -0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 35.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.021",
+                "weapon_position": [
+                    -257.870941,
+                    -20.642105,
+                    160.646317
+                ],
+                "forward": [
+                    -0.762518,
+                    0.095846,
+                    0.639828
+                ],
+                "up": [
+                    -0.073422,
+                    -0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -35.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.022",
+                "weapon_position": [
+                    257.870941,
+                    -20.642082,
+                    160.646347
+                ],
+                "forward": [
+                    0.762518,
+                    0.095846,
+                    0.639828
+                ],
+                "up": [
+                    0.073422,
+                    -0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 35.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.023",
+                "weapon_position": [
+                    -296.4552,
+                    -20.633066,
+                    116.159973
+                ],
+                "forward": [
+                    -0.762518,
+                    0.095846,
+                    0.639828
+                ],
+                "up": [
+                    -0.073422,
+                    -0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -35.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.024",
+                "weapon_position": [
+                    296.4552,
+                    -20.633039,
+                    116.160004
+                ],
+                "forward": [
+                    0.762518,
+                    0.095846,
+                    0.639828
+                ],
+                "up": [
+                    0.073422,
+                    -0.995396,
+                    0.061609
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 35.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.025",
+                "weapon_position": [
+                    -335.071106,
+                    -20.621986,
+                    22.149124
+                ],
+                "forward": [
+                    -0.989016,
+                    0.14781,
+                    -0.0
+                ],
+                "up": [
+                    -0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.026",
+                "weapon_position": [
+                    335.071106,
+                    -20.621956,
+                    22.149155
+                ],
+                "forward": [
+                    0.989016,
+                    0.147809,
+                    0.0
+                ],
+                "up": [
+                    0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.027",
+                "weapon_position": [
+                    -335.071106,
+                    -20.621981,
+                    -37.486225
+                ],
+                "forward": [
+                    -0.989016,
+                    0.14781,
+                    -0.0
+                ],
+                "up": [
+                    -0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.028",
+                "weapon_position": [
+                    335.071106,
+                    -20.62195,
+                    -37.486195
+                ],
+                "forward": [
+                    0.989016,
+                    0.147809,
+                    0.0
+                ],
+                "up": [
+                    0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.029",
+                "weapon_position": [
+                    -359.460175,
+                    -16.678829,
+                    -168.154968
+                ],
+                "forward": [
+                    -0.989016,
+                    0.14781,
+                    -0.0
+                ],
+                "up": [
+                    -0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.030",
+                "weapon_position": [
+                    359.460175,
+                    -16.678799,
+                    -168.154938
+                ],
+                "forward": [
+                    0.989016,
+                    0.147809,
+                    0.0
+                ],
+                "up": [
+                    0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.031",
+                "weapon_position": [
+                    -359.460175,
+                    -16.678841,
+                    -231.821823
+                ],
+                "forward": [
+                    -0.989016,
+                    0.14781,
+                    -0.0
+                ],
+                "up": [
+                    -0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdttl",
+                "mesh_point": "child.hdttl.032",
+                "weapon_position": [
+                    359.460175,
+                    -16.67881,
+                    -231.821793
+                ],
+                "forward": [
+                    0.989016,
+                    0.147809,
+                    0.0
+                ],
+                "up": [
+                    0.147809,
+                    -0.989016,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.000",
+                "weapon_position": [
+                    -78.90921,
+                    39.672829,
+                    738.144775
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.001",
+                "weapon_position": [
+                    -78.909554,
+                    39.672817,
+                    697.289917
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.002",
+                "weapon_position": [
+                    -78.909897,
+                    39.672813,
+                    656.57959
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.003",
+                "weapon_position": [
+                    -78.910233,
+                    39.672806,
+                    615.880005
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.004",
+                "weapon_position": [
+                    -75.619049,
+                    -8.84446,
+                    738.152466
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.005",
+                "weapon_position": [
+                    -75.619049,
+                    -8.844468,
+                    697.289917
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.006",
+                "weapon_position": [
+                    -75.619049,
+                    -8.844473,
+                    656.579651
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.007",
+                "weapon_position": [
+                    -75.619041,
+                    -8.84448,
+                    615.880005
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.008",
+                "weapon_position": [
+                    -76.429764,
+                    28.893669,
+                    738.144775
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.009",
+                "weapon_position": [
+                    -76.44989,
+                    28.893658,
+                    697.289917
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.010",
+                "weapon_position": [
+                    -76.44989,
+                    28.893652,
+                    656.57959
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.011",
+                "weapon_position": [
+                    -76.448807,
+                    28.893639,
+                    615.880005
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.012",
+                "weapon_position": [
+                    -77.916107,
+                    -19.192928,
+                    738.152466
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.013",
+                "weapon_position": [
+                    -77.949028,
+                    -19.192936,
+                    697.289917
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.014",
+                "weapon_position": [
+                    -77.966164,
+                    -19.192944,
+                    656.579651
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.015",
+                "weapon_position": [
+                    -77.983322,
+                    -19.192953,
+                    615.880005
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.016",
+                "weapon_position": [
+                    78.910172,
+                    39.672813,
+                    615.880005
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.017",
+                "weapon_position": [
+                    78.909836,
+                    39.672821,
+                    656.57959
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.018",
+                "weapon_position": [
+                    78.909492,
+                    39.672825,
+                    697.289917
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.019",
+                "weapon_position": [
+                    78.909149,
+                    39.672836,
+                    738.144775
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.020",
+                "weapon_position": [
+                    75.618996,
+                    -8.844474,
+                    615.880005
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.021",
+                "weapon_position": [
+                    75.618988,
+                    -8.844467,
+                    656.579651
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.022",
+                "weapon_position": [
+                    75.618988,
+                    -8.844462,
+                    697.289917
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.023",
+                "weapon_position": [
+                    75.618988,
+                    -8.844454,
+                    738.152466
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.024",
+                "weapon_position": [
+                    76.448746,
+                    28.893646,
+                    615.880005
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.025",
+                "weapon_position": [
+                    76.449829,
+                    28.89366,
+                    656.57959
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.026",
+                "weapon_position": [
+                    76.449829,
+                    28.893665,
+                    697.289917
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.027",
+                "weapon_position": [
+                    76.429703,
+                    28.893677,
+                    738.144775
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.028",
+                "weapon_position": [
+                    77.983276,
+                    -19.192945,
+                    615.880005
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.029",
+                "weapon_position": [
+                    77.966103,
+                    -19.192936,
+                    656.579651
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.030",
+                "weapon_position": [
+                    77.948967,
+                    -19.192928,
+                    697.289917
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.031",
+                "weapon_position": [
+                    77.916046,
+                    -19.192921,
+                    738.152466
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.032",
+                "weapon_position": [
+                    -91.780006,
+                    76.427155,
+                    -387.023071
+                ],
+                "forward": [
+                    -0.258819,
+                    -0.0,
+                    -0.965926
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -45.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.033",
+                "weapon_position": [
+                    91.780022,
+                    76.42717,
+                    -387.022766
+                ],
+                "forward": [
+                    0.258752,
+                    -0.002895,
+                    -0.965939
+                ],
+                "up": [
+                    0.023467,
+                    0.999719,
+                    0.00329
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 45.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.034",
+                "weapon_position": [
+                    -69.547997,
+                    -52.559856,
+                    -378.593018
+                ],
+                "forward": [
+                    -0.258819,
+                    0.0,
+                    -0.965926
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 45.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_htddtl",
+                "mesh_point": "child.hddtl.035",
+                "weapon_position": [
+                    69.548027,
+                    -52.559872,
+                    -378.593475
+                ],
+                "forward": [
+                    0.258819,
+                    0.0,
+                    -0.965926
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -45.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.000",
+                "weapon_position": [
+                    -3.5e-05,
+                    114.183907,
+                    675.883545
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -145.0,
+                    "max_angle": 145.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.001",
+                "weapon_position": [
+                    93.301056,
+                    3.940677,
+                    536.438782
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -45.0,
+                    "max_angle": 45.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.002",
+                "weapon_position": [
+                    -93.301102,
+                    3.940669,
+                    536.439087
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -45.0,
+                    "max_angle": 45.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.003",
+                "weapon_position": [
+                    -404.775146,
+                    14.833034,
+                    131.490891
+                ],
+                "forward": [
+                    -0.5,
+                    -0.0,
+                    0.866025
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -120.0,
+                    "max_angle": 45.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.004",
+                "weapon_position": [
+                    -404.775085,
+                    -6.747104,
+                    131.491028
+                ],
+                "forward": [
+                    -0.5,
+                    -0.0,
+                    0.866025
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -45.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.005",
+                "weapon_position": [
+                    404.775085,
+                    14.833066,
+                    131.491028
+                ],
+                "forward": [
+                    0.5,
+                    -0.0,
+                    0.866025
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -45.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.006",
+                "weapon_position": [
+                    404.775085,
+                    -6.747068,
+                    131.491028
+                ],
+                "forward": [
+                    0.5,
+                    0.0,
+                    0.866025
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -120.0,
+                    "max_angle": 45.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hdmd",
+                "mesh_point": "child.hdmd.007",
+                "weapon_position": [
+                    -7e-06,
+                    -87.152,
+                    247.432251
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -105.0,
+                    "max_angle": 105.0
+                },
+                "pitch_arc": {
+                    "min_angle": -50.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.000",
+                "weapon_position": [
+                    -4.1e-05,
+                    -188.748352,
+                    1116.633667
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.001",
+                "weapon_position": [
+                    -5.1e-05,
+                    91.812401,
+                    1078.374268
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.002",
+                "weapon_position": [
+                    -4.9e-05,
+                    100.709587,
+                    1014.574768
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.003",
+                "weapon_position": [
+                    -4.6e-05,
+                    109.543663,
+                    945.267517
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.004",
+                "weapon_position": [
+                    36.964931,
+                    112.504601,
+                    860.860352
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.005",
+                "weapon_position": [
+                    36.964931,
+                    112.504601,
+                    815.660156
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.006",
+                "weapon_position": [
+                    36.964935,
+                    112.504585,
+                    770.83429
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.007",
+                "weapon_position": [
+                    -36.965015,
+                    112.504601,
+                    860.860352
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.008",
+                "weapon_position": [
+                    -36.965015,
+                    112.504601,
+                    815.660156
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.009",
+                "weapon_position": [
+                    -36.965012,
+                    112.504585,
+                    770.83429
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.010",
+                "weapon_position": [
+                    36.914661,
+                    112.835167,
+                    583.85968
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.011",
+                "weapon_position": [
+                    36.914707,
+                    112.835159,
+                    538.506897
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.012",
+                "weapon_position": [
+                    36.901402,
+                    112.835159,
+                    493.591187
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.013",
+                "weapon_position": [
+                    -36.914722,
+                    112.835167,
+                    583.85968
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.014",
+                "weapon_position": [
+                    -36.914761,
+                    112.835159,
+                    538.506897
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.015",
+                "weapon_position": [
+                    -36.901455,
+                    112.835159,
+                    493.591187
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.016",
+                "weapon_position": [
+                    -10.529533,
+                    -62.811329,
+                    751.094971
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -65.0,
+                    "max_angle": 80.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.017",
+                "weapon_position": [
+                    -10.459332,
+                    -62.811329,
+                    727.199524
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -70.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.018",
+                "weapon_position": [
+                    10.529472,
+                    -62.811329,
+                    751.095032
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -80.0,
+                    "max_angle": 65.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.019",
+                "weapon_position": [
+                    10.459274,
+                    -62.811329,
+                    727.199036
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 70.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.020",
+                "weapon_position": [
+                    -10.52953,
+                    -62.811337,
+                    669.479431
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -70.0,
+                    "max_angle": 65.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.021",
+                "weapon_position": [
+                    -10.459329,
+                    -62.81134,
+                    645.349915
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -70.0,
+                    "max_angle": 65.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.022",
+                "weapon_position": [
+                    10.529476,
+                    -62.811337,
+                    669.479492
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -65.0,
+                    "max_angle": 70.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.023",
+                "weapon_position": [
+                    10.459277,
+                    -62.81134,
+                    645.349426
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -65.0,
+                    "max_angle": 70.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.024",
+                "weapon_position": [
+                    85.073174,
+                    49.367363,
+                    294.42337
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.025",
+                "weapon_position": [
+                    85.073174,
+                    49.367359,
+                    255.286774
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.026",
+                "weapon_position": [
+                    85.073174,
+                    49.367352,
+                    216.150238
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.027",
+                "weapon_position": [
+                    85.073181,
+                    49.367344,
+                    177.013611
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.028",
+                "weapon_position": [
+                    85.073181,
+                    49.367332,
+                    137.876999
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.029",
+                "weapon_position": [
+                    -85.073204,
+                    49.367355,
+                    294.42337
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.030",
+                "weapon_position": [
+                    -85.073204,
+                    49.367352,
+                    255.286774
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.031",
+                "weapon_position": [
+                    -85.073204,
+                    49.367344,
+                    216.150238
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.032",
+                "weapon_position": [
+                    -85.073196,
+                    49.367336,
+                    177.013611
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.033",
+                "weapon_position": [
+                    -85.073196,
+                    49.367325,
+                    137.876999
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.034",
+                "weapon_position": [
+                    265.20343,
+                    45.489807,
+                    -160.491562
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.035",
+                "weapon_position": [
+                    265.20343,
+                    45.489803,
+                    -200.258347
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.036",
+                "weapon_position": [
+                    265.20343,
+                    45.489788,
+                    -240.025146
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.037",
+                "weapon_position": [
+                    -265.20343,
+                    45.489784,
+                    -160.491592
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.038",
+                "weapon_position": [
+                    -265.20343,
+                    45.48978,
+                    -200.258377
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.039",
+                "weapon_position": [
+                    -265.20343,
+                    45.489765,
+                    -240.025177
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.040",
+                "weapon_position": [
+                    32.233803,
+                    132.477356,
+                    -12.313812
+                ],
+                "forward": [
+                    0.965926,
+                    0.0,
+                    0.258819
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.041",
+                "weapon_position": [
+                    -32.23381,
+                    132.477356,
+                    -12.313787
+                ],
+                "forward": [
+                    -0.965926,
+                    -0.0,
+                    0.258819
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.042",
+                "weapon_position": [
+                    73.441513,
+                    138.668503,
+                    -219.338913
+                ],
+                "forward": [
+                    0.975535,
+                    -0.219846,
+                    -0.0
+                ],
+                "up": [
+                    0.219846,
+                    0.975535,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": -5.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.043",
+                "weapon_position": [
+                    73.441521,
+                    138.668991,
+                    -319.446075
+                ],
+                "forward": [
+                    0.975535,
+                    -0.219846,
+                    -0.0
+                ],
+                "up": [
+                    0.219846,
+                    0.975535,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": -5.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.044",
+                "weapon_position": [
+                    -73.441505,
+                    138.668991,
+                    -319.446014
+                ],
+                "forward": [
+                    -0.975535,
+                    -0.219846,
+                    -0.0
+                ],
+                "up": [
+                    -0.219846,
+                    0.975535,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": -5.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.045",
+                "weapon_position": [
+                    -73.441513,
+                    138.668991,
+                    -219.33902
+                ],
+                "forward": [
+                    -0.975535,
+                    -0.219846,
+                    -0.0
+                ],
+                "up": [
+                    -0.219846,
+                    0.975535,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": -5.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.046",
+                "weapon_position": [
+                    179.705261,
+                    48.793289,
+                    -499.39563
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 85.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.047",
+                "weapon_position": [
+                    -179.705231,
+                    48.793274,
+                    -499.689575
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.048",
+                "weapon_position": [
+                    -265.20343,
+                    -37.403965,
+                    -160.491577
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.049",
+                "weapon_position": [
+                    -265.20343,
+                    -37.403973,
+                    -200.258362
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.050",
+                "weapon_position": [
+                    -265.20343,
+                    -37.403984,
+                    -240.025177
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.051",
+                "weapon_position": [
+                    265.20343,
+                    -37.403942,
+                    -160.491547
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.052",
+                "weapon_position": [
+                    265.20343,
+                    -37.40395,
+                    -200.258331
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.053",
+                "weapon_position": [
+                    265.20343,
+                    -37.403961,
+                    -240.025146
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 90.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.054",
+                "weapon_position": [
+                    -179.705215,
+                    -40.707584,
+                    -499.621307
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 85.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            },
+            {
+                "weapon": "weapon_keldabe_turret_hqtl",
+                "mesh_point": "child.lqtl.055",
+                "weapon_position": [
+                    179.705276,
+                    -40.707569,
+                    -499.454163
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    -1.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -85.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 0.0
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    },
+    "formation": {
+        "leader_priority": 4,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 3,
+                "group": 2
+            }
+        }
+    },
+    "spawn_debris": {
+        "spawn_debris_time": 5.98,
+        "generic_group_name": "trader",
+        "generic_counts": {
+            "small_debris": [
+                16,
+                28
+            ],
+            "large_debris": [
+                4,
+                7
+            ]
+        },
+        "custom_debris": [
+            {
+                "unit": "trader_large_debris",
+                "basis": {
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                }
+            }
+        ],
+        "spawn_loot": {
+            "loot_unit": "ship_loot_trader",
+            "loot_name": "pirate_keldabe_loot_name",
+            "experience_given": 200.0,
+            "exotics": [
+                {
+                    "bundles": [
+                        {
+                            "types": [
+                                "offense"
+                            ],
+                            "counts": [
+                                1,
+                                3
+                            ]
+                        }
+                    ],
+                    "weight": 1.0
+                },
+                {
+                    "bundles": [
+                        {
+                            "types": [
+                                "defense"
+                            ],
+                            "counts": [
+                                1,
+                                2
+                            ]
+                        }
+                    ],
+                    "weight": 1.0
+                }
+            ],
+            "assets": {
+                "credits": [
+                    250.0,
+                    750.0
+                ],
+                "metal": [
+                    75.0,
+                    225.0
+                ],
+                "crystal": [
+                    50.0,
+                    150.0
+                ]
+            }
+        }
+    },
+    "health": {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 6.0,
+        "durability": 600.0,
+        "can_ever_be_resurrected": true,
+        "levels": [
+            {
+                "max_hull_points": 5500.0,
+                "hull_point_restore_rate": 3.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.5,
+                "max_armor_points": 1950.0,
+                "armor_point_restore_rate": 3.0,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 130.0,
+                "max_shield_points": 6500.0,
+                "shield_point_restore_rate": 6.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 40.0,
+                    "restore_percentage": 0.15
+                },
+                "experience_given_on_death": 100.0
+            },
+            {
+                "max_hull_points": 6050.0,
+                "hull_point_restore_rate": 3.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.55,
+                "max_armor_points": 2095.0,
+                "armor_point_restore_rate": 3.6,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 135.0,
+                "max_shield_points": 7025.0,
+                "shield_point_restore_rate": 7.2,
+                "shield_burst_restore": {
+                    "cooldown_duration": 38.0,
+                    "restore_percentage": 0.18
+                },
+                "experience_given_on_death": 120.0
+            },
+            {
+                "max_hull_points": 6600.0,
+                "hull_point_restore_rate": 4.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.6,
+                "max_armor_points": 2240.0,
+                "armor_point_restore_rate": 4.2,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 140.0,
+                "max_shield_points": 7550.0,
+                "shield_point_restore_rate": 8.4,
+                "shield_burst_restore": {
+                    "cooldown_duration": 36.0,
+                    "restore_percentage": 0.22
+                },
+                "experience_given_on_death": 150.0
+            },
+            {
+                "max_hull_points": 7150.0,
+                "hull_point_restore_rate": 4.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.65,
+                "max_armor_points": 2385.0,
+                "armor_point_restore_rate": 4.8,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 145.0,
+                "max_shield_points": 8075.0,
+                "shield_point_restore_rate": 9.6,
+                "shield_burst_restore": {
+                    "cooldown_duration": 34.0,
+                    "restore_percentage": 0.25
+                },
+                "experience_given_on_death": 190.0
+            },
+            {
+                "max_hull_points": 7700.0,
+                "hull_point_restore_rate": 5.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.7,
+                "max_armor_points": 2530.0,
+                "armor_point_restore_rate": 5.4,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 150.0,
+                "max_shield_points": 8600.0,
+                "shield_point_restore_rate": 10.8,
+                "shield_burst_restore": {
+                    "cooldown_duration": 32.0,
+                    "restore_percentage": 0.28
+                },
+                "experience_given_on_death": 240.0
+            },
+            {
+                "max_hull_points": 8250.0,
+                "hull_point_restore_rate": 5.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.75,
+                "max_armor_points": 2675.0,
+                "armor_point_restore_rate": 6.0,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 155.0,
+                "max_shield_points": 9125.0,
+                "shield_point_restore_rate": 12.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 30.0,
+                    "restore_percentage": 0.32
+                },
+                "experience_given_on_death": 300.0
+            },
+            {
+                "max_hull_points": 8800.0,
+                "hull_point_restore_rate": 6.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.8,
+                "max_armor_points": 2820.0,
+                "armor_point_restore_rate": 6.6,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 160.0,
+                "max_shield_points": 9650.0,
+                "shield_point_restore_rate": 13.2,
+                "shield_burst_restore": {
+                    "cooldown_duration": 28.0,
+                    "restore_percentage": 0.35
+                },
+                "experience_given_on_death": 370.0
+            },
+            {
+                "max_hull_points": 9350.0,
+                "hull_point_restore_rate": 6.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.85,
+                "max_armor_points": 2965.0,
+                "armor_point_restore_rate": 7.2,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 165.0,
+                "max_shield_points": 10175.0,
+                "shield_point_restore_rate": 14.4,
+                "shield_burst_restore": {
+                    "cooldown_duration": 26.0,
+                    "restore_percentage": 0.38
+                },
+                "experience_given_on_death": 450.0
+            },
+            {
+                "max_hull_points": 9900.0,
+                "hull_point_restore_rate": 7.0,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 0.92,
+                "max_armor_points": 3110.0,
+                "armor_point_restore_rate": 7.8,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 170.0,
+                "max_shield_points": 10700.0,
+                "shield_point_restore_rate": 15.6,
+                "shield_burst_restore": {
+                    "cooldown_duration": 24.0,
+                    "restore_percentage": 0.42
+                },
+                "experience_given_on_death": 540.0
+            },
+            {
+                "max_hull_points": 10450.0,
+                "hull_point_restore_rate": 7.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_crippled_percentage": 1.0,
+                "max_armor_points": 3255.0,
+                "armor_point_restore_rate": 8.4,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_strength": 175.0,
+                "max_shield_points": 11225.0,
+                "shield_point_restore_rate": 16.8,
+                "shield_burst_restore": {
+                    "cooldown_duration": 22.0,
+                    "restore_percentage": 0.45
+                },
+                "experience_given_on_death": 640.0
+            }
+        ]
+    },
+    "antimatter": {
+        "max_antimatter": 0.0,
+        "antimatter_restore_rate": 0.0
+    },
+    "levels": {
+        "type": "experience",
+        "levels": [
+            {
+                "experience_to_next_level": 200.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 270.0,
+                        "antimatter_restore_rate": 0.85,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                }
+            },
+            {
+                "experience_to_next_level": 500.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 300.0,
+                        "antimatter_restore_rate": 0.96,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.02,
+                        "cooldown_duration": -0.03
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 900.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 330.0,
+                        "antimatter_restore_rate": 1.07,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.04,
+                        "cooldown_duration": -0.06
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 1500.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 360.0,
+                        "antimatter_restore_rate": 1.18,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.06,
+                        "cooldown_duration": -0.09
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 2300.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 390.0,
+                        "antimatter_restore_rate": 1.29,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.08,
+                        "cooldown_duration": -0.12
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 3300.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 420.0,
+                        "antimatter_restore_rate": 1.4,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.1,
+                        "cooldown_duration": -0.15
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 4500.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 450.0,
+                        "antimatter_restore_rate": 1.51,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.12,
+                        "cooldown_duration": -0.18
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 6000.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 480.0,
+                        "antimatter_restore_rate": 1.62,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.14,
+                        "cooldown_duration": -0.21
+                    }
+                }
+            },
+            {
+                "experience_to_next_level": 7800.0,
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 510.0,
+                        "antimatter_restore_rate": 1.73,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.16,
+                        "cooldown_duration": -0.24
+                    }
+                }
+            },
+            {
+                "unit_modifiers": {
+                    "additive_values": {
+                        "max_antimatter": 540.0,
+                        "antimatter_restore_rate": 1.84,
+                        "max_squadron_capacity": 5.0
+                    },
+                    "scalar_values": {}
+                },
+                "weapon_modifiers": {
+                    "additive_values": {},
+                    "scalar_values": {
+                        "damage": 0.18,
+                        "cooldown_duration": -0.27
+                    }
+                }
+            }
+        ]
+    },
+    "build": {
+        "build_time": 75.0,
+        "price": {
+            "credits": 5100.0,
+            "metal": 1100.0,
+            "crystal": 700.0
+        },
+        "exotic_price": [
+            {
+                "exotic_type": "offense",
+                "count": 3
+            },
+            {
+                "exotic_type": "defense",
+                "count": 2
+            }
+        ],
+        "build_kind": "capital_ship",
+        "supply_cost": 60,
+        "build_group_id": "capital_ship"
+    },
+    "carrier": {
+        "base_max_squadron_capacity": 7,
+        "strikecraft_kinds": [
+            "mem_custom_strikecraft3"
+        ],
+        "launch_destination_formation": "titan_strikecraft",
+        "launch_destination_formation_offset": {
+            "rank": 3,
+            "group": 2
+        },
+        "hangar_data": [
+            {
+                "launch_basis": {
+                    "position": [
+                        53.946159,
+                        -25.164057,
+                        76.616661
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        -0.866025,
+                        0.296198,
+                        0.939693,
+                        0.17101,
+                        0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        53.946159,
+                        -25.164057,
+                        76.616661
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        -0.866025,
+                        0.296198,
+                        0.939693,
+                        0.17101,
+                        0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        53.946159,
+                        -25.164038,
+                        109.693642
+                    ],
+                    "rotation": [
+                        0.422618,
+                        0.0,
+                        -0.906308,
+                        0.309975,
+                        0.939693,
+                        0.144544,
+                        0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        53.946159,
+                        -25.164038,
+                        109.693642
+                    ],
+                    "rotation": [
+                        0.422618,
+                        0.0,
+                        -0.906308,
+                        0.309975,
+                        0.939693,
+                        0.144544,
+                        0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        53.946163,
+                        -25.164028,
+                        162.031097
+                    ],
+                    "rotation": [
+                        0.34202,
+                        -0.0,
+                        -0.939693,
+                        0.321394,
+                        0.939693,
+                        0.116978,
+                        0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        53.946163,
+                        -25.164028,
+                        162.031097
+                    ],
+                    "rotation": [
+                        0.34202,
+                        -0.0,
+                        -0.939693,
+                        0.321394,
+                        0.939693,
+                        0.116978,
+                        0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        53.946156,
+                        -25.16403,
+                        195.082153
+                    ],
+                    "rotation": [
+                        0.258819,
+                        -0.0,
+                        -0.965926,
+                        0.330366,
+                        0.939693,
+                        0.088521,
+                        0.907673,
+                        -0.34202,
+                        0.243211
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        53.946156,
+                        -25.16403,
+                        195.082153
+                    ],
+                    "rotation": [
+                        0.258819,
+                        -0.0,
+                        -0.965926,
+                        0.330366,
+                        0.939693,
+                        0.088521,
+                        0.907673,
+                        -0.34202,
+                        0.243211
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        110.750061,
+                        -25.160517,
+                        76.599785
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        0.866025,
+                        -0.296198,
+                        0.939693,
+                        0.17101,
+                        -0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        110.750061,
+                        -25.160517,
+                        76.599785
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        0.866025,
+                        -0.296198,
+                        0.939693,
+                        0.17101,
+                        -0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        110.750061,
+                        -25.146389,
+                        109.690651
+                    ],
+                    "rotation": [
+                        0.422618,
+                        -0.0,
+                        0.906308,
+                        -0.309975,
+                        0.939693,
+                        0.144544,
+                        -0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        110.750061,
+                        -25.146389,
+                        109.690651
+                    ],
+                    "rotation": [
+                        0.422618,
+                        -0.0,
+                        0.906308,
+                        -0.309975,
+                        0.939693,
+                        0.144544,
+                        -0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        110.750061,
+                        -25.067806,
+                        162.033264
+                    ],
+                    "rotation": [
+                        0.34202,
+                        0.0,
+                        0.939693,
+                        -0.321394,
+                        0.939693,
+                        0.116978,
+                        -0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        110.750061,
+                        -25.067806,
+                        162.033264
+                    ],
+                    "rotation": [
+                        0.34202,
+                        0.0,
+                        0.939693,
+                        -0.321394,
+                        0.939693,
+                        0.116978,
+                        -0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        110.750053,
+                        -25.03018,
+                        195.095932
+                    ],
+                    "rotation": [
+                        0.258819,
+                        0.0,
+                        0.965926,
+                        -0.330366,
+                        0.939693,
+                        0.088521,
+                        -0.907673,
+                        -0.34202,
+                        0.24321
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        110.750053,
+                        -25.03018,
+                        195.095932
+                    ],
+                    "rotation": [
+                        0.258819,
+                        0.0,
+                        0.965926,
+                        -0.330366,
+                        0.939693,
+                        0.088521,
+                        -0.907673,
+                        -0.34202,
+                        0.24321
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -110.750061,
+                        -25.160528,
+                        76.59977
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        -0.866025,
+                        0.296198,
+                        0.939693,
+                        0.17101,
+                        0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -110.750061,
+                        -25.160528,
+                        76.59977
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        -0.866025,
+                        0.296198,
+                        0.939693,
+                        0.17101,
+                        0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -110.750061,
+                        -25.1464,
+                        109.690636
+                    ],
+                    "rotation": [
+                        0.422618,
+                        0.0,
+                        -0.906308,
+                        0.309975,
+                        0.939693,
+                        0.144544,
+                        0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -110.750061,
+                        -25.1464,
+                        109.690636
+                    ],
+                    "rotation": [
+                        0.422618,
+                        0.0,
+                        -0.906308,
+                        0.309975,
+                        0.939693,
+                        0.144544,
+                        0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -110.750076,
+                        -25.067818,
+                        162.033264
+                    ],
+                    "rotation": [
+                        0.34202,
+                        -0.0,
+                        -0.939693,
+                        0.321394,
+                        0.939693,
+                        0.116978,
+                        0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -110.750076,
+                        -25.067818,
+                        162.033264
+                    ],
+                    "rotation": [
+                        0.34202,
+                        -0.0,
+                        -0.939693,
+                        0.321394,
+                        0.939693,
+                        0.116978,
+                        0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -110.750069,
+                        -25.030191,
+                        195.095932
+                    ],
+                    "rotation": [
+                        0.258819,
+                        -0.0,
+                        -0.965926,
+                        0.330366,
+                        0.939693,
+                        0.088521,
+                        0.907673,
+                        -0.34202,
+                        0.243211
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -110.750069,
+                        -25.030191,
+                        195.095932
+                    ],
+                    "rotation": [
+                        0.258819,
+                        -0.0,
+                        -0.965926,
+                        0.330366,
+                        0.939693,
+                        0.088521,
+                        0.907673,
+                        -0.34202,
+                        0.243211
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -53.946167,
+                        -25.164061,
+                        76.616661
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        0.866025,
+                        -0.296198,
+                        0.939693,
+                        0.17101,
+                        -0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -53.946167,
+                        -25.164061,
+                        76.616661
+                    ],
+                    "rotation": [
+                        0.5,
+                        0.0,
+                        0.866025,
+                        -0.296198,
+                        0.939693,
+                        0.17101,
+                        -0.813798,
+                        -0.34202,
+                        0.469846
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -53.946167,
+                        -25.164042,
+                        109.693642
+                    ],
+                    "rotation": [
+                        0.422618,
+                        -0.0,
+                        0.906308,
+                        -0.309975,
+                        0.939693,
+                        0.144544,
+                        -0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -53.946167,
+                        -25.164042,
+                        109.693642
+                    ],
+                    "rotation": [
+                        0.422618,
+                        -0.0,
+                        0.906308,
+                        -0.309975,
+                        0.939693,
+                        0.144544,
+                        -0.851651,
+                        -0.34202,
+                        0.397131
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -53.946178,
+                        -25.164032,
+                        162.031097
+                    ],
+                    "rotation": [
+                        0.34202,
+                        0.0,
+                        0.939693,
+                        -0.321394,
+                        0.939693,
+                        0.116978,
+                        -0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -53.946178,
+                        -25.164032,
+                        162.031097
+                    ],
+                    "rotation": [
+                        0.34202,
+                        0.0,
+                        0.939693,
+                        -0.321394,
+                        0.939693,
+                        0.116978,
+                        -0.883022,
+                        -0.34202,
+                        0.321394
+                    ]
+                }
+            },
+            {
+                "launch_basis": {
+                    "position": [
+                        -53.946171,
+                        -25.164034,
+                        195.082153
+                    ],
+                    "rotation": [
+                        0.258819,
+                        0.0,
+                        0.965926,
+                        -0.330366,
+                        0.939693,
+                        0.088521,
+                        -0.907673,
+                        -0.34202,
+                        0.24321
+                    ]
+                },
+                "land_basis": {
+                    "position": [
+                        -53.946171,
+                        -25.164034,
+                        195.082153
+                    ],
+                    "rotation": [
+                        0.258819,
+                        0.0,
+                        0.965926,
+                        -0.330366,
+                        0.939693,
+                        0.088521,
+                        -0.907673,
+                        -0.34202,
+                        0.24321
+                    ]
+                }
+            }
+        ]
+    },
+    "items": {
+        "levels": [
+            {
+                "max_ship_component_count": 6
+            }
+        ]
+    },
+    "target_filter_unit_type": "capital_ship",
+    "tags": [
+        "capital_ship"
+    ],
+    "abilities": [
+        {
+            "abilities": [
+                "trader_battle_capital_ship_adaptive_force_field"
+            ]
+        }
+    ],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+        {
+            "skins": [
+                "pirate_keldabe"
+            ]
+        }
+    ],
+    "action_effect_size": "large_unit",
+    "can_join_fleet": true
+}

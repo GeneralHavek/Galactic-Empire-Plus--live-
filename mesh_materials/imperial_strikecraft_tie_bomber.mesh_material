@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "imperial_strikecraft_tie_bomber_clr",
+    "normal_texture": "imperial_strikecraft_tie_bomber_nrm",
+    "occlusion_roughness_metallic_texture": "imperial_strikecraft_tie_bomber_orm"
+}

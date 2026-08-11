@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_experimental",
+    "field_coord": [
+        4,
+        2
+    ],
+    "research_time": 300.0,
+    "price": {
+        "credits": 1200.0,
+        "metal": 200.0,
+        "crystal": 300.0
+    },
+    "prerequisites": [
+        [
+            "imperial_unlock_isd1"
+        ]
+    ],
+    "name": "imperial_unlock_tector_research_subject_name",
+    "name_uppercase": "imperial_unlock_tector_research_subject_name_uppercase",
+    "hud_icon": "imperial_isd1_hud_icon",
+    "extra_text_filter_strings": [
+        "research_text_filter_capital_ship"
+    ]
+}

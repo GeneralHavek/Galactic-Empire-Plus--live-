@@ -1,0 +1,105 @@
+{
+    "version": 0,
+    "active_duration": "ion_blast_duration",
+    "stacking_limit":
+    {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "trigger_event_actions": [
+        {
+            "trigger_event_type": "on_buff_started",
+            "action_group":
+            {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit":
+                        {
+                            "unit_type": "target"
+                        },
+                        "operators": [
+                        {
+                            "operator_type": "play_weapon_effects",
+                            "effect_alias_binding": "unit_skin",
+                            "mesh_point": "ability.0",
+                            "effects":
+                            {
+                                "muzzle_effect": "weapon_muzzle_heavy_ion_ability",
+                                "projectile_travel_effect": "weapon_bolt_heavy_ion_ability",
+                                "projectile_travel_easing_function": "linear",
+                                "muzzle_picking_behavior": "sequential",
+                                "hit_shield_impact_radius_t": 1.0
+                            }
+                        }]
+                    },
+                    {
+                        "action_type": "start_buff_effect",
+                        "effect_definition":
+                        {
+                            "binding": "unit_skin",
+                            "mesh_point": "center",
+                            "effect_by_size":
+                            {
+                                "small_unit": "ability_ion_blast_medium",
+                                "medium_unit": "ability_ion_blast_medium",
+                                "large_unit": "ability_ion_blast_large"
+                            }
+                        }
+                    },
+                    {
+                        "constraint":
+                        {
+                            "constraint_type": "unit_passes_unit_constraint",
+                            "unit":
+                            {
+                                "unit_type": "current_spawner"
+                            },
+                            "unit_constraint":
+                            {
+                                "constraint_type": "can_ever_move"
+                            }
+                        },
+                        "action_type": "start_brake_to_stop"
+                    }
+            ]
+            }
+        },
+        {
+            "trigger_event_type": "on_buff_made_dead",
+            "action_group":
+            {
+                "constraint":
+                {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit":
+                    {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint":
+                    {
+                        "constraint_type": "can_ever_move"
+                    }
+                },
+                "actions": [
+                {
+                    "action_type": "stop_brake_to_stop"
+                }]
+            }
+        }
+    ],
+    "unit_mutations": [
+        "disable_can_hyperspace",
+        "disable_can_passively_regenerate_hull",
+        "disable_can_passively_regenerate_shields",
+        "disable_can_use_active_abilities",
+        "disable_can_use_weapons"
+    ],
+    "gui": {
+        "hud_icon": "ability_ion_blast_hud_icon",
+        "name": "ability_ion_blast_name",
+        "is_visible_within_unit_tooltip": true
+    }
+}

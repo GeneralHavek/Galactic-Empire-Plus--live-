@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "action_values": [
+        {
+            "action_value_id": "corvette_credit_upkeep",
+            "action_value": {
+                "values": [-0.15, -0.11, -0.084, -0.063, -0.047]
+            }
+        },
+        {
+            "action_value_id": "corvette_metal_upkeep",
+            "action_value": {
+                "values": [-0.01, -0.0075, -0.0056, -0.0042, -0.0032]
+            }
+        },
+        {
+            "action_value_id": "corvette_crystal_upkeep",
+            "action_value": {
+                "values": [-0.005, -0.00375, -0.00281, -0.00211, -0.00158]
+            }
+        }
+
+    ],
+    "buff_empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "corvette_credit_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "credit_income_rate",
+                "value_behavior": "additive",
+                "value_id": "corvette_credit_upkeep"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "corvette_metal_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "metal_income_rate",
+                "value_behavior": "additive",
+                "value_id": "corvette_metal_upkeep"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "corvette_crystal_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "crystal_income_rate",
+                "value_behavior": "additive",
+                "value_id": "corvette_crystal_upkeep"
+            }
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "imperial_executor_assault_operations_unit_item_hud_icon",
+    "tooltip_picture": "imperial_executor_assault_operations_unit_item_tooltip_picture",
+    "name": "imperial_executor_assault_operations_unit_item_name",
+    "description": "imperial_executor_assault_operations_unit_item_description",
+    "build_time": 60.0,
+    "price": {
+        "credits": 1000.0,
+        "metal": 175.0,
+        "crystal": 100.0
+    },
+    "required_unit_tags": [
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_group_id": "offense",
+    "unit_mutations": [
+        "imperial_executor_assault_operations_equipped"
+    ],
+    "other_item_requirements": {
+        "mutually_exclusive_items": [
+            "imperial_executor_operational_logistics",
+            "imperial_executor_strategic_operations"
+        ]
+    },
+    "weapon_modifiers": [
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "values": [
+                0.05
+            ],
+            "weapon_type": "normal",
+            "tags": [
+                "turbolaser",
+                "ion",
+                "concussion",
+                "proton"
+            ]
+        },
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "values": [
+                -0.03
+            ],
+            "weapon_type": "normal",
+            "tags": [
+                "turbolaser",
+                "ion",
+                "concussion",
+                "proton"
+            ]
+        },
+        {
+            "modifier_type": "tracking_speed",
+            "value_behavior": "scalar",
+            "values": [
+                0.08
+            ],
+            "weapon_type": "normal",
+            "tags": [
+                "turbolaser",
+                "ion",
+                "concussion",
+                "proton"
+            ]
+        },
+        {
+            "modifier_type": "range",
+            "value_behavior": "scalar",
+            "values": [
+                0.05
+            ],
+            "weapon_type": "normal",
+            "tags": [
+                "turbolaser",
+                "ion",
+                "concussion",
+                "proton"
+            ]
+        }
+    ]
+}

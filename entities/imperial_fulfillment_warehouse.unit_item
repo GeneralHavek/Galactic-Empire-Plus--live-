@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "imperial_fulfillment_warehouse_unit_item_hud_icon",
+    "tooltip_icon": "imperial_fulfillment_warehouse_unit_item_hud_icon",
+    "tooltip_picture": "imperial_fulfillment_warehouse_unit_item_tooltip_picture",
+    "name": "imperial_fulfillment_warehouse_unit_item_name",
+    "description": "imperial_fulfillment_warehouse_unit_item_description",
+    "build_time": 60.0,
+    "price":
+    {
+        "credits": 1500.0,
+        "metal": 125.0,
+        "crystal": 125.0
+    },
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "asteroid",
+            "barren",
+            "city",
+            "crystalline",
+            "desert",
+            "ferrous",
+            "gas_giant",
+            "hive_asteroid",
+            "ice",
+            "ice_asteroid",
+            "ice_moon",
+            "irradiated",
+            "magnetic",
+            "moon",
+            "oceanic",
+            "pirate_base",
+            "ship_graveyard",
+            "swamp",
+            "terran",
+            "volcanic",
+            "volcanic_moon"
+        ],
+        "build_prerequisites": [
+            ["imperial_unlock_fulfillment_warehouse_unit_item"]
+        ]
+    }],
+    "trade_capacity":
+    {
+        "import_points": 1
+    }
+}

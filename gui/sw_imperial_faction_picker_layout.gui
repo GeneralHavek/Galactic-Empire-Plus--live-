@@ -1,0 +1,155 @@
+{
+    "portrait_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "height": 346,
+            "width": 280,
+            "margins": { "left": 466, "top": -13 }
+        }
+    },
+    "description_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "height": 346,
+            "width": 420,
+            "margins": { "left": 40, "top": 51 }
+        }
+    },
+    "select_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "width": 280,
+            "height": 62,
+            "margins": { "left": 466, "top": 335 }
+        }
+    },
+    "unique_assets_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "width": 420,
+            "height": 550,
+            "margins": { "left": 40, "top": 437 }
+        }
+    },
+    "planet_items_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "width": 397,
+            "height": 110,
+            "margins": { "left": 50, "top": 572 }
+        }
+    },
+    "units_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "width": 397,
+            "height": 60,
+            "margins": { "left": 50, "top": 477 }
+        }
+    },
+    "research_0": {
+        "layout": {
+            "horizontal_alignment": "left",
+            "vertical_alignment": "top",
+            "width": 397,
+            "height": 255,
+            "margins": { "left": 50, "top": 717 }
+        }
+    },
+    "race_description": {
+        "layout": {
+            "horizontal_alignment": "center",
+            "vertical_alignment": "top",
+            "width": 826,
+            "height": 120,
+            "margins": { "top": 402 }
+        }
+    },
+    "homeworld": {
+        "layout": {
+            "horizontal_alignment": "center",
+            "vertical_alignment": "top",
+            "width": 250,
+            "height": 133,
+            "margins": { "top": 50 }
+        }
+    },
+    "special_function": {
+        "layout": {
+            "horizontal_alignment": "center",
+            "vertical_alignment": "top",
+            "width": 250,
+            "height": 145,
+            "margins": { "top": 184 }
+        }
+    },
+    "race_assets": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 828,
+            "height": 460,
+            "margins": { "right": 123, "top": 527 }
+        }
+    },
+    "capital_ships": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 195,
+            "height": 212,
+            "margins": { "top": 567, "right": 136 }
+        }
+    },
+    "cruisers": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 195,
+            "height": 212,
+            "margins": { "top": 567, "right": 337 }
+        }
+    },
+    "frigates": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 195,
+            "height": 212,
+            "margins": { "top": 567, "right": 538 }
+        }
+    },
+    "corvettes": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 195,
+            "height": 212,
+            "margins": { "top": 567, "right": 741 }
+        }
+    },
+    "military_structures": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 390,
+            "height": 160,
+            "margins": { "top": 814, "right": 136 }
+        }
+    },
+    "civilian_structures": {
+        "layout": {
+            "horizontal_alignment": "right",
+            "vertical_alignment": "top",
+            "width": 398,
+            "height": 160,
+            "margins": { "top": 814, "right": 538 }
+        }
+    }
+}

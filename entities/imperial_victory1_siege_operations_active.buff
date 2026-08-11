@@ -1,0 +1,102 @@
+{
+    "version": 0,
+    "active_duration": "imperial_victory1_siege_operations_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_victory1_siege_operations_turbolaser_range_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victory1_siege_operations_concussion_cooldown_modifier"
+        }
+    ],
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_victory1_siege_operations_self_speed_modifier"
+        }
+    ],
+    "trigger_event_actions": [
+        {
+            "trigger_event_type": "on_buff_started",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "stop_move"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_victory1_siege_operations_aura_interval_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_units_in_gravity_well_of_unit",
+                        "gravity_well_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_victory1_missile_guidance_coordination",
+                                "destination_target_filter_id": "imperial_victory1_missile_guidance_coordination_target_filter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_victory1_siege_operations_ability_hud_icon",
+        "name": "imperial_victory1_siege_operations_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_victory1_siege_operations_self_speed_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_victory1_siege_operations_turbolaser_range_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_victory1_siege_operations_concussion_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.missile_speed",
+                        "value_id": "imperial_victory1_missile_guidance_coordination_speed_value",
+                        "value_float_format": "percentage",
+                        "value_color": "positive"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.missile_turn_rate",
+                        "value_id": "imperial_victory1_missile_guidance_coordination_turn_rate_value",
+                        "value_float_format": "percentage",
+                        "value_color": "positive"
+                    }
+                ]
+            }
+        ]
+    }
+}

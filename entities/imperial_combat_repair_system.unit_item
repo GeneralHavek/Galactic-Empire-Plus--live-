@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "imperial_combat_repair_system_unit_item_hud_icon",
+    "tooltip_icon": "imperial_combat_repair_system_unit_item_hud_icon",
+    "tooltip_picture": "imperial_combat_repair_system_unit_item_tooltip_picture",
+    "name": "imperial_combat_repair_system_unit_item_name",
+    "description": "imperial_combat_repair_system_unit_item_description",
+    "build_time": 30.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 150.0,
+        "crystal": 150.0
+    },
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        ["imperial_unlock_combat_repair_system_unit_item"]
+    ],
+    "build_group_id": "defense",
+    "ability": "trader_combat_repair_system_unit_item",
+    "unit_modifiers": [
+        {
+            "modifier_type": "hull_point_restore_rate",
+            "value_behavior": "additive",
+            "values": [2.0]
+        }]
+}

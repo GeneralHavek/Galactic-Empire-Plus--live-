@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_executor_engines_clr",
+    "occlusion_roughness_metallic_texture": "imperial_executor_engines_orm",
+    "normal_texture": "imperial_executor_engines_nrm",
+    "mask_texture": "imperial_executor_engines_msk",
+    "base_color_factor": [1.0, 1.0, 1.0, 1.0],
+    "roughness_factor": 1.0,
+    "metallic_factor": 1.0,
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0,
+    "parallax_factor": 0.0
+}

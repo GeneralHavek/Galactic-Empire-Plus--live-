@@ -1,0 +1,129 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_duration_value",
+            "action_value": {
+                "values": [
+                    15.0,
+                    18.0,
+                    21.0,
+                    24.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    70.0,
+                    70.0,
+                    70.0,
+                    70.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    55.0,
+                    55.0,
+                    55.0,
+                    55.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_turbolaser_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.16,
+                    0.22,
+                    0.28
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_turbolaser_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.06,
+                    -0.1,
+                    -0.14,
+                    -0.18
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_ion_tracking_value",
+            "action_value": {
+                "values": [
+                    0.1,
+                    0.16,
+                    0.22,
+                    0.28
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_advanced_fire_control_ion_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.06,
+                    -0.1,
+                    -0.14,
+                    -0.18
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_advanced_fire_control_turbolaser_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_advanced_fire_control_turbolaser_tracking_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_advanced_fire_control_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_advanced_fire_control_turbolaser_cooldown_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_advanced_fire_control_ion_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_advanced_fire_control_ion_tracking_value",
+                "tags": [
+                    "ion"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_advanced_fire_control_ion_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_advanced_fire_control_ion_cooldown_value",
+                "tags": [
+                    "ion"
+                ]
+            }
+        }
+    ]
+}

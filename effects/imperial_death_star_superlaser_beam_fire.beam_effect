@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "glow_texture": "imperial_superlaser_secondary_beam",
+    "core_texture": "imperial_superlaser_primary_beam",
+    "glow_color": "ff00ff00",
+    "core_color": "ff848484",
+    "width": 20.0,
+    "glow_tiling_animation_rate": 2.0,
+    "core_tiling_animation_rate": 2.0,
+    "core_fade_in_duration": 0.0,
+    "core_fade_out_duration": 0.0,
+    "basic_constants": {
+        "depth_fade_opacity": 2.0,
+        "alpha_ramp_curvature": 2.0
+    }
+}

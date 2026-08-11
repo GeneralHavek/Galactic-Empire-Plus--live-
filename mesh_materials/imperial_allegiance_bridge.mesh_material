@@ -1,0 +1,7 @@
+{
+    "base_color_texture": "imperial_allegiance_bridge_clr",
+    "normal_texture": "imperial_allegiance_bridge_nrm",
+    "mask_texture": "imperial_allegiance_bridge_msk",
+    "occlusion_roughness_metallic_texture": "imperial_allegiance_bridge_orm",
+    "emissive_hue_strength": 1
+}

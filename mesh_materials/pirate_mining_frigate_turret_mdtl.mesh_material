@@ -1,0 +1,15 @@
+{
+    "base_color_texture": "pirate_mining_frigate_clr",
+    "normal_texture": "pirate_mining_frigate_nrm",
+    "mask_texture": "pirate_mining_frigate_msk",
+    "occlusion_roughness_metallic_texture": "pirate_mining_frigate_orm",
+    "emissive_hue_strength": 1,
+    "base_color_factor": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "roughness_factor": 1,
+    "metallic_factor": 1
+}

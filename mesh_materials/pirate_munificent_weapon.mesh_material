@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "pirate_munificent_weapon_clr",
+    "normal_texture": "pirate_munificent_weapon_nrm",
+    "occlusion_roughness_metallic_texture": "pirate_munificent_weapon_orm"
+}

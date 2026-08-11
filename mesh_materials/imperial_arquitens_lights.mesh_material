@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_arquitens_lights_clr",
+    "occlusion_roughness_metallic_texture": "imperial_arquitens_lights_orm",
+    "mask_texture": "imperial_arquitens_lights_msk",
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0,
+    "has_transparency": true
+
+}

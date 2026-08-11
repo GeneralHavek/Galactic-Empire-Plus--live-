@@ -1,0 +1,455 @@
+{
+    "version": 1,
+    "skybox": "skybox_random",
+    "root_nodes": [
+        {
+            "id": 0,
+            "filling_name": "random_star",
+            "position": [-599.922852, 1300.025879],
+            "rotation": 147.962357,
+            "chance_of_retrograde_orbit": 1.0,
+            "chance_of_first_planet_bonus": 0.0,
+            "chance_of_second_planet_bonus": 0.0,
+            "chance_of_loot": 0.0,
+            "child_nodes": [
+                {
+                    "id": 2,
+                    "filling_name": "player_home_planet",
+                    "position": [-599.976990, 1000.072388],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 6,
+                    "filling_name": "random_crystalline_planet",
+                    "position": [-599.987183, 1199.985962],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 7,
+                    "filling_name": "random_volcanic_planet",
+                    "position": [-599.979736, 700.004883],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 8,
+                    "filling_name": "random_ice_moon_planet",
+                    "position": [-700.003845, 600.026245],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 9,
+                    "filling_name": "random_volcanic_moon_planet",
+                    "position": [-499.975708, 600.005493],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 10,
+                    "filling_name": "random_asteroid_line_cluster",
+                    "position": [-599.995361, 399.990875],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 11,
+                    "filling_name": "random_space_junk_fixture",
+                    "position": [-599.988831, 0.033277],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 12,
+                    "filling_name": "random_radiation_storm_fixture",
+                    "position": [-600.0, -300.0],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 13,
+                    "filling_name": "random_ice_planet",
+                    "position": [-299.949768, 1000.061584],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 14,
+                    "filling_name": "random_asteroid",
+                    "position": [100.0, 1100.0],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 15,
+                    "filling_name": "random_ice_asteroid",
+                    "position": [0.073097, 899.961609],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 16,
+                    "filling_name": "random_moon_planet",
+                    "position": [-100.000938, 999.986206],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 17,
+                    "filling_name": "random_space_junk_fixture",
+                    "position": [400.074585, 1000.031921],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 18,
+                    "filling_name": "random_radiation_storm_fixture",
+                    "position": [700.016296, 1000.007874],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 19,
+                    "filling_name": "random_barren_planet",
+                    "position": [-899.975891, 999.997620],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 20,
+                    "filling_name": "random_gas_giant_planet",
+                    "position": [-1199.917603, 999.884399],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 21,
+                    "filling_name": "random_oceanic_planet",
+                    "position": [-199.919846, 699.988892],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 1.0
+                },
+                {
+                    "id": 22,
+                    "filling_name": "random_swamp_planet",
+                    "position": [-1000.042603, 700.012939],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 1.0
+                },
+                {
+                    "id": 25,
+                    "filling_name": "random_space_junk_fixture",
+                    "position": [-1600.016479, 1000.009033],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 26,
+                    "filling_name": "random_radiation_storm_fixture",
+                    "position": [-1899.977295, 999.958984],
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 59,
+                    "filling_name": "random_ship_graveyard_planet",
+                    "position": [-1300.001587, 1000.007996],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 60,
+                    "filling_name": "random_ice_asteroid",
+                    "position": [-1050.0, 850.0],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 62,
+                    "filling_name": "random_volcanic_moon_planet",
+                    "position": [-1100.0, 1050.0],
+                    "ownership": {
+                        "player_index": 0
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "filling_name": "random_star",
+            "position": [-599.904480, 3300.049072],
+            "chance_of_loot": 0.0,
+            "child_nodes": [
+                {
+                    "id": 3,
+                    "filling_name": "player_home_planet",
+                    "position": [-599.933838, 3500.037109],
+                    "ownership": {
+                        "player_index": 1
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 4,
+                    "filling_name": "player_home_planet",
+                    "position": [-799.906372, 3299.924316],
+                    "ownership": {
+                        "player_index": 3
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                },
+                {
+                    "id": 5,
+                    "filling_name": "player_home_planet",
+                    "position": [-399.990875, 3300.084229],
+                    "ownership": {
+                        "player_index": 2
+                    },
+                    "orbit_speed_scalar": 0.0,
+                    "ignore_orbit_overlap_checks": true,
+                    "chance_of_loot": 0.0
+                }
+            ]
+        }
+    ],
+    "phase_lanes": [
+        {
+            "id": 27,
+            "node_a": 2,
+            "node_b": 6
+        },
+        {
+            "id": 28,
+            "node_a": 2,
+            "node_b": 13
+        },
+        {
+            "id": 29,
+            "node_a": 2,
+            "node_b": 7
+        },
+        {
+            "id": 30,
+            "node_a": 2,
+            "node_b": 19
+        },
+        {
+            "id": 31,
+            "node_a": 6,
+            "node_b": 0
+        },
+        {
+            "id": 32,
+            "node_a": 6,
+            "node_b": 19
+        },
+        {
+            "id": 33,
+            "node_a": 6,
+            "node_b": 13
+        },
+        {
+            "id": 36,
+            "node_a": 25,
+            "node_b": 26
+        },
+        {
+            "id": 37,
+            "node_a": 7,
+            "node_b": 8
+        },
+        {
+            "id": 38,
+            "node_a": 7,
+            "node_b": 9
+        },
+        {
+            "id": 40,
+            "node_a": 8,
+            "node_b": 10
+        },
+        {
+            "id": 41,
+            "node_a": 9,
+            "node_b": 10
+        },
+        {
+            "id": 42,
+            "node_a": 10,
+            "node_b": 11
+        },
+        {
+            "id": 43,
+            "node_a": 11,
+            "node_b": 12
+        },
+        {
+            "id": 44,
+            "node_a": 13,
+            "node_b": 16
+        },
+        {
+            "id": 46,
+            "node_a": 13,
+            "node_b": 15
+        },
+        {
+            "id": 47,
+            "node_a": 15,
+            "node_b": 21
+        },
+        {
+            "id": 48,
+            "node_a": 15,
+            "node_b": 17
+        },
+        {
+            "id": 50,
+            "node_a": 14,
+            "node_b": 17
+        },
+        {
+            "id": 51,
+            "node_a": 17,
+            "node_b": 18
+        },
+        {
+            "id": 52,
+            "node_a": 21,
+            "node_b": 9
+        },
+        {
+            "id": 53,
+            "node_a": 22,
+            "node_b": 8
+        },
+        {
+            "id": 55,
+            "node_a": 4,
+            "node_b": 1
+        },
+        {
+            "id": 56,
+            "node_a": 1,
+            "node_b": 3
+        },
+        {
+            "id": 57,
+            "node_a": 1,
+            "node_b": 5
+        },
+        {
+            "id": 63,
+            "node_a": 25,
+            "node_b": 59
+        },
+        {
+            "id": 64,
+            "node_a": 59,
+            "node_b": 20
+        },
+        {
+            "id": 65,
+            "node_a": 60,
+            "node_b": 22
+        },
+        {
+            "id": 66,
+            "node_a": 60,
+            "node_b": 19
+        },
+        {
+            "id": 67,
+            "node_a": 60,
+            "node_b": 20
+        },
+        {
+            "id": 68,
+            "node_a": 62,
+            "node_b": 20
+        },
+        {
+            "id": 69,
+            "node_a": 62,
+            "node_b": 19
+        },
+        {
+            "id": 70,
+            "node_a": 14,
+            "node_b": 16
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "level_count": 5,
+    "action_values": [
+        {
+            "action_value_id": "cruiser_credit_upkeep",
+            "action_value": {
+                "values": [-1.5, -1.125, -0.8438, -0.6328, -0.4746]
+            }
+        },
+        {
+            "action_value_id": "cruiser_metal_upkeep",
+            "action_value": {
+                "values": [-0.4, -0.03, -0.0225, -0.0169, -0.0127]
+            }
+        },
+        {
+            "action_value_id": "cruiser_crystal_upkeep",
+            "action_value": {
+                "values": [-0.3, -0.225, -0.1688, -0.1266, -0.0949]
+            }
+        }
+
+    ],
+    "buff_empire_modifiers": [
+        {
+            "buff_empire_modifier_id": "cruiser_credit_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "credit_income_rate",
+                "value_behavior": "additive",
+                "value_id": "cruiser_credit_upkeep"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "cruiser_metal_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "metal_income_rate",
+                "value_behavior": "additive",
+                "value_id": "cruiser_metal_upkeep"
+            }
+        },
+        {
+            "buff_empire_modifier_id": "cruiser_crystal_upkeep_modifier",
+            "buff_empire_modifier": {
+                "modifier_type": "crystal_income_rate",
+                "value_behavior": "additive",
+                "value_id": "cruiser_crystal_upkeep"
+            }
+        }
+    ]
+}

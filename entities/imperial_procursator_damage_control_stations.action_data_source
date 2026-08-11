@@ -1,0 +1,98 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_procursator_damage_control_stations_duration_value",
+            "action_value": {
+                "values": [
+                    15.0,
+                    20.0,
+                    25.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_procursator_damage_control_stations_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_procursator_damage_control_stations_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    70.0,
+                    70.0,
+                    70.0,
+                    70.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_procursator_damage_control_stations_hull_regen_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    1.5,
+                    2.0,
+                    2.5
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_procursator_damage_control_stations_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.5,
+                    1.0,
+                    1.5,
+                    2.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_procursator_damage_control_stations_damage_taken_value",
+            "action_value": {
+                "values": [
+                    0.15,
+                    0.3,
+                    0.45,
+                    0.6
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_hull_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hull_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_procursator_damage_control_stations_hull_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_procursator_damage_control_stations_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_procursator_damage_control_stations_damage_taken_value"
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 2,
+    "field": "military_mobilization",
+    "field_coord": [5, 2],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 225.0,
+        "crystal": 350.0
+    },
+    "unit_modifiers": [
+    {
+        "modifier_type": "experience_gained_from_unit_death",
+        "value_behavior": "scalar",
+        "value": 0.1
+    }],
+    "name": "imperial_upgrade_experience_gain_0_research_subject_name",
+    "name_uppercase": "imperial_upgrade_experience_gain_0_research_subject_name_uppercase",
+    "description": "imperial_upgrade_experience_gain_0_research_subject_description",
+    "hud_icon": "imperial_upgrade_experience_gain_0_research_subject_hud_icon",
+    "tooltip_picture": "imperial_upgrade_experience_gain_0_research_subject_tooltip_picture"
+}

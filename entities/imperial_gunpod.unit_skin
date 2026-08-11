@@ -1,0 +1,300 @@
+{
+    "version": 0,
+    "skin_stages": [
+        {
+            "is_main_view_icon_visible_camera_distance": 10067.340209,
+            "min_camera_distance": 150.814868,
+            "gui": {
+                "hud_icon": "imperial_gunpod_hud_icon",
+                "hud_monochrome_icon": "imperial_gunpod_main_view_icon",
+                "hud_picture": "imperial_gunpod_hud_picture",
+                "tooltip_picture": "imperial_gunpod_tooltip_picture",
+                "name": "imperial_gunpod_name",
+                "description": "imperial_gunpod_description"
+            },
+            "unit_mesh": {
+                "mesh": "imperial_gunpod",
+                "shader": "ship",
+                "is_shadow_blocker": true
+            },
+            "child_mesh_alias_bindings": {
+                "map": [
+                    {
+                        "mesh_alias_name": "imperial_turret_mqtl_barrel",
+                        "mesh_definition": {
+                            "mesh": "imperial_turret_mqtl_barrel",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    },
+                    {
+                        "mesh_alias_name": "imperial_turret_mqtl_mount",
+                        "mesh_definition": {
+                            "mesh": "imperial_turret_mqtl_mount",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    },
+                    {
+                        "mesh_alias_name": "imperial_turret_uhdtl_barrel",
+                        "mesh_definition": {
+                            "mesh": "imperial_turret_uhdtl_barrel",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    },
+                    {
+                        "mesh_alias_name": "imperial_turret_uhdtl_mount",
+                        "mesh_definition": {
+                            "mesh": "imperial_turret_uhdtl_mount",
+                            "shader": "ship",
+                            "is_shadow_blocker": true
+                        }
+                    }
+                ]
+            },
+            "main_view_icon": {
+                "group": "structure",
+                "icon": "imperial_gunpod_main_view_icon",
+                "selected_icon": "imperial_gunpod_main_view_icon_selected",
+                "sub_selected_icon": "imperial_gunpod_main_view_icon_sub_selected"
+            },
+            "effects": {
+                "damage_effects": {
+                    "max_damage_effect_count": 20,
+                    "damage_effects": [
+                        {
+                            "max_count": 5,
+                            "weight": 2.0,
+                            "hull_percentage_threshold": 0.50,
+                            "particle_effect": "damage_air_decompression",
+                            "sound": "ambient_loop_airdecompression"
+                        },
+                        {
+                            "max_count": 5,
+                            "weight": 2.0,
+                            "hull_percentage_threshold": 0.50,
+                            "particle_effect": "tec_damage_plasma_sparks"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 2.0,
+                            "hull_percentage_threshold": 0.450,
+                            "particle_effect": "damage_smoke_1"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 3.0,
+                            "hull_percentage_threshold": 0.450,
+                            "particle_effect": "damage_smoke_2"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 3.0,
+                            "hull_percentage_threshold": 0.450,
+                            "particle_effect": "damage_smoke_3"
+                        },
+                        {
+                            "max_count": 3,
+                            "weight": 3.0,
+                            "hull_percentage_threshold": 0.420,
+                            "particle_effect": "tec_damage_escaping_gas",
+                            "sound": "ambient_loop_tech_escaping_gas"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 4.0,
+                            "hull_percentage_threshold": 0.40,
+                            "particle_effect": "damage_electricity",
+                            "sound": "ambient_loop_electrical_damage"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 4.0,
+                            "hull_percentage_threshold": 0.40,
+                            "particle_effect": "damage_electricity_2",
+                            "sound": "ambient_loop_electrical_damage_01"
+                        },
+                        {
+                            "max_count": 7,
+                            "weight": 4.0,
+                            "hull_percentage_threshold": 0.380,
+                            "particle_effect": "tec_damage_embers"
+                        },
+                        {
+                            "max_count": 7,
+                            "weight": 6.0,
+                            "hull_percentage_threshold": 0.350,
+                            "particle_effect": "damage_fire",
+                            "sound": "ambient_loop_firedamage"
+                        },
+                        {
+                            "max_count": 2,
+                            "weight": 2.0,
+                            "hull_percentage_threshold": 0.30,
+                            "particle_effect": "damage_fire_pillar",
+                            "sound": "ambient_loop_firepillar_damage"
+                        }
+                    ]
+                },
+                "shield_effect": "imperial_gunpod",
+                "effect_alias_bindings": [
+                    {
+                        "alias_name": "imperial_missile_muzzle",
+                        "alias_binding": {
+                            "particle_effect": "javelis_torpedo_muzzle",
+                            "sounds": [
+                                "weapon_muzzle_torpedo_1",
+                                "weapon_muzzle_torpedo_2",
+                                "weapon_muzzle_torpedo_3"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "imperial_torpedo_muzzle",
+                        "alias_binding": {
+                            "particle_effect": "javelis_torpedo_muzzle",
+                            "sounds": [
+                                "weapon_muzzle_torpedo_1",
+                                "weapon_muzzle_torpedo_2",
+                                "weapon_muzzle_torpedo_3"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_bolt_uhtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_ultra_heavy_dual_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_bolt_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_medium_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_medium_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_htl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_heavy_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_missile",
+                        "alias_binding": {
+                            "particle_effect": "torpedo_missile_hit",
+                            "sounds": [
+                                "weapon_impact_physical_medium_hithull",
+                                "weapon_impact_physical_medium_hithull_01",
+                                "weapon_impact_physical_medium_hithull_02",
+                                "weapon_impact_physical_medium_hithull_03",
+                                "weapon_impact_physical_medium_hithull_04"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_medium_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_htl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_heavy_green",
+                            "sounds": [
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4",
+                                "weapon_hit_shield_1",
+                                "weapon_hit_shield_2",
+                                "weapon_hit_shield_3",
+                                "weapon_hit_shield_4",
+                                "weapon_hit_hull_1",
+                                "weapon_hit_hull_2",
+                                "weapon_hit_hull_3",
+                                "weapon_hit_hull_4"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_missile",
+                        "alias_binding": {
+                            "particle_effect": "torpedo_missile_hit",
+                            "sounds": [
+                                "weapon_impact_generic_medium_hitshields",
+                                "weapon_impact_generic_medium_hitshields_01",
+                                "weapon_impact_generic_medium_hitshields_02",
+                                "weapon_impact_generic_medium_hitshields_03"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_mtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_medium_green",
+                            "sounds": [
+                                "weapon_muzzle_imperial_medium"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_uhtl",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_ultra_heavy_dual_green",
+                            "sounds": [
+                                "weapon_muzzle_imperial_ultra_heavy"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "sounds": {
+                "dialogue": {
+                    "selected": {
+                        "neutral": [
+                            "ui_onselection_tech_gauss_defense"
+                        ],
+                        "scared": [
+                            "ui_onselection_tech_gauss_defense"
+                        ]
+                    }
+                }
+            },
+            "death_sequence_group": "planetmodulesmall"
+        }
+    ]
+}

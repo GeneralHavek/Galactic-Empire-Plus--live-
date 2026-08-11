@@ -1,0 +1,98 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_venator_mk2_line_battle_doctrine_duration_value",
+            "action_value": {
+                "values": [
+                    45.0,
+                    45.0,
+                    45.0,
+                    45.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_line_battle_doctrine_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_line_battle_doctrine_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    80.0,
+                    80.0,
+                    80.0,
+                    80.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_line_battle_doctrine_shield_regen_value",
+            "action_value": {
+                "values": [
+                    0.75,
+                    1.5,
+                    2.25,
+                    3.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_line_battle_doctrine_hull_regen_value",
+            "action_value": {
+                "values": [
+                    0.03,
+                    0.06,
+                    0.09,
+                    0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_venator_mk2_line_battle_doctrine_armor_regen_value",
+            "action_value": {
+                "values": [
+                    0.02,
+                    0.04,
+                    0.06,
+                    0.08
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_venator_mk2_line_battle_doctrine_shield_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "shield_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_line_battle_doctrine_shield_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_venator_mk2_line_battle_doctrine_hull_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "hull_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_line_battle_doctrine_hull_regen_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_venator_mk2_line_battle_doctrine_armor_regen_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "armor_point_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "imperial_venator_mk2_line_battle_doctrine_armor_regen_value"
+            }
+        }
+    ]
+}

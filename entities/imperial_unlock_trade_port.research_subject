@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_industry",
+    "field_coord": [1, 5],
+    "research_time": 75.0,
+    "price":
+    {
+        "credits": 450.0,
+        "metal": 50.0,
+        "crystal": 75.0
+    },
+    "name": "imperial_unlock_trade_port_research_subject_name",
+    "name_uppercase": "imperial_unlock_trade_port_research_subject_name_uppercase",
+    "hud_icon": "sw_trade_complex_hud_icon",
+    "tooltip_picture": "sw_trade_complex_tooltip_picture"
+}

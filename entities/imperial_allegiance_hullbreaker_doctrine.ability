@@ -1,0 +1,107 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_allegiance_hullbreaker_doctrine",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [
+        1,
+        3,
+        6,
+        9
+    ],
+    "passive_actions": {
+        "only_if_owner_unit_operational": true,
+        "persistant_buff": "imperial_allegiance_hullbreaker_doctrine_passive_on_hit"
+    },
+    "active_actions": {
+        "cooldown_time": "imperial_allegiance_hullbreaker_doctrine_active_cooldown_time_value",
+        "antimatter_cost": "imperial_allegiance_hullbreaker_doctrine_active_antimatter_cost_value",
+        "actions": {
+            "actions": [
+                {
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_allegiance_hullbreaker_doctrine_active"
+                        }
+                    ]
+                }
+            ]
+        },
+        "auto_cast": {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint": {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                    "constraint_type": "weapon_has_target",
+                    "weapon_type": "normal"
+                }
+            }
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_allegiance_hullbreaker_doctrine_ability_hud_icon",
+        "name": "imperial_allegiance_hullbreaker_doctrine_ability_name",
+        "description": "imperial_allegiance_hullbreaker_doctrine_ability_description",
+        "targeting": {
+            "targeting_type": "radius",
+            "values": {
+                "radius": "imperial_allegiance_hullbreaker_doctrine_active_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.passive_debuff_duration",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.passive_debuff_max_stacks",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_max_stacks_value"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.damage_taken_per_stack",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_structural_failure_damage_taken_value",
+                        "value_float_format": "percentage",
+                        "value_color": "negative"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.active_duration",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_active_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.radius",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_active_radius_value"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_debuff_duration",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_active_exploit_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.damage_taken",
+                        "value_id": "imperial_allegiance_hullbreaker_doctrine_active_exploit_damage_taken_value",
+                        "value_float_format": "percentage",
+                        "value_color": "negative"
+                    }
+                ]
+            }
+        ]
+    }
+}

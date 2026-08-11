@@ -1,0 +1,208 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_duration_value",
+            "action_value": {
+                "values": [
+                    20.0,
+                    25.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    120.0,
+                    120.0,
+                    120.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_refresh_interval_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_passive_battle_hardened_damage_taken_value",
+            "action_value": {
+                "values": [
+                    -0.025,
+                    -0.05,
+                    -0.075
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_passive_turbolaser_range_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_passive_turbolaser_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.025,
+                    -0.05,
+                    -0.075
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_battle_hardened_damage_taken_value",
+            "action_value": {
+                "values": [
+                    -0.025,
+                    -0.05,
+                    -0.075
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_range_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.025,
+                    -0.05,
+                    -0.075
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_duration_value",
+            "action_value": {
+                "values": [
+                    60.0,
+                    60.0,
+                    60.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_max_stack_count_value",
+            "action_value": {
+                "values": [
+                    10.0,
+                    10.0,
+                    10.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_tector_battle_hardened_damage_taken_value",
+            "action_value": {
+                "values": [
+                    -0.007,
+                    -0.009,
+                    -0.012
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_tector_linebreaker_doctrine_passive_turbolaser_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_linebreaker_doctrine_passive_turbolaser_range_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_tector_linebreaker_doctrine_passive_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_linebreaker_doctrine_passive_turbolaser_cooldown_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_range_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_cooldown_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_tector_linebreaker_doctrine_passive_battle_hardened_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_linebreaker_doctrine_passive_battle_hardened_damage_taken_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_linebreaker_doctrine_active_battle_hardened_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_linebreaker_doctrine_active_battle_hardened_damage_taken_value"
+            }
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_battle_hardened_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_tector_battle_hardened_damage_taken_value"
+            }
+        }
+    ]
+}

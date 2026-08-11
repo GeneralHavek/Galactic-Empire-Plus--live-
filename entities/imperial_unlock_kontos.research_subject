@@ -1,0 +1,19 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 0,
+    "field": "military_experimental",
+    "field_coord": [
+        1,
+        3
+    ],
+    "research_time": 90.0,
+    "price": {
+        "credits": 450.0,
+        "metal": 50.0,
+        "crystal": 75.0
+    },
+    "name": "imperial_unlock_kontos_research_subject_name",
+    "name_uppercase": "imperial_unlock_kontos_research_subject_name_uppercase",
+    "hud_icon": "imperial_kontos_hud_icon"
+}

@@ -1,0 +1,16 @@
+{
+    "unit_tags": [
+        {
+            "name": "venator",
+            "localized_name": "unit_tag_name.venator"
+        },
+        {
+            "name": "capital_ship_garrison",
+            "localized_name": "unit_tag_name.capital_ship_garrison"
+        },
+        {
+            "name": "death_star",
+            "localized_name": "unit_tag_name.death_star"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "preserve_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_isd1_imperial_battle_doctrine_passive_interval_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_isd1_imperial_battle_doctrine_passive_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_isd1_imperial_battle_doctrine_passive_aura",
+                                "destination_target_filter_id": "imperial_isd1_imperial_battle_doctrine_target_filter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

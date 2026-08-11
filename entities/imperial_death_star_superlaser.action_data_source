@@ -1,0 +1,91 @@
+{
+    "version": 0,
+    "target_filters": [
+        {
+            "target_filter_id": "superlaser_target_filter",
+            "target_filter": {
+                "unit_types": [
+                    "planet"
+                ],
+                "ownerships": [
+                    "enemy",
+                    "none"
+                ]
+            }
+        }
+    ],
+    "action_values": [
+        {
+            "action_value_id": "superlaser_cooldown",
+            "action_value": {
+                "values": [
+                    600
+                ]
+            }
+        },
+        {
+            "action_value_id": "superlaser_antimatter_cost",
+            "action_value": {
+                "values": [
+                    95
+                ]
+            }
+        },
+        {
+            "action_value_id": "superlaser_range",
+            "action_value": {
+                "values": [
+                    25000
+                ]
+            }
+        },
+        {
+            "action_value_id": "superlaser_charge_duration",
+            "action_value": {
+                "values": [
+                    7.5
+                ]
+            }
+        },
+        {
+            "action_value_id": "superlaser_beam_duration",
+            "action_value": {
+                "values": [
+                    0.5
+                ]
+            }
+        },
+        {
+            "action_value_id": "execution_interval_count_value",
+            "action_value": {
+                "values": [
+                    8.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "destroy_planet_time",
+            "action_value": {
+                "values": [
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "objectives_completed_value",
+            "action_value": {
+                "values": [
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "objectives_completed_max_stack_value",
+            "action_value": {
+                "values": [
+                    5.0
+                ]
+            }
+        }
+    ]
+}

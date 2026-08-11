@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "base_color_texture": "planet_coruscant_1_clr",
+    "occlusion_roughness_metallic_texture": "planet_coruscant_1_orm",
+    "mask_texture": "planet_coruscant_1_msk",	
+    "normal_texture": "planet_coruscant_1_nrm",
+    "base_color_factor": [1.0, 1.0, 1.0, 1.0],
+    "roughness_factor": 1.0,
+    "metallic_factor": 1.0,
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0
+}

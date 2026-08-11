@@ -1,0 +1,100 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_isd2_concentrated_fire_doctrine",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [
+        1,
+        3,
+        6,
+        9
+    ],
+    "active_actions": {
+        "cooldown_time": "imperial_isd2_concentrated_fire_doctrine_cooldown_time_value",
+        "antimatter_cost": "imperial_isd2_concentrated_fire_doctrine_antimatter_cost_value",
+        "actions": {
+            "actions": [
+                {
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_isd2_concentrated_fire_doctrine_on_self"
+                        }
+                    ]
+                },
+                {
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "target"
+                    },
+                    "range_value": "imperial_isd2_concentrated_fire_doctrine_range_value",
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_isd2_concentrated_fire_doctrine_on_target"
+                        }
+                    ]
+                }
+            ]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "imperial_isd2_concentrated_fire_doctrine_target_filter"
+        ],
+        "range": "imperial_isd2_concentrated_fire_doctrine_range_value",
+        "auto_cast": {
+            "enabled_by_default_behavior": "always",
+            "target_definitions": [
+                {
+                    "target_filter": "imperial_isd2_concentrated_fire_doctrine_high_priority_target_filter"
+                },
+                {
+                    "target_filter": "imperial_isd2_concentrated_fire_doctrine_target_filter"
+                }
+            ]
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_isd2_concentrated_fire_doctrine_ability_hud_icon",
+        "name": "imperial_isd2_concentrated_fire_doctrine_ability_name",
+        "description": "imperial_isd2_concentrated_fire_doctrine_ability_description",
+        "targeting": {
+            "targeting_type": "range",
+            "values": {
+                "range": "imperial_isd2_concentrated_fire_doctrine_range_value"
+            }
+        },
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_damage_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.duration",
+                        "value_id": "imperial_isd2_concentrated_fire_doctrine_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.ability_range",
+                        "value_id": "imperial_isd2_concentrated_fire_doctrine_range_value"
+                    }
+                ]
+            }
+        ]
+    }
+}

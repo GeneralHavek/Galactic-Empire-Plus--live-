@@ -1,0 +1,7 @@
+{
+    "version": 1,
+    "base_color_texture": "imperial_venator_bridge_clr",
+    "occlusion_roughness_metallic_texture": "imperial_venator_bridge_orm",
+    "normal_texture": "imperial_venator_bridge_nrm",
+    "mask_texture": "imperial_venator_bridge_msk"
+}

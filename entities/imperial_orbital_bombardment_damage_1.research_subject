@@ -1,0 +1,28 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_armament",
+    "field_coord": [6, 6],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 1700.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "prerequisites": [
+        ["imperial_orbital_bombardment_damage_0"]
+    ],
+    "weapon_modifiers": [
+        {
+            "weapon_type": "planet_bombing",
+            "value_behavior": "scalar",
+            "modifier_type": "damage",
+            "value": 0.25
+        }],
+    "name": "imperial_orbital_bombardment_damage_1_research_subject_name",
+    "name_uppercase": "imperial_orbital_bombardment_damage_1_research_subject_name_uppercase",
+    "hud_icon": "imperial_orbital_bombardment_damage_1_hud_icon",
+    "tooltip_picture": "imperial_orbital_bombardment_damage_1_tooltip_picture"
+}

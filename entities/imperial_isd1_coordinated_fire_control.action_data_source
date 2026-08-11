@@ -1,0 +1,96 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_isd1_coordinated_fire_control_buff_duration_value",
+            "action_value": {
+                "values": [
+                    10.0,
+                    15.0,
+                    20.0,
+                    25.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_coordinated_fire_control_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    90.0,
+                    90.0,
+                    90.0,
+                    90.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_tracking_bonus_value",
+            "action_value": {
+                "values": [
+                    0.25,
+                    0.3,
+                    0.35,
+                    0.4
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_cooldown_bonus_value",
+            "action_value": {
+                "values": [
+                    -0.1,
+                    -0.15,
+                    -0.2,
+                    -0.25
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_damage_bonus_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_tracking_bonus_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_cooldown_bonus_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd1_coordinated_fire_control_heavy_turbolaser_damage_bonus_value",
+                "tags": [
+                    "turbolaser"
+                ]
+            }
+        }
+    ]
+}

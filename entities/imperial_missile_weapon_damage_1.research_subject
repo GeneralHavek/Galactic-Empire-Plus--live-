@@ -1,0 +1,39 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_armament",
+    "field_coord": [6, 4],
+    "research_time": 540.0,
+    "price":
+    {
+        "credits": 1750.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "prerequisites": [
+        ["imperial_missile_weapon_damage_0"]
+    ],
+    "weapon_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "damage",
+        "value": 0.1,
+        "tags": [
+            "concussion",
+            "proton"]
+    },
+    {
+        "value_behavior": "additive",
+        "modifier_type": "bypass_shields_chance",
+        "value": 0.05,
+        "tags": [
+            "proton"
+        ]
+    }],
+    "name": "trader_missile_weapon_damage_1_research_subject_name",
+    "name_uppercase": "trader_missile_weapon_damage_1_research_subject_name_uppercase",
+    "description": "trader_missile_weapon_damage_1_research_subject_description",
+    "hud_icon": "trader_missile_weapon_damage_1_research_subject_hud_icon",
+    "tooltip_picture": "trader_missile_weapon_damage_1_research_subject_tooltip_picture"
+}

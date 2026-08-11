@@ -1,0 +1,119 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_executor_sector_command",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [
+        1,
+        3,
+        6,
+        9
+    ],
+    "active_actions": {
+        "cooldown_time": "imperial_executor_sector_command_cooldown_time_value",
+        "antimatter_cost": "imperial_executor_sector_command_antimatter_cost_value",
+        "actions": {
+            "actions": [
+                {
+                    "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                    "radius_origin_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "radius_value": "imperial_executor_sector_command_gravity_well_radius_value",
+                    "include_radius_origin_unit": true,
+                    "include_y_axis_in_radius_check": false,
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_executor_sector_command_allied_aura",
+                            "destination_target_filter_id": "imperial_executor_sector_command_allied_ship_target_filter"
+                        }
+                    ]
+                },
+                {
+                    "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                    "radius_origin_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "radius_value": "imperial_executor_sector_command_gravity_well_radius_value",
+                    "include_radius_origin_unit": false,
+                    "include_y_axis_in_radius_check": false,
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_executor_sector_command_enemy_debuff",
+                            "destination_target_filter_id": "imperial_executor_sector_command_enemy_ship_target_filter"
+                        }
+                    ]
+                }
+            ]
+        },
+        "auto_cast": {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint": {
+                "constraint_type": "has_valid_targets_in_radius",
+                "radius_origin_unit": {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "imperial_executor_sector_command_gravity_well_radius_value",
+                "target_count_value": "imperial_executor_sector_command_minimum_enemy_targets_value",
+                "target_filter_id": "imperial_executor_sector_command_enemy_ship_target_filter"
+            }
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_executor_sector_command_ability_hud_icon",
+        "name": "imperial_executor_sector_command_ability_name",
+        "description": "imperial_executor_sector_command_ability_description",
+        "targeting": {
+            "targeting_type": "radius",
+            "values": {
+                "radius": "imperial_executor_sector_command_gravity_well_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.active_duration",
+                        "value_id": "imperial_executor_sector_command_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.radius",
+                        "value_id": "imperial_executor_sector_command_gravity_well_radius_value"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_executor_sector_command_allied_weapon_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_executor_sector_command_allied_weapon_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_sector_command_allied_move_speed_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_sector_command_allied_turn_rate_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_sector_command_enemy_antimatter_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_sector_command_enemy_move_speed_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_executor_sector_command_enemy_turn_rate_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

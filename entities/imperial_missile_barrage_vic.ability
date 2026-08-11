@@ -1,0 +1,211 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_missile_barrage_vic",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [0, 3, 6, 9],
+    "active_actions":
+    {
+        "cooldown_time": "missile_barrage_cooldown_time_value",
+        "stop_use_type": "on_spawned_buff_removed",
+        "antimatter_cost": "missile_barrage_antimatter_cost_value",
+        "actions":
+        {
+            "actions": [
+            {
+                "action_type": "use_unit_operators_on_single_unit",
+                "destination_unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "operators": [
+                {
+                    "operator_type": "apply_buff",
+                    "buff": "imperial_missile_barrage_vic_on_self"
+                }]
+            }]
+        },
+        "targeting_type": "unit_targeted",
+        "target_filters": [
+            "missile_barrage_target_filter"
+        ],
+        "range": "missile_barrage_range_value",
+        "move_alignment":
+        {
+            "type": "yaw",
+            "angle": 0.0,
+            "allow_opposite_angle": false
+        },
+        "firing_angle": 45.0,
+        "auto_cast":
+        {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint":
+            {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit":
+                {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint":
+                {
+                    "constraint_type": "weapon_has_target"
+                }
+            },
+            "target_definitions": [
+            {
+                "target_filter": "missile_barrage_auto_cast_target_filter"
+            }]
+        },
+        "watched_buff": "imperial_missile_barrage_vic_on_self"
+    },
+    "gui":
+    {
+        "hud_icon": "trader_siege_capital_ship_missile_barrage_ability_hud_icon",
+        "name": "trader_siege_capital_ship_missile_barrage_ability_name",
+        "description": "trader_siege_capital_ship_missile_barrage_ability_description",
+        "targeting":
+        {
+            "targeting_type": "range_and_radius",
+            "values":
+            {
+                "range": "missile_barrage_range_value",
+                "radius": "missile_barrage_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.damage",
+                "value_id": "missile_barrage_damage_value"
+            },
+            {
+                "visible_if_value_zero": true,
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.armor_penetration",
+                "value_id": "missile_barrage_penetration_value"
+            },
+            {
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.missile_volleys",
+                "value_id": "missile_barrage_execution_count_value"
+            },
+            {
+                "visibility": "upgrade_only",
+                "rendering_type": "single_value",
+                "label_text": "tooltip.ability.radius",
+                "value_id": "missile_barrage_radius_value"
+            }]
+        }]
+    },
+    "ability_positions": [
+    {
+        "position": [-72.610229, 0.000008, 12.821015]
+    },
+    {
+        "position": [-71.031395, 0.000009, 17.828436]
+    },
+    {
+        "position": [-74.236115, 0.000007, 7.664367]
+    },
+    {
+        "position": [-78.639801, 0.000005, -6.049633]
+    },
+    {
+        "position": [-77.060966, 0.000006, -1.042210]
+    },
+    {
+        "position": [-80.265694, 0.000005, -11.206280]
+    },
+    {
+        "position": [-84.780518, 0.000003, -25.119272]
+    },
+    {
+        "position": [-83.201683, 0.000004, -20.111847]
+    },
+    {
+        "position": [-86.406403, 0.000002, -30.275919]
+    },
+    {
+        "position": [-91.259041, 0.0, -44.492184]
+    },
+    {
+        "position": [-89.680199, 0.000001, -39.484760]
+    },
+    {
+        "position": [-92.884926, -0.0, -49.648834]
+    },
+    {
+        "position": [-97.330040, -0.000002, -63.424297]
+    },
+    {
+        "position": [-95.751198, -0.000002, -58.416874]
+    },
+    {
+        "position": [-98.955925, -0.000003, -68.580948]
+    },
+    {
+        "position": [-103.427437, -0.000005, -82.464111]
+    },
+    {
+        "position": [-101.848595, -0.000004, -77.456688]
+    },
+    {
+        "position": [-105.053314, -0.000005, -87.620758]
+    },
+    {
+        "position": [72.610229, 0.000014, 12.821021]
+    },
+    {
+        "position": [71.031395, 0.000015, 17.828444]
+    },
+    {
+        "position": [74.236115, 0.000014, 7.664374]
+    },
+    {
+        "position": [78.639801, 0.000012, -6.049626]
+    },
+    {
+        "position": [77.060966, 0.000013, -1.042204]
+    },
+    {
+        "position": [80.265694, 0.000012, -11.206272]
+    },
+    {
+        "position": [84.780518, 0.000010, -25.119265]
+    },
+    {
+        "position": [83.201683, 0.000011, -20.111839]
+    },
+    {
+        "position": [86.406403, 0.000010, -30.275911]
+    },
+    {
+        "position": [91.259041, 0.000008, -44.492176]
+    },
+    {
+        "position": [89.680199, 0.000009, -39.484753]
+    },
+    {
+        "position": [92.884926, 0.000008, -49.648827]
+    },
+    {
+        "position": [97.330040, 0.000006, -63.424290]
+    },
+    {
+        "position": [95.751198, 0.000007, -58.416866]
+    },
+    {
+        "position": [98.955925, 0.000006, -68.580933]
+    },
+    {
+        "position": [103.427437, 0.000004, -82.464096]
+    },
+    {
+        "position": [101.848595, 0.000005, -77.456673]
+    },
+    {
+        "position": [105.053329, 0.000004, -87.620743]
+    }]
+}

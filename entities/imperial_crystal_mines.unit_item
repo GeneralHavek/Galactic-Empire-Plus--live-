@@ -1,0 +1,38 @@
+{
+    "version": 0,
+    "item_type": "planet_component",
+    "build_group_id": "economy",
+    "hud_icon": "imperial_crystal_mines_unit_item_hud_icon",
+    "tooltip_icon": "imperial_crystal_mines_unit_item_hud_picture",
+    "tooltip_picture": "imperial_crystal_mines_unit_item_tooltip_picture",
+    "name": "imperial_crystal_mines_unit_item_name",
+    "description": "imperial_crystal_mines_unit_item_description",
+    "build_time": 60.0,
+    "price":
+    {
+        "credits": 750.0,
+        "metal": 200.0,
+        "crystal": 100.0
+    },
+    "max_count_on_unit": 1,
+    "planet_type_groups": [
+    {
+        "planet_types": [
+            "barren",
+            "crystalline",
+            "magnetic",
+            "ice",
+            "ice_asteroid",
+            "ice_moon"
+        ],
+        "build_prerequisites": [
+            ["imperial_unlock_crystal_mines_unit_item"]
+        ]
+    }],
+    "planet_modifiers": [
+    {
+        "modifier_type": "mining_track_crystal_income_rate_per_population",
+        "value_behavior": "scalar",
+        "values": [0.15]
+    }]
+}

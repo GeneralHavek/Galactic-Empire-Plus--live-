@@ -1,0 +1,14 @@
+{
+    "version": 0,
+    "active_duration": "imperial_victoryii_system_destabilization_gate_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "per_source_ability",
+    "restart_other_stacked_buffs_when_started": true,
+    "gui": {
+        "is_visible_within_unit_tooltip": false,
+        "visibility_scope": "negative"
+    }
+}

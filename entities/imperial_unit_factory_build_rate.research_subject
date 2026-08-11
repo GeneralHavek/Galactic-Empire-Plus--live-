@@ -1,0 +1,53 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 4,
+    "field": "civilian_industry",
+    "field_coord": [9, 7],
+    "research_time": 600.0,
+    "price":
+    {
+        "credits": 2250.0,
+        "metal": 425.0,
+        "crystal": 750.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["imperial_labor_negotiations"]
+    ],
+    "unit_factory_modifiers": [
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "value": -0.4,
+        "build_kinds": [
+            "corvette",
+            "frigate",
+            "cruiser"]
+    },
+    {
+        "modifier_type": "build_time",
+        "value_behavior": "scalar",
+        "value": -0.15,
+        "build_kinds": [
+            "capital_ship",
+            "super_capital_ship",
+            "titan"]
+    }],
+    "name": "imperial_unit_factory_build_rate_research_subject_name",
+    "name_uppercase": "imperial_unit_factory_build_rate_research_subject_name_uppercase",
+    "description": "imperial_unit_factory_build_rate_research_subject_description",
+    "hud_icon": "imperial_unit_factory_build_rate_research_subject_hud_icon",
+    "tooltip_picture": "imperial_unit_factory_build_rate_research_subject_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_corvette",
+        "research_text_filter_cruiser",
+        "research_text_filter_frigate",
+        "research_text_filter_capital_ship",
+        "research_text_filter_titan"
+    ]
+}

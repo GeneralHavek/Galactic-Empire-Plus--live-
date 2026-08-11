@@ -1,0 +1,35 @@
+{
+    "scenarios": [
+    ],
+    "fake_server_scenarios": [
+	],
+    "dlc_scenarios":
+    [
+        {
+            "product_id": "dlc_PathsToPower",
+            "scenarios":
+            [
+                "public_superpowers",
+                "public_spearhead",
+                "public_all_as_one",
+                "public_defend_the_homeworld",
+                "public_scorched_space",
+                "public_the_uprising",
+                "public_seek_and_destroy_tec",
+                "public_seek_and_destroy_exodus",
+                "public_conversion",
+                "public_treasure_hunt",
+                "public_clash_of_the_titans"
+            ]
+        }
+    ],
+    "dlc_multiplayer_scenarios":
+    [
+        {
+            "product_id":"dlc_PathsToPower",
+            "scenarios":
+            [
+            ]
+        }
+    ]
+}

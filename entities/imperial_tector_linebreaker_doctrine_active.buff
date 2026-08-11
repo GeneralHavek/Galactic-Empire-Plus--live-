@@ -1,0 +1,78 @@
+{
+    "version": 0,
+    "active_duration": "imperial_tector_linebreaker_doctrine_active_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_tector_linebreaker_doctrine_active_refresh_interval_value",
+            "action_group": {
+                "constraint": {
+                    "constraint_type": "unit_passes_unit_constraint",
+                    "unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "unit_constraint": {
+                        "constraint_type": "has_buff",
+                        "buff": "imperial_tector_battle_hardened",
+                        "include_pending_buffs": true
+                    }
+                },
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_single_unit",
+                        "destination_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_tector_battle_hardened"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_range_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_cooldown_modifier"
+        }
+    ],
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_tector_linebreaker_doctrine_active_battle_hardened_damage_taken_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_tector_linebreaker_doctrine_ability_hud_icon",
+        "name": "imperial_tector_linebreaker_doctrine_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_tector_linebreaker_doctrine_active_battle_hardened_damage_taken_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_range_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_tector_linebreaker_doctrine_active_turbolaser_cooldown_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

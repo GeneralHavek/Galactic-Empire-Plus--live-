@@ -1,0 +1,5 @@
+{
+    "base_color_texture": "imperial_immobilizer_generator_clr",
+    "normal_texture": "imperial_immobilizer_generator_nrm",
+    "occlusion_roughness_metallic_texture": "imperial_immobilizer_generator_orm"
+}

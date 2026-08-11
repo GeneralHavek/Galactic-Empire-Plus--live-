@@ -1,0 +1,106 @@
+{
+    "version": 0,
+    "skin_stages": [
+        {
+            "is_main_view_icon_visible_camera_distance": 3897.056275,
+            "min_camera_distance": 18.0,
+            "gui": {
+                "hud_icon": "imperial_strikecraft_tie_fighter_hud_icon",
+                "hud_monochrome_icon": "imperial_strikecraft_tie_fighter_main_view_icon",
+                "hud_picture": "imperial_strikecraft_tie_fighter_hud_picture",
+                "tooltip_picture": "imperial_strikecraft_tie_fighter_tooltip_picture",
+                "name": "imperial_tie_fighter_name",
+                "description": "imperial_tie_fighter_description"
+            },
+            "unit_mesh": {
+                "mesh": "imperial_strikecraft_tie_fighter",
+                "shader": "ship",
+                "is_shadow_blocker": true
+            },
+            "main_view_icon": {
+                "group": "ship",
+                "icon": "imperial_strikecraft_tie_fighter_main_view_icon",
+                "selected_icon": "imperial_strikecraft_tie_fighter_main_view_icon_selected",
+                "sub_selected_icon": "imperial_strikecraft_tie_fighter_main_view_icon_sub_selected"
+            },
+            "effects": {
+                "exhaust_effects": {
+                    "trail_effects": [
+                        {
+                            "trail_effect": "trail_fighter_imperial_tie"
+                        }
+                    ]
+                },
+                "shield_effect": "imperial_tie_defender",
+                "effect_alias_bindings": [
+                    {
+                        "alias_name": "weapon_bolt_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_bolt_pd_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_hull_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_pd_green",
+                            "sounds": [
+                                "weapon_hit_tiny_1",
+                                "weapon_hit_tiny_2",
+                                "weapon_hit_tiny_3"
+                            ]
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_hit_shield_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_hit_shield_pd_green"
+                        }
+                    },
+                    {
+                        "alias_name": "weapon_muzzle_pd",
+                        "alias_binding": {
+                            "particle_effect": "weapon_muzzle_pd_green",
+                            "sounds": [
+                                "weapon_muzzle_imperial_fighter_1",
+                                "weapon_muzzle_imperial_fighter_2",
+                                "weapon_muzzle_imperial_fighter_3"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "sounds": {
+                "move_sounds": {
+                    "engine": "effect_engine_tie_bomber"
+                },
+                "dialogue": {
+                    "selected": {
+                        "neutral": [
+                            "dialog_tie_fighter_select1",
+                            "dialog_tie_fighter_select2",
+                            "dialog_tie_fighter_select3",
+                            "dialog_tie_fighter_select4"
+                        ]
+                    },
+                    "order_issued": {
+                        "neutral": [
+                            "dialog_tie_fighter_move1",
+                            "dialog_tie_fighter_move2",
+                            "dialog_tie_fighter_move3",
+                            "dialog_tie_fighter_move4"
+                        ]
+                    },
+                    "attack_order_issued": {
+                        "neutral": [
+                            "dialog_tie_fighter_attack1",
+                            "dialog_tie_fighter_attack2",
+                            "dialog_tie_fighter_attack3",
+                            "dialog_tie_fighter_attack4"
+                        ]
+                    }
+                }
+            },
+            "death_sequence_group": "strikecraft0"
+        }
+    ]
+}

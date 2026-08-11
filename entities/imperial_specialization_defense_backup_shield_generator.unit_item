@@ -1,0 +1,56 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "trader_backup_shield_generator_unit_item_hud_icon",
+    "tooltip_icon": "trader_backup_shield_generator_unit_item_hud_icon",
+    "name": "imperial_specialization_defense_generator_unit_item_name",
+    "description": "imperial_specialization_defense_generator_unit_item_description",
+    "build_time": 15.0,
+    "price":
+    {
+        "credits": 150.0,
+        "metal": 25.0,
+        "crystal": 75.0
+    },
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "structure",
+        "starbase",
+        "titan",
+        "frigate",
+        "corvette",
+        "cruiser"
+    ],
+    "max_count_on_unit": 1,
+    "build_prerequisites": [
+        [
+            "imperial_unlock_specialization_defense_unit_item"
+        ]
+    ],
+    "build_group_id": "defense",
+    "ability": "imperial_backup_shield_generator_unit_item",
+    "unit_modifiers": [
+        {
+            "modifier_type": "max_shield_points",
+            "value_behavior": "scalar",
+            "values": [0.25]
+        },
+        {
+            "modifier_type": "shield_burst_restore_points",
+            "value_behavior": "scalar",
+            "values": [0.15]
+        },
+        {
+            "modifier_type": "shield_point_restore_rate",
+            "value_behavior": "scalar",
+            "values": [0.50]
+        }
+    ],
+    "other_item_requirements": 
+    {
+        "mutually_exclusive_items": [
+            "imperial_specialization_defense_hull_and_armor"
+        ]
+    }
+}

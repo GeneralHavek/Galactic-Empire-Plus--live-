@@ -1,0 +1,48 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 0,
+    "field": "civilian_policy",
+    "field_coord": [0, 4],
+    "research_time": 60,
+    "price": {
+        "credits": 400.0,
+        "metal": 25.0,
+        "crystal": 50.0
+    },
+    "buff_providers": [
+        {
+            "scope": "all_owned_units",
+            "all_owned_units_target_filter": {
+                "unit_types": [
+                    "planet"
+                ],
+                "unit_definitions": [
+                    "city_planet"
+                ],
+                "ownerships": ["self"]
+            },
+            "action_data_source": "imperial_homeworld_heart_of_the_galaxy",
+            "buff": "imperial_homeworld_heart_of_the_galaxy",
+            "extra_level_prerequisites": [
+                [
+                    ["imperial_structure_price_decrease"]
+                ],
+                [
+                    ["imperial_structure_build_rate"]
+                ],
+                [
+                    ["imperial_war_measures_act"]
+                ],
+                [
+                    ["imperial_pervasive_economy"]
+                ]
+            ]
+        }
+    ],
+    "name": "imperial_homeworld_heart_of_the_galaxy_name",
+    "name_uppercase": "imperial_homeworld_heart_of_the_galaxy_name_uppercase",
+    "description": "imperial_homeworld_heart_of_the_galaxy_description",
+    "hud_icon": "imperial_homeworld_heart_of_the_galaxy_hud_icon",
+    "tooltip_picture": "imperial_homeworld_heart_of_the_galaxy_tooltip_picture"
+}

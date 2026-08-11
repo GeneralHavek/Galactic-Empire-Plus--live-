@@ -1,0 +1,152 @@
+{
+    "common_target_filters": [
+        {
+            "target_filter_id": "common_weapon_heavy_only",
+            "target_filter":
+            {
+                "unit_types": [
+                    "titan",
+                    "super_capital_ship",
+                    "capital_ship",
+                    "starbase",
+                    "structure",
+                    "cruiser"
+                ],
+                "ownerships": [
+                    "enemy"
+                ],
+                "constraints": []
+            }
+        },
+        {
+            "target_filter_id": "laser_cannon",
+            "target_filter": 
+            {
+                "unit_types": [
+                    "strikecraft",
+                    "torpedo",
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "starbase",
+                    "structure",
+                    "titan"
+                ],
+                "ownerships": [
+                    "enemy"
+                ],
+                "constraints": []
+            }
+        },
+        {
+            "target_filter_id": "heavy_laser_cannon",
+            "target_filter": 
+            {
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "starbase",
+                    "strikecraft",
+                    "structure",
+                    "titan"
+                ],
+                "ownerships": [
+                    "enemy"
+                ],
+                "constraints": []
+            }
+        },
+        {
+            "target_filter_id": "turbolaser",
+            "target_filter": 
+            {
+                "unit_types": [
+                    "titan",
+                    "super_capital_ship",
+                    "capital_ship",
+                    "starbase",
+                    "structure",
+                    "cruiser",
+                    "frigate",
+                    "corvette"
+                ],
+                "ownerships": ["enemy"],
+                "constraints": []
+            }
+        },
+        {
+            "target_filter_id": "heavy_turbolaser",
+            "target_filter":
+            {
+                "unit_types": [
+                    "titan",
+                    "super_capital_ship",
+                    "capital_ship",
+                    "starbase",
+                    "structure",
+                    "cruiser",
+                    "frigate",
+                    "corvette"
+                ],
+                "ownerships": [
+                    "enemy"
+                ],
+                "constraints": []
+            }
+        },
+        {
+            "target_filter_id": "mass_driver",
+            "target_filter":
+            {
+                "unit_types": [
+                    "titan",
+                    "super_capital_ship",
+                    "capital_ship",
+                    "starbase",
+                    "structure",
+                    "cruiser",
+                    "frigate",
+                    "corvette"
+                ],
+                "ownerships": [
+                    "enemy"
+                ],
+                "constraints": []
+            }
+        },
+        {
+            "target_filter_id": "common_ion_weapon",
+            "target_filter":
+            {
+                "unit_types": [
+                    "titan",
+                    "super_capital_ship",
+                    "capital_ship",
+                    "starbase",
+                    "structure",
+                    "cruiser",
+                    "frigate",
+                    "corvette"
+                ],
+                "ownerships": [
+                    "enemy"
+                ],
+                "constraints": [
+                {
+                    "constraint_type": "composite_not",
+                        "constraint":
+                        {
+                            "constraint_type": "has_missing_shields",
+                            "percentage_missing_threshold": 0.99
+                        }
+                }]
+            }
+        }
+    ],
+    "in_phase_space_mutation": "in_phase_space"
+}

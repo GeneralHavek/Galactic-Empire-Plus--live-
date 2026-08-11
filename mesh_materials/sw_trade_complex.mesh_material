@@ -1,0 +1,15 @@
+{
+    "base_color_texture": "sw_trade_complex_clr",
+    "normal_texture": "sw_trade_complex_nrm",
+    "mask_texture": "sw_trade_complex_msk",
+    "occlusion_roughness_metallic_texture": "sw_trade_complex_orm",
+    "emissive_hue_strength": 1,
+    "base_color_factor": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "roughness_factor": 1,
+    "metallic_factor": 1
+}

@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 3,
+    "field": "civilian_annexation",
+    "field_coord": [
+        7,
+        10
+    ],
+    "research_time": 600.0,
+    "price": {
+        "credits": 1750.0,
+        "metal": 325.0,
+        "crystal": 550.0
+    },
+    "prerequisites": [
+        [
+            "imperial_upgrade_ferrous_biosphere_0",
+            "imperial_unlock_strip_mining_unit_item"
+        ]
+    ],
+    "name": "imperial_unlock_ferric_mines_unit_item_research_subject_name",
+    "name_uppercase": "imperial_unlock_ferric_mines_unit_item_research_subject_name_uppercase",
+    "hud_icon": "imperial_ferric_mines_unit_item_hud_icon",
+    "tooltip_picture": "imperial_ferric_mines_unit_item_tooltip_picture",
+    "extra_text_filter_strings": [
+        "research_text_filter_ferrous"
+    ]
+}

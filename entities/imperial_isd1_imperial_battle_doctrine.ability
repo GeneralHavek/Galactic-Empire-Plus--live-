@@ -1,0 +1,122 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_isd1_imperial_battle_doctrine",
+    "level_source": "internal_level",
+    "min_required_unit_levels": [
+        4,
+        7,
+        9
+    ],
+    "passive_actions": {
+        "only_if_owner_unit_operational": true,
+        "persistant_buff": "imperial_isd1_imperial_battle_doctrine_passive_controller"
+    },
+    "active_actions": {
+        "cooldown_time": "imperial_isd1_imperial_battle_doctrine_active_cooldown_time_value",
+        "actions": {
+            "actions": [
+                {
+                    "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                    "radius_origin_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "radius_value": "imperial_isd1_imperial_battle_doctrine_active_radius_value",
+                    "include_radius_origin_unit": true,
+                    "include_y_axis_in_radius_check": false,
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_isd1_imperial_battle_doctrine_active_aura",
+                            "destination_target_filter_id": "imperial_isd1_imperial_battle_doctrine_target_filter"
+                        }
+                    ]
+                }
+            ]
+        },
+        "auto_cast": {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint": {
+                "constraint_type": "has_valid_targets_in_radius",
+                "radius_origin_unit": {
+                    "unit_type": "current_spawner"
+                },
+                "radius_value": "imperial_isd1_imperial_battle_doctrine_active_radius_value",
+                "target_count_value": "imperial_isd1_imperial_battle_doctrine_minimum_targets_value",
+                "target_filter_id": "imperial_isd1_imperial_battle_doctrine_target_filter"
+            }
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_isd1_imperial_battle_doctrine_ability_hud_icon",
+        "name": "imperial_isd1_imperial_battle_doctrine_ability_name",
+        "description": "imperial_isd1_imperial_battle_doctrine_ability_description",
+        "targeting": {
+            "targeting_type": "radius",
+            "values": {
+                "radius": "imperial_isd1_imperial_battle_doctrine_active_radius_value"
+            }
+        },
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.passive_aura_radius",
+                        "value_id": "imperial_isd1_imperial_battle_doctrine_passive_radius_value"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_passive_antimatter_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_passive_shield_regen_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "imperial_isd1_imperial_battle_doctrine_passive_phase_charge_modifier"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.active_duration",
+                        "value_id": "imperial_isd1_imperial_battle_doctrine_active_duration_value",
+                        "value_suffix": "seconds"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_aura_radius",
+                        "value_id": "imperial_isd1_imperial_battle_doctrine_active_radius_value"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_additional_antimatter_restore_rate",
+                        "value_id": "imperial_isd1_imperial_battle_doctrine_active_antimatter_regen_value",
+                        "value_float_format": "percentage",
+                        "value_color": "positive"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_additional_shield_restore_rate",
+                        "value_id": "imperial_isd1_imperial_battle_doctrine_active_shield_regen_value",
+                        "value_float_format": "percentage",
+                        "value_color": "positive"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.active_additional_hyperspace_charge_time",
+                        "value_id": "imperial_isd1_imperial_battle_doctrine_active_phase_charge_value",
+                        "value_float_format": "percentage"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_cooldown_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd1_imperial_battle_doctrine_active_weapon_tracking_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

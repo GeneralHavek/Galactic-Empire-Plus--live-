@@ -1,0 +1,34 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_flak_splash_damage",
+    "passive_actions":
+    {
+        "persistant_buff": "imperial_flak_splash_damage"
+    },
+    "gui":
+    {
+        "hud_icon": "trader_flak_burst_unit_item_hud_icon",
+        "tooltip_picture": "trader_flak_burst_unit_item_tooltip_picture",
+        "name": "imperial_flak_splash_item_name",
+        "description": "imperial_flak_splash_unit_item_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+                {
+                    "rendering_type": "single_value",
+                    "label_text": "tooltip.ability.splash_damage",
+                    "value_id": "flak_splash_damage_value",
+                    "value_float_format": "percentage",
+                    "value_color": "positive"
+                },
+                {
+                    "rendering_type": "single_value",
+                    "label_text": "tooltip.ability.radius",
+                    "value_id": "flak_splash_damage_radius_value",
+                    "value_color": "positive"
+                }
+            ]
+        }
+    ]
+    }
+}

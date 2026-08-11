@@ -1,0 +1,18 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 1,
+    "field": "civilian_annexation",
+    "field_coord": [2, 3],
+    "research_time": 120.0,
+    "price":
+    {
+        "credits": 700.0,
+        "metal": 125.0,
+        "crystal": 100.0
+    },
+    "name": "imperial_unlock_population_growth_ability_name",
+    "name_uppercase": "imperial_unlock_population_growth_ability_name_uppercase",
+    "hud_icon": "imperial_unlock_population_structure_growth_ability_hud_icon",
+    "tooltip_picture": "imperial_unlock_population_structure_growth_ability_tooltip_picture"
+}

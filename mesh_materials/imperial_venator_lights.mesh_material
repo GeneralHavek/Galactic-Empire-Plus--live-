@@ -1,0 +1,11 @@
+{
+    "version": 1,
+    "base_color_texture": "common_lights_teal_clr",
+    "occlusion_roughness_metallic_texture": "common_lights_teal_orm",
+    "normal_texture": "common_lights_teal_nrm",
+    "mask_texture": "common_lights_teal_msk",
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0,
+    "has_transparency": true
+
+}

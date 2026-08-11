@@ -1,0 +1,727 @@
+{
+    "loadouts": [
+        {
+            "name": "imperial_hegemony",
+            "ability_picking_order": [
+                1,
+                2,
+                0,
+                2,
+                3,
+                1,
+                0,
+                3,
+                1,
+                3
+            ],
+            "required_items": [
+                {
+                    "slot_index": 0,
+                    "candidates": [
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 1,
+                    "candidates": [
+                        {
+                            "item": "imperial_specialization_defense_backup_shield_generator",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_specialization_defense_hull_and_armor",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 2,
+                    "candidates": [
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 3,
+                    "candidates": [
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 4,
+                    "candidates": [
+                        {
+                            "item": "imperial_reserve_squadron_hangar",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 5,
+                    "candidates": [
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_reserve_squadron_hangar",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 6,
+                    "candidates": [
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 7,
+                    "candidates": [
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "operational_logistics",
+            "ability_picking_order": [
+                1,
+                2,
+                1,
+                2,
+                3,
+                1,
+                0,
+                3,
+                1,
+                3
+            ],
+            "required_items": [
+                {
+                    "slot_index": 0,
+                    "candidates": [
+                        {
+                            "item": "imperial_executor_operational_logistics",
+                            "priority": 4
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 1,
+                    "candidates": [
+                        {
+                            "item": "imperial_specialization_defense_backup_shield_generator",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_specialization_defense_hull_and_armor",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 2,
+                    "candidates": [
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 3,
+                    "candidates": [
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 4,
+                    "candidates": [
+                        {
+                            "item": "imperial_reserve_squadron_hangar",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 5,
+                    "candidates": [
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 6,
+                    "candidates": [
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 7,
+                    "candidates": [
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "assault_operations",
+            "ability_picking_order": [
+                0,
+                2,
+                0,
+                2,
+                3,
+                0,
+                1,
+                3,
+                0,
+                3
+            ],
+            "required_items": [
+                {
+                    "slot_index": 0,
+                    "candidates": [
+                        {
+                            "item": "imperial_executor_assault_operations",
+                            "priority": 4
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 1,
+                    "candidates": [
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 2,
+                    "candidates": [
+                        {
+                            "item": "imperial_specialization_defense_hull_and_armor",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_specialization_defense_backup_shield_generator",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 3,
+                    "candidates": [
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_reserve_squadron_hangar",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 4,
+                    "candidates": [
+                        {
+                            "item": "imperial_reserve_squadron_hangar",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 5,
+                    "candidates": [
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 6,
+                    "candidates": [
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 7,
+                    "candidates": [
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "strategic_operations",
+            "ability_picking_order": [
+                1,
+                2,
+                0,
+                2,
+                3,
+                1,
+                2,
+                3,
+                1,
+                3
+            ],
+            "required_items": [
+                {
+                    "slot_index": 0,
+                    "candidates": [
+                        {
+                            "item": "imperial_executor_strategic_operations",
+                            "priority": 4
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 1,
+                    "candidates": [
+                        {
+                            "item": "imperial_specialization_defense_backup_shield_generator",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_specialization_defense_hull_and_armor",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 2,
+                    "candidates": [
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 3,
+                    "candidates": [
+                        {
+                            "item": "imperial_combat_repair_system",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_antimatter_engine",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 4,
+                    "candidates": [
+                        {
+                            "item": "imperial_reserve_squadron_hangar",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 5,
+                    "candidates": [
+                        {
+                            "item": "imperial_missile_armor",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_salvage_kit",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 6,
+                    "candidates": [
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 1
+                        }
+                    ]
+                },
+                {
+                    "slot_index": 7,
+                    "candidates": [
+                        {
+                            "item": "imperial_war_reporter",
+                            "priority": 4
+                        },
+                        {
+                            "item": "imperial_emperors_will",
+                            "priority": 3
+                        },
+                        {
+                            "item": "imperial_volatile_accelerants",
+                            "priority": 2
+                        },
+                        {
+                            "item": "imperial_missile_guidance_computer_con",
+                            "priority": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required_loadouts": [],
+    "weighted_random_loadouts": [
+        {
+            "loadout": "imperial_hegemony",
+            "weight": 20.0
+        },
+        {
+            "loadout": "operational_logistics",
+            "weight": 25.0
+        },
+        {
+            "loadout": "assault_operations",
+            "weight": 30.0
+        },
+        {
+            "loadout": "strategic_operations",
+            "weight": 25.0
+        }
+    ]
+}

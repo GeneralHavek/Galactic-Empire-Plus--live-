@@ -1,0 +1,44 @@
+{
+    "version": 0,
+    "active_duration": "imperial_isd2_concentrated_fire_doctrine_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_damage_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_tracking_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_isd2_concentrated_fire_doctrine_ability_hud_icon",
+        "name": "imperial_isd2_concentrated_fire_doctrine_ability_name",
+        "visibility_scope": "positive",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_damage_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_tracking_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}

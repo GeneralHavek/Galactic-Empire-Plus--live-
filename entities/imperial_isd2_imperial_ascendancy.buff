@@ -1,0 +1,30 @@
+{
+  "version": 0,
+  "stacking_limit": {
+    "stacking_limit": "imperial_isd2_imperial_ascendancy_stack_limit_value",
+    "stacking_limit_met_behavior": "preserve_existing_buff"
+  },
+  "stacking_ownership_type": "for_all_players",
+  "restart_other_stacked_buffs_when_started": true,
+  "weapon_modifiers": [
+    {
+      "buff_weapon_modifier_id": "imperial_isd2_imperial_ascendancy_damage_modifier"
+    },
+    {
+      "buff_weapon_modifier_id": "imperial_isd2_imperial_ascendancy_tracking_modifier"
+    },
+    {
+      "buff_weapon_modifier_id": "imperial_isd2_imperial_ascendancy_cooldown_modifier"
+    }
+  ],
+  "unit_modifiers": [
+    {
+      "buff_unit_modifier_id": "imperial_isd2_imperial_ascendancy_antimatter_regen_modifier"
+    }
+  ],
+  "gui": {
+    "hud_icon": "imperial_isd2_tarkin_doctrine_ability_hud_icon",
+    "name": "imperial_isd2_imperial_ascendancy_name",
+    "visibility_scope": "positive"
+  }
+}

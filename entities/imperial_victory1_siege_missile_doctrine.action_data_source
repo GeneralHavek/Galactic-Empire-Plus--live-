@@ -1,0 +1,172 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_victory1_siege_missile_doctrine_duration_value",
+            "action_value": {
+                "values": [
+                    25.0,
+                    30.0,
+                    35.0,
+                    40.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_missile_doctrine_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    60.0,
+                    60.0,
+                    60.0,
+                    60.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_missile_doctrine_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    35.0,
+                    40.0,
+                    45.0,
+                    50.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_missile_doctrine_concussion_cooldown_value",
+            "action_value": {
+                "values": [
+                    0.15,
+                    0.2,
+                    0.25,
+                    0.3
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_siege_missile_doctrine_concussion_damage_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.1,
+                    0.15,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_armor_fracture_duration_value",
+            "action_value": {
+                "values": [
+                    4.0,
+                    8.0,
+                    12.0,
+                    16.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_armor_fracture_gate_duration_value",
+            "action_value": {
+                "values": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_armor_fracture_armor_strength_value",
+            "action_value": {
+                "values": [
+                    0.03,
+                    0.06,
+                    0.09,
+                    0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_victory1_armor_fracture_max_stacks_value",
+            "action_value": {
+                "values": [
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_victory1_armor_fracture_application_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan",
+                    "structure",
+                    "starbase"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint": {
+                            "constraint_type": "has_buff",
+                            "buff": "imperial_victory1_armor_fracture_gate",
+                            "include_pending_buffs": true
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_victory1_siege_missile_doctrine_concussion_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_siege_missile_doctrine_concussion_cooldown_value",
+                "tags": [
+                    "concussion"
+                ]
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_victory1_siege_missile_doctrine_concussion_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_siege_missile_doctrine_concussion_damage_value",
+                "tags": [
+                    "concussion"
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_victory1_armor_fracture_armor_strength_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_victory1_armor_fracture_armor_strength_value"
+            }
+        }
+    ]
+}

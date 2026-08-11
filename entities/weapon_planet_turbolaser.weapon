@@ -1,0 +1,27 @@
+{
+    "version": 0,
+    "name": "weapon_name.planet_laser",
+    "pitch_speed": 0.0,
+    "yaw_speed": 0.0,
+    "range": 5500.0,
+    "cooldown_duration": 13.0,
+    "uniforms_target_filter_id": "common_planet_bombing",
+    "weapon_type": "planet_bombing",
+    "bombing_damage": 55.0,
+    "population_damage": 1.5,
+    "tags": [
+        "bomb"
+    ],
+    "acquire_target_logic": "order_target_only",
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects": {
+        "muzzle_effect": "weapon_muzzle_htl",
+        "projectile_travel_effect": "weapon_bolt_htl",
+        "hit_hull_effect": "weapon_hit_planet_bomb",
+        "hit_shield_effect": "weapon_hit_planet_bomb",
+        "hit_shield_impact_radius_t": 0.091250
+    }
+}

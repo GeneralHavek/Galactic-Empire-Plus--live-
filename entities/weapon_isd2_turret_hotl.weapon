@@ -1,0 +1,57 @@
+{
+    "version": 0,
+    "name": "weapon_name.weapon_htlt",
+    "pitch_speed": 35.0,
+    "yaw_speed": 35.0,
+    "pitch_firing_tolerance": 2.50,
+    "yaw_firing_tolerance": 2.50,
+    "range": 9000.0,
+    "cooldown_duration": 15.0,
+    "uniforms_target_filter_id": "heavy_turbolaser",
+    "attack_target_type_groups": [
+        "heavy_capital",
+        "defense"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 95.0,
+    "penetration": 700.0,
+    "tags": [
+        "turbolaser",
+        "energy"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 1.450,
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects": {
+        "burst_pattern": [
+            0.0,
+            0.60
+        ],
+        "muzzle_picking_behavior": "random",
+        "muzzle_effect": "weapon_muzzle_hotl_isd",
+        "projectile_travel_effect": "weapon_bolt_hotl_isd",
+        "hit_hull_effect": "weapon_hit_hull_htl",
+        "hit_shield_effect": "weapon_hit_shield_htl",
+        "hit_shield_impact_radius_t": 0.650
+    },
+    "turret": {
+        "type": "biaxial",
+        "biaxial_base_mesh": "imperial_isd2_hotl_mount",
+        "biaxial_barrel_mesh": "imperial_isd2_hotl_barrel",
+        "barrel_position": [-0.0, 2.9480, -2.629449],
+        "muzzle_positions": [
+            [9.575518, 2.783147, 15.034307],
+            [8.303185, 2.783147, 15.034307],
+            [6.947194, 2.783146, 15.034307],
+            [5.674843, 2.783146, 15.034307],
+            [-9.575521, 2.783145, 15.034307],
+            [-8.303188, 2.783145, 15.034307],
+            [-6.947197, 2.783145, 15.034307],
+            [-5.674847, 2.783145, 15.034307]
+        ]
+    }
+}

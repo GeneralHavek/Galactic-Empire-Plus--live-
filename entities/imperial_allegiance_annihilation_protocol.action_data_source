@@ -1,0 +1,197 @@
+{
+    "version": 0,
+    "level_count": 3,
+    "action_values": [
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_range_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.08,
+                    0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_tracking_value",
+            "action_value": {
+                "values": [
+                    0.08,
+                    0.13,
+                    0.18
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.04,
+                    -0.06,
+                    -0.08
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_damage_value",
+            "action_value": {
+                "values": [
+                    0.05,
+                    0.08,
+                    0.12
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_active_duration_value",
+            "action_value": {
+                "values": [
+                    20.0,
+                    25.0,
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_active_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    120.0,
+                    120.0,
+                    120.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_active_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_internal_cooldown_value",
+            "action_value": {
+                "values": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_execution_mandate_duration_value",
+            "action_value": {
+                "values": [
+                    12.0,
+                    12.0,
+                    12.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_execution_mandate_max_stacks_value",
+            "action_value": {
+                "values": [
+                    5.0,
+                    5.0,
+                    5.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_allegiance_annihilation_protocol_execution_mandate_damage_taken_value",
+            "action_value": {
+                "values": [
+                    0.01,
+                    0.015,
+                    0.02
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_allegiance_annihilation_protocol_execution_mandate_eligible_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "corvette",
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan",
+                    "starbase"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ],
+                "constraints": [
+                    {
+                        "constraint_type": "composite_not",
+                        "constraint": {
+                            "constraint_type": "has_buff",
+                            "buff": "imperial_allegiance_annihilation_protocol_execution_mandate_gate"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_annihilation_protocol_passive_weapon_range_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "range",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_range_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_annihilation_protocol_passive_weapon_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_tracking_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_annihilation_protocol_passive_weapon_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_cooldown_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_allegiance_annihilation_protocol_passive_weapon_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_annihilation_protocol_passive_weapon_damage_value",
+                "weapon_type": "normal"
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "imperial_allegiance_annihilation_protocol_execution_mandate_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "imperial_allegiance_annihilation_protocol_execution_mandate_damage_taken_value"
+            }
+        }
+    ]
+}

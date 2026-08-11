@@ -1,0 +1,33 @@
+{
+    "version": 0,
+    "domain": "civilian",
+    "tier": 2,
+    "field": "civilian_policy",
+    "field_coord": [5, 2],
+    "research_time": 270.0,
+    "price":
+    {
+        "credits": 1250.0,
+        "metal": 225.0,
+        "crystal": 350.0
+    },
+    "exotic_price": [
+    {
+        "exotic_type": "economic",
+        "count": 1
+    }],
+    "prerequisites": [
+        ["imperial_upgrade_influence_1"]
+    ],
+    "empire_modifiers": [
+    {
+        "value_behavior": "scalar",
+        "modifier_type": "influence_points_recharge_rate",
+        "value": 0.25
+    }],
+    "name": "imperial_upgrade_influence_rate_research_subject_name",
+    "name_uppercase": "imperial_upgrade_influence_rate_research_subject_name_uppercase",
+    "description": "imperial_upgrade_influence_rate_research_subject_description",
+    "hud_icon": "imperial_upgrade_influence_rate_research_subject_hud_icon",
+    "tooltip_picture": "imperial_upgrade_influence_rate_research_subject_tooltip_picture"
+}

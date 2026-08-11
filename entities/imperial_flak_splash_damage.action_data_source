@@ -1,0 +1,56 @@
+{
+    "version": 0,
+    "level_count": 1,
+    "target_filters": [
+    {
+        "target_filter_id": "flak_splash_damage_auto_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "torpedo",
+                "strikecraft"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_ever_move"
+            }]
+        }
+    },
+    {
+        "target_filter_id": "flak_splash_damage_target_filter",
+        "target_filter":
+        {
+            "unit_types": [
+                "torpedo",
+                "strikecraft"
+            ],
+            "ownerships": [
+                "enemy"
+            ],
+            "constraints": [
+            {
+                "constraint_type": "can_ever_move"
+            }]
+        }
+    }],
+    "action_values":[
+        {
+            "action_value_id": "flak_splash_damage_radius_value",
+            "action_value":
+            {
+                "values": [200.0]
+            }
+        },
+        {
+            "action_value_id": "flak_splash_damage_value",
+            "action_value":
+            {
+                "transform_type": "per_total_resolved_damage_dealt",
+                "values": [0.75]
+            }
+        }
+    ]
+}

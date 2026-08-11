@@ -1,0 +1,41 @@
+# ============================================================
+# Galactic Empire Plus
+# Files excluded from Git/GitHub
+# ============================================================
+
+# Sins II large/binary asset directories
+fonts/
+textures/
+videos/
+
+# Sins II binary asset formats
+*.particle_effect
+*.ogg
+*.mesh
+*.material
+*.fxco
+*.dll
+
+# Image assets
+*.png
+*.jpg
+*.jpeg
+*.dds
+*.tga
+
+# Release packages
+*.zip
+
+# Windows filesystem junk
+Thumbs.db
+Desktop.ini
+
+# Temporary / backup files
+*.tmp
+*.bak
+*.old
+*.orig
+*~
+
+# Logs
+*.log

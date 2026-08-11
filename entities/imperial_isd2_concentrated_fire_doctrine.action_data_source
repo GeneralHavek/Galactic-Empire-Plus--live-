@@ -1,0 +1,155 @@
+{
+    "version": 0,
+    "level_count": 4,
+    "action_values": [
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_duration_value",
+            "action_value": {
+                "values": [
+                    15.0,
+                    18.0,
+                    21.0,
+                    24.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    70.0,
+                    70.0,
+                    70.0,
+                    70.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    80.0,
+                    80.0,
+                    80.0,
+                    80.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_range_value",
+            "action_value": {
+                "values": [
+                    11000,
+                    12000,
+                    13000,
+                    14000
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_damage_value",
+            "action_value": {
+                "values": [
+                    0.08,
+                    0.12,
+                    0.16,
+                    0.2
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_tracking_value",
+            "action_value": {
+                "values": [
+                    0.15,
+                    0.23,
+                    0.31,
+                    0.4
+                ]
+            }
+        },
+        {
+            "action_value_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_value",
+            "action_value": {
+                "values": [
+                    -0.07,
+                    -0.11,
+                    -0.15,
+                    -0.19
+                ]
+            }
+        }
+    ],
+    "target_filters": [
+        {
+            "target_filter_id": "imperial_isd2_concentrated_fire_doctrine_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "frigate",
+                    "cruiser",
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan",
+                    "starbase",
+                    "structure"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        },
+        {
+            "target_filter_id": "imperial_isd2_concentrated_fire_doctrine_high_priority_target_filter",
+            "target_filter": {
+                "ownerships": [
+                    "enemy"
+                ],
+                "unit_types": [
+                    "capital_ship",
+                    "super_capital_ship",
+                    "titan",
+                    "starbase"
+                ],
+                "exemptions": [
+                    "is_dead",
+                    "is_fully_unbuilt",
+                    "is_in_phase_space"
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_concentrated_fire_doctrine_damage_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_tracking_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "tracking_speed",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_concentrated_fire_doctrine_tracking_value",
+                "weapon_type": "normal"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "imperial_isd2_concentrated_fire_doctrine_cooldown_value",
+                "weapon_type": "normal"
+            }
+        }
+    ]
+}

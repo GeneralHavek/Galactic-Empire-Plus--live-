@@ -1,0 +1,53 @@
+{
+    "version": 0,
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "restart_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "active_duration": "imperial_executor_hegemony_active_duration_value",
+    "make_dead_on_source_ability_released": true,
+    "make_dead_on_current_spawner_ownership_changed_from_buff_ownership": true,
+    "time_actions": [
+        {
+            "execution_interval_value": "imperial_executor_hegemony_active_interval_value",
+            "action_group": {
+                "actions": [
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": true,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_strategic_operations_active_allied_aura",
+                                "destination_target_filter_id": "imperial_executor_hegemony_allied_ship_target_filter"
+                            }
+                        ]
+                    },
+                    {
+                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+                        "radius_origin_unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+                        "include_radius_origin_unit": false,
+                        "include_y_axis_in_radius_check": false,
+                        "operators": [
+                            {
+                                "operator_type": "apply_buff",
+                                "buff": "imperial_executor_strategic_operations_active_enemy_debuff",
+                                "destination_target_filter_id": "imperial_executor_hegemony_enemy_ship_target_filter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "base_color_texture": "imperial_starbase4_clr",
+    "normal_texture": "imperial_starbase4_nrm",
+    "mask_texture": "imperial_starbase4_msk",
+    "occlusion_roughness_metallic_texture": "imperial_starbase4_orm",
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0
+}

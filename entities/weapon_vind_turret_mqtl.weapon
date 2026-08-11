@@ -1,0 +1,81 @@
+{
+    "version": 0,
+    "name": "weapon_name.weapon_mtlt",
+    "pitch_speed": 40.0,
+    "yaw_speed": 40.0,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
+    "range": 7500.0,
+    "cooldown_duration": 8,
+    "uniforms_target_filter_id": "turbolaser",
+    "attack_target_type_groups": [
+        "light_corvette",
+        "lrm_flak",
+        "heavy_capital",
+        "defense"
+    ],
+    "weapon_type": "normal",
+    "damage_affect_type": "hull_and_armor_and_shields",
+    "damage": 28,
+    "penetration": 300.0,
+    "tags": [
+        "turbolaser",
+        "energy"
+    ],
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.85,
+    "firing": {
+        "firing_type": "projectile",
+        "travel_speed": 4000.0
+    },
+    "effects": {
+        "burst_pattern": [
+            0.0,
+            0.2,
+            0.4,
+            0.6,
+            2,
+            2.2,
+            2.4,
+            2.6
+        ],
+        "muzzle_picking_behavior": "sequential",
+        "muzzle_effect": "weapon_muzzle_mtl",
+        "projectile_travel_effect": "weapon_bolt_mtl",
+        "hit_hull_effect": "weapon_hit_hull_mtl",
+        "hit_shield_effect": "weapon_hit_shield_mtl",
+        "hit_shield_impact_radius_t": 0.35
+    },
+    "turret": {
+        "type": "biaxial",
+        "biaxial_base_mesh": "imperial_turret_mqtl_mount",
+        "biaxial_barrel_mesh": "imperial_turret_mqtl_barrel",
+        "barrel_position": [
+            -0.0,
+            3.836964,
+            -3.22184
+        ],
+        "muzzle_positions": [
+            [
+                2.797004,
+                -0.744431,
+                11.641137
+            ],
+            [
+                -2.796791,
+                0.815004,
+                11.641137
+            ],
+            [
+                -2.796791,
+                -0.744431,
+                11.641137
+            ],
+            [
+                2.797004,
+                0.815004,
+                11.641137
+            ]
+        ]
+    }
+}

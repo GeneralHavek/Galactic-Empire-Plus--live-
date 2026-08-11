@@ -1,0 +1,23 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_emperors_will_unit_item",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "imperial_emperors_will_unit_item"
+    },
+    "gui":
+    {
+        "hud_icon": "imperial_emperors_will_unit_item_hud_icon",
+        "name": "imperial_emperors_will_unit_item_name",
+        "description": "imperial_emperors_will_unit_item_description",
+        "tooltip_line_groups": [
+        {
+            "lines": [
+            {
+                "rendering_type": "buff_unit_modifier",
+                "unit_modifier_id": "culture_provider_culture_rate_modifier"
+            }]
+        }]
+    }
+}

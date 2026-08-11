@@ -1,0 +1,14 @@
+{
+    "base_color_texture": "imperial_isd2_hangar_clr",
+    "normal_texture": "imperial_isd1_hangar_nrm",
+    "occlusion_roughness_metallic_texture": "imperial_isd1_hangar_orm",
+    "emissive_hue_strength": 1,
+    "base_color_factor": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "roughness_factor": 1,
+    "metallic_factor": 1
+}

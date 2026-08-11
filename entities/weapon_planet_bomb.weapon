@@ -1,0 +1,29 @@
+{
+    "version": 0,
+    "name": "weapon_name.planet_launcher",
+    "pitch_speed": 0.0,
+    "yaw_speed": 0.0,
+    "range": 6000.0,
+    "cooldown_duration": 10.0,
+    "uniforms_target_filter_id": "common_planet_bombing",
+    "weapon_type": "planet_bombing",
+    "bombing_damage": 50.0,
+    "population_damage": 2.5,
+    "tags": [
+        "bomb"
+    ],
+    "acquire_target_logic": "order_target_only",
+    "firing":
+    {
+        "firing_type": "projectile",
+        "travel_speed": 2500.0
+    },
+    "effects":
+    {
+        "muzzle_effect": "weapon_muzzle_planet_bomb",
+        "projectile_travel_effect": "weapon_bolt_planet_bomb",
+        "hit_hull_effect": "weapon_hit_planet_bomb",
+        "hit_shield_effect": "weapon_hit_planet_bomb",
+        "hit_shield_impact_radius_t": 0.09125
+    }
+}

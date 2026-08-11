@@ -1,0 +1,26 @@
+{
+    "version": 0,
+    "domain": "military",
+    "tier": 3,
+    "field": "military_armament",
+    "field_coord": [
+        6,
+        1
+    ],
+    "research_time": 540.0,
+    "price": {
+        "credits": 1700.0,
+        "metal": 300.0,
+        "crystal": 500.0
+    },
+    "prerequisites": [
+        [
+            "imperial_missile_weapon_damage_1"
+        ]
+    ],
+    "name": "imperial_unlock_gunpod_missiles_research_subject_name",
+    "name_uppercase": "imperial_unlock_gunpod_missiles_research_subject_name_uppercase",
+    "description": "imperial_unlock_gunpod_missiles_research_subject_description",
+    "hud_icon": "imperial_unlock_gunpod_missile_research_subject_hud_icon",
+    "tooltip_picture": "imperial_unlock_gunpod_missile_research_subject_tooltip_picture"
+}

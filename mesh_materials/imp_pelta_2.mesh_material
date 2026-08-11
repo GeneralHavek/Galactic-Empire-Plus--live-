@@ -1,0 +1,7 @@
+{
+    "version": 1,
+    "base_color_texture": "common_lights_grid_imp_clr",
+    "mask_texture": "common_lights_grid_imp_msk",
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0
+}

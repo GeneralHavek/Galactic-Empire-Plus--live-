@@ -1,0 +1,15 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_gravity_well_jump_disruption",
+    "level_source": "unit_item",
+    "passive_actions":
+    {
+        "persistant_buff": "imperial_gravity_well_jump_disruption_on_spawner"
+    },
+    "gui":
+    {
+        "hud_icon": "gravity_well_research_hud_icon",
+        "name": "imperial_jump_disruption_ability_name",
+        "description": "imperial_jump_disruption_ability_description"
+    }
+}

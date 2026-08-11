@@ -1,0 +1,8 @@
+{
+    "base_color_texture": "imperial_hangar_shield_clr",
+    "mask_texture": "imperial_hangar_shield_msk",
+    "emissive_factor": 1.0,
+    "emissive_hue_strength": 1.0,
+    "has_transparency": true
+
+}

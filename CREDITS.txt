@@ -1,0 +1,191 @@
+Base mod edited by: GeneralHavoc
+
+Mod created by and credit below given by: Tracyn057
+
+None of the models, textures or sounds used in this mod belong to me. Whatsoever. I cannot creat models or textures for the life of me.
+
+Sounds are a mix from Star Wars Interregnum mod for Sins1 and Star Wars Fallen Republic mod for Stellaris. I do now know individual creators of the files, so I have to appologize for that.
+
+Models and textures are from Elratie's SW:FR modpack released in raw format for Stellaris.
+
+Credits for those are as follows:
+
+
+
+
+## CIS Faction: ##
+
+Supply Ship:
+Model by WarbNull provided by Barlex
+Texture by Elratie
+
+Lucrehulk:
+Model by Geroenimo
+Model edits, UV mapping and Textures by Elratie
+Lights generator by Doci
+
+Munificent:
+Model by Maxloef
+Much Model edits, fixes, UV mapping and Textures by Elratie
+Lights generator by Doci
+
+Hangar Texture:
+provided by Barlex and edited by Elratie
+
+Medium Dual TL:
+Model by Maxloef 
+Model edits, UV mapping and Texture by Elratie
+
+Heavy Quad TL:
+Model/ Texture by DICE
+Model edits by Elratie
+
+
+## Mandalorian Faction:  ##
+
+Centurion SD:
+Model by Geroenimo
+Model edits, UV mapping, Lights and Texture by Elratie
+
+Kandosii SD:
+Model/ Height map by Geroenimo
+Model edits, Lights and Texture by Elratie
+
+Battlestation:
+Model/ Height map by Geroenimo
+Model edits, Texture by Elratie
+
+Hangar Texture by Geroenimo
+
+
+## Imperial Faction:  ##
+
+Acclamator:
+Model/ Normal map by Doci
+Model edits and Texture by Elratie
+
+Allegiance BC:
+Model by Geroenimo
+Height map and Texture parts by ArvisTaljik
+Model edits, UV mapping and Texture by Elratie
+
+Arquitens:
+Model and base Height map by Doci
+Model edits and Texture by Elratie
+Lights mesh and Texture by DICE, edits by Elratie
+
+Costums Corvette MV:
+Modeldesign by Fractalsponge
+Model and Texture by Elratie
+
+Cr90:
+Model and Height map by ArvisTaljik
+Model edits and Texture by Elratie
+
+Dreadnaught SF:
+Modeldesign by Fractalsponge
+Model and Texture by Elratie
+
+Dreadnaught:
+Model and Texture by Tracyn057
+
+TIE Fighter:
+Model by Geroenimo
+
+Gladiator SF:
+Model by ArvisTaljik
+Model edits by Geroenimo
+Model edits, UV mapping and Texture by Elratie
+
+Immobilizer 418 & Vindicator SF:
+Model design by Fractalsponge Vindicator
+Model and Texture by Elratie
+
+Imperial Escort Carrier:
+Model by Geroenimo
+Height map template and Texture parts by ArvisTaljik
+Model edits and Texture by Elratie
+
+Indictor EW Corvette:
+Modeldesign by Fractalsponge
+Model and Texture by Elratie
+
+ISD I & Tector SD:
+Model and Texture by Elratie
+
+ISD II & Dominator SD:
+Model by Geroenimo
+Model edits, UV mapping and Textures by Elratie
+
+Kontos SF:
+Modeldesign by Fractalsponge
+Model and Texture by Elratie
+
+Lancer SF:
+Model by Westbend High and Low Poly
+Model edits, UV mapping and Texture by Elratie
+
+Procursator SD:
+Model by Geroenimo
+Height map and Texture parts by ArvisTaljik
+Model edits, UV mapping and Texture by Elratie
+
+SSD Executer:
+Base model by Fractalsponge
+Heavy Model edits, UV mapping, new Trench and Texture by Elratie
+Hull Plating Generator by Doci
+
+Starbase:
+Model design and parts by Westbend
+Model and Texture by Elratie
+
+Velox SF:
+Model design by Fractalsponge
+Model and Texture by Elratie
+
+Venator SD:
+Model by Geroenimo
+Model edits, UV mapping, new Engine and Texture by Elratie
+
+Vigil Corvette:
+Model design by Fractalsponge
+Model and Texture by Elratie
+
+VSD I and VSD II:
+Model by Geroenimo
+Texture parts and Height map by ArvisTaljik
+Model edits, UV mapping and Texture by Elratie
+
+Various:
+Hangar Texture by ArvisTaljik
+Lights Grids Texture by Geroenimo
+Lights Grids Texture edits by Elratie
+
+Sensor Dish, Sensor Pads, Sensor Tower Model and Texture by Elratie
+
+DBY- 827 Turret Model by DICE, Model edits and Texture by Elratie
+Medium Dual TL Venator Trench Model by DICE, Model edits and Texture by Elratie
+
+All other Turret Model designs by Fractalsponge most, Model and Texture by Elratie
+
+"Death Star - Star Wars" (https://skfb.ly/oqGZX) by Quiznos323 is licensed under CC Attribution-NonCommercial-ShareAlike (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+
+
+
+
+
+
+
+
+ALSO:
+
+Research Stations: Nomada Firefox
+Kihraxz: WarbNull
+TIE Models: Jeroenimo
+XX-777: ArvisTaljik
+TonnFalk: Yuuzhan Vong at War mod team
+Icons: PNGEgg
+
+Barlex/Lord Poncho: Venator
+
