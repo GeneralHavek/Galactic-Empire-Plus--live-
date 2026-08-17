@@ -1057,12 +1057,17 @@
     },
     "target_filter_unit_type": "capital_ship",
     "tags": [
-        "capital_ship_garrison"
+        "capital_ship"
     ],
     "is_loot_collector": false,
     "abilities": [
         {
-            "abilities": []
+            "abilities": [
+                "imperial_power_weapons_capital",
+                "imperial_procursator_dynamic_power_routing",
+                "imperial_procursator_damage_control_stations",
+                "imperial_procursator_sustained_combat_doctrine"
+            ]
         }
     ],
     "ship_roles": [
