@@ -42,13 +42,15 @@
     },
     "ai": {
         "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
             "heavy_capital",
             "defense"
         ],
         "attack_target_type_groups_to_ignore": [
             "torpedo_strikecraft"
         ],
-        "attack_target_type_groups_matching_weapon": "weapon_tie_bomb",
+        "attack_target_type_groups_matching_weapon": "weapon_tie_bomber_laser",
         "auto_follow_target_priority": -1.0,
         "pursuit": {
             "min_target_speed": 500.0,
@@ -93,7 +95,7 @@
                 }
             },
             {
-                "weapon": "weapon_tie_laser",
+                "weapon": "weapon_tie_bomber_laser",
                 "mesh_point": "weapon.0",
                 "weapon_position": [1.474950, -0.745445, 2.311594],
                 "non_turret_muzzle_positions": [

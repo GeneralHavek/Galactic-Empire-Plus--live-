@@ -61,10 +61,10 @@
             "action_value_id": "imperial_procursator_damage_control_stations_damage_taken_value",
             "action_value": {
                 "values": [
-                    0.15,
-                    0.3,
-                    0.45,
-                    0.6
+                    -0.15,
+                    -0.3,
+                    -0.45,
+                    -0.6
                 ]
             }
         }

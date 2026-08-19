@@ -5,8 +5,10 @@
     "yaw_speed": 0.0,
     "range": 4500.0,
     "cooldown_duration": 25.0,
-    "uniforms_target_filter_id": "common_weapon_heavy_only",
+    "uniforms_target_filter_id": "common_weapon_no_corvette_weapon",
     "attack_target_type_groups": [
+        "light_corvette",
+        "lrm_flak",
         "heavy_capital",
         "defense"
     ],
