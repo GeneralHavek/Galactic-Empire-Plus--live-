@@ -1,0 +1,95 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Root",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "glow",
+            "type": "point",
+            "emit_particle_count_is_always_one": true,
+            "emit_rate": {
+                "primary_emit_rate": [300.0, 300.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [20.0, 20.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "height": [15.0, 15.0],
+                    "texture_0": "t_softglow3",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.150
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff00ff00",
+                    "intensity": 200.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 2,
+            "name": "core",
+            "type": "point",
+            "emit_particle_count_is_always_one": true,
+            "emit_rate": {
+                "primary_emit_rate": [300.0, 300.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [20.0, 20.0],
+                "color": "ffffff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.10, 0.10],
+                    "height": [8.0, 8.0],
+                    "texture_0": "t_softglow3",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0]
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 2,
+            "attachee_id": 1
+        }
+    ],
+    "modifier_to_emitter_attachments": []
+}

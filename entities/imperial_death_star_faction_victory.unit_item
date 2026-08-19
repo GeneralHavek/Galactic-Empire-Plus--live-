@@ -34,7 +34,7 @@
         }
     ],
     "required_unit_tags": [
-        "death_star"
+        "mem_advanced_station"
     ],
     "max_count_on_unit": 1,
     "build_prerequisites": [

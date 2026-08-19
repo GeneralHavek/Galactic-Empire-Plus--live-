@@ -9,7 +9,6 @@ textures/
 videos/
 
 # Sins II binary asset formats
-*.particle_effect
 *.ogg
 *.mesh
 *.material

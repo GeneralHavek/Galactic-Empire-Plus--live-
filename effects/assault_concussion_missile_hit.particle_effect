@@ -1,0 +1,313 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Root",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "Flash",
+            "type": "point",
+            "emit_max_particle_count": [3.0, 3.0],
+            "emit_rate": {
+                "behavior": "increase",
+                "primary_emit_rate": [100.0, 200.0],
+                "primary_time": [30.0, 30.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 1,
+                "max_duration": [0.350, 0.450],
+                "color": "ff000000",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "width": [35.0, 35.0],
+                    "rotation": [0.0, 6.283185],
+                    "texture_0": "initial_explosion_glow",
+                    "gradient_texture": "gradient_suppression",
+                    "erosion_texture": "smoke_noise2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "alpha_ramp_steepness": 1.0
+                        },
+                        "erosion_constants": {
+                            "erosion_softness": 0.750
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 5,
+            "name": "ConcussionRing",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "behavior": "increase",
+                "primary_emit_rate": [100.0, 200.0],
+                "primary_time": [30.0, 30.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [0.20, 0.30],
+                "color": "ff000000",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "width": [65.0, 85.0],
+                    "rotation": [0.0, 6.283185],
+                    "texture_0": "binary_blast_5",
+                    "gradient_texture": "t_gradient_ancient_white",
+                    "erosion_texture": "smoke_noise2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "alpha_ramp_steepness": 1.0
+                        },
+                        "erosion_constants": {
+                            "erosion_softness": 0.50
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 6,
+            "name": "Refract",
+            "type": "point",
+            "emit_max_particle_count": [3.0, 3.0],
+            "emit_rate": {
+                "behavior": "increase",
+                "primary_emit_rate": [100.0, 200.0],
+                "primary_time": [30.0, 30.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [0.20, 0.20],
+                "color": "ff000000",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "width": [75.0, 75.0],
+                    "rotation": [0.0, 6.283185],
+                    "refraction_texture": "refraction_shrink",
+                    "refraction_mask_texture": "heat_refraction",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "alpha_ramp_steepness": 1.0
+                        },
+                        "erosion_constants": {
+                            "erosion_softness": 0.750
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 9,
+            "name": "AftermathFires",
+            "type": "point",
+            "emit_max_particle_count": [3.0, 4.0],
+            "emit_rate": {
+                "behavior": "increase",
+                "primary_emit_rate": [100.0, 200.0],
+                "primary_time": [30.0, 30.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 2.0],
+                "color": "ff808080",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "shader_type": "uber_multiply_color",
+                    "width": [25.0, 45.0],
+                    "rotation": [0.0, 6.283185],
+                    "gradient_texture": "t_gradient_advent_res",
+                    "erosion_texture": "smoke_noise",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "texture_animation": "flame_cloud",
+                    "uber_constants": {
+                        "basic_constants": {
+                            "alpha_ramp_steepness": 1.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": 0.10,
+                                "v_pan_speed": 0.0540
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": -0.0440,
+                                "v_pan_speed": -0.0230
+                            },
+                            "erosion_softness": 0.550
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [1.0, 3.0],
+            "angle_variance": [0.0, 6.283185]
+        }
+    ],
+    "modifiers": [
+        {
+            "id": 3,
+            "name": "Erosion",
+            "type": "float_property",
+            "property_type": "erosion_test_base",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "in_sine",
+                "easing_values": [0.0, 1.0]
+            }
+        },
+        {
+            "id": 4,
+            "name": "GrowFlash",
+            "type": "float_property",
+            "property_type": "width_and_height_scale",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "out_cubic",
+                "easing_values": [0.0, 1.0]
+            }
+        },
+        {
+            "id": 7,
+            "name": "GrowRefract",
+            "type": "float_property",
+            "property_type": "width_and_height_scale",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "linear",
+                "easing_values": [0.0, 1.0]
+            }
+        },
+        {
+            "id": 8,
+            "name": "Refract",
+            "type": "float_property",
+            "property_type": "refraction_scalar",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "linear",
+                "easing_values": [0.20, 0.0]
+            }
+        },
+        {
+            "id": 10,
+            "name": "GrowFires",
+            "type": "float_property",
+            "property_type": "width_and_height_scale",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "out_cubic",
+                "easing_values": [0.50, 1.0]
+            }
+        },
+        {
+            "id": 11,
+            "name": "GrowShards",
+            "type": "float_property",
+            "property_type": "width_and_height_scale",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "linear",
+                "easing_values": [0.0, 1.0]
+            }
+        }
+    ],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 5,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 6,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 9,
+            "attachee_id": 1
+        }
+    ],
+    "modifier_to_emitter_attachments": [
+        {
+            "attacher_id": 3,
+            "attachee_id": 0
+        },
+        {
+            "attacher_id": 4,
+            "attachee_id": 0
+        },
+        {
+            "attacher_id": 3,
+            "attachee_id": 5
+        },
+        {
+            "attacher_id": 7,
+            "attachee_id": 6
+        },
+        {
+            "attacher_id": 8,
+            "attachee_id": 6
+        },
+        {
+            "attacher_id": 3,
+            "attachee_id": 9
+        },
+        {
+            "attacher_id": 10,
+            "attachee_id": 9
+        },
+        {
+            "attacher_id": 11,
+            "attachee_id": 5
+        }
+    ]
+}

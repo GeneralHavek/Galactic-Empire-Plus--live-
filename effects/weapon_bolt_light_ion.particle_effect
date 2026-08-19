@@ -1,0 +1,234 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 0,
+            "name": "spark",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [15.0, 15.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 1,
+            "name": "end point",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [40.0, 40.0],
+            "yaw": [-0.0, -0.0],
+            "pitch": [-0.0, -0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 8,
+            "name": "root",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "laserbolt",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [1.0, 1.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "color": "ffff8080",
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "anchor": "bottom",
+                    "width": [2.0, 2.0],
+                    "height": [15.0, 15.0],
+                    "texture_0": "psicapitallaserheavy_clr"
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ffccd7ff",
+                    "intensity": 800.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 1,
+            "name": "end point",
+            "is_visible": false,
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [1.0, 1.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "mass": [0.0, 0.0],
+                "color": "ffff8000",
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "width": [1.50, 1.50],
+                    "height": [1.50, 1.50],
+                    "texture_0": "psicapitallaser_front_clr",
+                    "gradient_texture": "t_gradient_93"
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ffccd7ff",
+                    "intensity": 800.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 2,
+            "name": "(copy) laserbolt-1",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [1.0, 1.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "color": "ffc04000",
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "anchor": "bottom",
+                    "width": [4.0, 4.0],
+                    "height": [15.0, 15.0],
+                    "texture_0": "psicapitallaserlight_clr"
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ffffffff",
+                    "intensity": 800.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 3,
+            "name": "sparks",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [5.0, 5.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [0.10, 0.250],
+                "color": "ffffc0c0",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "bottom",
+                    "width": [5.0, 10.0],
+                    "height": [15.0, 20.0],
+                    "distortion_texture": "electric_uvs",
+                    "erosion_texture": "smoke_noise",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "initial_distortion_scalar": [0.050, 0.050],
+                    "random_flip_texture_horizontal_chance": 0.50,
+                    "random_flip_texture_vertical_chance": 0.50,
+                    "texture_animation": "lightning_03",
+                    "texture_animation_fps": [10.0, 10.0],
+                    "texture_animation_first_frame": "random",
+                    "texture_animation_next_frame": "random",
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0
+                        },
+                        "erosion_constants": {
+                            "erosion_softness": 0.350
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": 1.0,
+                                "v_pan_speed": 0.50
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": -0.060,
+                                "v_pan_speed": -1.20
+                            }
+                        }
+                    }
+                },
+                "mesh": {},
+                "pitch": [1.570796, 1.570796],
+                "roll": [0.0, 6.283185]
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [
+        {
+            "id": 6,
+            "name": "slide",
+            "type": "push",
+            "force": {
+                "type": "constant",
+                "range": [10.0, 10.0]
+            },
+            "op": "fixed_in_emitter_space",
+            "direction": [0.0, 0.0, -2.0]
+        },
+        {
+            "id": 7,
+            "name": "spin",
+            "type": "rotate",
+            "op": "around_axis",
+            "angular_velocity": [20.0, 20.0],
+            "radius": [1.0, 1.0],
+            "axis_of_rotation": [0.0, 0.0, 1.0]
+        }
+    ],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 1,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 0,
+            "attachee_id": 8
+        },
+        {
+            "attacher_id": 2,
+            "attachee_id": 8
+        },
+        {
+            "attacher_id": 3,
+            "attachee_id": 0
+        }
+    ],
+    "modifier_to_emitter_attachments": [
+        {
+            "attacher_id": 7,
+            "attachee_id": 3
+        }
+    ]
+}

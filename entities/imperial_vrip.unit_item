@@ -13,7 +13,7 @@
         "crystal": 320.0
     },
     "required_unit_tags": [
-        "venator"
+        "mem_limited2"
     ],
     "build_prerequisites": [
         ["imperial_unlock_vrip"]

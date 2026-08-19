@@ -1,0 +1,142 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 1,
+            "name": "R",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "glowR",
+            "type": "point",
+            "emit_particle_count_is_always_one": true,
+            "emit_rate": {
+                "primary_emit_rate": [300.0, 300.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [20.0, 20.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.250, 0.250],
+                    "height": [5.0, 5.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.50
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff00ff00",
+                    "intensity": 500.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 2,
+            "name": "coreR",
+            "type": "point",
+            "emit_particle_count_is_always_one": true,
+            "emit_rate": {
+                "primary_emit_rate": [300.0, 300.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [20.0, 20.0],
+                "color": "ffffff80",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.0, 0.0],
+                    "height": [0.0, 0.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.750
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [
+        {
+            "id": 3,
+            "name": "color",
+            "type": "color",
+            "change_duration_context": "particle_time_elapsed",
+            "change_duration": [1.750, 1.750],
+            "begin_color": "ffffffff",
+            "end_color": "ffffff00"
+        },
+        {
+            "id": 5,
+            "name": "sizeGlow",
+            "type": "size",
+            "width_change_rate": [15.0, 15.0],
+            "width_stop": [1.50, 1.50],
+            "height_change_rate": [300.0, 300.0],
+            "height_stop": [60.0, 60.0]
+        },
+        {
+            "id": 6,
+            "name": "sizeCore",
+            "type": "size",
+            "width_change_rate": [15.0, 15.0],
+            "width_stop": [0.50, 0.50],
+            "height_change_rate": [300.0, 300.0],
+            "height_stop": [60.0, 60.0]
+        }
+    ],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 2,
+            "attachee_id": 1
+        }
+    ],
+    "modifier_to_emitter_attachments": [
+        {
+            "attacher_id": 3,
+            "attachee_id": 2
+        },
+        {
+            "attacher_id": 5,
+            "attachee_id": 0
+        },
+        {
+            "attacher_id": 6,
+            "attachee_id": 2
+        }
+    ]
+}

@@ -3762,7 +3762,7 @@
     },
     "target_filter_unit_type": "structure",
     "tags": [
-        "death_star"
+        "mem_advanced_station"
     ],
     "virtual_supply_cost": 2000,
     "abilities": [

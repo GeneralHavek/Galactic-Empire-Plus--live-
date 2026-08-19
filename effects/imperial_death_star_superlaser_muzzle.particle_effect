@@ -1,0 +1,620 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 14,
+            "name": "Beam1",
+            "x": [10.0, 10.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [0.0, 0.0],
+            "start_delay": [6.0, 6.0]
+        },
+        {
+            "id": 20,
+            "name": "Beam2",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [0.907571, 0.907571],
+            "start_delay": [6.20, 6.20]
+        },
+        {
+            "id": 36,
+            "name": "Beam3",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [1.570796, 1.570796],
+            "start_delay": [6.40, 6.40]
+        },
+        {
+            "id": 39,
+            "name": "Beam4",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [2.356195, 2.356195],
+            "start_delay": [6.60, 6.60]
+        },
+        {
+            "id": 40,
+            "name": "Beam5",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [3.141593, 3.141593],
+            "start_delay": [6.10, 6.10]
+        },
+        {
+            "id": 41,
+            "name": "Beam6",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [3.926991, 3.926991],
+            "start_delay": [6.30, 6.30]
+        },
+        {
+            "id": 42,
+            "name": "Beam7",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [4.712389, 4.712389],
+            "start_delay": [6.50, 6.50]
+        },
+        {
+            "id": 43,
+            "name": "Beam8",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [5.672320, 5.672320],
+            "roll": [5.497787, 5.497787],
+            "start_delay": [6.70, 6.70]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 13,
+            "name": "Beam1",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [2.0, 2.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0,
+                            "alpha_ramp_curvature": 0.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 33,
+            "name": "Beam2",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.80, 1.80],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 37,
+            "name": "Beam3",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.60, 1.60],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 38,
+            "name": "Beam4",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.40, 1.40],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 44,
+            "name": "Beam5",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.90, 1.90],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 45,
+            "name": "Beam6",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.70, 1.70],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 46,
+            "name": "Beam7",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.50, 1.50],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_secondary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 47,
+            "name": "Beam8",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_rate": {
+                "primary_emit_rate": [100.0, 100.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.30, 1.30],
+                "color": "ff00ff00",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.250, 0.250],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_particle_direction",
+                    "anchor": "top",
+                    "width": [500.0, 500.0],
+                    "height": [1500.0, 1500.0],
+                    "texture_0": "imperial_superlaser_primary_beam",
+                    "gradient_texture": "t_gradient_76",
+                    "distortion_texture": "t_uvdist_003",
+                    "erosion_texture": "imperial_superlaser_secondary_beam",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 1.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 10.0,
+                            "depth_fade_distance": 100.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 0.50
+                            },
+                            "erosion_test": 0.10
+                        },
+                        "distortion_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": -0.030,
+                                "v_pan_speed": 0.10,
+                                "v_scale": 25.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": 0.0120,
+                                "v_pan_speed": 0.050,
+                                "v_scale": 25.0,
+                                "global_scale": 0.50
+                            }
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 13,
+            "attachee_id": 14
+        },
+        {
+            "attacher_id": 33,
+            "attachee_id": 20
+        },
+        {
+            "attacher_id": 37,
+            "attachee_id": 36
+        },
+        {
+            "attacher_id": 38,
+            "attachee_id": 39
+        },
+        {
+            "attacher_id": 44,
+            "attachee_id": 40
+        },
+        {
+            "attacher_id": 45,
+            "attachee_id": 41
+        },
+        {
+            "attacher_id": 46,
+            "attachee_id": 42
+        },
+        {
+            "attacher_id": 47,
+            "attachee_id": 43
+        }
+    ],
+    "modifier_to_emitter_attachments": []
+}

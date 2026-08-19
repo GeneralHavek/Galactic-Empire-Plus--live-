@@ -1,0 +1,331 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 0,
+            "name": "flames",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [-9.0, -9.0],
+            "yaw": [-0.0, -0.0],
+            "pitch": [-0.0, -0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 1,
+            "name": "core",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [-0.0, -0.0],
+            "pitch": [-0.0, -0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 3,
+            "name": "whiteFlames",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [-3.0, -3.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 7,
+            "name": "dust",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [-3.0, -3.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 99,
+            "name": "heat refraction",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.10, 0.10],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "flames",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [2.0, 2.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.50, 1.50],
+                "external_color": "primary",
+                "color": "ff8080ff",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.50, 0.50],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "anchor": "bottom",
+                    "width": [50.0, 50.0],
+                    "height": [180.0, 180.0],
+                    "texture_0": "t_edgemask_ghost_fade",
+                    "gradient_texture": "t_gradient_93",
+                    "erosion_texture": "t_noise_008",
+                    "initial_gradient_pan_offset": [0.80, 0.80],
+                    "random_flip_texture_horizontal_chance": 0.50,
+                    "texture_animation_first_frame": "random",
+                    "texture_animation_next_frame": "ping_pong_loop",
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_opacity": 3.0,
+                            "depth_fade_distance": 2.50,
+                            "alpha_ramp_curvature": 0.50,
+                            "alpha_ramp_steepness": 0.10,
+                            "alpha_ramp_growth_delay": 1.10,
+                            "alpha_ramp_max_alpha_scalar": 2.0
+                        },
+                        "erosion_constants": {
+                            "noise_constants_0": {
+                                "v_pan_speed": 1.0,
+                                "u_scale": 0.50
+                            },
+                            "noise_constants_1": {
+                                "v_pan_speed": 1.350
+                            },
+                            "erosion_softness": 0.0
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 1,
+            "name": "core",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [3.0, 3.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "external_color": "primary",
+                "color": "ff8080ff",
+                "fade_in_time": [0.50, 0.50],
+                "fade_out_time": [0.50, 0.50],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_multiply_color",
+                    "width": [20.0, 20.0],
+                    "height": [20.0, 20.0],
+                    "rotation": [3.141593, 3.141593],
+                    "texture_0": "zap_clr",
+                    "texture_1": "zap_clr",
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 2.0,
+                            "depth_fade_opacity": 0.90,
+                            "alpha_ramp_steepness": 0.10
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ffffffff",
+                    "intensity": 3.0,
+                    "surface_radius": 15.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 2,
+            "name": "dustEmit",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [2.0, 5.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [3.0, 5.0],
+                "external_color": "primary",
+                "color": "ffe0e0e0",
+                "fade_in_time": [13.0, 13.0],
+                "fade_out_time": [3.0, 3.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_multiply_color",
+                    "width": [0.010, 0.080],
+                    "height": [0.010, 0.080],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 2.50,
+                            "depth_fade_opacity": 0.750
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [6.0, 15.0],
+            "angle_variance": [0.052360, 0.052360]
+        },
+        {
+            "id": 5,
+            "name": "whiteFlameEmit",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [3.0, 3.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [3.0, 3.0],
+                "external_color": "primary",
+                "color": "ff8080ff",
+                "fade_in_time": [1.0, 1.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "shader_type": "uber_add_color",
+                    "width": [175.0, 175.0],
+                    "gradient_texture": "t_gradient_93",
+                    "erosion_texture": "soft_circle_large",
+                    "texture_animation_first_frame": "random",
+                    "texture_animation_next_frame": "random",
+                    "uber_constants": {
+                        "basic_constants": {
+                            "depth_fade_distance": 3.0,
+                            "alpha_ramp_growth_delay": 1.0
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [1.50, 1.50]
+        },
+        {
+            "id": 99,
+            "name": "heat refraction",
+            "type": "point",
+            "emit_particle_count_is_always_one": true,
+            "emit_rate": {
+                "primary_emit_rate": [1.0, 1.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "camera_offset": [-10.0, -10.0],
+                "color": "ffffffff",
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "shader_type": "uber_multiply_color",
+                    "width": [40.0, 40.0],
+                    "height": [40.0, 40.0],
+                    "refraction_texture": "water_uv",
+                    "refraction_mask_texture": "heat_refraction_falloff",
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.0
+                        },
+                        "refraction_constants": {
+                            "noise_constants_0": {
+                                "u_pan_speed": 0.010,
+                                "v_pan_speed": 0.10,
+                                "global_scale": 3.0
+                            },
+                            "noise_constants_1": {
+                                "u_pan_speed": -0.10,
+                                "v_pan_speed": 0.010,
+                                "global_scale": 2.0
+                            },
+                            "u_strength": 0.00510,
+                            "v_strength": 0.00510
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [
+        {
+            "id": 1,
+            "name": "inflate",
+            "type": "size",
+            "width_change_rate": [0.0, 0.0],
+            "height_change_rate": [1.0, 1.0]
+        },
+        {
+            "id": 2,
+            "name": "jitterFlameMod",
+            "type": "push",
+            "force": {
+                "type": "random",
+                "range": [7.50, 7.50]
+            },
+            "op": "random_jitter"
+        },
+        {
+            "id": 6,
+            "name": "whiteMod",
+            "type": "color",
+            "change_duration_context": "particle_time_elapsed",
+            "change_duration": [0.0, 0.0],
+            "begin_color": "ffffffff",
+            "end_color": "ffffffff"
+        },
+        {
+            "id": 100,
+            "name": "Shrink",
+            "type": "float_property",
+            "property_type": "width_and_height_scale",
+            "property_value": {
+                "type": "ease",
+                "range": [0.0, 0.0],
+                "easing_function": "linear",
+                "easing_values": [1.0, 0.0]
+            }
+        }
+    ],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 0
+        },
+        {
+            "attacher_id": 99,
+            "attachee_id": 99
+        },
+        {
+            "attacher_id": 1,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 5,
+            "attachee_id": 3
+        }
+    ],
+    "modifier_to_emitter_attachments": [
+        {
+            "attacher_id": 6,
+            "attachee_id": 2
+        },
+        {
+            "attacher_id": 100,
+            "attachee_id": 5
+        }
+    ],
+    "max_effect_radius_scalar": 2.0
+}

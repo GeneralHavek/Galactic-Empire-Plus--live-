@@ -1,0 +1,86 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Root",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [-0.50, -0.50],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "SimplePoint",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [40.0, 40.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.50, 1.50],
+                "color": "ff0000ff",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.20, 0.20],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "width": [2.0, 2.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.70
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [
+        {
+            "id": 2,
+            "name": "NewModifier2",
+            "type": "push",
+            "force": {
+                "type": "constant",
+                "range": [1.0, 1.0]
+            },
+            "op": "fixed_in_emitter_space",
+            "direction": [0.0, 0.0, 5.0],
+            "point": [0.0, 0.0, -1.0]
+        },
+        {
+            "id": 3,
+            "name": "NewModifier3",
+            "type": "size",
+            "width_change_rate": [1.0, 1.0],
+            "width_stop": [0.0, 0.0],
+            "height_change_rate": [1.0, 1.0],
+            "height_stop": [0.0, 0.0]
+        }
+    ],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 1
+        }
+    ],
+    "modifier_to_emitter_attachments": [
+        {
+            "attacher_id": 2,
+            "attachee_id": 0
+        },
+        {
+            "attacher_id": 3,
+            "attachee_id": 0
+        }
+    ]
+}

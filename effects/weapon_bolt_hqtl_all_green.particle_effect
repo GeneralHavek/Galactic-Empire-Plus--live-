@@ -1,0 +1,363 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 1,
+            "name": "R",
+            "x": [2.50, 2.50],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 3,
+            "name": "L",
+            "x": [-2.50, -2.50],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 6,
+            "name": "RR",
+            "x": [0.850, 0.850],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        },
+        {
+            "id": 9,
+            "name": "LL",
+            "x": [-0.850, -0.850],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "GlowR",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [2.0, 2.0],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.70
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff00ff00",
+                    "intensity": 900.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 2,
+            "name": "CoreR",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ffffffff",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.50, 0.50],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.50
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 4,
+            "name": "CoreL",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ffffffff",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.50, 0.50],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.50
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 5,
+            "name": "GlowL",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [2.0, 2.0],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.70
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff00ff00",
+                    "intensity": 900.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 7,
+            "name": "GlowRR",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [2.0, 2.0],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.70
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff00ff00",
+                    "intensity": 900.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 8,
+            "name": "CoreRR",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ffffffff",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.50, 0.50],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.50
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 10,
+            "name": "CoreLL",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ffffffff",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [0.50, 0.50],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.50
+                        }
+                    }
+                },
+                "mesh": {}
+            },
+            "forward_velocity": [0.0, 0.0]
+        },
+        {
+            "id": 11,
+            "name": "GlowLL",
+            "type": "point",
+            "emit_rate": {
+                "primary_emit_rate": [10.0, 10.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "max_duration": [1.0, 1.0],
+                "color": "ff00ff00",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [0.0, 0.0],
+                "billboard": {
+                    "render_with_additive_blending": true,
+                    "facing_type": "face_camera_by_rotating_on_particle_direction",
+                    "width": [2.0, 2.0],
+                    "height": [90.0, 90.0],
+                    "texture_0": "t_softglow2",
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.70
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff00ff00",
+                    "intensity": 900.0,
+                    "surface_radius": 0.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 2,
+            "attachee_id": 1
+        },
+        {
+            "attacher_id": 5,
+            "attachee_id": 3
+        },
+        {
+            "attacher_id": 4,
+            "attachee_id": 3
+        },
+        {
+            "attacher_id": 7,
+            "attachee_id": 6
+        },
+        {
+            "attacher_id": 8,
+            "attachee_id": 6
+        },
+        {
+            "attacher_id": 10,
+            "attachee_id": 9
+        },
+        {
+            "attacher_id": 11,
+            "attachee_id": 9
+        }
+    ],
+    "modifier_to_emitter_attachments": []
+}

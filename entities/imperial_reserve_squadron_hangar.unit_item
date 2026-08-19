@@ -17,7 +17,7 @@
         "capital_ship",
         "super_capital_ship",
         "titan",
-        "death_star"
+        "mem_advanced_station"
     ],
     "build_prerequisites": [
         ["imperial_unlock_reserve_squadron_hangar_unit_item"]

@@ -1,0 +1,100 @@
+{
+    "version": 2,
+    "nodes": [
+        {
+            "id": 1,
+            "name": "large_hangar_shield",
+            "x": [0.0, 0.0],
+            "y": [0.0, 0.0],
+            "z": [0.0, 0.0],
+            "yaw": [0.0, 0.0],
+            "pitch": [0.0, 0.0],
+            "roll": [0.0, 0.0]
+        }
+    ],
+    "emitters": [
+        {
+            "id": 0,
+            "name": "large_hangar_shield",
+            "type": "point",
+            "emit_max_particle_count": [1.0, 1.0],
+            "emit_particle_count_is_always_one": true,
+            "emit_rate": {
+                "primary_emit_rate": [1.0, 1.0]
+            },
+            "particle": {
+                "type": "billboard",
+                "render_layer": 0,
+                "color": "ff6495ed",
+                "fade_in_time": [0.0, 0.0],
+                "fade_out_time": [1.0, 1.0],
+                "billboard": {
+                    "facing_type": "face_particle_direction",
+                    "width": [60.0, 60.0],
+                    "height": [20.0, 20.0],
+                    "initial_erosion_noise_offset_u": [0.0, 0.0],
+                    "initial_erosion_noise_offset_v": [0.0, 0.0],
+                    "initial_refraction_scalar": [0.0, 0.0],
+                    "uber_constants": {
+                        "basic_constants": {
+                            "emissive_factor": 0.750,
+                            "depth_fade_opacity": 2.0,
+                            "depth_fade_distance": 2.0,
+                            "alpha_ramp_curvature": 0.20,
+                            "alpha_ramp_steepness": 0.20,
+                            "alpha_ramp_growth_delay": 1.0,
+                            "alpha_ramp_max_alpha_scalar": 0.150
+                        }
+                    }
+                },
+                "mesh": {},
+                "light": {
+                    "type": "point_finite",
+                    "color": "ff0000ff",
+                    "intensity": 1.0,
+                    "surface_radius": 1.0
+                }
+            },
+            "forward_velocity": [0.0, 0.0]
+        }
+    ],
+    "modifiers": [
+        {
+            "id": 2,
+            "name": "hangar_shield_scale",
+            "type": "float_property",
+            "property_type": "width_and_height_scale",
+            "property_value": {
+                "type": "constant",
+                "range": [1.0, 1.0]
+            }
+        },
+        {
+            "id": 3,
+            "name": "hangar_shield_size",
+            "type": "size",
+            "particle_time_anchor": "emitter_begin",
+            "width_change_rate": [0.0, 0.0],
+            "width_stop": [70.0, 70.0],
+            "height_change_rate": [0.0, 0.0],
+            "height_stop": [33.0, 33.0]
+        }
+    ],
+    "emitter_to_node_attachments": [
+        {
+            "attacher_id": 0,
+            "attachee_id": 1
+        }
+    ],
+    "modifier_to_emitter_attachments": [
+        {
+            "attacher_id": 2,
+            "attachee_id": 0
+        },
+        {
+            "attacher_id": 3,
+            "attachee_id": 0
+        }
+    ],
+    "max_effect_radius_scalar": 1.0
+}
