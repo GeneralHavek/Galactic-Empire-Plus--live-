@@ -6,16 +6,15 @@
     "pitch_firing_tolerance": 1.0,
     "yaw_firing_tolerance": 1.0,
     "range": 6000.0,
-    "cooldown_duration": 0.30,
+    "cooldown_duration": 0.3,
     "uniforms_target_filter_id": "strikecraft_and_torpedo_weapon",
     "attack_target_type_groups": [
-        "torpedo_strikecraft",
-        "light_flak_corvette"
+        "torpedo_strikecraft"
     ],
     "always_check_is_dead_soon": true,
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
-    "damage": 0.60,
+    "damage": 0.6,
     "penetration": 75.0,
     "tags": [
         "physical",
@@ -30,21 +29,21 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.030,
-            0.060,
-            0.090,
-            0.120,
-            0.150,
-            0.180,
-            0.210,
-            0.240,
-            0.270
+            0.03,
+            0.06,
+            0.09,
+            0.12,
+            0.15,
+            0.18,
+            0.21,
+            0.24,
+            0.27
         ],
         "muzzle_picking_behavior": "random",
         "muzzle_effect": "trader_antifighter_frigate_point_defense_autocannon_weapon_muzzle",
         "projectile_travel_effect": "trader_antifighter_frigate_point_defense_autocannon_weapon_projectile_travel",
         "hit_hull_effect": "trader_antifighter_frigate_point_defense_autocannon_weapon_hit_hull",
         "hit_shield_effect": "trader_antifighter_frigate_point_defense_autocannon_weapon_hit_shield",
-        "hit_shield_impact_radius_t": 0.250
+        "hit_shield_impact_radius_t": 0.25
     }
 }

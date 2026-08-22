@@ -7,9 +7,13 @@
     "cooldown_duration": 18.0,
     "uniforms_target_filter_id": "common_weapon",
     "attack_target_type_groups": [
-        "light_flak_corvette",
-        "heavy_capital",
-        "defense"
+        "light_corvette",
+        "lrm_flak",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
@@ -20,7 +24,7 @@
         "physical",
         "concussion"
     ],
-    "acquire_target_logic": "order_target_only",
+    "acquire_target_logic": "order_target_or_best_target_in_range",
     "always_check_is_dead_soon": true,
     "firing": {
         "firing_type": "spawn_torpedo",

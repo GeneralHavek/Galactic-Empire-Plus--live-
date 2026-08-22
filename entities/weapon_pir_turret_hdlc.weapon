@@ -3,15 +3,15 @@
     "name": "weapon_name.weapon_hlc",
     "pitch_speed": 55.0,
     "yaw_speed": 55.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 6500.0,
     "cooldown_duration": 6.0,
     "uniforms_target_filter_id": "heavy_laser_cannon",
     "attack_target_type_groups": [
         "light_corvette",
         "lrm_flak",
-        "heavy_capital",
+        "capital_supercapital_heavy",
         "defense"
     ],
     "weapon_type": "normal",
@@ -23,7 +23,7 @@
         "energy"
     ],
     "acquire_target_logic": "best_target_in_range",
-    "target_acquired_duration_required_to_fire": 0.850,
+    "target_acquired_duration_required_to_fire": 0.85,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 4000.0
@@ -31,25 +31,37 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.40,
-            0.80,
-            1.20
+            0.4,
+            0.8,
+            1.2
         ],
         "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_hdlc",
         "projectile_travel_effect": "weapon_bolt_hdlc",
         "hit_hull_effect": "weapon_hit_hull_hdlc",
         "hit_shield_effect": "weapon_hit_shield_hdlc",
-        "hit_shield_impact_radius_t": 0.350
+        "hit_shield_impact_radius_t": 0.35
     },
     "turret": {
         "type": "biaxial",
         "biaxial_base_mesh": "pirate_turret_hdlc_mount",
         "biaxial_barrel_mesh": "pirate_turret_hdlc_barrel",
-        "barrel_position": [-0.0, 0.486397, 0.0],
+        "barrel_position": [
+            -0.0,
+            0.486397,
+            0.0
+        ],
         "muzzle_positions": [
-            [0.210989, 0.000719, 4.093191],
-            [-0.206765, 0.000719, 4.093191]
+            [
+                0.210989,
+                0.000719,
+                4.093191
+            ],
+            [
+                -0.206765,
+                0.000719,
+                4.093191
+            ]
         ]
     }
 }

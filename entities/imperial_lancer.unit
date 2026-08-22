@@ -3,8 +3,16 @@
     "spatial": {
         "radius": 126.022141,
         "box": {
-            "center": [0.000036, -3.463145, -0.007305],
-            "extents": [25.969120, 28.936249, 125.021942]
+            "center": [
+                3.6e-05,
+                -3.463145,
+                -0.007305
+            ],
+            "extents": [
+                25.96912,
+                28.936249,
+                125.021942
+            ]
         },
         "collision_rank": 1
     },
@@ -12,13 +20,19 @@
         "can_move_linear": true,
         "max_linear_speed": 750.0,
         "time_to_max_linear_speed": 6.0,
-        "arrival_tolerance_spatial_radius_scalar": 0.250,
-        "death_linear_speed_range": [1.0, 2.0],
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 35.0,
-        "time_to_max_angular_speed": 3.50,
+        "time_to_max_angular_speed": 3.5,
         "max_bank_angle": 35.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 90.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 175.0,
@@ -47,14 +61,24 @@
     },
     "ai": {
         "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft",
-            "corvette",
+            "torpedo_strikecraft_corvette",
             "capital"
         ],
         "auto_follow_target_priority": 4.0,
         "pursuit": {
             "min_distance_to_target": 4500.0
-        }
+        },
+        "attack_target_type_groups": [
+            "torpedo_strikecraft",
+            "light_corvette",
+            "lrm_flak",
+            "antistructure_antiarmor",
+            "carrier_support",
+            "capital_supercapital_heavy",
+            "defense_starbase_titan",
+            "defense_civilian"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_lancer_turret_pdlc"
     },
     "ai_attack_target": {
         "attack_priority": 50.0,
@@ -62,9 +86,9 @@
         "attack_target_type": "flak"
     },
     "player_ai": {
-        "max_empire_owned_count_percentage": 0.20,
+        "max_empire_owned_count_percentage": 0.2,
         "max_count_to_fleet_supply_ratio": 40,
-        "attack_ship_weight_scalar": 0.250
+        "attack_ship_weight_scalar": 0.25
     },
     "user_interface": {
         "pip_type": "frigate",
@@ -82,9 +106,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.000",
-                "weapon_position": [-0.000660, 24.671574, 76.772285],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    -0.00066,
+                    24.671574,
+                    76.772285
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -97,9 +133,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.001",
-                "weapon_position": [-0.000664, 15.159375, 36.642616],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    -0.000664,
+                    15.159375,
+                    36.642616
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -112,9 +160,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.002",
-                "weapon_position": [-0.000051, 18.367472, -44.498890],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    -5.1e-05,
+                    18.367472,
+                    -44.49889
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -127,9 +187,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.003",
-                "weapon_position": [-0.000679, 23.724937, -85.618851],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    -0.000679,
+                    23.724937,
+                    -85.618851
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -142,9 +214,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.004",
-                "weapon_position": [-0.000664, -23.094551, 34.446106],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    -0.000664,
+                    -23.094551,
+                    34.446106
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -157,9 +241,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.005",
-                "weapon_position": [-0.000677, -28.968491, -85.092384],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    -0.000677,
+                    -28.968491,
+                    -85.092384
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -172,9 +268,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.006",
-                "weapon_position": [-14.869859, 4.584855, 15.621982],
-                "forward": [0.0, 0.0, 1.0],
-                "up": [-1.0, -0.0, 0.0],
+                "weapon_position": [
+                    -14.869859,
+                    4.584855,
+                    15.621982
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -187,9 +295,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.007",
-                "weapon_position": [-14.155425, -0.873447, -47.574177],
-                "forward": [0.0, 0.0, 1.0],
-                "up": [-1.0, -0.0, 0.0],
+                "weapon_position": [
+                    -14.155425,
+                    -0.873447,
+                    -47.574177
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -202,9 +322,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.008",
-                "weapon_position": [-25.949001, -2.292773, -79.384010],
-                "forward": [0.0, 0.0, 1.0],
-                "up": [-1.0, -0.0, 0.0],
+                "weapon_position": [
+                    -25.949001,
+                    -2.292773,
+                    -79.38401
+                ],
+                "forward": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -1.0,
+                    -0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -217,9 +349,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.009",
-                "weapon_position": [-14.647812, 11.727931, -32.623291],
-                "forward": [0.000001, 0.0, 1.0],
-                "up": [-0.707107, 0.707106, 0.0],
+                "weapon_position": [
+                    -14.647812,
+                    11.727931,
+                    -32.623291
+                ],
+                "forward": [
+                    1e-06,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.707107,
+                    0.707106,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -232,9 +376,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.010",
-                "weapon_position": [-9.113837, -11.555530, -42.041759],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.866025, -0.50, 0.0],
+                "weapon_position": [
+                    -9.113837,
+                    -11.55553,
+                    -42.041759
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.866025,
+                    -0.5,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -247,9 +403,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.011",
-                "weapon_position": [-22.474607, -15.268340, -79.384117],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.866025, -0.50, 0.0],
+                "weapon_position": [
+                    -22.474607,
+                    -15.26834,
+                    -79.384117
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.866025,
+                    -0.5,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -262,9 +430,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.012",
-                "weapon_position": [-22.464653, 10.677307, -79.384117],
-                "forward": [0.0, -0.0, 1.0],
-                "up": [-0.866025, 0.50, -0.0],
+                "weapon_position": [
+                    -22.464653,
+                    10.677307,
+                    -79.384117
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.866025,
+                    0.5,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -277,9 +457,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.013",
-                "weapon_position": [14.869857, 4.584856, 15.621984],
-                "forward": [0.0, -0.0, 1.0],
-                "up": [1.0, -0.0, 0.0],
+                "weapon_position": [
+                    14.869857,
+                    4.584856,
+                    15.621984
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -292,9 +484,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.014",
-                "weapon_position": [14.155429, -0.873446, -47.574177],
-                "forward": [0.0, -0.0, 1.0],
-                "up": [1.0, -0.0, 0.0],
+                "weapon_position": [
+                    14.155429,
+                    -0.873446,
+                    -47.574177
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -307,9 +511,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.015",
-                "weapon_position": [25.949009, -2.292771, -79.384010],
-                "forward": [0.0, -0.0, 1.0],
-                "up": [1.0, -0.0, 0.0],
+                "weapon_position": [
+                    25.949009,
+                    -2.292771,
+                    -79.38401
+                ],
+                "forward": [
+                    0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    1.0,
+                    -0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -322,9 +538,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.016",
-                "weapon_position": [14.647814, 11.727933, -32.623291],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [0.707107, 0.707106, 0.0],
+                "weapon_position": [
+                    14.647814,
+                    11.727933,
+                    -32.623291
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.707107,
+                    0.707106,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -337,9 +565,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.017",
-                "weapon_position": [9.113841, -11.555530, -42.041759],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.866026, -0.50, 0.0],
+                "weapon_position": [
+                    9.113841,
+                    -11.55553,
+                    -42.041759
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.866026,
+                    -0.5,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -352,9 +592,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.018",
-                "weapon_position": [22.474615, -15.268338, -79.384117],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.866026, -0.50, 0.0],
+                "weapon_position": [
+                    22.474615,
+                    -15.268338,
+                    -79.384117
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.866026,
+                    -0.5,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -367,9 +619,21 @@
             {
                 "weapon": "weapon_lancer_turret_pdlc",
                 "mesh_point": "child.pd.019",
-                "weapon_position": [22.464661, 10.677309, -79.384117],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [0.866025, 0.50, 0.0],
+                "weapon_position": [
+                    22.464661,
+                    10.677309,
+                    -79.384117
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    0.866025,
+                    0.5,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -395,22 +659,25 @@
         "spawn_debris_time": 1.0,
         "generic_group_name": "trader",
         "generic_counts": {
-            "small_debris": [3, 4]
+            "small_debris": [
+                3,
+                4
+            ]
         }
     },
     "health": {
         "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 0.80,
+        "can_collide_duration_after_death": 0.8,
         "durability": 160.0,
         "can_ever_be_resurrected": true,
         "levels": [
             {
                 "max_hull_points": 730.0,
-                "hull_point_restore_rate": 1.50,
+                "hull_point_restore_rate": 1.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_point_restore_scalar_after_damage_taken": 0.0,
                 "max_armor_points": 275,
-                "armor_point_restore_rate": 1.20,
+                "armor_point_restore_rate": 1.2,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_point_restore_scalar_after_damage_taken": 0.0,
                 "armor_strength": 90.0,

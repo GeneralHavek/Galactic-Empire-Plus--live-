@@ -1,10 +1,18 @@
 {
     "version": 0,
     "spatial": {
-        "radius": 305.974060,
+        "radius": 305.97406,
         "box": {
-            "center": [0.000023, 3.731785, -0.310471],
-            "extents": [62.631287, 51.828163, 298.550232]
+            "center": [
+                2.3e-05,
+                3.731785,
+                -0.310471
+            ],
+            "extents": [
+                62.631287,
+                51.828163,
+                298.550232
+            ]
         },
         "collision_rank": 1
     },
@@ -12,17 +20,23 @@
         "can_move_linear": true,
         "max_linear_speed": 625.0,
         "time_to_max_linear_speed": 7.5,
-        "arrival_tolerance_spatial_radius_scalar": 0.250,
-        "death_linear_speed_range": [1.0, 2.0],
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 35.0,
         "time_to_max_angular_speed": 10.0,
         "max_bank_angle": 35.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 90.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 150.0,
-        "time_to_strafe_max_linear_speed": 9.60,
+        "time_to_strafe_max_linear_speed": 9.6,
         "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
         "strafe_start_angle": 0.0,
         "strafe_stop_angle": 180.0,
@@ -49,12 +63,11 @@
         "attack_target_type_groups": [
             "light_corvette",
             "lrm_flak",
-            "heavy_capital",
+            "capital_supercapital_heavy",
             "defense"
         ],
         "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft",
-            "corvette"
+            "torpedo_strikecraft_corvette"
         ],
         "attack_target_type_groups_matching_weapon": "weapon_dreadnought_turret_mdtl",
         "auto_follow_target_priority": 5.0,
@@ -84,9 +97,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.hvyturret.000",
-                "weapon_position": [-41.241230, 31.086372, 50.888718],
-                "forward": [-0.005926, 0.011374, 0.999918],
-                "up": [-0.819496, 0.572972, -0.011374],
+                "weapon_position": [
+                    -41.24123,
+                    31.086372,
+                    50.888718
+                ],
+                "forward": [
+                    -0.005926,
+                    0.011374,
+                    0.999918
+                ],
+                "up": [
+                    -0.819496,
+                    0.572972,
+                    -0.011374
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -99,9 +124,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.hvyturret.001",
-                "weapon_position": [-52.130398, 14.603959, 10.476136],
-                "forward": [-0.013713, 0.016764, 0.999765],
-                "up": [-0.824755, 0.565109, -0.020788],
+                "weapon_position": [
+                    -52.130398,
+                    14.603959,
+                    10.476136
+                ],
+                "forward": [
+                    -0.013713,
+                    0.016764,
+                    0.999765
+                ],
+                "up": [
+                    -0.824755,
+                    0.565109,
+                    -0.020788
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -114,9 +151,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.hvyturret.002",
-                "weapon_position": [-35.843891, -11.921296, 79.543617],
-                "forward": [-0.013683, 0.015112, 0.999792],
-                "up": [-0.741270, -0.671207, 0.000001],
+                "weapon_position": [
+                    -35.843891,
+                    -11.921296,
+                    79.543617
+                ],
+                "forward": [
+                    -0.013683,
+                    0.015112,
+                    0.999792
+                ],
+                "up": [
+                    -0.74127,
+                    -0.671207,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -129,9 +178,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.hvyturret.003",
-                "weapon_position": [41.241222, 31.086370, 50.888718],
-                "forward": [0.005926, 0.011374, 0.999918],
-                "up": [0.819496, 0.572972, -0.011374],
+                "weapon_position": [
+                    41.241222,
+                    31.08637,
+                    50.888718
+                ],
+                "forward": [
+                    0.005926,
+                    0.011374,
+                    0.999918
+                ],
+                "up": [
+                    0.819496,
+                    0.572972,
+                    -0.011374
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -144,9 +205,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.hvyturret.004",
-                "weapon_position": [52.130398, 14.603966, 10.476140],
-                "forward": [0.013713, 0.016764, 0.999766],
-                "up": [0.824755, 0.565109, -0.020788],
+                "weapon_position": [
+                    52.130398,
+                    14.603966,
+                    10.47614
+                ],
+                "forward": [
+                    0.013713,
+                    0.016764,
+                    0.999766
+                ],
+                "up": [
+                    0.824755,
+                    0.565109,
+                    -0.020788
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -159,9 +232,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.hvyturret.005",
-                "weapon_position": [35.843884, -11.921294, 79.543617],
-                "forward": [0.013684, 0.015112, 0.999792],
-                "up": [0.741270, -0.671207, 0.0],
+                "weapon_position": [
+                    35.843884,
+                    -11.921294,
+                    79.543617
+                ],
+                "forward": [
+                    0.013684,
+                    0.015112,
+                    0.999792
+                ],
+                "up": [
+                    0.74127,
+                    -0.671207,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -174,9 +259,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.000",
-                "weapon_position": [-40.976212, 30.771912, 15.954643],
-                "forward": [0.005926, -0.011374, -0.999918],
-                "up": [-0.819496, 0.572972, -0.011374],
+                "weapon_position": [
+                    -40.976212,
+                    30.771912,
+                    15.954643
+                ],
+                "forward": [
+                    0.005926,
+                    -0.011374,
+                    -0.999918
+                ],
+                "up": [
+                    -0.819496,
+                    0.572972,
+                    -0.011374
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -189,9 +286,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.001",
-                "weapon_position": [-35.560513, -12.234204, 43.238232],
-                "forward": [0.013685, -0.015111, -0.999792],
-                "up": [-0.741270, -0.671208, -0.000001],
+                "weapon_position": [
+                    -35.560513,
+                    -12.234204,
+                    43.238232
+                ],
+                "forward": [
+                    0.013685,
+                    -0.015111,
+                    -0.999792
+                ],
+                "up": [
+                    -0.74127,
+                    -0.671208,
+                    -1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 90.0
@@ -204,9 +313,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.002",
-                "weapon_position": [-51.704582, 13.932069, -24.681885],
-                "forward": [0.013715, -0.016765, -0.999765],
-                "up": [-0.824754, 0.565109, -0.020791],
+                "weapon_position": [
+                    -51.704582,
+                    13.932069,
+                    -24.681885
+                ],
+                "forward": [
+                    0.013715,
+                    -0.016765,
+                    -0.999765
+                ],
+                "up": [
+                    -0.824754,
+                    0.565109,
+                    -0.020791
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -219,9 +340,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.003",
-                "weapon_position": [-45.136879, 23.196470, -51.554489],
-                "forward": [-0.011509, 0.015270, 0.999817],
-                "up": [-0.830440, 0.556815, -0.018063],
+                "weapon_position": [
+                    -45.136879,
+                    23.19647,
+                    -51.554489
+                ],
+                "forward": [
+                    -0.011509,
+                    0.01527,
+                    0.999817
+                ],
+                "up": [
+                    -0.83044,
+                    0.556815,
+                    -0.018063
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -234,9 +367,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.004",
-                "weapon_position": [-32.340176, -15.892963, -69.982368],
-                "forward": [-0.013684, 0.015112, 0.999792],
-                "up": [-0.741270, -0.671207, -0.0],
+                "weapon_position": [
+                    -32.340176,
+                    -15.892963,
+                    -69.982368
+                ],
+                "forward": [
+                    -0.013684,
+                    0.015112,
+                    0.999792
+                ],
+                "up": [
+                    -0.74127,
+                    -0.671207,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 90.0
@@ -249,9 +394,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.005",
-                "weapon_position": [-45.113708, 22.106583, -86.214066],
-                "forward": [0.011509, -0.015270, -0.999817],
-                "up": [-0.830440, 0.556815, -0.018063],
+                "weapon_position": [
+                    -45.113708,
+                    22.106583,
+                    -86.214066
+                ],
+                "forward": [
+                    0.011509,
+                    -0.01527,
+                    -0.999817
+                ],
+                "up": [
+                    -0.83044,
+                    0.556815,
+                    -0.018063
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 90.0
@@ -264,9 +421,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.006",
-                "weapon_position": [-32.538815, -15.673580, -105.187843],
-                "forward": [0.013683, -0.015114, -0.999792],
-                "up": [-0.741269, -0.671208, 0.000002],
+                "weapon_position": [
+                    -32.538815,
+                    -15.67358,
+                    -105.187843
+                ],
+                "forward": [
+                    0.013683,
+                    -0.015114,
+                    -0.999792
+                ],
+                "up": [
+                    -0.741269,
+                    -0.671208,
+                    2e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -279,9 +448,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.007",
-                "weapon_position": [40.976204, 30.771910, 15.954647],
-                "forward": [-0.005925, -0.011374, -0.999918],
-                "up": [0.819496, 0.572971, -0.011373],
+                "weapon_position": [
+                    40.976204,
+                    30.77191,
+                    15.954647
+                ],
+                "forward": [
+                    -0.005925,
+                    -0.011374,
+                    -0.999918
+                ],
+                "up": [
+                    0.819496,
+                    0.572971,
+                    -0.011373
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -294,9 +475,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.008",
-                "weapon_position": [35.560513, -12.234199, 43.238232],
-                "forward": [-0.013685, -0.015111, -0.999792],
-                "up": [0.741270, -0.671207, -0.000001],
+                "weapon_position": [
+                    35.560513,
+                    -12.234199,
+                    43.238232
+                ],
+                "forward": [
+                    -0.013685,
+                    -0.015111,
+                    -0.999792
+                ],
+                "up": [
+                    0.74127,
+                    -0.671207,
+                    -1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -309,9 +502,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.009",
-                "weapon_position": [51.704597, 13.932076, -24.681881],
-                "forward": [-0.013714, -0.016765, -0.999765],
-                "up": [0.824754, 0.565109, -0.020790],
+                "weapon_position": [
+                    51.704597,
+                    13.932076,
+                    -24.681881
+                ],
+                "forward": [
+                    -0.013714,
+                    -0.016765,
+                    -0.999765
+                ],
+                "up": [
+                    0.824754,
+                    0.565109,
+                    -0.02079
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -324,9 +529,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.010",
-                "weapon_position": [45.136879, 23.196474, -51.554482],
-                "forward": [0.011509, 0.015270, 0.999817],
-                "up": [0.830440, 0.556816, -0.018063],
+                "weapon_position": [
+                    45.136879,
+                    23.196474,
+                    -51.554482
+                ],
+                "forward": [
+                    0.011509,
+                    0.01527,
+                    0.999817
+                ],
+                "up": [
+                    0.83044,
+                    0.556816,
+                    -0.018063
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -339,9 +556,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.011",
-                "weapon_position": [32.340183, -15.892963, -69.982368],
-                "forward": [0.013684, 0.015112, 0.999792],
-                "up": [0.741270, -0.671207, -0.000001],
+                "weapon_position": [
+                    32.340183,
+                    -15.892963,
+                    -69.982368
+                ],
+                "forward": [
+                    0.013684,
+                    0.015112,
+                    0.999792
+                ],
+                "up": [
+                    0.74127,
+                    -0.671207,
+                    -1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -354,9 +583,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.012",
-                "weapon_position": [45.113716, 22.106586, -86.214066],
-                "forward": [-0.011508, -0.015270, -0.999817],
-                "up": [0.830440, 0.556815, -0.018063],
+                "weapon_position": [
+                    45.113716,
+                    22.106586,
+                    -86.214066
+                ],
+                "forward": [
+                    -0.011508,
+                    -0.01527,
+                    -0.999817
+                ],
+                "up": [
+                    0.83044,
+                    0.556815,
+                    -0.018063
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -369,9 +610,21 @@
             {
                 "weapon": "weapon_dreadnought_turret_mdtl",
                 "mesh_point": "child.medturret.013",
-                "weapon_position": [32.538822, -15.673579, -105.187843],
-                "forward": [-0.013682, -0.015114, -0.999792],
-                "up": [0.741270, -0.671207, 0.000002],
+                "weapon_position": [
+                    32.538822,
+                    -15.673579,
+                    -105.187843
+                ],
+                "forward": [
+                    -0.013682,
+                    -0.015114,
+                    -0.999792
+                ],
+                "up": [
+                    0.74127,
+                    -0.671207,
+                    2e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -95.0,
                     "max_angle": 95.0
@@ -384,12 +637,28 @@
             {
                 "weapon": "weapon_imp_pddlc",
                 "mesh_point": "child.pdturret.000",
-                "weapon_position": [32.999996, 0.000034, 270.000031],
-                "non_turret_muzzle_positions": [
-                    [32.999996, 0.000034, 270.000031]
+                "weapon_position": [
+                    32.999996,
+                    3.4e-05,
+                    270.000031
                 ],
-                "forward": [0.939693, -0.0, 0.342020],
-                "up": [0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        32.999996,
+                        3.4e-05,
+                        270.000031
+                    ]
+                ],
+                "forward": [
+                    0.939693,
+                    -0.0,
+                    0.34202
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 95.0
@@ -402,12 +671,28 @@
             {
                 "weapon": "weapon_imp_pddlc",
                 "mesh_point": "child.pdturret.001",
-                "weapon_position": [-33.000019, 0.000031, 270.000031],
-                "non_turret_muzzle_positions": [
-                    [-33.000019, 0.000031, 270.000031]
+                "weapon_position": [
+                    -33.000019,
+                    3.1e-05,
+                    270.000031
                 ],
-                "forward": [-0.939693, -0.0, 0.342020],
-                "up": [0.0, -1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -33.000019,
+                        3.1e-05,
+                        270.000031
+                    ]
+                ],
+                "forward": [
+                    -0.939693,
+                    -0.0,
+                    0.34202
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 95.0
@@ -420,12 +705,28 @@
             {
                 "weapon": "weapon_imp_pddlc",
                 "mesh_point": "child.pdturret.002",
-                "weapon_position": [48.910, 0.000028, 220.000031],
-                "non_turret_muzzle_positions": [
-                    [48.910, 0.000028, 220.000031]
+                "weapon_position": [
+                    48.91,
+                    2.8e-05,
+                    220.000031
                 ],
-                "forward": [0.974370, 0.0, 0.224951],
-                "up": [0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        48.91,
+                        2.8e-05,
+                        220.000031
+                    ]
+                ],
+                "forward": [
+                    0.97437,
+                    0.0,
+                    0.224951
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 95.0
@@ -438,12 +739,28 @@
             {
                 "weapon": "weapon_imp_pddlc",
                 "mesh_point": "child.pdturret.003",
-                "weapon_position": [-48.910023, 0.000024, 220.000031],
-                "non_turret_muzzle_positions": [
-                    [-48.910023, 0.000024, 220.000031]
+                "weapon_position": [
+                    -48.910023,
+                    2.4e-05,
+                    220.000031
                 ],
-                "forward": [-0.974370, 0.0, 0.224951],
-                "up": [-0.0, -1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -48.910023,
+                        2.4e-05,
+                        220.000031
+                    ]
+                ],
+                "forward": [
+                    -0.97437,
+                    0.0,
+                    0.224951
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 95.0
@@ -456,12 +773,28 @@
             {
                 "weapon": "weapon_imp_pddlc",
                 "mesh_point": "child.pdturret.004",
-                "weapon_position": [55.930008, 3.670008, 46.542809],
-                "non_turret_muzzle_positions": [
-                    [55.930008, 3.670008, 46.542809]
+                "weapon_position": [
+                    55.930008,
+                    3.670008,
+                    46.542809
                 ],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        55.930008,
+                        3.670008,
+                        46.542809
+                    ]
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -87.0,
                     "max_angle": 90.0
@@ -474,12 +807,28 @@
             {
                 "weapon": "weapon_imp_pddlc",
                 "mesh_point": "child.pdturret.005",
-                "weapon_position": [-55.930016, 3.670004, 46.542801],
-                "non_turret_muzzle_positions": [
-                    [-55.930016, 3.670004, 46.542801]
+                "weapon_position": [
+                    -55.930016,
+                    3.670004,
+                    46.542801
                 ],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [0.0, -1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -55.930016,
+                        3.670004,
+                        46.542801
+                    ]
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -492,12 +841,28 @@
             {
                 "weapon": "weapon_concussion_missile_dreadnought",
                 "mesh_point": "child.torpedo.000",
-                "weapon_position": [-0.000013, 0.000036, 298.133026],
-                "non_turret_muzzle_positions": [
-                    [-0.000013, 0.000036, 298.133026]
+                "weapon_position": [
+                    -1.3e-05,
+                    3.6e-05,
+                    298.133026
                 ],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -1.3e-05,
+                        3.6e-05,
+                        298.133026
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -523,13 +888,19 @@
         "spawn_debris_time": 3.0,
         "generic_group_name": "trader",
         "generic_counts": {
-            "small_debris": [7, 8],
-            "large_debris": [1, 2]
+            "small_debris": [
+                7,
+                8
+            ],
+            "large_debris": [
+                1,
+                2
+            ]
         }
     },
     "health": {
         "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 3.950,
+        "can_collide_duration_after_death": 3.95,
         "durability": 450.0,
         "can_ever_be_resurrected": true,
         "levels": [
@@ -550,7 +921,7 @@
                 "shield_point_restore_scalar_after_damage_taken": 0.0,
                 "shield_burst_restore": {
                     "cooldown_duration": 30.0,
-                    "restore_percentage": 0.350
+                    "restore_percentage": 0.35
                 },
                 "experience_given_on_death": 100.0
             }
@@ -579,16 +950,44 @@
         },
         "hangar_data": [
             {
-                "hangar_basis":
-                {
-                "position": [-16.617561, -28.275589, -53.427593],
-                "rotation": [0.0, -0.0, 1.0, 0.0, 1.0, -0.0, -1.0, 0.0, 0.0]}
+                "hangar_basis": {
+                    "position": [
+                        -16.617561,
+                        -28.275589,
+                        -53.427593
+                    ],
+                    "rotation": [
+                        0.0,
+                        -0.0,
+                        1.0,
+                        0.0,
+                        1.0,
+                        -0.0,
+                        -1.0,
+                        0.0,
+                        0.0
+                    ]
+                }
             },
             {
-                "hangar_basis":
-                {
-                "position": [16.617561, -28.275589, -53.427597],
-                "rotation": [-0.0, 0.0, -1.0, -0.0, 1.0, -0.0, 1.0, 0.0, -0.0]}
+                "hangar_basis": {
+                    "position": [
+                        16.617561,
+                        -28.275589,
+                        -53.427597
+                    ],
+                    "rotation": [
+                        -0.0,
+                        0.0,
+                        -1.0,
+                        -0.0,
+                        1.0,
+                        -0.0,
+                        1.0,
+                        0.0,
+                        -0.0
+                    ]
+                }
             }
         ]
     },

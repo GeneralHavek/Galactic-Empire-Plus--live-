@@ -4,12 +4,16 @@
     "pitch_speed": 0.0,
     "yaw_speed": 0.0,
     "range": 10000.0,
-    "cooldown_duration": 7.50,
+    "cooldown_duration": 7.5,
     "uniforms_target_filter_id": "common_weapon",
     "attack_target_type_groups": [
-        "light_flak_corvette",
-        "heavy_capital",
-        "defense"
+        "light_corvette",
+        "lrm_flak",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
@@ -31,9 +35,9 @@
     },
     "burst_pattern": [
         0.0,
-        0.40,
-        0.80,
-        1.20,
+        0.4,
+        0.8,
+        1.2,
         1.6,
         2.0
     ],

@@ -6,11 +6,16 @@
     "pitch_firing_tolerance": 1.0,
     "yaw_firing_tolerance": 1.0,
     "range": 8500.0,
-    "cooldown_duration": 7.50,
+    "cooldown_duration": 7.5,
     "uniforms_target_filter_id": "common_ion_weapon",
     "attack_target_type_groups": [
-        "heavy_capital",
-        "defense"
+        "capital_supercapital_heavy",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "light_corvette",
+        "lrm_flak",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "shields_only",
@@ -21,7 +26,7 @@
         "energy"
     ],
     "acquire_target_logic": "best_target_in_range",
-    "target_acquired_duration_required_to_fire": 0.80,
+    "target_acquired_duration_required_to_fire": 0.8,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 4000.0
@@ -29,23 +34,35 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.320
+            0.32
         ],
         "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_hic",
         "projectile_travel_effect": "weapon_bolt_hic",
         "hit_hull_effect": "weapon_hit_hull_hic",
         "hit_shield_effect": "weapon_hit_shield_hic",
-        "hit_shield_impact_radius_t": 0.750
+        "hit_shield_impact_radius_t": 0.75
     },
     "turret": {
         "type": "biaxial",
         "biaxial_base_mesh": "imperial_turret_hdic_mount_vic",
         "biaxial_barrel_mesh": "imperial_turret_hdic_barrel_vic",
-        "barrel_position": [-0.0, 2.530001, 3.180001],
+        "barrel_position": [
+            -0.0,
+            2.530001,
+            3.180001
+        ],
         "muzzle_positions": [
-            [0.663874, 0.000001, 4.913763],
-            [-0.691083, 0.000001, 4.913763]
+            [
+                0.663874,
+                1e-06,
+                4.913763
+            ],
+            [
+                -0.691083,
+                1e-06,
+                4.913763
+            ]
         ]
     }
 }

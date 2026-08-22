@@ -9,10 +9,7 @@
     "cooldown_duration": 6.0,
     "uniforms_target_filter_id": "turbolaser",
     "attack_target_type_groups": [
-        "corvette",
-        "heavy_capital",
-        "capital",
-        "light_flak",
+        "capital_supercapital_heavy",
         "defense"
     ],
     "weapon_type": "normal",

@@ -3,16 +3,20 @@
     "name": "weapon_name.weapon_hlc",
     "pitch_speed": 45.0,
     "yaw_speed": 45.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 6500.0,
     "cooldown_duration": 4.0,
     "uniforms_target_filter_id": "heavy_laser_cannon",
     "attack_target_type_groups": [
         "light_corvette",
         "lrm_flak",
-        "heavy_capital",
-        "defense"
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "strikecraft_torpedo",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
@@ -29,13 +33,13 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.20,
-            0.40,
-            0.80,
+            0.2,
+            0.4,
+            0.8,
             1.0,
-            1.20,
-            1.60,
-            1.80,
+            1.2,
+            1.6,
+            1.8,
             2.0
         ],
         "muzzle_picking_behavior": "random",
@@ -43,6 +47,6 @@
         "projectile_travel_effect": "weapon_bolt_mtl",
         "hit_hull_effect": "weapon_hit_hull_mtl",
         "hit_shield_effect": "weapon_hit_shield_mtl",
-        "hit_shield_impact_radius_t": 0.350
+        "hit_shield_impact_radius_t": 0.35
     }
 }

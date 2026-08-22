@@ -3,8 +3,16 @@
     "spatial": {
         "radius": 416.303223,
         "box": {
-            "center": [0.000088, 8.278622, 16.070084],
-            "extents": [127.247726, 108.206970, 399.999878]
+            "center": [
+                8.8e-05,
+                8.278622,
+                16.070084
+            ],
+            "extents": [
+                127.247726,
+                108.20697,
+                399.999878
+            ]
         },
         "collision_rank": 1
     },
@@ -12,13 +20,19 @@
         "can_move_linear": true,
         "max_linear_speed": 750.0,
         "time_to_max_linear_speed": 5.0,
-        "arrival_tolerance_spatial_radius_scalar": 0.250,
-        "death_linear_speed_range": [1.0, 2.0],
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 45.0,
         "time_to_max_angular_speed": 8.0,
         "max_bank_angle": 35.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 90.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 125.0,
@@ -49,13 +63,11 @@
         "attack_target_type_groups": [
             "corvette",
             "light_flak",
-            "heavy_capital",
-            "capital",
+            "capital_supercapital_heavy",
             "defense"
         ],
         "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft",
-            "corvette"
+            "torpedo_strikecraft_corvette"
         ],
         "attack_target_type_groups_matching_weapon": "weapon_pirate_turret_hqtl_ysal",
         "auto_follow_target_priority": 5.0,
@@ -83,9 +95,21 @@
             {
                 "weapon": "weapon_pirate_turret_htddtl_ysal",
                 "mesh_point": "child.hvy.000",
-                "weapon_position": [0.000082, 107.446892, -221.589981],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    8.2e-05,
+                    107.446892,
+                    -221.589981
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -98,9 +122,21 @@
             {
                 "weapon": "weapon_pirate_turret_htddtl_ysal",
                 "mesh_point": "child.hvy.001",
-                "weapon_position": [0.000061, -6.640315, 379.461731],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    6.1e-05,
+                    -6.640315,
+                    379.461731
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -113,9 +149,21 @@
             {
                 "weapon": "weapon_pirate_turret_htddtl_ysal",
                 "mesh_point": "child.hvy.002",
-                "weapon_position": [0.000076, -78.774567, 108.447746],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    7.6e-05,
+                    -78.774567,
+                    108.447746
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -140.0,
                     "max_angle": 140.0
@@ -128,9 +176,21 @@
             {
                 "weapon": "weapon_pirate_turret_htddtl_ysal",
                 "mesh_point": "child.hvy.003",
-                "weapon_position": [0.000091, -90.880501, -221.500488],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    9.1e-05,
+                    -90.880501,
+                    -221.500488
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -110.0,
                     "max_angle": 110.0
@@ -143,9 +203,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.000",
-                "weapon_position": [0.000062, 50.531235, 293.192657],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    6.2e-05,
+                    50.531235,
+                    293.192657
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -140.0,
                     "max_angle": 140.0
@@ -158,9 +230,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.001",
-                "weapon_position": [0.000064, 56.807510, 250.795456],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    6.4e-05,
+                    56.80751,
+                    250.795456
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -140.0,
                     "max_angle": 140.0
@@ -173,9 +257,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.002",
-                "weapon_position": [-15.629702, 59.118340, 198.874695],
-                "forward": [-0.0, -0.087156, 0.996195],
-                "up": [-0.0, 0.996195, 0.087156],
+                "weapon_position": [
+                    -15.629702,
+                    59.11834,
+                    198.874695
+                ],
+                "forward": [
+                    -0.0,
+                    -0.087156,
+                    0.996195
+                ],
+                "up": [
+                    -0.0,
+                    0.996195,
+                    0.087156
+                ],
                 "yaw_arc": {
                     "min_angle": -150.0,
                     "max_angle": 5.0
@@ -188,9 +284,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.003",
-                "weapon_position": [15.629834, 59.118340, 198.874695],
-                "forward": [-0.0, -0.087156, 0.996195],
-                "up": [-0.0, 0.996195, 0.087156],
+                "weapon_position": [
+                    15.629834,
+                    59.11834,
+                    198.874695
+                ],
+                "forward": [
+                    -0.0,
+                    -0.087156,
+                    0.996195
+                ],
+                "up": [
+                    -0.0,
+                    0.996195,
+                    0.087156
+                ],
                 "yaw_arc": {
                     "min_angle": -5.0,
                     "max_angle": 150.0
@@ -203,9 +311,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.004",
-                "weapon_position": [54.585392, 6.615288, 20.602167],
-                "forward": [1.0, -0.0, -0.0],
-                "up": [0.0, 1.0, -0.0],
+                "weapon_position": [
+                    54.585392,
+                    6.615288,
+                    20.602167
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 70.0
@@ -218,9 +338,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.005",
-                "weapon_position": [54.570755, 6.615281, -24.183748],
-                "forward": [1.0, -0.0, -0.0],
-                "up": [0.0, 1.0, -0.0],
+                "weapon_position": [
+                    54.570755,
+                    6.615281,
+                    -24.183748
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 65.0
@@ -233,9 +365,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.006",
-                "weapon_position": [54.570763, 6.615271, -68.969681],
-                "forward": [1.0, -0.0, -0.0],
-                "up": [0.0, 1.0, -0.0],
+                "weapon_position": [
+                    54.570763,
+                    6.615271,
+                    -68.969681
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 60.0
@@ -248,9 +392,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.007",
-                "weapon_position": [-54.585232, 6.615283, 20.602163],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -54.585232,
+                    6.615283,
+                    20.602163
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -70.0,
                     "max_angle": 90.0
@@ -263,9 +419,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.008",
-                "weapon_position": [-54.570606, 6.615276, -24.183752],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -54.570606,
+                    6.615276,
+                    -24.183752
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -65.0,
                     "max_angle": 90.0
@@ -278,9 +446,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.009",
-                "weapon_position": [-54.570602, 6.615266, -68.969681],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -54.570602,
+                    6.615266,
+                    -68.969681
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -60.0,
                     "max_angle": 90.0
@@ -293,9 +473,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.010",
-                "weapon_position": [65.357025, 31.771812, -188.177795],
-                "forward": [1.0, -0.0, -0.0],
-                "up": [0.0, 1.0, -0.0],
+                "weapon_position": [
+                    65.357025,
+                    31.771812,
+                    -188.177795
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -308,9 +500,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.011",
-                "weapon_position": [65.357025, 31.771811, -213.834808],
-                "forward": [1.0, -0.0, -0.0],
-                "up": [0.0, 1.0, -0.0],
+                "weapon_position": [
+                    65.357025,
+                    31.771811,
+                    -213.834808
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -323,9 +527,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.012",
-                "weapon_position": [65.357033, 31.771803, -239.491516],
-                "forward": [1.0, -0.0, -0.0],
-                "up": [0.0, 1.0, -0.0],
+                "weapon_position": [
+                    65.357033,
+                    31.771803,
+                    -239.491516
+                ],
+                "forward": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -338,9 +554,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.013",
-                "weapon_position": [-65.356857, 31.771809, -188.177795],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -65.356857,
+                    31.771809,
+                    -188.177795
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -353,9 +581,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.014",
-                "weapon_position": [-65.356857, 31.771807, -213.834808],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -65.356857,
+                    31.771807,
+                    -213.834808
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -368,9 +608,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.015",
-                "weapon_position": [-65.356857, 31.771799, -239.491516],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -65.356857,
+                    31.771799,
+                    -239.491516
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -383,9 +635,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.016",
-                "weapon_position": [71.864166, -5.630264, 10.932794],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [1.0, 0.0, 0.0],
+                "weapon_position": [
+                    71.864166,
+                    -5.630264,
+                    10.932794
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -160.0,
                     "max_angle": 160.0
@@ -398,9 +662,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.017",
-                "weapon_position": [-71.864014, -5.630270, 10.932788],
-                "forward": [-0.0, -0.0, 1.0],
-                "up": [-1.0, -0.0, -0.0],
+                "weapon_position": [
+                    -71.864014,
+                    -5.63027,
+                    10.932788
+                ],
+                "forward": [
+                    -0.0,
+                    -0.0,
+                    1.0
+                ],
+                "up": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -160.0,
                     "max_angle": 160.0
@@ -413,9 +689,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.018",
-                "weapon_position": [-18.360039, -11.595321, 343.479523],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -18.360039,
+                    -11.595321,
+                    343.479523
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -10.0,
                     "max_angle": 130.0
@@ -428,9 +716,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.019",
-                "weapon_position": [18.325829, -11.595319, 343.479523],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    18.325829,
+                    -11.595319,
+                    343.479523
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -130.0,
                     "max_angle": 10.0
@@ -443,9 +743,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.020",
-                "weapon_position": [0.000068, -33.774071, 249.259262],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    6.8e-05,
+                    -33.774071,
+                    249.259262
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -160.0,
                     "max_angle": 160.0
@@ -458,9 +770,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.021",
-                "weapon_position": [0.000070, -36.563034, 204.617493],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    7e-05,
+                    -36.563034,
+                    204.617493
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -155.0,
                     "max_angle": 155.0
@@ -473,9 +797,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.022",
-                "weapon_position": [54.585392, -17.715069, 20.660282],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    54.585392,
+                    -17.715069,
+                    20.660282
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -70.0,
                     "max_angle": 90.0
@@ -488,9 +824,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.023",
-                "weapon_position": [54.570755, -17.715076, -24.125635],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    54.570755,
+                    -17.715076,
+                    -24.125635
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -65.0,
                     "max_angle": 90.0
@@ -503,9 +851,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.024",
-                "weapon_position": [54.570763, -17.715086, -68.911568],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    54.570763,
+                    -17.715086,
+                    -68.911568
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -50.0,
                     "max_angle": 90.0
@@ -518,9 +878,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.025",
-                "weapon_position": [-54.585232, -17.715073, 20.660278],
-                "forward": [-1.0, 0.0, -0.0],
-                "up": [-0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -54.585232,
+                    -17.715073,
+                    20.660278
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 70.0
@@ -533,9 +905,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.026",
-                "weapon_position": [-54.570606, -17.715080, -24.125639],
-                "forward": [-1.0, 0.0, -0.0],
-                "up": [-0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -54.570606,
+                    -17.71508,
+                    -24.125639
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 65.0
@@ -548,9 +932,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.027",
-                "weapon_position": [-54.570602, -17.715090, -68.911568],
-                "forward": [-1.0, 0.0, -0.0],
-                "up": [-0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -54.570602,
+                    -17.71509,
+                    -68.911568
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 50.0
@@ -563,9 +959,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.028",
-                "weapon_position": [65.438171, -15.596386, -188.177795],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    65.438171,
+                    -15.596386,
+                    -188.177795
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -578,9 +986,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.029",
-                "weapon_position": [65.438171, -15.596392, -213.834808],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    65.438171,
+                    -15.596392,
+                    -213.834808
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -593,9 +1013,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.030",
-                "weapon_position": [65.438171, -15.596397, -239.491516],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    65.438171,
+                    -15.596397,
+                    -239.491516
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -608,9 +1040,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.031",
-                "weapon_position": [-65.437996, -15.596392, -188.177795],
-                "forward": [-1.0, 0.0, -0.0],
-                "up": [-0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -65.437996,
+                    -15.596392,
+                    -188.177795
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -623,9 +1067,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.032",
-                "weapon_position": [-65.437996, -15.596397, -213.834808],
-                "forward": [-1.0, 0.0, -0.0],
-                "up": [-0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -65.437996,
+                    -15.596397,
+                    -213.834808
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -638,9 +1094,21 @@
             {
                 "weapon": "weapon_pirate_turret_hqtl_ysal",
                 "mesh_point": "child.med.033",
-                "weapon_position": [-65.437996, -15.596403, -239.491516],
-                "forward": [-1.0, 0.0, -0.0],
-                "up": [-0.0, -1.0, 0.000001],
+                "weapon_position": [
+                    -65.437996,
+                    -15.596403,
+                    -239.491516
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    -1.0,
+                    1e-06
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 90.0
@@ -666,30 +1134,36 @@
         "spawn_debris_time": 1.0,
         "generic_group_name": "trader",
         "generic_counts": {
-            "small_debris": [8, 9],
-            "large_debris": [1, 1]
+            "small_debris": [
+                8,
+                9
+            ],
+            "large_debris": [
+                1,
+                1
+            ]
         }
     },
     "health": {
         "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 0.80,
+        "can_collide_duration_after_death": 0.8,
         "durability": 425.0,
         "can_ever_be_resurrected": true,
         "levels": [
             {
                 "max_hull_points": 1900.0,
-                "hull_point_restore_rate": 1.70,
+                "hull_point_restore_rate": 1.7,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 1.0,
                 "max_armor_points": 750.0,
-                "armor_point_restore_rate": 2.350,
+                "armor_point_restore_rate": 2.35,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 110.0,
                 "max_shield_points": 1650.0,
                 "shield_point_restore_rate": 3.0,
                 "shield_burst_restore": {
                     "cooldown_duration": 30.0,
-                    "restore_percentage": 0.350
+                    "restore_percentage": 0.35
                 },
                 "experience_given_on_death": 70.0
             }

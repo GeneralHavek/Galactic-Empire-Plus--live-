@@ -3,13 +3,13 @@
     "name": "weapon_name.weapon_hict",
     "pitch_speed": 35.0,
     "yaw_speed": 35.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 8500.0,
     "cooldown_duration": 7.0,
     "uniforms_target_filter_id": "common_ion_weapon",
     "attack_target_type_groups": [
-        "heavy_capital",
+        "capital_supercapital_heavy",
         "defense"
     ],
     "weapon_type": "normal",
@@ -29,7 +29,7 @@
         {
             "modifier_type": "cooldown_duration",
             "value_behavior": "scalar",
-            "value": -0.10,
+            "value": -0.1,
             "prerequisites": [
                 [
                     "imperial_unlock_starbase_improve_weapon_item"
@@ -39,7 +39,7 @@
         {
             "modifier_type": "tracking_speed",
             "value_behavior": "scalar",
-            "value": 0.250,
+            "value": 0.25,
             "prerequisites": [
                 [
                     "imperial_unlock_starbase_improve_weapon_item"
@@ -49,7 +49,7 @@
         {
             "modifier_type": "range",
             "value_behavior": "scalar",
-            "value": 0.250,
+            "value": 0.25,
             "prerequisites": [
                 [
                     "imperial_unlock_starbase_improve_weapon_item"
@@ -60,23 +60,35 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.20
+            0.2
         ],
         "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_hic",
         "projectile_travel_effect": "weapon_bolt_hic",
         "hit_hull_effect": "weapon_hit_hull_hic",
         "hit_shield_effect": "weapon_hit_shield_hic",
-        "hit_shield_impact_radius_t": 0.750
+        "hit_shield_impact_radius_t": 0.75
     },
     "turret": {
         "type": "biaxial",
         "biaxial_base_mesh": "imperial_isd1_hdic_mount",
         "biaxial_barrel_mesh": "imperial_isd1_hdic_barrel",
-        "barrel_position": [-0.000001, 9.639810, 12.065223],
+        "barrel_position": [
+            -1e-06,
+            9.63981,
+            12.065223
+        ],
         "muzzle_positions": [
-            [2.482830, -0.004731, 18.292875],
-            [-2.613098, -0.004731, 18.292875]
+            [
+                2.48283,
+                -0.004731,
+                18.292875
+            ],
+            [
+                -2.613098,
+                -0.004731,
+                18.292875
+            ]
         ]
     }
 }

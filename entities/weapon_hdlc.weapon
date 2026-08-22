@@ -11,8 +11,12 @@
     "attack_target_type_groups": [
         "light_corvette",
         "lrm_flak",
-        "heavy_capital",
-        "defense"
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "strikecraft_torpedo",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",

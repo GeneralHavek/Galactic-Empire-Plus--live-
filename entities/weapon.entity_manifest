@@ -148,6 +148,11 @@
         "weapon_pirate_rupture_turret_dllc",
         "weapon_pirate_rupture_turret_ldtlt",
         "weapon_pirate_rupture_turret_lict",
-        "weapon_imp_xx9_hdtlt"
+        "weapon_imp_xx9_hdtlt",
+        "weapon_418_turret_lrmtl",
+        "weapon_allegiance_mtl",
+        "weapon_imperial_dreadnought_turret_mdtl",
+        "weapon_munificent_mtl",
+        "weapon_tie_interceptor_laser"
     ]
 }

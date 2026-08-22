@@ -1,37 +1,44 @@
 {
     "version": 0,
-    "name": "weapon_name.weapon_mtl",
+    "name": "weapon_name.weapon_mtlt",
     "pitch_speed": 40.0,
     "yaw_speed": 40.0,
     "pitch_firing_tolerance": 2.5,
     "yaw_firing_tolerance": 2.5,
-    "range": 7500.0,
-    "cooldown_duration": 6.0,
+    "range": 8000.0,
+    "cooldown_duration": 10.0,
     "uniforms_target_filter_id": "turbolaser",
     "attack_target_type_groups": [
-        "light_corvette",
-        "lrm_flak",
         "capital_supercapital_heavy",
         "defense"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
-    "damage": 15.0,
+    "damage": 50.0,
     "penetration": 300.0,
     "tags": [
-        "energy",
-        "turbolaser"
+        "turbolaser",
+        "energy"
     ],
     "acquire_target_logic": "order_target_or_best_target_in_range",
-    "target_acquired_duration_required_to_fire": 0.85,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 4000.0
     },
     "effects": {
         "burst_pattern": [
-            0.0
+            0.0,
+            0.4,
+            2.0,
+            2.4,
+            4.0,
+            4.4,
+            6.0,
+            6.4,
+            8.0,
+            8.4
         ],
+        "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_mtl",
         "projectile_travel_effect": "weapon_bolt_mtl",
         "hit_hull_effect": "weapon_hit_hull_mtl",
@@ -40,33 +47,23 @@
     },
     "turret": {
         "type": "biaxial",
-        "biaxial_base_mesh": "pirate_turret_mddtl_mount",
-        "biaxial_barrel_mesh": "pirate_turret_mddtl_barrel",
+        "biaxial_base_mesh": "dreadnought_turret_0_mount",
+        "biaxial_barrel_mesh": "dreadnought_turret_0_barrel",
         "barrel_position": [
-            0.018918,
-            3.58316,
-            2.641358
+            0.0,
+            4.154261,
+            -0.0
         ],
         "muzzle_positions": [
             [
-                6.514247,
-                4.631804,
-                20.016022
+                -2.362317,
+                0.0,
+                17.717382
             ],
             [
-                6.512508,
-                3.128297,
-                20.036692
-            ],
-            [
-                -6.488546,
-                4.646848,
-                20.010698
-            ],
-            [
-                -6.490285,
-                3.143334,
-                20.031307
+                2.36232,
+                0.0,
+                17.717382
             ]
         ]
     }

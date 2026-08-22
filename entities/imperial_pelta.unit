@@ -3,22 +3,36 @@
     "spatial": {
         "radius": 141.156464,
         "box": {
-            "center": [0.000050, 6.831576, -0.093536],
-            "extents": [92.228775, 29.308842, 140.919098]
+            "center": [
+                5e-05,
+                6.831576,
+                -0.093536
+            ],
+            "extents": [
+                92.228775,
+                29.308842,
+                140.919098
+            ]
         },
         "collision_rank": 1
     },
     "physics": {
         "can_move_linear": true,
         "max_linear_speed": 625.0,
-        "time_to_max_linear_speed": 6.50,
-        "arrival_tolerance_spatial_radius_scalar": 0.250,
-        "death_linear_speed_range": [1.0, 2.0],
+        "time_to_max_linear_speed": 6.5,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 20.0,
         "time_to_max_angular_speed": 10.0,
         "max_bank_angle": 35.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 90.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 125.0,
@@ -47,12 +61,18 @@
     },
     "ai": {
         "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft",
-            "corvette"
+            "torpedo_strikecraft_corvette"
         ],
         "behaviors": [
             "auto_follow_unit_attacking_any_or_is_damaged"
-        ]
+        ],
+        "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
+            "capital_supercapital_heavy",
+            "defense"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_pelta_turret_mttl"
     },
     "ai_attack_target": {
         "attack_priority": 50.0,
@@ -60,7 +80,7 @@
         "attack_target_type": "support"
     },
     "player_ai": {
-        "max_empire_owned_count_percentage": 0.050,
+        "max_empire_owned_count_percentage": 0.05,
         "max_count_to_fleet_supply_ratio": 250
     },
     "user_interface": {
@@ -79,9 +99,21 @@
             {
                 "weapon": "weapon_pelta_turret_mttl",
                 "mesh_point": "child.lightturret.000",
-                "weapon_position": [31.156988, 13.864780, -68.958549],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    31.156988,
+                    13.86478,
+                    -68.958549
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -30.0,
                     "max_angle": 230.0
@@ -94,9 +126,21 @@
             {
                 "weapon": "weapon_pelta_turret_mttl",
                 "mesh_point": "child.lightturret.001",
-                "weapon_position": [-31.157005, 13.864779, -68.958549],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "weapon_position": [
+                    -31.157005,
+                    13.864779,
+                    -68.958549
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -230.0,
                     "max_angle": 30.0
@@ -109,9 +153,21 @@
             {
                 "weapon": "weapon_pelta_turret_mttl",
                 "mesh_point": "child.lightturret.002",
-                "weapon_position": [31.156990, -13.781132, -68.958549],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    31.15699,
+                    -13.781132,
+                    -68.958549
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -230.0,
                     "max_angle": 30.0
@@ -124,9 +180,21 @@
             {
                 "weapon": "weapon_pelta_turret_mttl",
                 "mesh_point": "child.lightturret.003",
-                "weapon_position": [-31.157003, -13.781134, -68.958549],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [0.0, -1.0, 0.0],
+                "weapon_position": [
+                    -31.157003,
+                    -13.781134,
+                    -68.958549
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -30.0,
                     "max_angle": 230.0
@@ -139,14 +207,38 @@
             {
                 "weapon": "weapon_pelta_hdlc",
                 "mesh_point": "weapon.light.000",
-                "weapon_position": [-29.343069, -0.000006, -43.112896],
-                "non_turret_muzzle_positions": [
-                    [-29.343067, -0.000005, -32.934032],
-                    [-29.343067, -0.000006, -42.933659],
-                    [-29.343067, -0.000008, -53.470985]
+                "weapon_position": [
+                    -29.343069,
+                    -6e-06,
+                    -43.112896
                 ],
-                "forward": [-1.0, 0.0, 0.0],
-                "up": [0.0, 1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -29.343067,
+                        -5e-06,
+                        -32.934032
+                    ],
+                    [
+                        -29.343067,
+                        -6e-06,
+                        -42.933659
+                    ],
+                    [
+                        -29.343067,
+                        -8e-06,
+                        -53.470985
+                    ]
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -15.0,
                     "max_angle": 90.0
@@ -159,14 +251,38 @@
             {
                 "weapon": "weapon_pelta_hdlc",
                 "mesh_point": "weapon.light.001",
-                "weapon_position": [29.343071, -0.000004, -43.112896],
-                "non_turret_muzzle_positions": [
-                    [29.343071, -0.000003, -32.934032],
-                    [29.343071, -0.000004, -42.933659],
-                    [29.343071, -0.000005, -53.470985]
+                "weapon_position": [
+                    29.343071,
+                    -4e-06,
+                    -43.112896
                 ],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        29.343071,
+                        -3e-06,
+                        -32.934032
+                    ],
+                    [
+                        29.343071,
+                        -4e-06,
+                        -42.933659
+                    ],
+                    [
+                        29.343071,
+                        -5e-06,
+                        -53.470985
+                    ]
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 15.0
@@ -179,14 +295,38 @@
             {
                 "weapon": "weapon_pelta_pddlc",
                 "mesh_point": "weapon.pd.000",
-                "weapon_position": [-26.975384, 0.000005, 52.728729],
-                "non_turret_muzzle_positions": [
-                    [-27.174248, 0.000003, 31.488926],
-                    [-26.858109, 0.000006, 59.841270],
-                    [-26.893795, 0.000007, 66.855995]
+                "weapon_position": [
+                    -26.975384,
+                    5e-06,
+                    52.728729
                 ],
-                "forward": [-1.0, 0.0, 0.0],
-                "up": [0.0, 1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -27.174248,
+                        3e-06,
+                        31.488926
+                    ],
+                    [
+                        -26.858109,
+                        6e-06,
+                        59.84127
+                    ],
+                    [
+                        -26.893795,
+                        7e-06,
+                        66.855995
+                    ]
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -55.0,
                     "max_angle": 90.0
@@ -199,14 +339,38 @@
             {
                 "weapon": "weapon_pelta_pddlc",
                 "mesh_point": "weapon.pd.001",
-                "weapon_position": [26.975378, 0.000007, 52.728729],
-                "non_turret_muzzle_positions": [
-                    [27.174244, 0.000005, 31.488930],
-                    [26.858105, 0.000008, 59.841270],
-                    [26.893787, 0.000009, 66.855995]
+                "weapon_position": [
+                    26.975378,
+                    7e-06,
+                    52.728729
                 ],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        27.174244,
+                        5e-06,
+                        31.48893
+                    ],
+                    [
+                        26.858105,
+                        8e-06,
+                        59.84127
+                    ],
+                    [
+                        26.893787,
+                        9e-06,
+                        66.855995
+                    ]
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 55.0
@@ -232,29 +396,35 @@
         "spawn_debris_time": 3.0,
         "generic_group_name": "trader",
         "generic_counts": {
-            "small_debris": [5, 7],
-            "large_debris": [0, 1]
+            "small_debris": [
+                5,
+                7
+            ],
+            "large_debris": [
+                0,
+                1
+            ]
         }
     },
     "health": {
         "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 3.950,
+        "can_collide_duration_after_death": 3.95,
         "durability": 235.0,
         "can_ever_be_resurrected": true,
         "levels": [
             {
                 "max_hull_points": 800.0,
-                "hull_point_restore_rate": 1.50,
+                "hull_point_restore_rate": 1.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "max_armor_points": 300.0,
-                "armor_point_restore_rate": 1.60,
+                "armor_point_restore_rate": 1.6,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 150.0,
                 "max_shield_points": 1370.0,
-                "shield_point_restore_rate": 1.750,
+                "shield_point_restore_rate": 1.75,
                 "shield_burst_restore": {
                     "cooldown_duration": 20.0,
-                    "restore_percentage": 0.350
+                    "restore_percentage": 0.35
                 },
                 "experience_given_on_death": 45.0
             }
@@ -262,7 +432,7 @@
     },
     "antimatter": {
         "max_antimatter": 570.0,
-        "antimatter_restore_rate": 2.80
+        "antimatter_restore_rate": 2.8
     },
     "build": {
         "build_time": 29.0,

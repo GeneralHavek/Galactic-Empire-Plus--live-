@@ -7,9 +7,13 @@
     "cooldown_duration": 7.5,
     "uniforms_target_filter_id": "common_weapon",
     "attack_target_type_groups": [
-        "light_flak_corvette",
-        "heavy_capital",
-        "defense"
+        "light_corvette",
+        "lrm_flak",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",

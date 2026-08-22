@@ -3,8 +3,16 @@
     "spatial": {
         "radius": 409.854156,
         "box": {
-            "center": [1.52588e-05, 18.4397, 33.9944],
-            "extents": [199.104, 79.5285, 375.834]
+            "center": [
+                1.52588e-05,
+                18.4397,
+                33.9944
+            ],
+            "extents": [
+                199.104,
+                79.5285,
+                375.834
+            ]
         },
         "collision_rank": 1
     },
@@ -13,12 +21,18 @@
         "max_linear_speed": 815.0,
         "time_to_max_linear_speed": 4.0,
         "arrival_tolerance_spatial_radius_scalar": 0.25,
-        "death_linear_speed_range": [1.0, 2.0],
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 65.0,
         "time_to_max_angular_speed": 4.0,
         "max_bank_angle": 40.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 90.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 125.0,
@@ -47,15 +61,11 @@
     },
     "ai": {
         "attack_target_type_groups": [
-            "corvette",
-            "heavy_capital",
-            "capital",
-            "light_flak",
+            "capital_supercapital_heavy",
             "defense"
         ],
         "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft",
-            "corvette"
+            "torpedo_strikecraft_corvette"
         ],
         "attack_target_type_groups_matching_weapon": "weapon_mtl_acc_2",
         "auto_follow_target_priority": 5.0,
@@ -85,9 +95,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.000",
-                "weapon_position": [-61.2755, 30.0756, -37.4933],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -61.2755,
+                    30.0756,
+                    -37.4933
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -90.0,
                     "max_angle": 92.0
@@ -100,9 +122,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.001",
-                "weapon_position": [-61.2755, 30.0756, -137.429],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -61.2755,
+                    30.0756,
+                    -137.429
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -92.0,
                     "max_angle": 90.0
@@ -115,9 +149,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.002",
-                "weapon_position": [-61.2755, 30.0756, -92.1981],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -61.2755,
+                    30.0756,
+                    -92.1981
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -92.0,
                     "max_angle": 90.0
@@ -130,9 +176,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.003",
-                "weapon_position": [61.2755, 30.0757, -37.4933],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    61.2755,
+                    30.0757,
+                    -37.4933
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -92.0,
                     "max_angle": 90.0
@@ -145,9 +203,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.004",
-                "weapon_position": [61.2755, 30.0756, -92.1981],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    61.2755,
+                    30.0756,
+                    -92.1981
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -92.0,
                     "max_angle": 90.0
@@ -160,9 +230,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.005",
-                "weapon_position": [61.2755, 30.0756, -137.429],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    61.2755,
+                    30.0756,
+                    -137.429
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -92.0,
                     "max_angle": 90.0
@@ -171,12 +253,25 @@
                     "min_angle": -100.0,
                     "max_angle": 8.0
                 }
-            },{
+            },
+            {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.006",
-                "weapon_position": [-136, 15.86, -15],
-                "forward": [-1.62843e-07, 5.96046e-08, 1],
-                "up": [-1.62843e-07, 1, 5.96046e-08],
+                "weapon_position": [
+                    -136,
+                    15.86,
+                    -15
+                ],
+                "forward": [
+                    -1.62843e-07,
+                    5.96046e-08,
+                    1
+                ],
+                "up": [
+                    -1.62843e-07,
+                    1,
+                    5.96046e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 25.0
@@ -185,12 +280,25 @@
                     "min_angle": -100.0,
                     "max_angle": 8.0
                 }
-            },{
+            },
+            {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.007",
-                "weapon_position": [-120, 16.15, 25],
-                "forward": [-1.62921e-07, 5.96046e-08, 1],
-                "up": [-1.62921e-07, 1, 5.96046e-08],
+                "weapon_position": [
+                    -120,
+                    16.15,
+                    25
+                ],
+                "forward": [
+                    -1.62921e-07,
+                    5.96046e-08,
+                    1
+                ],
+                "up": [
+                    -1.62921e-07,
+                    1,
+                    5.96046e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 25.0
@@ -199,12 +307,25 @@
                     "min_angle": -100.0,
                     "max_angle": 8.0
                 }
-            },{
+            },
+            {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.008",
-                "weapon_position": [-105, 16.15, 65],
-                "forward": [-1.62921e-07, 5.96046e-08, 1],
-                "up": [-1.62921e-07, 1, 5.96046e-08],
+                "weapon_position": [
+                    -105,
+                    16.15,
+                    65
+                ],
+                "forward": [
+                    -1.62921e-07,
+                    5.96046e-08,
+                    1
+                ],
+                "up": [
+                    -1.62921e-07,
+                    1,
+                    5.96046e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 25.0
@@ -217,9 +338,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.009",
-                "weapon_position": [136, 15.86, -15],
-                "forward": [-1.62843e-07, 5.96046e-08, 1],
-                "up": [-1.62843e-07, 5.96046e-08, 1],
+                "weapon_position": [
+                    136,
+                    15.86,
+                    -15
+                ],
+                "forward": [
+                    -1.62843e-07,
+                    5.96046e-08,
+                    1
+                ],
+                "up": [
+                    -1.62843e-07,
+                    5.96046e-08,
+                    1
+                ],
                 "yaw_arc": {
                     "min_angle": -25.0,
                     "max_angle": 180.0
@@ -232,9 +365,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.010",
-                "weapon_position": [120, 16.15, 25],
-                "forward": [-1.62843e-07, 5.96046e-08, 1],
-                "up": [-1.62843e-07, 1, 5.96046e-08],
+                "weapon_position": [
+                    120,
+                    16.15,
+                    25
+                ],
+                "forward": [
+                    -1.62843e-07,
+                    5.96046e-08,
+                    1
+                ],
+                "up": [
+                    -1.62843e-07,
+                    1,
+                    5.96046e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -25.0,
                     "max_angle": 180.0
@@ -247,9 +392,21 @@
             {
                 "weapon": "weapon_mtl_acc_2",
                 "mesh_point": "weapon.med.011",
-                "weapon_position": [105, 16.15, 65],
-                "forward": [-1.62843e-07, 5.96046e-08, 1],
-                "up": [-1.62843e-07, 1, 5.96046e-08],
+                "weapon_position": [
+                    105,
+                    16.15,
+                    65
+                ],
+                "forward": [
+                    -1.62843e-07,
+                    5.96046e-08,
+                    1
+                ],
+                "up": [
+                    -1.62843e-07,
+                    1,
+                    5.96046e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -25.0,
                     "max_angle": 180.0
@@ -262,9 +419,21 @@
             {
                 "weapon": "weapon_hdlc",
                 "mesh_point": "weapon.light.002",
-                "weapon_position": [-88.093857, 0.373357, -42.311092],
-                "forward": [-1.0, -0.0, -0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    -88.093857,
+                    0.373357,
+                    -42.311092
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -85.0,
                     "max_angle": 85.0
@@ -277,9 +446,21 @@
             {
                 "weapon": "weapon_hdlc",
                 "mesh_point": "weapon.light.003",
-                "weapon_position": [88.093857, 0.373365, -42.311081],
-                "forward": [1.0, 0.0, 0.0],
-                "up": [-0.0, 1.0, -0.0],
+                "weapon_position": [
+                    88.093857,
+                    0.373365,
+                    -42.311081
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -85.0,
                     "max_angle": 85.0
@@ -292,13 +473,33 @@
             {
                 "weapon": "weapon_concussion_missile_acclamator",
                 "mesh_point": "weapon.torpedo.001",
-                "weapon_position": [-144.923, 1.46519, 73.1441],
-                "non_turret_muzzle_positions": [
-                    [-144.923, 1.46519, 73.1441],
-                    [-105.645, 1.46521, 175.937]
+                "weapon_position": [
+                    -144.923,
+                    1.46519,
+                    73.1441
                 ],
-                "forward": [-0.927184, -1.82066e-07, 0.374607],
-                "up": [-1.92723e-07, 1, -5.96047e-08],
+                "non_turret_muzzle_positions": [
+                    [
+                        -144.923,
+                        1.46519,
+                        73.1441
+                    ],
+                    [
+                        -105.645,
+                        1.46521,
+                        175.937
+                    ]
+                ],
+                "forward": [
+                    -0.927184,
+                    -1.82066e-07,
+                    0.374607
+                ],
+                "up": [
+                    -1.92723e-07,
+                    1,
+                    -5.96047e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -311,13 +512,33 @@
             {
                 "weapon": "weapon_concussion_missile_acclamator",
                 "mesh_point": "weapon.torpedo.003",
-                "weapon_position": [144.923, 1.46521, 73.1441],
-                "non_turret_muzzle_positions": [
-                    [144.923, 1.46521, 73.1441],
-                    [105.645, 1.46523, 175.937]
+                "weapon_position": [
+                    144.923,
+                    1.46521,
+                    73.1441
                 ],
-                "forward": [0.927184, 1.82002e-08, 0.374607],
-                "up": [-1.39091e-08, 1, -5.96047e-08],
+                "non_turret_muzzle_positions": [
+                    [
+                        144.923,
+                        1.46521,
+                        73.1441
+                    ],
+                    [
+                        105.645,
+                        1.46523,
+                        175.937
+                    ]
+                ],
+                "forward": [
+                    0.927184,
+                    1.82002e-08,
+                    0.374607
+                ],
+                "up": [
+                    -1.39091e-08,
+                    1,
+                    -5.96047e-08
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -330,17 +551,53 @@
             {
                 "weapon": "weapon_planet_turbolaser_acc_2",
                 "mesh_point": "bomb.0",
-                "weapon_position": [1.4171e-05, -62.9318, -99.1657],
-                "non_turret_muzzle_positions": [
-                    [-61.2755, 30.0756, -37.4933],
-                    [-61.2755, 30.0756, -137.429],
-                    [-61.2755, 30.0756, -92.1981],
-                    [61.2755, 30.0757, -37.4933],
-                    [61.2755, 30.0756, -92.1981],
-                    [61.2755, 30.0756, -137.429]
+                "weapon_position": [
+                    1.4171e-05,
+                    -62.9318,
+                    -99.1657
                 ],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -61.2755,
+                        30.0756,
+                        -37.4933
+                    ],
+                    [
+                        -61.2755,
+                        30.0756,
+                        -137.429
+                    ],
+                    [
+                        -61.2755,
+                        30.0756,
+                        -92.1981
+                    ],
+                    [
+                        61.2755,
+                        30.0757,
+                        -37.4933
+                    ],
+                    [
+                        61.2755,
+                        30.0756,
+                        -92.1981
+                    ],
+                    [
+                        61.2755,
+                        30.0756,
+                        -137.429
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -180.0,
                     "max_angle": 180.0
@@ -420,7 +677,9 @@
         "supply_cost": 26,
         "build_group_id": "cruiser",
         "prerequisites": [
-            ["imperial_unlock_acclamator_2"]
+            [
+                "imperial_unlock_acclamator_2"
+            ]
         ]
     },
     "items": {

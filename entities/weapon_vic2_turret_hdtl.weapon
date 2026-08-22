@@ -3,14 +3,19 @@
     "name": "weapon_name.weapon_htlt",
     "pitch_speed": 35.0,
     "yaw_speed": 35.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 8500.0,
     "cooldown_duration": 8.0,
     "uniforms_target_filter_id": "turbolaser",
     "attack_target_type_groups": [
-        "heavy_capital",
-        "defense"
+        "capital_supercapital_heavy",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "light_corvette",
+        "lrm_flak",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
@@ -21,7 +26,7 @@
         "energy"
     ],
     "acquire_target_logic": "order_target_or_best_target_in_range",
-    "target_acquired_duration_required_to_fire": 1.20,
+    "target_acquired_duration_required_to_fire": 1.2,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 4000.0
@@ -38,16 +43,28 @@
         "projectile_travel_effect": "weapon_bolt_htl",
         "hit_hull_effect": "weapon_hit_hull_htl",
         "hit_shield_effect": "weapon_hit_shield_htl",
-        "hit_shield_impact_radius_t": 0.650
+        "hit_shield_impact_radius_t": 0.65
     },
     "turret": {
         "type": "biaxial",
         "biaxial_base_mesh": "imperial_turret_hdtl_vic_mount",
         "biaxial_barrel_mesh": "imperial_turret_hdtl_vic_barrel",
-        "barrel_position": [-0.0, 3.209661, 0.0],
+        "barrel_position": [
+            -0.0,
+            3.209661,
+            0.0
+        ],
         "muzzle_positions": [
-            [0.449282, 0.000001, 7.248532],
-            [-0.450188, 0.000001, 7.248532]
+            [
+                0.449282,
+                1e-06,
+                7.248532
+            ],
+            [
+                -0.450188,
+                1e-06,
+                7.248532
+            ]
         ]
     }
 }

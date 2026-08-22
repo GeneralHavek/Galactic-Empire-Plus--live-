@@ -3,8 +3,16 @@
     "spatial": {
         "radius": 65.487312,
         "box": {
-            "center": [0.0, 2.563275, -3.467257],
-            "extents": [33.016251, 20.278954, 60.248466]
+            "center": [
+                0.0,
+                2.563275,
+                -3.467257
+            ],
+            "extents": [
+                33.016251,
+                20.278954,
+                60.248466
+            ]
         },
         "collision_rank": 1
     },
@@ -12,13 +20,19 @@
         "can_move_linear": true,
         "max_linear_speed": 750.0,
         "time_to_max_linear_speed": 6.0,
-        "arrival_tolerance_spatial_radius_scalar": 0.250,
-        "death_linear_speed_range": [1.0, 2.0],
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 35.0,
-        "time_to_max_angular_speed": 3.50,
+        "time_to_max_angular_speed": 3.5,
         "max_bank_angle": 35.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 90.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 210.0,
@@ -49,12 +63,11 @@
         "attack_target_type_groups": [
             "light_corvette",
             "lrm_flak",
-            "heavy_capital",
+            "capital_supercapital_heavy",
             "defense"
         ],
         "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft",
-            "corvette"
+            "torpedo_strikecraft_corvette"
         ],
         "attack_target_type_groups_matching_weapon": "weapon_xx777_mtl",
         "auto_follow_target_priority": 4.0,
@@ -69,9 +82,9 @@
         "attack_target_type": "light"
     },
     "player_ai": {
-        "max_empire_owned_count_percentage": 0.20,
+        "max_empire_owned_count_percentage": 0.2,
         "max_count_to_fleet_supply_ratio": 40,
-        "attack_ship_weight_scalar": 0.250
+        "attack_ship_weight_scalar": 0.25
     },
     "user_interface": {
         "pip_type": "frigate",
@@ -89,13 +102,33 @@
             {
                 "weapon": "weapon_xx777_mtl",
                 "mesh_point": "weapon.turbo.000",
-                "weapon_position": [0.000001, -16.728226, 56.790974],
-                "non_turret_muzzle_positions": [
-                    [-2.712735, -16.728226, 56.790974],
-                    [2.712737, -16.728226, 56.790974]
+                "weapon_position": [
+                    1e-06,
+                    -16.728226,
+                    56.790974
                 ],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -2.712735,
+                        -16.728226,
+                        56.790974
+                    ],
+                    [
+                        2.712737,
+                        -16.728226,
+                        56.790974
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -9.0,
                     "max_angle": 9.0
@@ -108,13 +141,33 @@
             {
                 "weapon": "weapon_xx777_ion",
                 "mesh_point": "weapon.ion.000",
-                "weapon_position": [0.000002, -2.368824, 3.775405],
-                "non_turret_muzzle_positions": [
-                    [-30.504606, -2.368826, 3.775403],
-                    [30.504610, -2.368823, 3.775406]
+                "weapon_position": [
+                    2e-06,
+                    -2.368824,
+                    3.775405
                 ],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -30.504606,
+                        -2.368826,
+                        3.775403
+                    ],
+                    [
+                        30.50461,
+                        -2.368823,
+                        3.775406
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -9.0,
                     "max_angle": 9.0
@@ -140,22 +193,25 @@
         "spawn_debris_time": 1.0,
         "generic_group_name": "trader",
         "generic_counts": {
-            "small_debris": [3, 4]
+            "small_debris": [
+                3,
+                4
+            ]
         }
     },
     "health": {
         "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 0.80,
+        "can_collide_duration_after_death": 0.8,
         "durability": 115.0,
         "can_ever_be_resurrected": true,
         "levels": [
             {
                 "max_hull_points": 325.0,
-                "hull_point_restore_rate": 1.50,
+                "hull_point_restore_rate": 1.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_point_restore_scalar_after_damage_taken": 0.0,
                 "max_armor_points": 65,
-                "armor_point_restore_rate": 1.20,
+                "armor_point_restore_rate": 1.2,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_point_restore_scalar_after_damage_taken": 0.0,
                 "armor_strength": 30.0,

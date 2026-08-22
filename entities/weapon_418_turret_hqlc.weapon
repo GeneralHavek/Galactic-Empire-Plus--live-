@@ -3,16 +3,20 @@
     "name": "weapon_name.weapon_hlc",
     "pitch_speed": 35.0,
     "yaw_speed": 35.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 6500.0,
     "cooldown_duration": 5.0,
     "uniforms_target_filter_id": "heavy_laser_cannon",
     "attack_target_type_groups": [
         "light_corvette",
         "lrm_flak",
-        "heavy_capital",
-        "defense"
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "strikecraft_torpedo",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
@@ -30,31 +34,51 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.40,
-            0.80,
-            1.20,
+            0.4,
+            0.8,
+            1.2,
             2.0,
-            2.40,
-            2.80,
-            3.20
+            2.4,
+            2.8,
+            3.2
         ],
         "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_pd",
         "projectile_travel_effect": "weapon_bolt_pd",
         "hit_hull_effect": "weapon_hit_hull_pd",
         "hit_shield_effect": "weapon_hit_shield_pd",
-        "hit_shield_impact_radius_t": 0.10
+        "hit_shield_impact_radius_t": 0.1
     },
     "turret": {
         "type": "biaxial",
         "biaxial_base_mesh": "imperial_turret_pdqlc_mount",
         "biaxial_barrel_mesh": "imperial_turret_pdqlc_barrel",
-        "barrel_position": [-0.0, 1.254856, 0.0],
+        "barrel_position": [
+            -0.0,
+            1.254856,
+            0.0
+        ],
         "muzzle_positions": [
-            [0.939457, 0.236758, 2.788169],
-            [-0.939456, 0.236758, 2.788169],
-            [0.939457, -0.234671, 2.788169],
-            [-0.939456, -0.234671, 2.788169]
+            [
+                0.939457,
+                0.236758,
+                2.788169
+            ],
+            [
+                -0.939456,
+                0.236758,
+                2.788169
+            ],
+            [
+                0.939457,
+                -0.234671,
+                2.788169
+            ],
+            [
+                -0.939456,
+                -0.234671,
+                2.788169
+            ]
         ]
     }
 }

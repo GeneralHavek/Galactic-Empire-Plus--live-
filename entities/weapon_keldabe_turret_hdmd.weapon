@@ -3,13 +3,13 @@
     "name": "weapon_name.weapon_hdmd",
     "pitch_speed": 25.0,
     "yaw_speed": 25.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 10500.0,
     "cooldown_duration": 20.0,
     "uniforms_target_filter_id": "mass_driver",
     "attack_target_type_groups": [
-        "heavy_capital",
+        "capital_supercapital_heavy",
         "defense_starbase_titan"
     ],
     "weapon_type": "normal",
@@ -21,7 +21,7 @@
         "mass_driver"
     ],
     "acquire_target_logic": "order_target_or_best_target_in_range",
-    "target_acquired_duration_required_to_fire": 0.450,
+    "target_acquired_duration_required_to_fire": 0.45,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 5500.0
@@ -34,16 +34,28 @@
         "projectile_travel_effect": "pirate_mass_driver_weapon_projectile_travel",
         "hit_hull_effect": "pirate_mass_driver_weapon_hit_hull",
         "hit_shield_effect": "pirate_mass_driver_weapon_hit_shield",
-        "hit_shield_impact_radius_t": 0.450
+        "hit_shield_impact_radius_t": 0.45
     },
     "turret": {
         "type": "biaxial",
         "biaxial_base_mesh": "pirate_keldabe_hdmd_mount",
         "biaxial_barrel_mesh": "pirate_keldabe_hdmd_barrel",
-        "barrel_position": [-0.0, 4.559705, 3.008842],
+        "barrel_position": [
+            -0.0,
+            4.559705,
+            3.008842
+        ],
         "muzzle_positions": [
-            [3.608375, -0.006746, 37.655228],
-            [-3.543750, -0.006747, 37.655228]
+            [
+                3.608375,
+                -0.006746,
+                37.655228
+            ],
+            [
+                -3.54375,
+                -0.006747,
+                37.655228
+            ]
         ]
     }
 }

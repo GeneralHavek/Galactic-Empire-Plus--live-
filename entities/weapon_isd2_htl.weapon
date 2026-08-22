@@ -3,14 +3,19 @@
     "name": "weapon_name.weapon_ltl",
     "pitch_speed": 35.0,
     "yaw_speed": 35.0,
-    "pitch_firing_tolerance": 2.50,
-    "yaw_firing_tolerance": 2.50,
+    "pitch_firing_tolerance": 2.5,
+    "yaw_firing_tolerance": 2.5,
     "range": 8500.0,
     "cooldown_duration": 6.0,
     "uniforms_target_filter_id": "turbolaser",
     "attack_target_type_groups": [
         "light_corvette",
-        "lrm_flak"
+        "lrm_flak",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "capital_supercapital_heavy",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
@@ -21,7 +26,7 @@
         "energy"
     ],
     "acquire_target_logic": "order_target_or_best_target_in_range",
-    "target_acquired_duration_required_to_fire": 1.20,
+    "target_acquired_duration_required_to_fire": 1.2,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 4000.0
@@ -29,16 +34,16 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.10,
-            0.20,
-            0.30,
-            0.40
+            0.1,
+            0.2,
+            0.3,
+            0.4
         ],
         "muzzle_picking_behavior": "random",
         "muzzle_effect": "weapon_muzzle_mtl",
         "projectile_travel_effect": "weapon_bolt_mtl",
         "hit_hull_effect": "weapon_hit_hull_mtl",
         "hit_shield_effect": "weapon_hit_shield_mtl",
-        "hit_shield_impact_radius_t": 0.350
+        "hit_shield_impact_radius_t": 0.35
     }
 }

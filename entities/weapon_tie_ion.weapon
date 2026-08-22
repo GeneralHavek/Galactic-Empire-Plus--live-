@@ -7,8 +7,13 @@
     "cooldown_duration": 6.0,
     "uniforms_target_filter_id": "common_ion_weapon",
     "attack_target_type_groups": [
-        "heavy_capital",
-        "defense"
+        "capital_supercapital_heavy",
+        "antistructure_antiarmor",
+        "carrier_support",
+        "light_corvette",
+        "lrm_flak",
+        "defense_starbase_titan",
+        "defense_civilian"
     ],
     "weapon_type": "normal",
     "damage_affect_type": "shields_only",
@@ -18,8 +23,8 @@
         "ion",
         "energy"
     ],
-    "acquire_target_logic": "order_target_only",
-    "target_acquired_duration_required_to_fire": 0.250,
+    "acquire_target_logic": "order_target_or_best_target_in_range",
+    "target_acquired_duration_required_to_fire": 0.25,
     "firing": {
         "firing_type": "projectile",
         "travel_speed": 4000.0
@@ -27,11 +32,9 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.020,
-
+            0.02,
             0.07,
             0.09,
-
             0.14,
             0.16
         ],
@@ -40,6 +43,6 @@
         "projectile_travel_effect": "weapon_bolt_mic",
         "hit_hull_effect": "weapon_hit_hull_mic",
         "hit_shield_effect": "weapon_hit_shield_mic",
-        "hit_shield_impact_radius_t": 0.750
+        "hit_shield_impact_radius_t": 0.75
     }
 }
