@@ -29,15 +29,15 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.03,
-            0.06,
-            0.09,
-            0.12,
-            0.15,
-            0.18,
-            0.21,
-            0.24,
-            0.27
+            0.008,
+            0.017,
+            0.025,
+            0.033,
+            0.042,
+            0.05,
+            0.058,
+            0.067,
+            0.075
         ],
         "muzzle_picking_behavior": "random",
         "muzzle_effect": "trader_antifighter_frigate_point_defense_autocannon_weapon_muzzle",

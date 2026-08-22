@@ -1,10 +1,18 @@
 {
     "version": 0,
     "spatial": {
-        "radius": 5.602770,
+        "radius": 5.60277,
         "box": {
-            "center": [0.0, 0.0, -0.0],
-            "extents": [3.073245, 4.131501, 3.595116]
+            "center": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "extents": [
+                3.073245,
+                4.131501,
+                3.595116
+            ]
         },
         "collision_rank": 0
     },
@@ -13,12 +21,18 @@
         "max_linear_speed": 2100.0,
         "time_to_max_linear_speed": 4.0,
         "arrival_tolerance_spatial_radius_scalar": 2.0,
-        "death_linear_speed_range": [1.0, 2.0],
+        "death_linear_speed_range": [
+            1.0,
+            2.0
+        ],
         "can_move_angular": true,
         "max_angular_speed": 210.0,
-        "time_to_max_angular_speed": 1.250,
+        "time_to_max_angular_speed": 1.25,
         "max_bank_angle": 89.0,
-        "death_angular_speed_range": [5.0, 10.0],
+        "death_angular_speed_range": [
+            5.0,
+            10.0
+        ],
         "linear_acceleration_angle": 180.0,
         "can_strafe_linear": true,
         "strafe_max_linear_speed": 700.0,
@@ -36,7 +50,7 @@
         "attack_pattern": {
             "type": "strafe_and_pull_away",
             "use_weapon_cooldown": true,
-            "weapon_cooldown_percent_to_start_strafe": 0.80,
+            "weapon_cooldown_percent_to_start_strafe": 0.8,
             "pull_away_angle_range": 45.0
         }
     },
@@ -70,14 +84,30 @@
     "weapons": {
         "weapons": [
             {
-                "weapon": "weapon_tie_laser",
+                "weapon": "weapon_tie_laser_single",
                 "mesh_point": "weapon.0",
-                "weapon_position": [0.318609, -0.787886, 0.945109],
-                "non_turret_muzzle_positions": [
-                    [0.318609, -0.787886, 0.945109]
+                "weapon_position": [
+                    0.318609,
+                    -0.787886,
+                    0.945109
                 ],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        0.318609,
+                        -0.787886,
+                        0.945109
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -5.0,
                     "max_angle": 5.0
@@ -88,14 +118,30 @@
                 }
             },
             {
-                "weapon": "weapon_tie_laser",
+                "weapon": "weapon_tie_laser_single",
                 "mesh_point": "weapon.1",
-                "weapon_position": [-0.318609, -0.787886, 0.945109],
-                "non_turret_muzzle_positions": [
-                    [-0.318609, -0.787886, 0.945109]
+                "weapon_position": [
+                    -0.318609,
+                    -0.787886,
+                    0.945109
                 ],
-                "forward": [-0.0, 0.0, 1.0],
-                "up": [-0.0, 1.0, 0.0],
+                "non_turret_muzzle_positions": [
+                    [
+                        -0.318609,
+                        -0.787886,
+                        0.945109
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
                 "yaw_arc": {
                     "min_angle": -5.0,
                     "max_angle": 5.0
@@ -119,7 +165,7 @@
     },
     "health": {
         "release_time_after_death": 5.0,
-        "can_collide_duration_after_death": 0.10,
+        "can_collide_duration_after_death": 0.1,
         "round_max_points_up_to_5": false,
         "levels": [
             {
@@ -133,7 +179,7 @@
                     "cooldown_duration": 10.0,
                     "restore_percentage": 0.35
                 },
-                "experience_given_on_death": 4.50
+                "experience_given_on_death": 4.5
             }
         ]
     },
@@ -147,14 +193,17 @@
         }
     },
     "unit_modifiers": [
-    {
-        "modifier_type": "max_shield_points",
-        "value_behavior": "additive",
-        "value": 45.0,
-        "prerequisites": [
-            ["imperial_shields_strikecraft"]
-        ]
-    }],
+        {
+            "modifier_type": "max_shield_points",
+            "value_behavior": "additive",
+            "value": 45.0,
+            "prerequisites": [
+                [
+                    "imperial_shields_strikecraft"
+                ]
+            ]
+        }
+    ],
     "target_filter_unit_type": "strikecraft",
     "tags": [
         "strikecraft"

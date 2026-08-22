@@ -34,8 +34,8 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.45,
-            0.9
+            0.4,
+            0.8
         ],
         "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_mtl",

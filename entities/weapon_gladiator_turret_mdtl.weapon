@@ -31,10 +31,10 @@
         "burst_pattern": [
             0.0,
             0.4,
-            4.0,
-            4.4,
-            8.0,
-            8.4
+            0.8,
+            1.2,
+            1.6,
+            2.0
         ],
         "muzzle_picking_behavior": "sequential",
         "muzzle_effect": "weapon_muzzle_mtl",

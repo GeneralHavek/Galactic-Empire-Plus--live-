@@ -29,7 +29,7 @@
     "effects": {
         "burst_pattern": [
             0.0,
-            0.6
+            0.4
         ],
         "muzzle_picking_behavior": "random",
         "muzzle_effect": "weapon_muzzle_hotl_isd",

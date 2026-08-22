@@ -35,11 +35,11 @@
     },
     "burst_pattern": [
         0.0,
-        0.4,
-        0.8,
-        1.2,
-        1.6,
-        2.0
+        0.375,
+        0.75,
+        1.125,
+        1.5,
+        1.875
     ],
     "effects": {
         "muzzle_picking_behavior": "sequential",

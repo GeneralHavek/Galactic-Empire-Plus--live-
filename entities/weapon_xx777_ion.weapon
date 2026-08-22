@@ -35,8 +35,8 @@
         "burst_pattern": [
             0.0,
             0.33,
-            2.0,
-            2.33
+            0.66,
+            0.99
         ],
         "muzzle_effect": "weapon_muzzle_mic",
         "projectile_travel_effect": "weapon_bolt_mic",
