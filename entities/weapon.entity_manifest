@@ -153,6 +153,7 @@
         "weapon_allegiance_mtl",
         "weapon_imperial_dreadnought_turret_mdtl",
         "weapon_munificent_mtl",
-        "weapon_tie_interceptor_laser"
+        "weapon_tie_interceptor_laser",
+        "weapon_tie_laser_single"
     ]
 }
