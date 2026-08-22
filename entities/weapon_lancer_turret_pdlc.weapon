@@ -21,7 +21,7 @@
     "always_check_is_dead_soon": true,
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
-    "damage": 3.0,
+    "damage": 7.0,
     "penetration": 25.0,
     "tags": [
         "laser",

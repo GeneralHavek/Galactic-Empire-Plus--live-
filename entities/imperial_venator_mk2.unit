@@ -67,7 +67,7 @@
         "attack_target_type_groups_to_ignore": [
             "torpedo_strikecraft_corvette"
         ],
-        "attack_target_type_groups_matching_weapon": "weapon_ven_turret_mtl",
+        "attack_target_type_groups_matching_weapon": "weapon_ven_mk2_turret_mtl",
         "auto_follow_target_priority": 5.0,
         "pursuit": {
             "min_target_speed": 300.0,
@@ -94,7 +94,7 @@
     "weapons": {
         "weapons": [
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.000",
                 "weapon_position": [
                     108.018204,
@@ -121,7 +121,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.001",
                 "weapon_position": [
                     108.01815,
@@ -148,7 +148,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.002",
                 "weapon_position": [
                     108.018166,
@@ -175,7 +175,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.003",
                 "weapon_position": [
                     108.018173,
@@ -202,7 +202,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.004",
                 "weapon_position": [
                     -108.018677,
@@ -229,7 +229,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.005",
                 "weapon_position": [
                     -108.018692,
@@ -256,7 +256,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.006",
                 "weapon_position": [
                     -108.018677,
@@ -283,7 +283,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "mesh_point": "child.heavy.007",
                 "weapon_position": [
                     -108.018646,
@@ -310,7 +310,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.008",
                 "weapon_position": [
@@ -338,7 +338,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.009",
                 "weapon_position": [
@@ -366,7 +366,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.010",
                 "weapon_position": [
@@ -394,7 +394,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.011",
                 "weapon_position": [
@@ -422,7 +422,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.012",
                 "weapon_position": [
@@ -450,7 +450,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.013",
                 "weapon_position": [
@@ -478,7 +478,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.014",
                 "weapon_position": [
@@ -506,7 +506,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_dby",
+                "weapon": "weapon_ven_mk2_turret_dby",
                 "required_unit_item": "imperial_vrip",
                 "mesh_point": "child.heavy.015",
                 "weapon_position": [
@@ -534,7 +534,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_mtl",
+                "weapon": "weapon_ven_mk2_turret_mtl",
                 "mesh_point": "child.med.000",
                 "weapon_position": [
                     -86.335541,
@@ -561,7 +561,7 @@
                 }
             },
             {
-                "weapon": "weapon_ven_turret_mtl",
+                "weapon": "weapon_ven_mk2_turret_mtl",
                 "mesh_point": "child.med.001",
                 "weapon_position": [
                     86.33548,
@@ -1308,15 +1308,15 @@
         "can_ever_be_resurrected": true,
         "levels": [
             {
-                "max_hull_points": 2850.0,
+                "max_hull_points": 3700,
                 "hull_point_restore_rate": 3.0,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.5,
-                "max_armor_points": 1025.0,
+                "max_armor_points": 1325,
                 "armor_point_restore_rate": 3.0,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 160.0,
-                "max_shield_points": 4300.0,
+                "max_shield_points": 5500,
                 "shield_point_restore_rate": 4.0,
                 "shield_burst_restore": {
                     "cooldown_duration": 40.0,
@@ -1325,15 +1325,15 @@
                 "experience_given_on_death": 100.0
             },
             {
-                "max_hull_points": 3220.0,
+                "max_hull_points": 4180,
                 "hull_point_restore_rate": 3.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.55,
-                "max_armor_points": 1155.0,
+                "max_armor_points": 1493,
                 "armor_point_restore_rate": 3.6,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 165.0,
-                "max_shield_points": 4645.0,
+                "max_shield_points": 5941,
                 "shield_point_restore_rate": 5.2,
                 "shield_burst_restore": {
                     "cooldown_duration": 38.0,
@@ -1342,15 +1342,15 @@
                 "experience_given_on_death": 120.0
             },
             {
-                "max_hull_points": 3590.0,
+                "max_hull_points": 4661,
                 "hull_point_restore_rate": 4.0,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.6,
-                "max_armor_points": 1285.0,
+                "max_armor_points": 1661,
                 "armor_point_restore_rate": 4.2,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 170.0,
-                "max_shield_points": 4990.0,
+                "max_shield_points": 6383,
                 "shield_point_restore_rate": 6.4,
                 "shield_burst_restore": {
                     "cooldown_duration": 36.0,
@@ -1359,15 +1359,15 @@
                 "experience_given_on_death": 150.0
             },
             {
-                "max_hull_points": 3960.0,
+                "max_hull_points": 5141,
                 "hull_point_restore_rate": 4.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.65,
-                "max_armor_points": 1415.0,
+                "max_armor_points": 1829,
                 "armor_point_restore_rate": 4.8,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 175.0,
-                "max_shield_points": 5335.0,
+                "max_shield_points": 6824,
                 "shield_point_restore_rate": 7.6,
                 "shield_burst_restore": {
                     "cooldown_duration": 34.0,
@@ -1376,15 +1376,15 @@
                 "experience_given_on_death": 190.0
             },
             {
-                "max_hull_points": 4330.0,
+                "max_hull_points": 5621,
                 "hull_point_restore_rate": 5.0,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.7,
-                "max_armor_points": 1545.0,
+                "max_armor_points": 1997,
                 "armor_point_restore_rate": 5.4,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 180.0,
-                "max_shield_points": 5680.0,
+                "max_shield_points": 7265,
                 "shield_point_restore_rate": 8.8,
                 "shield_burst_restore": {
                     "cooldown_duration": 32.0,
@@ -1393,15 +1393,15 @@
                 "experience_given_on_death": 240.0
             },
             {
-                "max_hull_points": 4700.0,
+                "max_hull_points": 6102,
                 "hull_point_restore_rate": 5.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.75,
-                "max_armor_points": 1675.0,
+                "max_armor_points": 2165,
                 "armor_point_restore_rate": 6.0,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 185.0,
-                "max_shield_points": 6025.0,
+                "max_shield_points": 7706,
                 "shield_point_restore_rate": 10.0,
                 "shield_burst_restore": {
                     "cooldown_duration": 30.0,
@@ -1410,15 +1410,15 @@
                 "experience_given_on_death": 300.0
             },
             {
-                "max_hull_points": 5070.0,
+                "max_hull_points": 6582,
                 "hull_point_restore_rate": 6.0,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.8,
-                "max_armor_points": 1805.0,
+                "max_armor_points": 2333,
                 "armor_point_restore_rate": 6.6,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 190.0,
-                "max_shield_points": 6370.0,
+                "max_shield_points": 8148,
                 "shield_point_restore_rate": 11.2,
                 "shield_burst_restore": {
                     "cooldown_duration": 28.0,
@@ -1427,15 +1427,15 @@
                 "experience_given_on_death": 370.0
             },
             {
-                "max_hull_points": 5440.0,
+                "max_hull_points": 7062,
                 "hull_point_restore_rate": 6.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.85,
-                "max_armor_points": 1935.0,
+                "max_armor_points": 2501,
                 "armor_point_restore_rate": 7.2,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 195.0,
-                "max_shield_points": 6715.0,
+                "max_shield_points": 8589,
                 "shield_point_restore_rate": 12.4,
                 "shield_burst_restore": {
                     "cooldown_duration": 26.0,
@@ -1444,15 +1444,15 @@
                 "experience_given_on_death": 450.0
             },
             {
-                "max_hull_points": 5810.0,
+                "max_hull_points": 7543,
                 "hull_point_restore_rate": 7.0,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 0.92,
-                "max_armor_points": 2065.0,
+                "max_armor_points": 2669,
                 "armor_point_restore_rate": 7.8,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 200.0,
-                "max_shield_points": 7060.0,
+                "max_shield_points": 9030,
                 "shield_point_restore_rate": 13.6,
                 "shield_burst_restore": {
                     "cooldown_duration": 24.0,
@@ -1461,15 +1461,15 @@
                 "experience_given_on_death": 540.0
             },
             {
-                "max_hull_points": 6180.0,
+                "max_hull_points": 8023,
                 "hull_point_restore_rate": 7.5,
                 "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "hull_crippled_percentage": 1.0,
-                "max_armor_points": 2195.0,
+                "max_armor_points": 2837,
                 "armor_point_restore_rate": 8.4,
                 "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
                 "armor_strength": 205.0,
-                "max_shield_points": 7405.0,
+                "max_shield_points": 9472,
                 "shield_point_restore_rate": 14.8,
                 "shield_burst_restore": {
                     "cooldown_duration": 22.0,

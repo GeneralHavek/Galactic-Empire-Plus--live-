@@ -20,7 +20,7 @@
     "weapon_type": "normal",
     "damage_affect_type": "hull_and_armor_and_shields",
     "damage": 29.0,
-    "penetration": 300.0,
+    "penetration": 700.0,
     "tags": [
         "turbolaser",
         "energy"

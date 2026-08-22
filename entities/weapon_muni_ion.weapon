@@ -19,7 +19,7 @@
     ],
     "weapon_type": "normal",
     "damage_affect_type": "shields_only",
-    "damage": 125.0,
+    "damage": 250.0,
     "penetration": 700.0,
     "tags": [
         "ion",
