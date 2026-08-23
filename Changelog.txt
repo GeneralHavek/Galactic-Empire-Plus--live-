@@ -1,4 +1,4 @@
-Version 3.4.0.2:
+Version 3.4.1.0:
 
 [Misc]      Removed all unique unit_tags and replaced them with mem tags to hopefully prevent the issue of being unable to build the death star;
 [Misc]      Changed the garrison tags back to vanilla tags as they were unneeded;
@@ -6,3 +6,24 @@ Version 3.4.0.2:
 [Unit]      Updated targeting logic for the tie bomber, laser weapons will now target all non-strikecraft while the bomb will target all non-strikecraft and non-corvette units;
 [Unit]      Fixed the 2nd and 4th Victory I abilities increasing weapon reload instead of reducing it;
 [Unit]      Fixed 3rd Procusator ability from increased damage taken instead of reducing it;
+[Unit]      Reworked burst_patterns across all weapons to make firing effects more consistent;
+[Unit]      CR90 has recieved a dps boost of 21% (DPS: 18.34 -> 22.22);
+[Unit]      Vigil has recieved a dps boost of 29% (DPS: 11.77 -> 15.27);
+[Unit]      XX-777 has recieved a dps boost of 147% (DPS: 6.11 -> 15.11) and an ehp boost of 9% (Hull:  325 -> 400, Armor: 65 -> 80);
+[Unit]      Kontos has recieved an ehp boost of 31% (Hull:  700 -> 1,050, Armor: 115 -> 175, Shields: 1,100 -> 1,200);
+[Unit]      Lancer has recieved a dps boost of 133% (DPS: 24.00 -> 56.00) and an ehp boost of 56% (Hull:  730 -> 1,250, Armor: 275 -> 500, Shields: 1,200 -> 1,575)
+[Unit]      Acclamator I has recieved an ehp boost of 33% (Hull:  850 -> 1,200, Armor: 750 -> 1,070, Shields: 1,650 -> 1,950)
+[Unit]      Acclamator II has recieved a dps boost of 50% (DPS: 31.77 -> 47.77) and an ehp boost of 14% (Hull:  1,100 -> 1,200, Armor: 875 -> 930, Shields: 1,725 -> 2,200);
+[Unit]      Dreadnought has recieved an ehp boost of 41% (Hull:  2,250 -> 3,350, Armor: 950 -> 1,430, Shields: 2,750 -> 3,400);
+[Unit]      Immobilizer has recieved a dps boost of 20% (DPS: 17.27 -> 20.77) and an ehp boost of 23% (Hull:  1,600 -> 2,075, Armor: 400 -> 520, Shields: 1,650 -> 1,850);
+[Unit]      Munificent has recieved a dps boost of 126% (DPS: 27.08 -> 61.23) and an ehp boost of 54% (Hull:  1,660 -> 2,500, Armor: 325 -> 500, Shields: 1,570 -> 2,525);
+[Unit]      MTC has recieved an ehp boost of 37% (Hull:  1,750 -> 2,400, Armor: 550 -> 750, Shields: 1,420 -> 1,975);
+[Unit]      Vindicator has recieved a dps boost of 34% (DPS: 60.09 -> 80.59) and an ehp boost of 56% (Hull:  1,750 -> 2,800, Armor: 425 -> 675, Shields: 1,800 -> 2,700);
+[Unit]      Venator has recieved a dps boost of 95% (DPS: 38.17 -> 74.55) and an ehp boost of 18% (Hull:  2,500 -> 3,000, Armor: 1,000 -> 1,200, Shields: 4,100 -> 4,750);
+[Unit]      Venator Mk II has recieved a dps boost of 176% (DPS: 35.00 -> 96.76) and an ehp boost of 29% (Hull:  2,850 -> 3,700, Armor: 1,025 -> 1,325, Shields: 4,300 -> 5,500);
+[Unit]      ISD II has recieved an ehp boost of 9% (Hull:  6,175 -> 7,000, Armor: 1,400 -> 1,600, Shields: 7,600 -> 7,800);
+[Unit]      Tector has recieved an ehp boost of 20% (Hull:  5,700 -> 7,500, Armor: 1,350 -> 1,725, Shields: 7,750 -> 8,000);
+[Unit]      Lucrehulk has recieved an ehp boost of 66% (Hull:  5,500 -> 9,000, Armor: 1,950 -> 3,250, Shields: 6,500 -> 11,000);
+[Weapon]    ISD II Heavy Turbolaser weapon penetration increased from 300 to 700 to match other weapons of the same class;
+[Weapon]    Executor Heavy Quad Turbolaser weapon penetration increased from 300 to 700 to match other weapons of the same class;
+[Weapon]    Death Star Assault Concussion Missile weapon penetration increased from 50 to 600 to match other weapons of the same class
