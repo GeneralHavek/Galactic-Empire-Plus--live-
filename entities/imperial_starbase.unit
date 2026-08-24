@@ -4813,6 +4813,12 @@
     "tags": [
         "starbase"
     ],
+    "abilities": [
+    {
+        "abilities": [
+            "trader_starbase_phase_jamming"
+        ]
+    }],
     "virtual_supply_cost": 200,
     "skin_groups": [
         {
