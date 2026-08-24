@@ -1,11 +1,12 @@
 Version 3.4.1.0:
 
 [Misc]      Removed all unique unit_tags and replaced them with mem tags to hopefully prevent the issue of being unable to build the death star;
-[Misc]      Changed the garrison tags back to vanilla tags as they were unneeded;
+[Misc]      Changed the garrison_capital tags back to vanilla tags as they were unneeded;
 [Unit]      Reduced number of proton torpedoes fired by the Tie Defender per reload from 6 to 3, total dps is unchanged;
 [Unit]      Updated targeting logic for the tie bomber, laser weapons will now target all non-strikecraft while the bomb will target all non-strikecraft and non-corvette units;
 [Unit]      Fixed the 2nd and 4th Victory I abilities increasing weapon reload instead of reducing it;
 [Unit]      Fixed 3rd Procusator ability from increased damage taken instead of reducing it;
+[Unit]      Updated various targeting logic on all Imperial ships to make targeting more consistent;
 [Unit]      Reworked burst_patterns across all weapons to make firing effects more consistent;
 [Unit]      CR90 has recieved a dps boost of 21% (DPS: 18.34 -> 22.22);
 [Unit]      Vigil has recieved a dps boost of 29% (DPS: 11.77 -> 15.27);

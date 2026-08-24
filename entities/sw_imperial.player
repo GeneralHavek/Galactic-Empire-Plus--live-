@@ -551,7 +551,7 @@
                 "unit_limit": 4
             },
             {
-                "tag": "death_star",
+                "tag": "mem_advanced_station",
                 "unit_limit": 1
             }
         ],
