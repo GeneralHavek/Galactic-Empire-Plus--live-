@@ -1506,7 +1506,6 @@
     "tags": [
         "capital_ship"
     ],
-    "is_loot_collector": true,
     "abilities": [
         {
             "abilities": [

@@ -299,6 +299,27 @@
                             "dialog_victory_hyperspace1",
                             "dialog_victory_hyperspace2"
                         ]
+                    },
+                    "retreat": {
+                        "scared": [
+                            "imperial_star_destroyer_retreat"
+                        ]
+                    },
+                    "cannot_hyperspace": {
+                        "scared": [
+                            "trader_carrier_capital_ship_cannot_hyperspace_scared_0"
+                        ]
+                    },
+                    "shields_down": {
+                        "scared": [
+                            "imperial_star_destroyer_shields_down",
+                            "imperial_star_destroyer_shields_down_1"
+                        ]
+                    },
+                    "armor_down": {
+                        "scared": [
+                            "effect_imperialalarm"
+                        ]
                     }
                 }
             },
