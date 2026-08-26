@@ -3,4 +3,14 @@ Version 3.4.1.1:
 [Unit]      Fixed the unintended ability to build multiple Death Stars;
 [Unit]      Removed the garrison Victory I's ability to capture wreckage;
 [Sound]     Removed all combat notifications for garrison capitals except for the alarm when armor has been depleted;
-[Unit]      
+[Unit]      Added Hyperspace Destabilization ability to Imperial Starbase;
+[Unit]      Updated Tector ultimate ability to not spam out duplicate gui entries of buffs;
+[Unit]      Increased Tector ultimate ability active shield regeneration from +60/+85/+110/+140% to +500/+550/+600/+650%;
+[Unit]      Added additional functions to the hull and armor regen which should trigger in combat regen;
+[Unit]      Increased Tector ultimate 10 stack maximum damage reduction from -5%/-7%/-9/-12% to -10%/-12%/-15%/-20% while adding the missing syntax to only apply the mitigation while shields are active;
+[Unit]      Fixed issue causing Venator Mk2 ultimate reducing fire rate instead of increasing it;
+[GUI]       Fixed localization issue with Executor and ISD II abilities;
+[Unit]      Fixed Victory II 3rd ability increasing enemy turn rate instead of reducing it;
+[Unit]      Fixed ISD I ultimate ability to decrease allied hyperspace charge time instead of increasing it, tooltip changed to reflect it as a positive buff;
+[Unit]      Fixed Death Star 2nd ability not properly applying buffs when activated;
+[Unit]      Fixed Death Star 2nd ability applying an additive bonus instead of scalar bonus to max hull, max armor, max shield, and max antimatter 

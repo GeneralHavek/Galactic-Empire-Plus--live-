@@ -67,7 +67,7 @@
                         "rendering_type": "single_value",
                         "label_text": "tooltip.label.damage_taken_per_stack",
                         "value_id": "imperial_tector_battle_hardened_damage_taken_value",
-                        "value_float_format": "percentage",
+                        "value_float_format": "percentage_one_decimal_place",
                         "value_color": "positive"
                     },
                     {

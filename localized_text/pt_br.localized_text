@@ -37,6 +37,8 @@
     "tooltip.label.active_additional_antimatter_restore_rate": "Active Additional Antimatter Restore Rate:",
     "tooltip.label.active_additional_hull_restore_rate": "Active Additional Hull Restore Rate:",
     "tooltip.label.active_additional_weapon_cooldown_duration": "Active Additional Weapon Cooldown Duration:",
+    "tooltip.label.active_additional_weapon_tracking": "Active Additional Weapon Tracking:",
+    "tooltip.label.active_additional_weapon_damage": "Active Additional Weapon Damage:",
     "tooltip.label.active_additional_turbolaser_cooldown_reduction": "Active Additional Turbolaser Cooldown Reduction:",
     "tooltip.label.active_additional_turbolaser_tracking": "Active Additional Turbolaser Tracking:",
     "tooltip.label.active_additional_turbolaser_range": "Active Additional Turbolaser Range:",

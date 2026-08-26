@@ -11,18 +11,29 @@
             "trigger_event_type": "on_current_spawner_damaged",
             "action_group": {
                 "constraint": {
-                    "constraint_type": "composite_not",
-                    "constraint": {
-                        "constraint_type": "unit_passes_unit_constraint",
-                        "unit": {
-                            "unit_type": "current_spawner"
+                    "constraint_type": "composite_and",
+                    "constraints": [
+                        {
+                            "constraint_type": "composite_not",
+                            "constraint": {
+                                "constraint_type": "unit_passes_unit_constraint",
+                                "unit": {
+                                    "unit_type": "current_spawner"
+                                },
+                                "unit_constraint": {
+                                    "constraint_type": "has_buff",
+                                    "buff": "imperial_tector_battle_hardened_gate",
+                                    "include_pending_buffs": true
+                                }
+                            }
                         },
-                        "unit_constraint": {
-                            "constraint_type": "has_buff",
-                            "buff": "imperial_tector_battle_hardened_gate",
-                            "include_pending_buffs": true
+                        {
+                            "constraint_type": "value_comparison",
+                            "value_a": "uniforms_current_spawner_current_shields",
+                            "comparison_type": "greater_than",
+                            "value_b": "fixed_zero"
                         }
-                    }
+                    ]
                 },
                 "actions": [
                     {

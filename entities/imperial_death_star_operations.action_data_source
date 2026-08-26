@@ -1,929 +1,929 @@
 {
-    "version": 0,
-    "level_count": 1,
-    "target_filters": [
-        {
-            "target_filter_id": "imperial_death_star_operations_default_filter",
-            "target_filter": {
-                "ownerships": [
-                    "self"
-                ],
-                "unit_types": [
-                    "titan"
-                ],
-                "constraints": [
-                    {
-                        "constraint_type": "composite_not",
-                        "constraint": {
-                            "constraint_type": "has_mutation",
-                            "mutation": "imperial_death_star_battlestation_operations_equipped"
-                        }
-                    },
-                    {
-                        "constraint_type": "composite_not",
-                        "constraint": {
-                            "constraint_type": "has_mutation",
-                            "mutation": "imperial_death_star_weapons_operations_equipped"
-                        }
-                    },
-                    {
-                        "constraint_type": "composite_not",
-                        "constraint": {
-                            "constraint_type": "has_mutation",
-                            "mutation": "imperial_death_star_peacekeeping_operations_equipped"
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_operations_battlestation_filter",
-            "target_filter": {
-                "ownerships": [
-                    "self"
-                ],
-                "unit_types": [
-                    "titan"
-                ],
-                "constraints": [
-                    {
-                        "constraint_type": "has_mutation",
-                        "mutation": "imperial_death_star_battlestation_operations_equipped"
-                    }
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_operations_weapons_filter",
-            "target_filter": {
-                "ownerships": [
-                    "self"
-                ],
-                "unit_types": [
-                    "titan"
-                ],
-                "constraints": [
-                    {
-                        "constraint_type": "has_mutation",
-                        "mutation": "imperial_death_star_weapons_operations_equipped"
-                    }
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_operations_peacekeeping_filter",
-            "target_filter": {
-                "ownerships": [
-                    "self"
-                ],
-                "unit_types": [
-                    "titan"
-                ],
-                "constraints": [
-                    {
-                        "constraint_type": "has_mutation",
-                        "mutation": "imperial_death_star_peacekeeping_operations_equipped"
-                    }
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_allied_ships_in_gravity_well_filter",
-            "target_filter": {
-                "ownerships": [
-                    "self",
-                    "ally"
-                ],
-                "unit_types": [
-                    "corvette",
-                    "frigate",
-                    "cruiser",
-                    "capital_ship",
-                    "super_capital_ship",
-                    "titan"
-                ],
-                "exemptions": [
-                    "is_dead",
-                    "is_fully_unbuilt",
-                    "is_in_phase_space"
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_enemy_ships_structures_in_gravity_well_filter",
-            "target_filter": {
-                "ownerships": [
-                    "enemy"
-                ],
-                "unit_types": [
-                    "corvette",
-                    "frigate",
-                    "cruiser",
-                    "capital_ship",
-                    "super_capital_ship",
-                    "titan",
-                    "structure",
-                    "starbase"
-                ],
-                "exemptions": [
-                    "is_dead",
-                    "is_fully_unbuilt",
-                    "is_in_phase_space"
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_enemy_colonized_planet_filter",
-            "target_filter": {
-                "ownerships": [
-                    "enemy"
-                ],
-                "unit_types": [
-                    "planet"
-                ],
-                "constraints": [
-                    {
-                        "constraint_type": "is_colonizable_planet"
-                    }
-                ],
-                "exemptions": [
-                    "is_dead",
-                    "is_not_explored"
-                ]
-            }
-        },
-        {
-            "target_filter_id": "imperial_death_star_conventional_weapon_target_filter",
-            "target_filter": {
-                "ownerships": [
-                    "enemy"
-                ],
-                "unit_types": [
-                    "corvette",
-                    "frigate",
-                    "cruiser",
-                    "capital_ship",
-                    "super_capital_ship",
-                    "titan",
-                    "structure",
-                    "starbase"
-                ],
-                "exemptions": [
-                    "is_dead",
-                    "is_fully_unbuilt",
-                    "is_in_phase_space"
-                ]
-            }
-        }
-    ],
-    "action_values": [
-        {
-            "action_value_id": "imperial_death_star_operations_interval_value",
-            "action_value": {
-                "values": [
-                    1.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_passive_aura_duration_value",
-            "action_value": {
-                "values": [
-                    2.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_active_duration_value",
-            "action_value": {
-                "values": [
-                    20.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_cooldown_time_value",
-            "action_value": {
-                "values": [
-                    120.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_antimatter_cost_value",
-            "action_value": {
-                "values": [
-                    100.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_max_stack_count_value",
-            "action_value": {
-                "values": [
-                    50.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_gate_duration_value",
-            "action_value": {
-                "values": [
-                    1.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_fire_distribution_duration_value",
-            "action_value": {
-                "values": [
-                    16.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_target_saturation_duration_value",
-            "action_value": {
-                "values": [
-                    16.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_damage_control_readiness_duration_value",
-            "action_value": {
-                "values": [
-                    50.0
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_passive_shield_regen_value",
-            "action_value": {
-                "values": [
-                    0.35
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_passive_hull_regen_value",
-            "action_value": {
-                "values": [
-                    0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_passive_antimatter_regen_value",
-            "action_value": {
-                "values": [
-                    0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_passive_weapon_cooldown_value",
-            "action_value": {
-                "values": [
-                    -0.05
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_passive_weapon_tracking_value",
-            "action_value": {
-                "values": [
-                    0.12
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_active_shield_regen_value",
-            "action_value": {
-                "values": [
-                    0.5
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_active_hull_regen_value",
-            "action_value": {
-                "values": [
-                    0.35
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_active_antimatter_regen_value",
-            "action_value": {
-                "values": [
-                    0.35
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_active_weapon_cooldown_value",
-            "action_value": {
-                "values": [
-                    -0.07
-                ]
-            }
-        },
-        {
-            "action_value_id": "operational_readiness_active_weapon_tracking_value",
-            "action_value": {
-                "values": [
-                    0.18
-                ]
-            }
-        },
-        {
-            "action_value_id": "damage_control_readiness_shield_regen_value",
-            "action_value": {
-                "values": [
-                    0.005
-                ]
-            }
-        },
-        {
-            "action_value_id": "damage_control_readiness_hull_regen_value",
-            "action_value": {
-                "values": [
-                    0.004
-                ]
-            }
-        },
-        {
-            "action_value_id": "damage_control_readiness_active_shield_regen_value",
-            "action_value": {
-                "values": [
-                    0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "damage_control_readiness_active_hull_regen_value",
-            "action_value": {
-                "values": [
-                    0.2
-                ]
-            }
-        },
-        {
-            "action_value_id": "battlestation_alert_active_armor_value",
-            "action_value": {
-                "values": [
-                    0.15
-                ]
-            }
-        },
-        {
-            "action_value_id": "battlestation_alert_active_shield_regen_value",
-            "action_value": {
-                "values": [
-                    0.35
-                ]
-            }
-        },
-        {
-            "action_value_id": "battlestation_alert_active_hull_regen_value",
-            "action_value": {
-                "values": [
-                    0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "target_saturation_weapon_cooldown_value",
-            "action_value": {
-                "values": [
-                    -0.0015
-                ]
-            }
-        },
-        {
-            "action_value_id": "target_saturation_weapon_tracking_value",
-            "action_value": {
-                "values": [
-                    0.003
-                ]
-            }
-        },
-        {
-            "action_value_id": "target_saturation_active_weapon_cooldown_value",
-            "action_value": {
-                "values": [
-                    -0.04
-                ]
-            }
-        },
-        {
-            "action_value_id": "target_saturation_active_weapon_tracking_value",
-            "action_value": {
-                "values": [
-                    0.1
-                ]
-            }
-        },
-        {
-            "action_value_id": "total_fire_control_active_range_value",
-            "action_value": {
-                "values": [
-                    0.18
-                ]
-            }
-        },
-        {
-            "action_value_id": "total_fire_control_active_cooldown_value",
-            "action_value": {
-                "values": [
-                    -0.09
-                ]
-            }
-        },
-        {
-            "action_value_id": "total_fire_control_active_tracking_value",
-            "action_value": {
-                "values": [
-                    0.22
-                ]
-            }
-        },
-        {
-            "action_value_id": "total_fire_control_active_damage_value",
-            "action_value": {
-                "values": [
-                    0.18
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_credit_income_value",
-            "action_value": {
-                "values": [
-                    -0.15
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_metal_income_value",
-            "action_value": {
-                "values": [
-                    -0.12
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_crystal_income_value",
-            "action_value": {
-                "values": [
-                    -0.12
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_population_growth_value",
-            "action_value": {
-                "values": [
-                    -0.2
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_culture_rate_value",
-            "action_value": {
-                "values": [
-                    -0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_active_credit_income_value",
-            "action_value": {
-                "values": [
-                    -0.2
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_active_metal_income_value",
-            "action_value": {
-                "values": [
-                    -0.15
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_active_crystal_income_value",
-            "action_value": {
-                "values": [
-                    -0.15
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_active_population_growth_value",
-            "action_value": {
-                "values": [
-                    -0.35
-                ]
-            }
-        },
-        {
-            "action_value_id": "coercive_presence_active_culture_rate_value",
-            "action_value": {
-                "values": [
-                    -0.4
-                ]
-            }
-        },
-        {
-            "action_value_id": "systemic_terror_antimatter_regen_value",
-            "action_value": {
-                "values": [
-                    -0.35
-                ]
-            }
-        },
-        {
-            "action_value_id": "systemic_terror_weapon_cooldown_value",
-            "action_value": {
-                "values": [
-                    0.2
-                ]
-            }
-        },
-        {
-            "action_value_id": "systemic_terror_weapon_tracking_value",
-            "action_value": {
-                "values": [
-                    -0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "systemic_terror_movement_speed_value",
-            "action_value": {
-                "values": [
-                    -0.15
-                ]
-            }
-        },
-        {
-            "action_value_id": "systemic_terror_turn_rate_value",
-            "action_value": {
-                "values": [
-                    -0.25
-                ]
-            }
-        },
-        {
-            "action_value_id": "imperial_death_star_operations_gravity_well_radius_value",
-            "action_value": {
-                "values": [
-                    20000.0
-                ]
-            }
-        }
-    ],
-    "buff_weapon_modifiers": [
-        {
-            "buff_weapon_modifier_id": "operational_readiness_passive_weapon_cooldown_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "cooldown_duration",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_passive_weapon_cooldown_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "operational_readiness_passive_weapon_tracking_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "tracking_speed",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_passive_weapon_tracking_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "operational_readiness_active_weapon_cooldown_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "cooldown_duration",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_active_weapon_cooldown_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "operational_readiness_active_weapon_tracking_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "tracking_speed",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_active_weapon_tracking_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "target_saturation_weapon_cooldown_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "cooldown_duration",
-                "value_behavior": "scalar",
-                "value_id": "target_saturation_weapon_cooldown_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "target_saturation_weapon_tracking_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "tracking_speed",
-                "value_behavior": "scalar",
-                "value_id": "target_saturation_weapon_tracking_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "target_saturation_active_weapon_cooldown_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "cooldown_duration",
-                "value_behavior": "scalar",
-                "value_id": "target_saturation_active_weapon_cooldown_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "target_saturation_active_weapon_tracking_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "tracking_speed",
-                "value_behavior": "scalar",
-                "value_id": "target_saturation_active_weapon_tracking_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_range_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "range",
-                "value_behavior": "scalar",
-                "value_id": "total_fire_control_active_range_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_cooldown_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "cooldown_duration",
-                "value_behavior": "scalar",
-                "value_id": "total_fire_control_active_cooldown_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_tracking_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "tracking_speed",
-                "value_behavior": "scalar",
-                "value_id": "total_fire_control_active_tracking_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_damage_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "damage",
-                "value_behavior": "scalar",
-                "value_id": "total_fire_control_active_damage_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "systemic_terror_weapon_cooldown_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "cooldown_duration",
-                "value_behavior": "scalar",
-                "value_id": "systemic_terror_weapon_cooldown_value",
-                "weapon_type": "normal"
-            }
-        },
-        {
-            "buff_weapon_modifier_id": "systemic_terror_weapon_tracking_modifier",
-            "buff_weapon_modifier": {
-                "modifier_type": "tracking_speed",
-                "value_behavior": "scalar",
-                "value_id": "systemic_terror_weapon_tracking_value",
-                "weapon_type": "normal"
-            }
-        }
-    ],
-    "buff_unit_modifiers": [
-        {
-            "buff_unit_modifier_id": "operational_readiness_passive_shield_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "shield_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_passive_shield_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "operational_readiness_passive_hull_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "hull_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_passive_hull_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "operational_readiness_passive_antimatter_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "antimatter_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_passive_antimatter_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "operational_readiness_active_shield_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "shield_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_active_shield_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "operational_readiness_active_hull_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "hull_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_active_hull_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "operational_readiness_active_antimatter_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "antimatter_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "operational_readiness_active_antimatter_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "damage_control_readiness_shield_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "shield_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "damage_control_readiness_shield_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "damage_control_readiness_hull_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "hull_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "damage_control_readiness_hull_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "damage_control_readiness_active_shield_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "shield_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "damage_control_readiness_active_shield_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "damage_control_readiness_active_hull_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "hull_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "damage_control_readiness_active_hull_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "battlestation_alert_active_armor_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "max_armor_points",
-                "value_behavior": "scalar",
-                "value_id": "battlestation_alert_active_armor_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "battlestation_alert_active_shield_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "shield_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "battlestation_alert_active_shield_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "battlestation_alert_active_hull_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "hull_point_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "battlestation_alert_active_hull_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "systemic_terror_antimatter_regen_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "antimatter_restore_rate",
-                "value_behavior": "scalar",
-                "value_id": "systemic_terror_antimatter_regen_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "systemic_terror_movement_speed_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "max_linear_speed",
-                "value_behavior": "scalar",
-                "value_id": "systemic_terror_movement_speed_value"
-            }
-        },
-        {
-            "buff_unit_modifier_id": "systemic_terror_turn_rate_modifier",
-            "buff_unit_modifier": {
-                "modifier_type": "max_angular_speed",
-                "value_behavior": "scalar",
-                "value_id": "systemic_terror_turn_rate_value"
-            }
-        }
-    ],
-    "buff_planet_modifiers": [
-        {
-            "buff_planet_modifier_id": "coercive_presence_credit_income_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "commerce_track_credit_income_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_credit_income_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_metal_income_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "mining_track_metal_income_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_metal_income_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_crystal_income_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "mining_track_crystal_income_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_crystal_income_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_population_growth_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "population_growth_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_population_growth_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_culture_rate_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "culture_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_culture_rate_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_active_credit_income_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "commerce_track_credit_income_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_active_credit_income_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_active_metal_income_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "mining_track_metal_income_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_active_metal_income_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_active_crystal_income_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "mining_track_crystal_income_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_active_crystal_income_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_active_population_growth_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "population_growth_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_active_population_growth_value"
-            }
-        },
-        {
-            "buff_planet_modifier_id": "coercive_presence_active_culture_rate_modifier",
-            "buff_planet_modifier": {
-                "modifier_type": "culture_rate",
-                "value_behavior": "scalar",
-                "value_id": "coercive_presence_active_culture_rate_value"
-            }
-        }
-    ]
+  "version": 0,
+  "level_count": 1,
+  "target_filters": [
+    {
+      "target_filter_id": "imperial_death_star_operations_default_filter",
+      "target_filter": {
+        "ownerships": [
+          "self"
+        ],
+        "unit_types": [
+          "structure"
+        ],
+        "constraints": [
+          {
+            "constraint_type": "composite_not",
+            "constraint": {
+              "constraint_type": "has_mutation",
+              "mutation": "imperial_death_star_battlestation_operations_equipped"
+            }
+          },
+          {
+            "constraint_type": "composite_not",
+            "constraint": {
+              "constraint_type": "has_mutation",
+              "mutation": "imperial_death_star_weapons_operations_equipped"
+            }
+          },
+          {
+            "constraint_type": "composite_not",
+            "constraint": {
+              "constraint_type": "has_mutation",
+              "mutation": "imperial_death_star_peacekeeping_operations_equipped"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_operations_battlestation_filter",
+      "target_filter": {
+        "ownerships": [
+          "self"
+        ],
+        "unit_types": [
+          "structure"
+        ],
+        "constraints": [
+          {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_death_star_battlestation_operations_equipped"
+          }
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_operations_weapons_filter",
+      "target_filter": {
+        "ownerships": [
+          "self"
+        ],
+        "unit_types": [
+          "structure"
+        ],
+        "constraints": [
+          {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_death_star_weapons_operations_equipped"
+          }
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_operations_peacekeeping_filter",
+      "target_filter": {
+        "ownerships": [
+          "self"
+        ],
+        "unit_types": [
+          "structure"
+        ],
+        "constraints": [
+          {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_death_star_peacekeeping_operations_equipped"
+          }
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_allied_ships_in_gravity_well_filter",
+      "target_filter": {
+        "ownerships": [
+          "self",
+          "ally"
+        ],
+        "unit_types": [
+          "corvette",
+          "frigate",
+          "cruiser",
+          "capital_ship",
+          "super_capital_ship",
+          "titan"
+        ],
+        "exemptions": [
+          "is_dead",
+          "is_fully_unbuilt",
+          "is_in_phase_space"
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_enemy_ships_structures_in_gravity_well_filter",
+      "target_filter": {
+        "ownerships": [
+          "enemy"
+        ],
+        "unit_types": [
+          "corvette",
+          "frigate",
+          "cruiser",
+          "capital_ship",
+          "super_capital_ship",
+          "titan",
+          "structure",
+          "starbase"
+        ],
+        "exemptions": [
+          "is_dead",
+          "is_fully_unbuilt",
+          "is_in_phase_space"
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_enemy_colonized_planet_filter",
+      "target_filter": {
+        "ownerships": [
+          "enemy"
+        ],
+        "unit_types": [
+          "planet"
+        ],
+        "constraints": [
+          {
+            "constraint_type": "is_colonizable_planet"
+          }
+        ],
+        "exemptions": [
+          "is_dead",
+          "is_not_explored"
+        ]
+      }
+    },
+    {
+      "target_filter_id": "imperial_death_star_conventional_weapon_target_filter",
+      "target_filter": {
+        "ownerships": [
+          "enemy"
+        ],
+        "unit_types": [
+          "corvette",
+          "frigate",
+          "cruiser",
+          "capital_ship",
+          "super_capital_ship",
+          "titan",
+          "structure",
+          "starbase"
+        ],
+        "exemptions": [
+          "is_dead",
+          "is_fully_unbuilt",
+          "is_in_phase_space"
+        ]
+      }
+    }
+  ],
+  "action_values": [
+    {
+      "action_value_id": "imperial_death_star_operations_interval_value",
+      "action_value": {
+        "values": [
+          1.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_passive_aura_duration_value",
+      "action_value": {
+        "values": [
+          2.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_active_duration_value",
+      "action_value": {
+        "values": [
+          20.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_cooldown_time_value",
+      "action_value": {
+        "values": [
+          120.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_antimatter_cost_value",
+      "action_value": {
+        "values": [
+          100.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_max_stack_count_value",
+      "action_value": {
+        "values": [
+          50.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_gate_duration_value",
+      "action_value": {
+        "values": [
+          1.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_fire_distribution_duration_value",
+      "action_value": {
+        "values": [
+          16.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_target_saturation_duration_value",
+      "action_value": {
+        "values": [
+          16.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_damage_control_readiness_duration_value",
+      "action_value": {
+        "values": [
+          50.0
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_passive_shield_regen_value",
+      "action_value": {
+        "values": [
+          0.35
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_passive_hull_regen_value",
+      "action_value": {
+        "values": [
+          0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_passive_antimatter_regen_value",
+      "action_value": {
+        "values": [
+          0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_passive_weapon_cooldown_value",
+      "action_value": {
+        "values": [
+          -0.05
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_passive_weapon_tracking_value",
+      "action_value": {
+        "values": [
+          0.12
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_active_shield_regen_value",
+      "action_value": {
+        "values": [
+          0.5
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_active_hull_regen_value",
+      "action_value": {
+        "values": [
+          0.35
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_active_antimatter_regen_value",
+      "action_value": {
+        "values": [
+          0.35
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_active_weapon_cooldown_value",
+      "action_value": {
+        "values": [
+          -0.07
+        ]
+      }
+    },
+    {
+      "action_value_id": "operational_readiness_active_weapon_tracking_value",
+      "action_value": {
+        "values": [
+          0.18
+        ]
+      }
+    },
+    {
+      "action_value_id": "damage_control_readiness_shield_regen_value",
+      "action_value": {
+        "values": [
+          0.005
+        ]
+      }
+    },
+    {
+      "action_value_id": "damage_control_readiness_hull_regen_value",
+      "action_value": {
+        "values": [
+          0.004
+        ]
+      }
+    },
+    {
+      "action_value_id": "damage_control_readiness_active_shield_regen_value",
+      "action_value": {
+        "values": [
+          0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "damage_control_readiness_active_hull_regen_value",
+      "action_value": {
+        "values": [
+          0.2
+        ]
+      }
+    },
+    {
+      "action_value_id": "battlestation_alert_active_armor_value",
+      "action_value": {
+        "values": [
+          0.15
+        ]
+      }
+    },
+    {
+      "action_value_id": "battlestation_alert_active_shield_regen_value",
+      "action_value": {
+        "values": [
+          0.35
+        ]
+      }
+    },
+    {
+      "action_value_id": "battlestation_alert_active_hull_regen_value",
+      "action_value": {
+        "values": [
+          0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "target_saturation_weapon_cooldown_value",
+      "action_value": {
+        "values": [
+          -0.0015
+        ]
+      }
+    },
+    {
+      "action_value_id": "target_saturation_weapon_tracking_value",
+      "action_value": {
+        "values": [
+          0.003
+        ]
+      }
+    },
+    {
+      "action_value_id": "target_saturation_active_weapon_cooldown_value",
+      "action_value": {
+        "values": [
+          -0.04
+        ]
+      }
+    },
+    {
+      "action_value_id": "target_saturation_active_weapon_tracking_value",
+      "action_value": {
+        "values": [
+          0.1
+        ]
+      }
+    },
+    {
+      "action_value_id": "total_fire_control_active_range_value",
+      "action_value": {
+        "values": [
+          0.18
+        ]
+      }
+    },
+    {
+      "action_value_id": "total_fire_control_active_cooldown_value",
+      "action_value": {
+        "values": [
+          -0.09
+        ]
+      }
+    },
+    {
+      "action_value_id": "total_fire_control_active_tracking_value",
+      "action_value": {
+        "values": [
+          0.22
+        ]
+      }
+    },
+    {
+      "action_value_id": "total_fire_control_active_damage_value",
+      "action_value": {
+        "values": [
+          0.18
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_credit_income_value",
+      "action_value": {
+        "values": [
+          -0.15
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_metal_income_value",
+      "action_value": {
+        "values": [
+          -0.12
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_crystal_income_value",
+      "action_value": {
+        "values": [
+          -0.12
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_population_growth_value",
+      "action_value": {
+        "values": [
+          -0.2
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_culture_rate_value",
+      "action_value": {
+        "values": [
+          -0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_active_credit_income_value",
+      "action_value": {
+        "values": [
+          -0.2
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_active_metal_income_value",
+      "action_value": {
+        "values": [
+          -0.15
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_active_crystal_income_value",
+      "action_value": {
+        "values": [
+          -0.15
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_active_population_growth_value",
+      "action_value": {
+        "values": [
+          -0.35
+        ]
+      }
+    },
+    {
+      "action_value_id": "coercive_presence_active_culture_rate_value",
+      "action_value": {
+        "values": [
+          -0.4
+        ]
+      }
+    },
+    {
+      "action_value_id": "systemic_terror_antimatter_regen_value",
+      "action_value": {
+        "values": [
+          -0.35
+        ]
+      }
+    },
+    {
+      "action_value_id": "systemic_terror_weapon_cooldown_value",
+      "action_value": {
+        "values": [
+          0.2
+        ]
+      }
+    },
+    {
+      "action_value_id": "systemic_terror_weapon_tracking_value",
+      "action_value": {
+        "values": [
+          -0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "systemic_terror_movement_speed_value",
+      "action_value": {
+        "values": [
+          -0.15
+        ]
+      }
+    },
+    {
+      "action_value_id": "systemic_terror_turn_rate_value",
+      "action_value": {
+        "values": [
+          -0.25
+        ]
+      }
+    },
+    {
+      "action_value_id": "imperial_death_star_operations_gravity_well_radius_value",
+      "action_value": {
+        "values": [
+          20000.0
+        ]
+      }
+    }
+  ],
+  "buff_weapon_modifiers": [
+    {
+      "buff_weapon_modifier_id": "operational_readiness_passive_weapon_cooldown_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_passive_weapon_cooldown_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "operational_readiness_passive_weapon_tracking_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "tracking_speed",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_passive_weapon_tracking_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "operational_readiness_active_weapon_cooldown_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_active_weapon_cooldown_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "operational_readiness_active_weapon_tracking_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "tracking_speed",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_active_weapon_tracking_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "target_saturation_weapon_cooldown_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "value_id": "target_saturation_weapon_cooldown_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "target_saturation_weapon_tracking_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "tracking_speed",
+        "value_behavior": "scalar",
+        "value_id": "target_saturation_weapon_tracking_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "target_saturation_active_weapon_cooldown_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "value_id": "target_saturation_active_weapon_cooldown_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "target_saturation_active_weapon_tracking_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "tracking_speed",
+        "value_behavior": "scalar",
+        "value_id": "target_saturation_active_weapon_tracking_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_range_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "range",
+        "value_behavior": "scalar",
+        "value_id": "total_fire_control_active_range_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_cooldown_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "value_id": "total_fire_control_active_cooldown_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_tracking_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "tracking_speed",
+        "value_behavior": "scalar",
+        "value_id": "total_fire_control_active_tracking_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_damage_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "damage",
+        "value_behavior": "scalar",
+        "value_id": "total_fire_control_active_damage_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "systemic_terror_weapon_cooldown_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "cooldown_duration",
+        "value_behavior": "scalar",
+        "value_id": "systemic_terror_weapon_cooldown_value",
+        "weapon_type": "normal"
+      }
+    },
+    {
+      "buff_weapon_modifier_id": "systemic_terror_weapon_tracking_modifier",
+      "buff_weapon_modifier": {
+        "modifier_type": "tracking_speed",
+        "value_behavior": "scalar",
+        "value_id": "systemic_terror_weapon_tracking_value",
+        "weapon_type": "normal"
+      }
+    }
+  ],
+  "buff_unit_modifiers": [
+    {
+      "buff_unit_modifier_id": "operational_readiness_passive_shield_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_passive_shield_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "operational_readiness_passive_hull_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "hull_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_passive_hull_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "operational_readiness_passive_antimatter_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "antimatter_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_passive_antimatter_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "operational_readiness_active_shield_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_active_shield_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "operational_readiness_active_hull_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "hull_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_active_hull_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "operational_readiness_active_antimatter_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "antimatter_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "operational_readiness_active_antimatter_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "damage_control_readiness_shield_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "damage_control_readiness_shield_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "damage_control_readiness_hull_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "hull_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "damage_control_readiness_hull_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "damage_control_readiness_active_shield_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "damage_control_readiness_active_shield_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "damage_control_readiness_active_hull_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "hull_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "damage_control_readiness_active_hull_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "battlestation_alert_active_armor_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "max_armor_points",
+        "value_behavior": "scalar",
+        "value_id": "battlestation_alert_active_armor_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "battlestation_alert_active_shield_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "shield_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "battlestation_alert_active_shield_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "battlestation_alert_active_hull_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "hull_point_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "battlestation_alert_active_hull_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "systemic_terror_antimatter_regen_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "antimatter_restore_rate",
+        "value_behavior": "scalar",
+        "value_id": "systemic_terror_antimatter_regen_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "systemic_terror_movement_speed_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "max_linear_speed",
+        "value_behavior": "scalar",
+        "value_id": "systemic_terror_movement_speed_value"
+      }
+    },
+    {
+      "buff_unit_modifier_id": "systemic_terror_turn_rate_modifier",
+      "buff_unit_modifier": {
+        "modifier_type": "max_angular_speed",
+        "value_behavior": "scalar",
+        "value_id": "systemic_terror_turn_rate_value"
+      }
+    }
+  ],
+  "buff_planet_modifiers": [
+    {
+      "buff_planet_modifier_id": "coercive_presence_credit_income_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "commerce_track_credit_income_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_credit_income_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_metal_income_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "mining_track_metal_income_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_metal_income_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_crystal_income_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "mining_track_crystal_income_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_crystal_income_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_population_growth_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "population_growth_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_population_growth_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_culture_rate_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_culture_rate_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_active_credit_income_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "commerce_track_credit_income_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_active_credit_income_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_active_metal_income_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "mining_track_metal_income_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_active_metal_income_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_active_crystal_income_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "mining_track_crystal_income_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_active_crystal_income_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_active_population_growth_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "population_growth_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_active_population_growth_value"
+      }
+    },
+    {
+      "buff_planet_modifier_id": "coercive_presence_active_culture_rate_modifier",
+      "buff_planet_modifier": {
+        "modifier_type": "culture_rate",
+        "value_behavior": "scalar",
+        "value_id": "coercive_presence_active_culture_rate_value"
+      }
+    }
+  ]
 }

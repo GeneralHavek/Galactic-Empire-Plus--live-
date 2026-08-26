@@ -16,6 +16,12 @@
         },
         {
             "buff_unit_modifier_id": "imperial_tector_fortified_defense_active_shield_regen_modifier"
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_fortified_defense_active_armor_regen_after_damage_scalar_modifier"
+        },
+        {
+            "buff_unit_modifier_id": "imperial_tector_fortified_defense_active_hull_regen_after_damage_scalar_modifier"
         }
     ],
     "gui": {

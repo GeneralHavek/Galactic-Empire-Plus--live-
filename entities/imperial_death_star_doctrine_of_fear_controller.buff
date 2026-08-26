@@ -1,39 +1,40 @@
 {
-    "version": 0,
-    "stacking_limit": {
-        "stacking_limit": "fixed_one",
-        "stacking_limit_met_behavior": "preserve_existing_buff"
-    },
-    "stacking_ownership_type": "for_all_players",
-    "restart_other_stacked_buffs_when_started": true,
-    "time_actions": [
-        {
-            "execution_interval_value": "imperial_death_star_operations_interval_value",
-            "action_group": {
-                "actions": [
-                    {
-                        "constraint": {
-                            "constraint_type": "unit_passes_target_filter",
-                            "unit": {
-                                "unit_type": "current_spawner",
-                                "redirection": "current_gravity_well_primary_fixture"
-                            },
-                            "target_filter_id": "imperial_death_star_enemy_colonized_planet_filter"
-                        },
-                        "action_type": "use_unit_operators_on_single_unit",
-                        "destination_unit": {
-                            "unit_type": "current_spawner",
-                            "redirection": "current_gravity_well_primary_fixture"
-                        },
-                        "operators": [
-                            {
-                                "operator_type": "apply_buff",
-                                "buff": "imperial_death_star_coercive_presence"
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
-    ]
+  "version": 0,
+  "stacking_limit": {
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "preserve_existing_buff"
+  },
+  "stacking_ownership_type": "for_all_players",
+  "restart_other_stacked_buffs_when_started": true,
+  "time_actions": [
+    {
+      "execution_interval_value": "imperial_death_star_operations_interval_value",
+      "action_group": {
+        "actions": [
+          {
+            "constraint": {
+              "constraint_type": "unit_passes_target_filter",
+              "unit": {
+                "unit_type": "current_spawner",
+                "redirection": "current_gravity_well_primary_fixture"
+              },
+              "target_filter_id": "imperial_death_star_enemy_colonized_planet_filter"
+            },
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit": {
+              "unit_type": "current_spawner",
+              "redirection": "current_gravity_well_primary_fixture"
+            },
+            "operators": [
+              {
+                "operator_type": "apply_buff",
+                "buff": "imperial_death_star_coercive_presence"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "active_duration": "imperial_death_star_operations_passive_aura_duration_value"
 }

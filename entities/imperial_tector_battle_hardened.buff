@@ -20,11 +20,33 @@
             {
                 "lines": [
                     {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_tector_battle_hardened_damage_taken_modifier"
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.label.damage_taken_per_stack",
+                        "value_id": "imperial_tector_battle_hardened_damage_taken_value",
+                        "value_float_format": "percentage_one_decimal_place",
+                        "value_color": "positive"
                     }
                 ]
             }
-        ]
-    }
+        ],
+        "show_duplicate_buffs": false
+    },
+    "trigger_event_actions": [
+        {
+            "trigger_event_type": "on_current_spawner_damaged",
+            "action_group": {
+                "constraint": {
+                    "constraint_type": "value_comparison",
+                    "value_a": "uniforms_current_spawner_current_shields",
+                    "comparison_type": "less_than_equal_to",
+                    "value_b": "fixed_zero"
+                },
+                "actions": [
+                    {
+                        "action_type": "make_buff_dead"
+                    }
+                ]
+            }
+        }
+    ]
 }

@@ -1,44 +1,47 @@
 {
-    "version": 0,
-    "active_duration": "imperial_procursator_damage_control_stations_duration_value",
-    "stacking_limit": {
-        "stacking_limit": "fixed_one",
-        "stacking_limit_met_behavior": "restart_existing_buff"
+  "version": 0,
+  "active_duration": "imperial_procursator_damage_control_stations_duration_value",
+  "stacking_limit": {
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "restart_existing_buff"
+  },
+  "stacking_ownership_type": "for_all_players",
+  "restart_other_stacked_buffs_when_started": true,
+  "unit_modifiers": [
+    {
+      "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_hull_regen_modifier"
     },
-    "stacking_ownership_type": "for_all_players",
-    "restart_other_stacked_buffs_when_started": true,
-    "unit_modifiers": [
-        {
-            "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_hull_regen_modifier"
-        },
-        {
-            "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_shield_regen_modifier"
-        },
-        {
-            "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_damage_taken_modifier"
-        }
-    ],
-    "gui": {
-        "hud_icon": "imperial_procursator_damage_control_stations_ability_hud_icon",
-        "name": "imperial_procursator_damage_control_stations_ability_name",
-        "visibility_scope": "positive",
-        "tooltip_line_groups": [
-            {
-                "lines": [
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_procursator_damage_control_stations_hull_regen_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_procursator_damage_control_stations_shield_regen_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_procursator_damage_control_stations_damage_taken_modifier"
-                    }
-                ]
-            }
-        ]
+    {
+      "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_shield_regen_modifier"
+    },
+    {
+      "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_damage_taken_modifier"
+    },
+    {
+      "buff_unit_modifier_id": "imperial_procursator_damage_control_stations_hull_regen_after_damage_scalar_modifier"
     }
+  ],
+  "gui": {
+    "hud_icon": "imperial_procursator_damage_control_stations_ability_hud_icon",
+    "name": "imperial_procursator_damage_control_stations_ability_name",
+    "visibility_scope": "positive",
+    "tooltip_line_groups": [
+      {
+        "lines": [
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_procursator_damage_control_stations_hull_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_procursator_damage_control_stations_shield_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_procursator_damage_control_stations_damage_taken_modifier"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -36,9 +36,9 @@
             "action_value_id": "imperial_venator_mk2_broadside_coordination_passive_heavy_turbolaser_cooldown_value",
             "action_value": {
                 "values": [
-                    0.05,
-                    0.1,
-                    0.15
+                    -0.05,
+                    -0.1,
+                    -0.15
                 ]
             }
         },
@@ -66,9 +66,9 @@
             "action_value_id": "imperial_venator_mk2_broadside_coordination_active_heavy_turbolaser_cooldown_value",
             "action_value": {
                 "values": [
-                    0.05,
-                    0.1,
-                    0.15
+                    -0.05,
+                    -0.1,
+                    -0.15
                 ]
             }
         },
