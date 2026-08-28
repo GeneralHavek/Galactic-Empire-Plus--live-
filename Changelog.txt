@@ -14,3 +14,16 @@ Version 3.4.1.1:
 [Unit]      Fixed ISD I ultimate ability to decrease allied hyperspace charge time instead of increasing it, tooltip changed to reflect it as a positive buff;
 [Unit]      Fixed Death Star 2nd ability not properly applying buffs when activated;
 [Unit]      Fixed Death Star 2nd ability applying an additive bonus instead of scalar bonus to max hull, max armor, max shield, and max antimatter 
+[Unit]      Moved Venator Mk2 fleet formation from rank 3/group 2 to rank 2/group 2;
+[Unit]      Moved ISD I, ISD II, and Tector from rank 3/group 2 to rank 1/group 2;
+[Unit]      Moved Victory from rank 3/group 2 to rank 2/group 2;
+[Unit]      Moved Procursator from rank 3/group 2 to rank 2/group 2;
+[Unit]      Moved Immobilizer from rank 1/group 0 to rank 2/group 2;
+[Unit]      Moved Ton-Falk from rank 1/group 0 to rank 3/group 2;
+[Unit]      Changed ISD I leader priority from 3 to 2;
+[Unit]      Changed ISD II leader priority from 4 to 3;
+[Unit]      Changed Lucrehulk leader priority from 4 to 3;
+[Unit]      Changed MTC leader priority from 1 to 0;
+[Unit]      Changed Pelta leader priority from 1 to 0;
+[Unit]      Changed Ton-Falk leader priority from 1 to 0;
+[Unit]      Changed XX-777 leader priority from 1 to 0

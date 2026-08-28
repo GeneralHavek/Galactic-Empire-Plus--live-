@@ -1,1073 +1,1073 @@
 {
-    "version": 0,
-    "spatial": {
-        "radius": 338.787994,
-        "box": {
-            "center": [
-                0.000107,
-                24.677988,
-                36.110779
-            ],
-            "extents": [
-                198.08049,
-                81.865257,
-                299.562164
-            ]
-        },
-        "collision_rank": 1
+  "version": 0,
+  "spatial": {
+    "radius": 338.787994,
+    "box": {
+      "center": [
+        0.000107,
+        24.677988,
+        36.110779
+      ],
+      "extents": [
+        198.08049,
+        81.865257,
+        299.562164
+      ]
     },
-    "physics": {
-        "can_move_linear": true,
-        "max_linear_speed": 750.0,
-        "time_to_max_linear_speed": 5.0,
-        "arrival_tolerance_spatial_radius_scalar": 0.25,
-        "death_linear_speed_range": [
+    "collision_rank": 1
+  },
+  "physics": {
+    "can_move_linear": true,
+    "max_linear_speed": 750.0,
+    "time_to_max_linear_speed": 5.0,
+    "arrival_tolerance_spatial_radius_scalar": 0.25,
+    "death_linear_speed_range": [
+      1.0,
+      2.0
+    ],
+    "can_move_angular": true,
+    "max_angular_speed": 35.0,
+    "time_to_max_angular_speed": 10.0,
+    "max_bank_angle": 35.0,
+    "death_angular_speed_range": [
+      5.0,
+      10.0
+    ],
+    "linear_acceleration_angle": 90.0,
+    "can_strafe_linear": true,
+    "strafe_max_linear_speed": 150.0,
+    "time_to_strafe_max_linear_speed": 9.6,
+    "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
+    "strafe_start_angle": 0.0,
+    "strafe_stop_angle": 180.0,
+    "strafe_speed_start_angle": 10.0,
+    "strafe_max_start_turning_angle": 170.0
+  },
+  "hyperspace": {
+    "speed": 215000.0,
+    "speed_between_stars": 752500.0,
+    "charge_time": 8.0,
+    "charge_time_variance": 1.0,
+    "min_charge_angle": 10.0,
+    "max_charge_angle": 45.0
+  },
+  "move": {
+    "follow_distance": 640.351013
+  },
+  "attack": {
+    "attack_pattern": {
+      "type": "stop_and_fire"
+    }
+  },
+  "ai": {
+    "attack_target_type_groups": [
+      "capital_supercapital_heavy",
+      "carrier_support",
+      "light_flak_corvette",
+      "defense"
+    ],
+    "attack_target_type_groups_to_ignore": [
+      "torpedo_strikecraft_corvette"
+    ],
+    "attack_target_type_groups_matching_weapon": "weapon_gladiator_turret_mdtl",
+    "auto_follow_target_priority": 5.0,
+    "pursuit": {
+      "min_target_speed": 300.0,
+      "min_distance_to_target": 3000.0
+    }
+  },
+  "ai_attack_target": {
+    "attack_priority": 50.0,
+    "is_always_a_threat": true,
+    "attack_target_type": "heavy"
+  },
+  "player_ai": {
+    "max_empire_owned_count_percentage": 0.2,
+    "max_count_to_fleet_supply_ratio": 400
+  },
+  "user_interface": {
+    "pip_type": "cruiser",
+    "can_ever_be_selected": true,
+    "selection_priority": 300,
+    "has_sub_selection_grouping": true,
+    "selection_group_unit_type": "combat_ship",
+    "can_move": true,
+    "can_rotate": true,
+    "can_attack": true,
+    "can_show_distance_to_plane_line": true
+  },
+  "weapons": {
+    "weapons": [
+      {
+        "weapon": "weapon_gladiator_turret_mdtl",
+        "mesh_point": "child.med.000",
+        "weapon_position": [
+          -67.000015,
+          27.335522,
+          19.261919
+        ],
+        "forward": [
+          -0.963631,
+          -0.266587,
+          -0.018642
+        ],
+        "up": [
+          -0.267238,
+          0.961283,
+          0.067219
+        ],
+        "yaw_arc": {
+          "min_angle": -70.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -80.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_mdtl",
+        "mesh_point": "child.med.001",
+        "weapon_position": [
+          -76.027847,
+          28.989513,
+          -39.647266
+        ],
+        "forward": [
+          -0.963631,
+          -0.266587,
+          -0.018642
+        ],
+        "up": [
+          -0.267238,
+          0.961283,
+          0.067219
+        ],
+        "yaw_arc": {
+          "min_angle": -70.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -80.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_mdtl",
+        "mesh_point": "child.med.002",
+        "weapon_position": [
+          -58.008247,
+          26.095942,
+          70.891708
+        ],
+        "forward": [
+          -0.963631,
+          -0.266587,
+          -0.018642
+        ],
+        "up": [
+          -0.267238,
+          0.961283,
+          0.067219
+        ],
+        "yaw_arc": {
+          "min_angle": -70.0,
+          "max_angle": 110.0
+        },
+        "pitch_arc": {
+          "min_angle": -80.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_mdtl",
+        "mesh_point": "child.med.003",
+        "weapon_position": [
+          67.000015,
+          27.335533,
+          19.261988
+        ],
+        "forward": [
+          0.96363,
+          -0.266221,
+          -0.023291
+        ],
+        "up": [
+          0.267238,
+          0.959964,
+          0.083986
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 70.0
+        },
+        "pitch_arc": {
+          "min_angle": -80.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_mdtl",
+        "mesh_point": "child.med.004",
+        "weapon_position": [
+          76.027863,
+          28.989521,
+          -39.647209
+        ],
+        "forward": [
+          0.96363,
+          -0.266221,
+          -0.023291
+        ],
+        "up": [
+          0.267238,
+          0.959964,
+          0.083986
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 70.0
+        },
+        "pitch_arc": {
+          "min_angle": -80.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_mdtl",
+        "mesh_point": "child.med.005",
+        "weapon_position": [
+          58.008194,
+          26.095945,
+          70.891739
+        ],
+        "forward": [
+          0.96363,
+          -0.266221,
+          -0.023291
+        ],
+        "up": [
+          0.267238,
+          0.959964,
+          0.083986
+        ],
+        "yaw_arc": {
+          "min_angle": -110.0,
+          "max_angle": 70.0
+        },
+        "pitch_arc": {
+          "min_angle": -80.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_sml",
+        "mesh_point": "child.light.000",
+        "weapon_position": [
+          -102.928444,
+          -2.671329,
+          79.74707
+        ],
+        "forward": [
+          -0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -75.0,
+          "max_angle": 60.0
+        },
+        "pitch_arc": {
+          "min_angle": -60.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_sml",
+        "mesh_point": "child.light.001",
+        "weapon_position": [
+          -123.29483,
+          -2.671201,
+          2.129723
+        ],
+        "forward": [
+          -0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -60.0,
+          "max_angle": 75.0
+        },
+        "pitch_arc": {
+          "min_angle": -60.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_sml",
+        "mesh_point": "child.light.002",
+        "weapon_position": [
+          102.928398,
+          -2.671319,
+          79.747147
+        ],
+        "forward": [
+          0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -60.0,
+          "max_angle": 75.0
+        },
+        "pitch_arc": {
+          "min_angle": -60.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_sml",
+        "mesh_point": "child.light.003",
+        "weapon_position": [
+          123.294861,
+          -2.671191,
+          2.129818
+        ],
+        "forward": [
+          0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -75.0,
+          "max_angle": 60.0
+        },
+        "pitch_arc": {
+          "min_angle": -60.0,
+          "max_angle": 5.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_hqlc",
+        "mesh_point": "weapon.light.000",
+        "weapon_position": [
+          -7.7e-05,
+          20.820681,
+          207.312134
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            -15.913008,
+            20.820681,
+            207.312134
+          ],
+          [
+            15.912853,
+            20.820681,
+            207.312134
+          ]
+        ],
+        "forward": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -180.0,
+          "max_angle": 180.0
+        },
+        "pitch_arc": {
+          "min_angle": -90.0,
+          "max_angle": 20.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_hqlc",
+        "mesh_point": "weapon.light.001",
+        "weapon_position": [
+          -78.328384,
+          2.2e-05,
+          214.972824
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            -61.984058,
+            3e-05,
+            277.821411
+          ],
+          [
+            -78.636765,
+            2.2e-05,
+            214.72612
+          ],
+          [
+            -94.364334,
+            1.4e-05,
+            152.370926
+          ]
+        ],
+        "forward": [
+          -0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_hqlc",
+        "mesh_point": "weapon.light.002",
+        "weapon_position": [
+          78.328232,
+          2.9e-05,
+          214.972885
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            61.983852,
+            3.6e-05,
+            277.821472
+          ],
+          [
+            78.636612,
+            2.9e-05,
+            214.726181
+          ],
+          [
+            94.364212,
+            2.2e-05,
+            152.370987
+          ]
+        ],
+        "forward": [
+          0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_hqlc",
+        "mesh_point": "weapon.light.003",
+        "weapon_position": [
+          -167.131134,
+          -2.3e-05,
+          -130.190048
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            -149.634689,
+            -1.5e-05,
+            -67.220543
+          ],
+          [
+            -167.752838,
+            -2.3e-05,
+            -130.101227
+          ],
+          [
+            -184.005875,
+            -3.1e-05,
+            -193.248367
+          ]
+        ],
+        "forward": [
+          -0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_hqlc",
+        "mesh_point": "weapon.light.004",
+        "weapon_position": [
+          167.131226,
+          -8e-06,
+          -130.189926
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            149.63472,
+            -1e-06,
+            -67.220436
+          ],
+          [
+            167.75293,
+            -8e-06,
+            -130.101105
+          ],
+          [
+            184.006027,
+            -1.5e-05,
+            -193.248215
+          ]
+        ],
+        "forward": [
+          0.965926,
+          0.0,
+          0.258819
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          -0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        }
+      },
+      {
+        "weapon": "weapon_gladiator_turret_hqlc",
+        "mesh_point": "weapon.light.005",
+        "weapon_position": [
+          -6.7e-05,
+          -21.742697,
+          182.81749
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            -23.586895,
+            -21.742699,
+            182.817474
+          ],
+          [
+            23.586761,
+            -21.742695,
+            182.817505
+          ]
+        ],
+        "forward": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        },
+        "pitch_arc": {
+          "min_angle": -90.0,
+          "max_angle": 90.0
+        }
+      },
+      {
+        "weapon": "weapon_concussion_missile_gladiator",
+        "mesh_point": "weapon.torpedo.000",
+        "weapon_position": [
+          -40.533833,
+          -0.045788,
+          335.671509
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            -39.082329,
+            4.550839,
+            335.671509
+          ],
+          [
+            -39.082329,
+            0.124368,
+            335.671509
+          ],
+          [
+            -39.082329,
+            -4.797664,
+            335.671509
+          ],
+          [
+            -42.711086,
+            2.162168,
+            335.671509
+          ],
+          [
+            -42.711086,
+            -2.268649,
+            335.671509
+          ]
+        ],
+        "forward": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -180.0,
+          "max_angle": 180.0
+        },
+        "pitch_arc": {
+          "min_angle": -180.0,
+          "max_angle": 180.0
+        }
+      },
+      {
+        "weapon": "weapon_concussion_missile_gladiator",
+        "mesh_point": "weapon.torpedo.001",
+        "weapon_position": [
+          40.533581,
+          -0.045784,
+          335.671509
+        ],
+        "non_turret_muzzle_positions": [
+          [
+            39.082077,
+            4.550843,
+            335.671509
+          ],
+          [
+            39.082077,
+            0.124371,
+            335.671509
+          ],
+          [
+            39.082077,
+            -4.79766,
+            335.671509
+          ],
+          [
+            42.710835,
+            2.162171,
+            335.671509
+          ],
+          [
+            42.710835,
+            -2.268645,
+            335.671509
+          ]
+        ],
+        "forward": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "up": [
+          -0.0,
+          1.0,
+          0.0
+        ],
+        "yaw_arc": {
+          "min_angle": -180.0,
+          "max_angle": 180.0
+        },
+        "pitch_arc": {
+          "min_angle": -180.0,
+          "max_angle": 180.0
+        }
+      }
+    ],
+    "max_range_weapon_index": 0
+  },
+  "formation": {
+    "leader_priority": 1,
+    "offsets_per_formation_type": {
+      "ships_and_structures": {
+        "rank": 1,
+        "group": 2
+      }
+    }
+  },
+  "spawn_debris": {
+    "spawn_debris_time": 3.0,
+    "generic_group_name": "trader",
+    "generic_counts": {
+      "small_debris": [
+        7,
+        8
+      ],
+      "large_debris": [
+        1,
+        2
+      ]
+    }
+  },
+  "health": {
+    "release_time_after_death": 60.0,
+    "can_collide_duration_after_death": 3.95,
+    "durability": 355.0,
+    "can_ever_be_resurrected": true,
+    "levels": [
+      {
+        "max_hull_points": 1750.0,
+        "hull_point_restore_rate": 2.0,
+        "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+        "hull_crippled_percentage": 1.0,
+        "max_armor_points": 450.0,
+        "armor_point_restore_rate": 1.6,
+        "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+        "armor_strength": 95.0,
+        "max_shield_points": 1600.0,
+        "shield_point_restore_rate": 3.0,
+        "shield_burst_restore": {
+          "cooldown_duration": 30.0,
+          "restore_percentage": 0.35
+        },
+        "experience_given_on_death": 100.0
+      }
+    ]
+  },
+  "build": {
+    "build_time": 50.0,
+    "price": {
+      "credits": 1425.0,
+      "metal": 575.0,
+      "crystal": 415.0
+    },
+    "prerequisites": [
+      [
+        "imperial_unlock_gladiator"
+      ]
+    ],
+    "build_kind": "cruiser",
+    "supply_cost": 27,
+    "build_group_id": "cruiser"
+  },
+  "carrier": {
+    "base_max_squadron_capacity": 3,
+    "strikecraft_kinds": [
+      "mem_custom_strikecraft1",
+      "interceptor",
+      "bomber"
+    ],
+    "launch_destination_formation": "capital_ship_strikecraft",
+    "launch_destination_formation_offset": {
+      "rank": 2,
+      "group": 0
+    },
+    "hangar_data": [
+      {
+        "launch_basis": {
+          "position": [
+            -7.9e-05,
+            2.6e-05,
+            213.990921
+          ],
+          "rotation": [
             1.0,
-            2.0
-        ],
-        "can_move_angular": true,
-        "max_angular_speed": 35.0,
-        "time_to_max_angular_speed": 10.0,
-        "max_bank_angle": 35.0,
-        "death_angular_speed_range": [
-            5.0,
-            10.0
-        ],
-        "linear_acceleration_angle": 90.0,
-        "can_strafe_linear": true,
-        "strafe_max_linear_speed": 150.0,
-        "time_to_strafe_max_linear_speed": 9.6,
-        "strafe_max_linear_distance_spatial_radius_scalar": 3.0,
-        "strafe_start_angle": 0.0,
-        "strafe_stop_angle": 180.0,
-        "strafe_speed_start_angle": 10.0,
-        "strafe_max_start_turning_angle": 170.0
-    },
-    "hyperspace": {
-        "speed": 215000.0,
-        "speed_between_stars": 752500.0,
-        "charge_time": 8.0,
-        "charge_time_variance": 1.0,
-        "min_charge_angle": 10.0,
-        "max_charge_angle": 45.0
-    },
-    "move": {
-        "follow_distance": 640.351013
-    },
-    "attack": {
-        "attack_pattern": {
-            "type": "stop_and_fire"
-        }
-    },
-    "ai": {
-        "attack_target_type_groups": [
-            "capital_supercapital_heavy",
-            "carrier_support",
-            "light_flak_corvette",
-            "defense"
-        ],
-        "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft_corvette"
-        ],
-        "attack_target_type_groups_matching_weapon": "weapon_gladiator_turret_mdtl",
-        "auto_follow_target_priority": 5.0,
-        "pursuit": {
-            "min_target_speed": 300.0,
-            "min_distance_to_target": 3000.0
-        }
-    },
-    "ai_attack_target": {
-        "attack_priority": 50.0,
-        "is_always_a_threat": true,
-        "attack_target_type": "heavy"
-    },
-    "player_ai": {
-        "max_empire_owned_count_percentage": 0.2,
-        "max_count_to_fleet_supply_ratio": 400
-    },
-    "user_interface": {
-        "pip_type": "cruiser",
-        "can_ever_be_selected": true,
-        "selection_priority": 300,
-        "has_sub_selection_grouping": true,
-        "selection_group_unit_type": "combat_ship",
-        "can_move": true,
-        "can_rotate": true,
-        "can_attack": true,
-        "can_show_distance_to_plane_line": true
-    },
-    "weapons": {
-        "weapons": [
-            {
-                "weapon": "weapon_gladiator_turret_mdtl",
-                "mesh_point": "child.med.000",
-                "weapon_position": [
-                    -67.000015,
-                    27.335522,
-                    19.261919
-                ],
-                "forward": [
-                    -0.963631,
-                    -0.266587,
-                    -0.018642
-                ],
-                "up": [
-                    -0.267238,
-                    0.961283,
-                    0.067219
-                ],
-                "yaw_arc": {
-                    "min_angle": -70.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -80.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_mdtl",
-                "mesh_point": "child.med.001",
-                "weapon_position": [
-                    -76.027847,
-                    28.989513,
-                    -39.647266
-                ],
-                "forward": [
-                    -0.963631,
-                    -0.266587,
-                    -0.018642
-                ],
-                "up": [
-                    -0.267238,
-                    0.961283,
-                    0.067219
-                ],
-                "yaw_arc": {
-                    "min_angle": -70.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -80.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_mdtl",
-                "mesh_point": "child.med.002",
-                "weapon_position": [
-                    -58.008247,
-                    26.095942,
-                    70.891708
-                ],
-                "forward": [
-                    -0.963631,
-                    -0.266587,
-                    -0.018642
-                ],
-                "up": [
-                    -0.267238,
-                    0.961283,
-                    0.067219
-                ],
-                "yaw_arc": {
-                    "min_angle": -70.0,
-                    "max_angle": 110.0
-                },
-                "pitch_arc": {
-                    "min_angle": -80.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_mdtl",
-                "mesh_point": "child.med.003",
-                "weapon_position": [
-                    67.000015,
-                    27.335533,
-                    19.261988
-                ],
-                "forward": [
-                    0.96363,
-                    -0.266221,
-                    -0.023291
-                ],
-                "up": [
-                    0.267238,
-                    0.959964,
-                    0.083986
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 70.0
-                },
-                "pitch_arc": {
-                    "min_angle": -80.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_mdtl",
-                "mesh_point": "child.med.004",
-                "weapon_position": [
-                    76.027863,
-                    28.989521,
-                    -39.647209
-                ],
-                "forward": [
-                    0.96363,
-                    -0.266221,
-                    -0.023291
-                ],
-                "up": [
-                    0.267238,
-                    0.959964,
-                    0.083986
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 70.0
-                },
-                "pitch_arc": {
-                    "min_angle": -80.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_mdtl",
-                "mesh_point": "child.med.005",
-                "weapon_position": [
-                    58.008194,
-                    26.095945,
-                    70.891739
-                ],
-                "forward": [
-                    0.96363,
-                    -0.266221,
-                    -0.023291
-                ],
-                "up": [
-                    0.267238,
-                    0.959964,
-                    0.083986
-                ],
-                "yaw_arc": {
-                    "min_angle": -110.0,
-                    "max_angle": 70.0
-                },
-                "pitch_arc": {
-                    "min_angle": -80.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_sml",
-                "mesh_point": "child.light.000",
-                "weapon_position": [
-                    -102.928444,
-                    -2.671329,
-                    79.74707
-                ],
-                "forward": [
-                    -0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -75.0,
-                    "max_angle": 60.0
-                },
-                "pitch_arc": {
-                    "min_angle": -60.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_sml",
-                "mesh_point": "child.light.001",
-                "weapon_position": [
-                    -123.29483,
-                    -2.671201,
-                    2.129723
-                ],
-                "forward": [
-                    -0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -60.0,
-                    "max_angle": 75.0
-                },
-                "pitch_arc": {
-                    "min_angle": -60.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_sml",
-                "mesh_point": "child.light.002",
-                "weapon_position": [
-                    102.928398,
-                    -2.671319,
-                    79.747147
-                ],
-                "forward": [
-                    0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -60.0,
-                    "max_angle": 75.0
-                },
-                "pitch_arc": {
-                    "min_angle": -60.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_sml",
-                "mesh_point": "child.light.003",
-                "weapon_position": [
-                    123.294861,
-                    -2.671191,
-                    2.129818
-                ],
-                "forward": [
-                    0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -75.0,
-                    "max_angle": 60.0
-                },
-                "pitch_arc": {
-                    "min_angle": -60.0,
-                    "max_angle": 5.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_hqlc",
-                "mesh_point": "weapon.light.000",
-                "weapon_position": [
-                    -7.7e-05,
-                    20.820681,
-                    207.312134
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        -15.913008,
-                        20.820681,
-                        207.312134
-                    ],
-                    [
-                        15.912853,
-                        20.820681,
-                        207.312134
-                    ]
-                ],
-                "forward": [
-                    -0.0,
-                    0.0,
-                    1.0
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -180.0,
-                    "max_angle": 180.0
-                },
-                "pitch_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 20.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_hqlc",
-                "mesh_point": "weapon.light.001",
-                "weapon_position": [
-                    -78.328384,
-                    2.2e-05,
-                    214.972824
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        -61.984058,
-                        3e-05,
-                        277.821411
-                    ],
-                    [
-                        -78.636765,
-                        2.2e-05,
-                        214.72612
-                    ],
-                    [
-                        -94.364334,
-                        1.4e-05,
-                        152.370926
-                    ]
-                ],
-                "forward": [
-                    -0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_hqlc",
-                "mesh_point": "weapon.light.002",
-                "weapon_position": [
-                    78.328232,
-                    2.9e-05,
-                    214.972885
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        61.983852,
-                        3.6e-05,
-                        277.821472
-                    ],
-                    [
-                        78.636612,
-                        2.9e-05,
-                        214.726181
-                    ],
-                    [
-                        94.364212,
-                        2.2e-05,
-                        152.370987
-                    ]
-                ],
-                "forward": [
-                    0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_hqlc",
-                "mesh_point": "weapon.light.003",
-                "weapon_position": [
-                    -167.131134,
-                    -2.3e-05,
-                    -130.190048
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        -149.634689,
-                        -1.5e-05,
-                        -67.220543
-                    ],
-                    [
-                        -167.752838,
-                        -2.3e-05,
-                        -130.101227
-                    ],
-                    [
-                        -184.005875,
-                        -3.1e-05,
-                        -193.248367
-                    ]
-                ],
-                "forward": [
-                    -0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_hqlc",
-                "mesh_point": "weapon.light.004",
-                "weapon_position": [
-                    167.131226,
-                    -8e-06,
-                    -130.189926
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        149.63472,
-                        -1e-06,
-                        -67.220436
-                    ],
-                    [
-                        167.75293,
-                        -8e-06,
-                        -130.101105
-                    ],
-                    [
-                        184.006027,
-                        -1.5e-05,
-                        -193.248215
-                    ]
-                ],
-                "forward": [
-                    0.965926,
-                    0.0,
-                    0.258819
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    -0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                }
-            },
-            {
-                "weapon": "weapon_gladiator_turret_hqlc",
-                "mesh_point": "weapon.light.005",
-                "weapon_position": [
-                    -6.7e-05,
-                    -21.742697,
-                    182.81749
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        -23.586895,
-                        -21.742699,
-                        182.817474
-                    ],
-                    [
-                        23.586761,
-                        -21.742695,
-                        182.817505
-                    ]
-                ],
-                "forward": [
-                    -0.0,
-                    0.0,
-                    1.0
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                },
-                "pitch_arc": {
-                    "min_angle": -90.0,
-                    "max_angle": 90.0
-                }
-            },
-            {
-                "weapon": "weapon_concussion_missile_gladiator",
-                "mesh_point": "weapon.torpedo.000",
-                "weapon_position": [
-                    -40.533833,
-                    -0.045788,
-                    335.671509
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        -39.082329,
-                        4.550839,
-                        335.671509
-                    ],
-                    [
-                        -39.082329,
-                        0.124368,
-                        335.671509
-                    ],
-                    [
-                        -39.082329,
-                        -4.797664,
-                        335.671509
-                    ],
-                    [
-                        -42.711086,
-                        2.162168,
-                        335.671509
-                    ],
-                    [
-                        -42.711086,
-                        -2.268649,
-                        335.671509
-                    ]
-                ],
-                "forward": [
-                    -0.0,
-                    0.0,
-                    1.0
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -180.0,
-                    "max_angle": 180.0
-                },
-                "pitch_arc": {
-                    "min_angle": -180.0,
-                    "max_angle": 180.0
-                }
-            },
-            {
-                "weapon": "weapon_concussion_missile_gladiator",
-                "mesh_point": "weapon.torpedo.001",
-                "weapon_position": [
-                    40.533581,
-                    -0.045784,
-                    335.671509
-                ],
-                "non_turret_muzzle_positions": [
-                    [
-                        39.082077,
-                        4.550843,
-                        335.671509
-                    ],
-                    [
-                        39.082077,
-                        0.124371,
-                        335.671509
-                    ],
-                    [
-                        39.082077,
-                        -4.79766,
-                        335.671509
-                    ],
-                    [
-                        42.710835,
-                        2.162171,
-                        335.671509
-                    ],
-                    [
-                        42.710835,
-                        -2.268645,
-                        335.671509
-                    ]
-                ],
-                "forward": [
-                    -0.0,
-                    0.0,
-                    1.0
-                ],
-                "up": [
-                    -0.0,
-                    1.0,
-                    0.0
-                ],
-                "yaw_arc": {
-                    "min_angle": -180.0,
-                    "max_angle": 180.0
-                },
-                "pitch_arc": {
-                    "min_angle": -180.0,
-                    "max_angle": 180.0
-                }
-            }
-        ],
-        "max_range_weapon_index": 0
-    },
-    "formation": {
-        "leader_priority": 1,
-        "offsets_per_formation_type": {
-            "ships_and_structures": {
-                "rank": 1,
-                "group": 0
-            }
-        }
-    },
-    "spawn_debris": {
-        "spawn_debris_time": 3.0,
-        "generic_group_name": "trader",
-        "generic_counts": {
-            "small_debris": [
-                7,
-                8
-            ],
-            "large_debris": [
-                1,
-                2
-            ]
-        }
-    },
-    "health": {
-        "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 3.95,
-        "durability": 355.0,
-        "can_ever_be_resurrected": true,
-        "levels": [
-            {
-                "max_hull_points": 1750.0,
-                "hull_point_restore_rate": 2.0,
-                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
-                "hull_crippled_percentage": 1.0,
-                "max_armor_points": 450.0,
-                "armor_point_restore_rate": 1.6,
-                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
-                "armor_strength": 95.0,
-                "max_shield_points": 1600.0,
-                "shield_point_restore_rate": 3.0,
-                "shield_burst_restore": {
-                    "cooldown_duration": 30.0,
-                    "restore_percentage": 0.35
-                },
-                "experience_given_on_death": 100.0
-            }
-        ]
-    },
-    "build": {
-        "build_time": 50.0,
-        "price": {
-            "credits": 1425.0,
-            "metal": 575.0,
-            "crystal": 415.0
+            0.0,
+            0.0,
+            -0.0,
+            1.0,
+            0.0,
+            -0.0,
+            0.0,
+            1.0
+          ]
         },
-        "prerequisites": [
-            [
-                "imperial_unlock_gladiator"
-            ]
-        ],
-        "build_kind": "cruiser",
-        "supply_cost": 27,
-        "build_group_id": "cruiser"
-    },
-    "carrier": {
-        "base_max_squadron_capacity": 3,
-        "strikecraft_kinds": [
-            "mem_custom_strikecraft1",
-            "interceptor",
-            "bomber"
-        ],
-        "launch_destination_formation": "capital_ship_strikecraft",
-        "launch_destination_formation_offset": {
-            "rank": 2,
-            "group": 0
+        "land_basis": {
+          "position": [
+            -7.9e-05,
+            2.6e-05,
+            213.990921
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            1.0,
+            0.0,
+            -0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "launch_basis": {
+          "position": [
+            -109.73217,
+            0.0,
+            41.719158
+          ],
+          "rotation": [
+            0.275636,
+            -0.0,
+            0.961262,
+            -0.0,
+            1.0,
+            0.0,
+            -0.961262,
+            -0.0,
+            0.275636
+          ]
         },
-        "hangar_data": [
-            {
-                "launch_basis": {
-                    "position": [
-                        -7.9e-05,
-                        2.6e-05,
-                        213.990921
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        1.0,
-                        0.0,
-                        -0.0,
-                        0.0,
-                        1.0
-                    ]
-                },
-                "land_basis": {
-                    "position": [
-                        -7.9e-05,
-                        2.6e-05,
-                        213.990921
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        1.0,
-                        0.0,
-                        -0.0,
-                        0.0,
-                        1.0
-                    ]
-                }
-            },
-            {
-                "launch_basis": {
-                    "position": [
-                        -109.73217,
-                        0.0,
-                        41.719158
-                    ],
-                    "rotation": [
-                        0.275636,
-                        -0.0,
-                        0.961262,
-                        -0.0,
-                        1.0,
-                        0.0,
-                        -0.961262,
-                        -0.0,
-                        0.275636
-                    ]
-                },
-                "land_basis": {
-                    "position": [
-                        -109.73217,
-                        0.0,
-                        41.719158
-                    ],
-                    "rotation": [
-                        0.275636,
-                        -0.0,
-                        0.961262,
-                        -0.0,
-                        1.0,
-                        0.0,
-                        -0.961262,
-                        -0.0,
-                        0.275636
-                    ]
-                }
-            },
-            {
-                "launch_basis": {
-                    "position": [
-                        109.73214,
-                        1e-05,
-                        41.719234
-                    ],
-                    "rotation": [
-                        0.275637,
-                        0.0,
-                        -0.961262,
-                        0.0,
-                        1.0,
-                        0.0,
-                        0.961262,
-                        -0.0,
-                        0.275637
-                    ]
-                },
-                "land_basis": {
-                    "position": [
-                        109.73214,
-                        1e-05,
-                        41.719234
-                    ],
-                    "rotation": [
-                        0.275637,
-                        0.0,
-                        -0.961262,
-                        0.0,
-                        1.0,
-                        0.0,
-                        0.961262,
-                        -0.0,
-                        0.275637
-                    ]
-                }
-            },
-            {
-                "launch_basis": {
-                    "position": [
-                        -12.500001,
-                        -24.875103,
-                        -11.892812
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        0.866025,
-                        0.5,
-                        -0.0,
-                        -0.5,
-                        0.866025
-                    ]
-                },
-                "land_basis": {
-                    "position": [
-                        -12.500001,
-                        -24.875103,
-                        -11.892812
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        0.866025,
-                        0.5,
-                        -0.0,
-                        -0.5,
-                        0.866025
-                    ]
-                }
-            },
-            {
-                "launch_basis": {
-                    "position": [
-                        2e-06,
-                        -24.875103,
-                        -11.892811
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        0.866025,
-                        0.5,
-                        -0.0,
-                        -0.5,
-                        0.866025
-                    ]
-                },
-                "land_basis": {
-                    "position": [
-                        2e-06,
-                        -24.875103,
-                        -11.892811
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        0.866025,
-                        0.5,
-                        -0.0,
-                        -0.5,
-                        0.866025
-                    ]
-                }
-            },
-            {
-                "launch_basis": {
-                    "position": [
-                        12.500005,
-                        -24.875103,
-                        -11.89281
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        0.866025,
-                        0.5,
-                        -0.0,
-                        -0.5,
-                        0.866025
-                    ]
-                },
-                "land_basis": {
-                    "position": [
-                        12.500005,
-                        -24.875103,
-                        -11.89281
-                    ],
-                    "rotation": [
-                        1.0,
-                        0.0,
-                        0.0,
-                        -0.0,
-                        0.866025,
-                        0.5,
-                        -0.0,
-                        -0.5,
-                        0.866025
-                    ]
-                }
-            }
-        ]
-    },
-    "items": {
-        "levels": [
-            {
-                "max_ship_component_count": 3
-            }
-        ]
-    },
-    "target_filter_unit_type": "cruiser",
-    "tags": [
-        "cruiser"
-    ],
-    "abilities": [
-        {
-            "abilities": [
-                "imperial_power_weapons"
-            ]
+        "land_basis": {
+          "position": [
+            -109.73217,
+            0.0,
+            41.719158
+          ],
+          "rotation": [
+            0.275636,
+            -0.0,
+            0.961262,
+            -0.0,
+            1.0,
+            0.0,
+            -0.961262,
+            -0.0,
+            0.275636
+          ]
         }
-    ],
-    "ship_roles": [
-        "attack_ship"
-    ],
-    "skin_groups": [
-        {
-            "skins": [
-                "imperial_gladiator"
-            ]
+      },
+      {
+        "launch_basis": {
+          "position": [
+            109.73214,
+            1e-05,
+            41.719234
+          ],
+          "rotation": [
+            0.275637,
+            0.0,
+            -0.961262,
+            0.0,
+            1.0,
+            0.0,
+            0.961262,
+            -0.0,
+            0.275637
+          ]
+        },
+        "land_basis": {
+          "position": [
+            109.73214,
+            1e-05,
+            41.719234
+          ],
+          "rotation": [
+            0.275637,
+            0.0,
+            -0.961262,
+            0.0,
+            1.0,
+            0.0,
+            0.961262,
+            -0.0,
+            0.275637
+          ]
         }
-    ],
-    "action_effect_size": "small_unit",
-    "can_join_fleet": true
+      },
+      {
+        "launch_basis": {
+          "position": [
+            -12.500001,
+            -24.875103,
+            -11.892812
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.866025,
+            0.5,
+            -0.0,
+            -0.5,
+            0.866025
+          ]
+        },
+        "land_basis": {
+          "position": [
+            -12.500001,
+            -24.875103,
+            -11.892812
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.866025,
+            0.5,
+            -0.0,
+            -0.5,
+            0.866025
+          ]
+        }
+      },
+      {
+        "launch_basis": {
+          "position": [
+            2e-06,
+            -24.875103,
+            -11.892811
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.866025,
+            0.5,
+            -0.0,
+            -0.5,
+            0.866025
+          ]
+        },
+        "land_basis": {
+          "position": [
+            2e-06,
+            -24.875103,
+            -11.892811
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.866025,
+            0.5,
+            -0.0,
+            -0.5,
+            0.866025
+          ]
+        }
+      },
+      {
+        "launch_basis": {
+          "position": [
+            12.500005,
+            -24.875103,
+            -11.89281
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.866025,
+            0.5,
+            -0.0,
+            -0.5,
+            0.866025
+          ]
+        },
+        "land_basis": {
+          "position": [
+            12.500005,
+            -24.875103,
+            -11.89281
+          ],
+          "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            -0.0,
+            0.866025,
+            0.5,
+            -0.0,
+            -0.5,
+            0.866025
+          ]
+        }
+      }
+    ]
+  },
+  "items": {
+    "levels": [
+      {
+        "max_ship_component_count": 3
+      }
+    ]
+  },
+  "target_filter_unit_type": "cruiser",
+  "tags": [
+    "cruiser"
+  ],
+  "abilities": [
+    {
+      "abilities": [
+        "imperial_power_weapons"
+      ]
+    }
+  ],
+  "ship_roles": [
+    "attack_ship"
+  ],
+  "skin_groups": [
+    {
+      "skins": [
+        "imperial_gladiator"
+      ]
+    }
+  ],
+  "action_effect_size": "small_unit",
+  "can_join_fleet": true
 }
