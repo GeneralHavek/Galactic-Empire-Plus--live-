@@ -11,3 +11,5 @@ Version 3.4.1.3:
 [GUI]       Updated ISD II ability Tarkin Doctrine to reference the correct localization labels;
 [GUI]       Updated ISD II ability Tarkin Doctrine to use two place decimal percentages;
 [GUI]       Updated ISD II buff Imperial Ascendancy to actually show values for itself;
+[GUI]       Updated Victory II abilities Power Disruption, System Destabilization, and Target Exploitation to no longer show multiple versions of the same buff;
+[GUI]       Updated Victory I abilities Armor Fracture and System Disruption to no longer show multiple versions of the same buff
