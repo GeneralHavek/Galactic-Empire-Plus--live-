@@ -145,11 +145,42 @@
       {
         "header_text": "imperial_executor_imperial_hegemony_ability_name",
         "is_visible_constraint": {
-          "constraint_type": "unit_passes_target_filter",
-          "unit": {
-            "unit_type": "current_spawner"
-          },
-          "target_filter_id": "imperial_executor_hegemony_no_configuration_target_filter"
+          "constraint_type": "composite_not",
+          "constraint": {
+            "constraint_type": "composite_or",
+            "constraints": [
+              {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                  "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                  "constraint_type": "has_mutation",
+                  "mutation": "imperial_executor_operational_logistics_equipped"
+                }
+              },
+              {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                  "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                  "constraint_type": "has_mutation",
+                  "mutation": "imperial_executor_assault_operations_equipped"
+                }
+              },
+              {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                  "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                  "constraint_type": "has_mutation",
+                  "mutation": "imperial_executor_strategic_operations_equipped"
+                }
+              }
+            ]
+          }
         },
         "lines": [
           {

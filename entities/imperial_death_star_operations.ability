@@ -110,11 +110,42 @@
       {
         "header_text": "imperial_death_star_operational_readiness_ability_name",
         "is_visible_constraint": {
-          "constraint_type": "unit_passes_target_filter",
-          "unit": {
-            "unit_type": "current_spawner"
-          },
-          "target_filter_id": "imperial_death_star_operations_default_filter"
+          "constraint_type": "composite_not",
+          "constraint": {
+            "constraint_type": "composite_or",
+            "constraints": [
+              {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                  "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                  "constraint_type": "has_mutation",
+                  "mutation": "imperial_death_star_battlestation_operations_equipped"
+                }
+              },
+              {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                  "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                  "constraint_type": "has_mutation",
+                  "mutation": "imperial_death_star_weapons_operations_equipped"
+                }
+              },
+              {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                  "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                  "constraint_type": "has_mutation",
+                  "mutation": "imperial_death_star_peacekeeping_operations_equipped"
+                }
+              }
+            ]
+          }
         },
         "lines": [
           {
@@ -168,11 +199,14 @@
       {
         "header_text": "imperial_death_star_battlestation_alert_ability_name",
         "is_visible_constraint": {
-          "constraint_type": "unit_passes_target_filter",
+          "constraint_type": "unit_passes_unit_constraint",
           "unit": {
             "unit_type": "current_spawner"
           },
-          "target_filter_id": "imperial_death_star_operations_battlestation_filter"
+          "unit_constraint": {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_death_star_battlestation_operations_equipped"
+          }
         },
         "lines": [
           {
@@ -217,11 +251,14 @@
       {
         "header_text": "imperial_death_star_total_fire_control_ability_name",
         "is_visible_constraint": {
-          "constraint_type": "unit_passes_target_filter",
+          "constraint_type": "unit_passes_unit_constraint",
           "unit": {
             "unit_type": "current_spawner"
           },
-          "target_filter_id": "imperial_death_star_operations_weapons_filter"
+          "unit_constraint": {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_death_star_weapons_operations_equipped"
+          }
         },
         "lines": [
           {
@@ -270,11 +307,14 @@
       {
         "header_text": "imperial_death_star_doctrine_of_fear_ability_name",
         "is_visible_constraint": {
-          "constraint_type": "unit_passes_target_filter",
+          "constraint_type": "unit_passes_unit_constraint",
           "unit": {
             "unit_type": "current_spawner"
           },
-          "target_filter_id": "imperial_death_star_operations_peacekeeping_filter"
+          "unit_constraint": {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_death_star_peacekeeping_operations_equipped"
+          }
         },
         "lines": [
           {
