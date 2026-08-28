@@ -1,82 +1,162 @@
 {
-    "version": 0,
-    "item_type": "ship_component",
-    "hud_icon": "imperial_death_star_weapons_operations_unit_item_hud_icon",
-    "tooltip_picture": "imperial_death_star_weapons_operations_unit_item_tooltip_picture",
-    "name": "imperial_death_star_weapons_operations_unit_item_name",
-    "description": "imperial_death_star_weapons_operations_unit_item_description",
-    "build_time": 60.0,
-    "price": {
-        "credits": 1000.0,
-        "metal": 175.0,
-        "crystal": 100.0
-    },
-    "required_unit_tags": [
-        "mem_advanced_station"
-    ],
-    "max_count_on_unit": 1,
-    "build_group_id": "offense",
-    "unit_mutations": [
-        "imperial_death_star_weapons_operations_equipped"
-    ],
-    "other_item_requirements": {
-        "mutually_exclusive_items": [
-            "imperial_death_star_battlestation_operations",
-            "imperial_death_star_peacekeeping_operations"
-        ]
-    },
-    "weapon_modifiers": [
-        {
-            "modifier_type": "damage",
-            "value_behavior": "scalar",
-            "values": [
-                0.15
-            ],
-            "weapon_type": "normal",
-            "tags": [
-                "turbolaser",
-                "ion",
-                "concussion"
-            ]
-        },
-        {
-            "modifier_type": "cooldown_duration",
-            "value_behavior": "scalar",
-            "values": [
-                -0.08
-            ],
-            "weapon_type": "normal",
-            "tags": [
-                "turbolaser",
-                "ion",
-                "concussion"
-            ]
-        },
-        {
-            "modifier_type": "tracking_speed",
-            "value_behavior": "scalar",
-            "values": [
-                0.18
-            ],
-            "weapon_type": "normal",
-            "tags": [
-                "turbolaser",
-                "ion",
-                "concussion"
-            ]
-        },
-        {
-            "modifier_type": "range",
-            "value_behavior": "scalar",
-            "values": [
-                0.15
-            ],
-            "weapon_type": "normal",
-            "tags": [
-                "turbolaser",
-                "ion",
-                "concussion"
-            ]
-        }
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "imperial_death_star_weapons_operations_unit_item_hud_icon",
+  "tooltip_picture": "imperial_death_star_weapons_operations_unit_item_tooltip_picture",
+  "name": "imperial_death_star_weapons_operations_unit_item_name",
+  "description": "imperial_death_star_weapons_operations_unit_item_description",
+  "build_time": 60.0,
+  "price": {
+    "credits": 1000.0,
+    "metal": 175.0,
+    "crystal": 100.0
+  },
+  "required_unit_tags": [
+    "mem_advanced_station"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "offense",
+  "unit_mutations": [
+    "imperial_death_star_weapons_operations_equipped"
+  ],
+  "other_item_requirements": {
+    "mutually_exclusive_items": [
+      "imperial_death_star_battlestation_operations",
+      "imperial_death_star_peacekeeping_operations"
     ]
+  },
+  "weapon_modifiers": [
+    {
+      "modifier_type": "damage",
+      "value_behavior": "scalar",
+      "values": [
+        0.15
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "turbolaser"
+      ]
+    },
+    {
+      "modifier_type": "damage",
+      "value_behavior": "scalar",
+      "values": [
+        0.15
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "ion"
+      ]
+    },
+    {
+      "modifier_type": "damage",
+      "value_behavior": "scalar",
+      "values": [
+        0.15
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "concussion"
+      ]
+    },
+    {
+      "modifier_type": "cooldown_duration",
+      "value_behavior": "scalar",
+      "values": [
+        -0.08
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "turbolaser"
+      ]
+    },
+    {
+      "modifier_type": "cooldown_duration",
+      "value_behavior": "scalar",
+      "values": [
+        -0.08
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "ion"
+      ]
+    },
+    {
+      "modifier_type": "cooldown_duration",
+      "value_behavior": "scalar",
+      "values": [
+        -0.08
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "concussion"
+      ]
+    },
+    {
+      "modifier_type": "tracking_speed",
+      "value_behavior": "scalar",
+      "values": [
+        0.18
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "turbolaser"
+      ]
+    },
+    {
+      "modifier_type": "tracking_speed",
+      "value_behavior": "scalar",
+      "values": [
+        0.18
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "ion"
+      ]
+    },
+    {
+      "modifier_type": "tracking_speed",
+      "value_behavior": "scalar",
+      "values": [
+        0.18
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "concussion"
+      ]
+    },
+    {
+      "modifier_type": "range",
+      "value_behavior": "scalar",
+      "values": [
+        0.15
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "turbolaser"
+      ]
+    },
+    {
+      "modifier_type": "range",
+      "value_behavior": "scalar",
+      "values": [
+        0.15
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "ion"
+      ]
+    },
+    {
+      "modifier_type": "range",
+      "value_behavior": "scalar",
+      "values": [
+        0.15
+      ],
+      "weapon_type": "normal",
+      "tags": [
+        "concussion"
+      ]
+    }
+  ]
 }

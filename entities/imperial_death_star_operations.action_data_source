@@ -373,7 +373,7 @@
       "action_value_id": "battlestation_alert_active_armor_value",
       "action_value": {
         "values": [
-          0.15
+          15.0
         ]
       }
     },
@@ -381,7 +381,7 @@
       "action_value_id": "battlestation_alert_active_shield_regen_value",
       "action_value": {
         "values": [
-          0.35
+          0.6
         ]
       }
     },
@@ -389,7 +389,7 @@
       "action_value_id": "battlestation_alert_active_hull_regen_value",
       "action_value": {
         "values": [
-          0.25
+          0.45
         ]
       }
     },
@@ -437,7 +437,7 @@
       "action_value_id": "total_fire_control_active_cooldown_value",
       "action_value": {
         "values": [
-          -0.09
+          -0.13
         ]
       }
     },
@@ -445,7 +445,7 @@
       "action_value_id": "total_fire_control_active_tracking_value",
       "action_value": {
         "values": [
-          0.22
+          0.32
         ]
       }
     },
@@ -798,8 +798,8 @@
     {
       "buff_unit_modifier_id": "battlestation_alert_active_armor_modifier",
       "buff_unit_modifier": {
-        "modifier_type": "max_armor_points",
-        "value_behavior": "scalar",
+        "modifier_type": "armor_strength",
+        "value_behavior": "additive",
         "value_id": "battlestation_alert_active_armor_value"
       }
     },

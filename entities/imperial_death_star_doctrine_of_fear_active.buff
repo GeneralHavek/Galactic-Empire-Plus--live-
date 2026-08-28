@@ -1,78 +1,124 @@
 {
-    "version": 0,
-    "stacking_limit": {
-        "stacking_limit": "fixed_one",
-        "stacking_limit_met_behavior": "restart_existing_buff"
-    },
-    "stacking_ownership_type": "for_all_players",
-    "restart_other_stacked_buffs_when_started": true,
-    "active_duration": "imperial_death_star_operations_active_duration_value",
-    "time_actions": [
-        {
-            "execution_interval_value": "imperial_death_star_operations_interval_value",
-            "action_group": {
-                "actions": [
-                    {
-                        "action_type": "use_unit_operators_on_units_in_radius_of_unit",
-                        "radius_origin_unit": {
-                            "unit_type": "current_spawner"
-                        },
-                        "radius_value": "imperial_death_star_operations_gravity_well_radius_value",
-                        "include_radius_origin_unit": false,
-                        "include_y_axis_in_radius_check": false,
-                        "operators": [
-                            {
-                                "operator_type": "apply_buff",
-                                "buff": "imperial_death_star_systemic_terror",
-                                "destination_target_filter_id": "imperial_death_star_enemy_ships_structures_in_gravity_well_filter"
-                            }
-                        ]
-                    },
-                    {
-                        "constraint": {
-                            "constraint_type": "unit_passes_target_filter",
-                            "unit": {
-                                "unit_type": "current_spawner",
-                                "redirection": "current_gravity_well_primary_fixture"
-                            },
-                            "target_filter_id": "imperial_death_star_enemy_colonized_planet_filter"
-                        },
-                        "action_type": "use_unit_operators_on_single_unit",
-                        "destination_unit": {
-                            "unit_type": "current_spawner",
-                            "redirection": "current_gravity_well_primary_fixture"
-                        },
-                        "operators": [
-                            {
-                                "operator_type": "apply_buff",
-                                "buff": "imperial_death_star_coercive_presence_active"
-                            }
-                        ]
-                    }
-                ]
-            }
-        }
-    ],
-    "gui": {
-        "hud_icon": "imperial_death_star_peacekeeping_operations_unit_item_hud_icon",
-        "name": "imperial_death_star_doctrine_of_fear_ability_name",
-        "visibility_scope": "positive",
-        "tooltip_line_groups": [
-            {
-                "lines": [
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.active_duration",
-                        "value_id": "imperial_death_star_operations_active_duration_value",
-                        "value_suffix": "seconds"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.radius",
-                        "value_id": "imperial_death_star_operations_gravity_well_radius_value"
-                    }
-                ]
-            }
+  "version": 0,
+  "stacking_limit": {
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "restart_existing_buff"
+  },
+  "stacking_ownership_type": "for_all_players",
+  "restart_other_stacked_buffs_when_started": true,
+  "active_duration": "imperial_death_star_operations_active_duration_value",
+  "time_actions": [
+    {
+      "execution_interval_value": "imperial_death_star_operations_interval_value",
+      "action_group": {
+        "actions": [
+          {
+            "action_type": "use_unit_operators_on_units_in_radius_of_unit",
+            "radius_origin_unit": {
+              "unit_type": "current_spawner"
+            },
+            "radius_value": "imperial_death_star_operations_gravity_well_radius_value",
+            "include_radius_origin_unit": false,
+            "include_y_axis_in_radius_check": false,
+            "operators": [
+              {
+                "operator_type": "apply_buff",
+                "buff": "imperial_death_star_systemic_terror",
+                "destination_target_filter_id": "imperial_death_star_enemy_ships_structures_in_gravity_well_filter"
+              }
+            ]
+          },
+          {
+            "constraint": {
+              "constraint_type": "unit_passes_target_filter",
+              "unit": {
+                "unit_type": "current_spawner",
+                "redirection": "current_gravity_well_primary_fixture"
+              },
+              "target_filter_id": "imperial_death_star_enemy_colonized_planet_filter"
+            },
+            "action_type": "use_unit_operators_on_single_unit",
+            "destination_unit": {
+              "unit_type": "current_spawner",
+              "redirection": "current_gravity_well_primary_fixture"
+            },
+            "operators": [
+              {
+                "operator_type": "apply_buff",
+                "buff": "imperial_death_star_coercive_presence_active"
+              }
+            ]
+          }
         ]
+      }
     }
+  ],
+  "gui": {
+    "hud_icon": "imperial_death_star_peacekeeping_operations_unit_item_hud_icon",
+    "name": "imperial_death_star_doctrine_of_fear_ability_name",
+    "visibility_scope": "positive",
+    "tooltip_line_groups": [
+      {
+        "header_text": "imperial_death_star_systemic_terror_ability_name",
+        "lines": [
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.active_duration",
+            "value_id": "imperial_death_star_operations_active_duration_value",
+            "value_suffix": "seconds"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.radius",
+            "value_id": "imperial_death_star_operations_gravity_well_radius_value"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "systemic_terror_antimatter_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "systemic_terror_weapon_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "systemic_terror_weapon_tracking_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "systemic_terror_movement_speed_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "systemic_terror_turn_rate_modifier"
+          }
+        ]
+      },
+      {
+        "header_text": "imperial_death_star_coercive_presence_active_ability_name",
+        "lines": [
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "coercive_presence_active_credit_income_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "coercive_presence_active_metal_income_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "coercive_presence_active_crystal_income_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "coercive_presence_active_population_growth_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "coercive_presence_active_culture_rate_modifier"
+          }
+        ]
+      }
+    ]
+  }
 }

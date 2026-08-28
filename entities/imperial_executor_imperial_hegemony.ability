@@ -1,221 +1,424 @@
 {
-    "version": 0,
-    "action_data_source": "imperial_executor_imperial_hegemony",
-    "level_source": "internal_level",
-    "min_required_unit_levels": [
-        4,
-        7,
-        9
-    ],
-    "passive_actions": {
-        "only_if_owner_unit_operational": true,
-        "persistant_buff": "imperial_executor_imperial_hegemony_passive_controller"
-    },
-    "active_actions": {
-        "cooldown_time": "imperial_executor_hegemony_active_cooldown_time_value",
-        "antimatter_cost": "imperial_executor_hegemony_active_antimatter_cost_value",
-        "actions": {
-            "actions": [
-                {
-                    "action_type": "use_unit_operators_on_single_unit",
-                    "destination_unit": {
-                        "unit_type": "current_spawner"
-                    },
-                    "operators": [
-                        {
-                            "operator_type": "apply_buff",
-                            "buff": "imperial_executor_imperial_hegemony_active_controller"
-                        }
-                    ],
-                    "constraint": {
-                        "constraint_type": "unit_passes_target_filter",
-                        "unit": {
-                            "unit_type": "current_spawner"
-                        },
-                        "target_filter_id": "imperial_executor_hegemony_no_configuration_target_filter"
-                    }
-                },
-                {
-                    "action_type": "use_unit_operators_on_single_unit",
-                    "destination_unit": {
-                        "unit_type": "current_spawner"
-                    },
-                    "operators": [
-                        {
-                            "operator_type": "apply_buff",
-                            "buff": "imperial_executor_operational_logistics_active_controller"
-                        }
-                    ],
-                    "constraint": {
-                        "constraint_type": "unit_passes_unit_constraint",
-                        "unit": {
-                            "unit_type": "current_spawner"
-                        },
-                        "unit_constraint": {
-                            "constraint_type": "has_mutation",
-                            "mutation": "imperial_executor_operational_logistics_equipped"
-                        }
-                    }
-                },
-                {
-                    "action_type": "use_unit_operators_on_single_unit",
-                    "destination_unit": {
-                        "unit_type": "current_spawner"
-                    },
-                    "operators": [
-                        {
-                            "operator_type": "apply_buff",
-                            "buff": "imperial_executor_assault_operations_active_controller"
-                        }
-                    ],
-                    "constraint": {
-                        "constraint_type": "unit_passes_unit_constraint",
-                        "unit": {
-                            "unit_type": "current_spawner"
-                        },
-                        "unit_constraint": {
-                            "constraint_type": "has_mutation",
-                            "mutation": "imperial_executor_assault_operations_equipped"
-                        }
-                    }
-                },
-                {
-                    "action_type": "use_unit_operators_on_single_unit",
-                    "destination_unit": {
-                        "unit_type": "current_spawner"
-                    },
-                    "operators": [
-                        {
-                            "operator_type": "apply_buff",
-                            "buff": "imperial_executor_strategic_operations_active_controller"
-                        }
-                    ],
-                    "constraint": {
-                        "constraint_type": "unit_passes_unit_constraint",
-                        "unit": {
-                            "unit_type": "current_spawner"
-                        },
-                        "unit_constraint": {
-                            "constraint_type": "has_mutation",
-                            "mutation": "imperial_executor_strategic_operations_equipped"
-                        }
-                    }
-                }
-            ]
-        },
-        "auto_cast": {
-            "enabled_by_default_behavior": "always",
-            "caster_constraint": {
-                "constraint_type": "has_valid_targets_in_radius",
-                "radius_origin_unit": {
-                    "unit_type": "current_spawner"
-                },
-                "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
-                "target_count_value": "imperial_executor_hegemony_minimum_targets_value",
-                "target_filter_id": "imperial_executor_hegemony_enemy_ship_target_filter"
-            }
-        }
-    },
-    "gui": {
-        "hud_icon": "imperial_executor_imperial_hegemony_ability_hud_icon",
-        "name": "imperial_executor_imperial_hegemony_ability_name",
-        "description": "imperial_executor_imperial_hegemony_ability_description",
-        "targeting": {
-            "targeting_type": "radius",
-            "values": {
-                "radius": "imperial_executor_hegemony_gravity_well_radius_value"
-            }
-        },
-        "tooltip_line_groups": [
+  "version": 0,
+  "action_data_source": "imperial_executor_imperial_hegemony",
+  "level_source": "internal_level",
+  "min_required_unit_levels": [
+    4,
+    7,
+    9
+  ],
+  "passive_actions": {
+    "only_if_owner_unit_operational": true,
+    "persistant_buff": "imperial_executor_imperial_hegemony_passive_controller"
+  },
+  "active_actions": {
+    "cooldown_time": "imperial_executor_hegemony_active_cooldown_time_value",
+    "antimatter_cost": "imperial_executor_hegemony_active_antimatter_cost_value",
+    "actions": {
+      "actions": [
+        {
+          "action_type": "use_unit_operators_on_single_unit",
+          "destination_unit": {
+            "unit_type": "current_spawner"
+          },
+          "operators": [
             {
-                "lines": [
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.radius",
-                        "value_id": "imperial_executor_hegemony_gravity_well_radius_value"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "imperial_executor_hegemony_passive_weapon_cooldown_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_executor_hegemony_passive_shield_regen_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_executor_hegemony_passive_antimatter_regen_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_executor_hegemony_passive_hull_regen_modifier"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.active_duration",
-                        "value_id": "imperial_executor_hegemony_active_duration_value",
-                        "value_suffix": "seconds"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.label.active_additional_weapon_cooldown_duration",
-                        "value_id": "imperial_executor_hegemony_active_weapon_cooldown_value",
-                        "value_float_format": "percentage",
-                        "value_color": "positive"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.label.active_additional_shield_restore_rate",
-                        "value_id": "imperial_executor_hegemony_active_shield_regen_value",
-                        "value_float_format": "percentage",
-                        "value_color": "positive"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.label.active_additional_antimatter_restore_rate",
-                        "value_id": "imperial_executor_hegemony_active_antimatter_regen_value",
-                        "value_float_format": "percentage",
-                        "value_color": "positive"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.label.active_additional_hull_restore_rate",
-                        "value_id": "imperial_executor_hegemony_active_hull_regen_value",
-                        "value_float_format": "percentage",
-                        "value_color": "positive"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.label.active_additional_weapon_tracking",
-                        "value_id": "imperial_executor_hegemony_active_weapon_tracking_value",
-                        "value_float_format": "percentage",
-                        "value_color": "positive"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.label.active_additional_weapon_damage",
-                        "value_id": "imperial_executor_hegemony_active_weapon_damage_value",
-                        "value_float_format": "percentage",
-                        "value_color": "positive"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "imperial_executor_hegemony_active_enemy_weapon_cooldown_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "imperial_executor_hegemony_active_enemy_weapon_tracking_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_executor_hegemony_active_enemy_move_speed_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_unit_modifier",
-                        "unit_modifier_id": "imperial_executor_hegemony_active_enemy_turn_rate_modifier"
-                    }
-                ]
+              "operator_type": "apply_buff",
+              "buff": "imperial_executor_imperial_hegemony_active_controller"
             }
-        ]
+          ],
+          "constraint": {
+            "constraint_type": "unit_passes_target_filter",
+            "unit": {
+              "unit_type": "current_spawner"
+            },
+            "target_filter_id": "imperial_executor_hegemony_no_configuration_target_filter"
+          }
+        },
+        {
+          "action_type": "use_unit_operators_on_single_unit",
+          "destination_unit": {
+            "unit_type": "current_spawner"
+          },
+          "operators": [
+            {
+              "operator_type": "apply_buff",
+              "buff": "imperial_executor_operational_logistics_active_controller"
+            }
+          ],
+          "constraint": {
+            "constraint_type": "unit_passes_unit_constraint",
+            "unit": {
+              "unit_type": "current_spawner"
+            },
+            "unit_constraint": {
+              "constraint_type": "has_mutation",
+              "mutation": "imperial_executor_operational_logistics_equipped"
+            }
+          }
+        },
+        {
+          "action_type": "use_unit_operators_on_single_unit",
+          "destination_unit": {
+            "unit_type": "current_spawner"
+          },
+          "operators": [
+            {
+              "operator_type": "apply_buff",
+              "buff": "imperial_executor_assault_operations_active_controller"
+            }
+          ],
+          "constraint": {
+            "constraint_type": "unit_passes_unit_constraint",
+            "unit": {
+              "unit_type": "current_spawner"
+            },
+            "unit_constraint": {
+              "constraint_type": "has_mutation",
+              "mutation": "imperial_executor_assault_operations_equipped"
+            }
+          }
+        },
+        {
+          "action_type": "use_unit_operators_on_single_unit",
+          "destination_unit": {
+            "unit_type": "current_spawner"
+          },
+          "operators": [
+            {
+              "operator_type": "apply_buff",
+              "buff": "imperial_executor_strategic_operations_active_controller"
+            }
+          ],
+          "constraint": {
+            "constraint_type": "unit_passes_unit_constraint",
+            "unit": {
+              "unit_type": "current_spawner"
+            },
+            "unit_constraint": {
+              "constraint_type": "has_mutation",
+              "mutation": "imperial_executor_strategic_operations_equipped"
+            }
+          }
+        }
+      ]
+    },
+    "auto_cast": {
+      "enabled_by_default_behavior": "always",
+      "caster_constraint": {
+        "constraint_type": "has_valid_targets_in_radius",
+        "radius_origin_unit": {
+          "unit_type": "current_spawner"
+        },
+        "radius_value": "imperial_executor_hegemony_gravity_well_radius_value",
+        "target_count_value": "imperial_executor_hegemony_minimum_targets_value",
+        "target_filter_id": "imperial_executor_hegemony_enemy_ship_target_filter"
+      }
     }
+  },
+  "gui": {
+    "hud_icon": "imperial_executor_imperial_hegemony_ability_hud_icon",
+    "name": "imperial_executor_imperial_hegemony_ability_name",
+    "description": "imperial_executor_imperial_hegemony_ability_description",
+    "targeting": {
+      "targeting_type": "radius",
+      "values": {
+        "radius": "imperial_executor_hegemony_gravity_well_radius_value"
+      }
+    },
+    "tooltip_line_groups": [
+      {
+        "lines": [
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.radius",
+            "value_id": "imperial_executor_hegemony_gravity_well_radius_value"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.active_duration",
+            "value_id": "imperial_executor_hegemony_active_duration_value",
+            "value_suffix": "seconds"
+          }
+        ]
+      },
+      {
+        "header_text": "imperial_executor_imperial_hegemony_ability_name",
+        "is_visible_constraint": {
+          "constraint_type": "unit_passes_target_filter",
+          "unit": {
+            "unit_type": "current_spawner"
+          },
+          "target_filter_id": "imperial_executor_hegemony_no_configuration_target_filter"
+        },
+        "lines": [
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_hegemony_passive_weapon_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_hegemony_passive_shield_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_hegemony_passive_antimatter_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_hegemony_passive_hull_regen_modifier"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_cooldown_duration",
+            "value_id": "imperial_executor_hegemony_active_weapon_cooldown_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_shield_restore_rate",
+            "value_id": "imperial_executor_hegemony_active_shield_regen_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_antimatter_restore_rate",
+            "value_id": "imperial_executor_hegemony_active_antimatter_regen_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_hull_restore_rate",
+            "value_id": "imperial_executor_hegemony_active_hull_regen_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_tracking",
+            "value_id": "imperial_executor_hegemony_active_weapon_tracking_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_damage",
+            "value_id": "imperial_executor_hegemony_active_weapon_damage_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_hegemony_active_enemy_weapon_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_hegemony_active_enemy_weapon_tracking_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_hegemony_active_enemy_move_speed_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_hegemony_active_enemy_turn_rate_modifier"
+          }
+        ]
+      },
+      {
+        "header_text": "imperial_executor_operational_logistics_ability_name",
+        "is_visible_constraint": {
+          "constraint_type": "unit_passes_unit_constraint",
+          "unit": {
+            "unit_type": "current_spawner"
+          },
+          "unit_constraint": {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_executor_operational_logistics_equipped"
+          }
+        },
+        "lines": [
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_operational_passive_weapon_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_operational_passive_shield_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_operational_passive_antimatter_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_operational_passive_hull_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "imperial_executor_operational_planet_credit_income_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "imperial_executor_operational_planet_metal_income_modifier"
+          },
+          {
+            "rendering_type": "buff_planet_modifier",
+            "planet_modifier_id": "imperial_executor_operational_planet_crystal_income_modifier"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_cooldown_duration",
+            "value_id": "imperial_executor_operational_active_weapon_cooldown_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_shield_restore_rate",
+            "value_id": "imperial_executor_operational_active_shield_regen_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_antimatter_restore_rate",
+            "value_id": "imperial_executor_operational_active_antimatter_regen_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_hull_restore_rate",
+            "value_id": "imperial_executor_operational_active_hull_regen_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          }
+        ]
+      },
+      {
+        "header_text": "imperial_executor_assault_operations_ability_name",
+        "is_visible_constraint": {
+          "constraint_type": "unit_passes_unit_constraint",
+          "unit": {
+            "unit_type": "current_spawner"
+          },
+          "unit_constraint": {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_executor_assault_operations_equipped"
+          }
+        },
+        "lines": [
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_assault_passive_weapon_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_assault_passive_weapon_damage_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_assault_passive_weapon_tracking_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_assault_passive_weapon_range_modifier"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_cooldown_duration",
+            "value_id": "imperial_executor_assault_active_weapon_cooldown_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_damage",
+            "value_id": "imperial_executor_assault_active_weapon_damage_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_tracking",
+            "value_id": "imperial_executor_assault_active_weapon_tracking_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_range",
+            "value_id": "imperial_executor_assault_active_weapon_range_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          }
+        ]
+      },
+      {
+        "header_text": "imperial_executor_strategic_operations_ability_name",
+        "is_visible_constraint": {
+          "constraint_type": "unit_passes_unit_constraint",
+          "unit": {
+            "unit_type": "current_spawner"
+          },
+          "unit_constraint": {
+            "constraint_type": "has_mutation",
+            "mutation": "imperial_executor_strategic_operations_equipped"
+          }
+        },
+        "lines": [
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_strategic_passive_allied_weapon_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "imperial_executor_strategic_passive_allied_weapon_tracking_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_strategic_passive_enemy_antimatter_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_strategic_passive_enemy_move_speed_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_strategic_passive_enemy_turn_rate_modifier"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_cooldown_duration",
+            "value_id": "imperial_executor_strategic_active_allied_weapon_cooldown_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.label.active_additional_weapon_tracking",
+            "value_id": "imperial_executor_strategic_active_allied_weapon_tracking_value",
+            "value_float_format": "percentage",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_strategic_active_enemy_antimatter_regen_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_strategic_active_enemy_move_speed_modifier"
+          },
+          {
+            "rendering_type": "buff_unit_modifier",
+            "unit_modifier_id": "imperial_executor_strategic_active_enemy_turn_rate_modifier"
+          }
+        ]
+      }
+    ]
+  }
 }

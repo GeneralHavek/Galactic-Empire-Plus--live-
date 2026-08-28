@@ -1,65 +1,51 @@
 {
-    "version": 0,
-    "stacking_limit": {
-        "stacking_limit": "fixed_one",
-        "stacking_limit_met_behavior": "restart_existing_buff"
+  "version": 0,
+  "stacking_limit": {
+    "stacking_limit": "fixed_one",
+    "stacking_limit_met_behavior": "restart_existing_buff"
+  },
+  "stacking_ownership_type": "for_all_players",
+  "restart_other_stacked_buffs_when_started": true,
+  "active_duration": "imperial_death_star_operations_active_duration_value",
+  "weapon_modifiers": [
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_range_modifier"
     },
-    "stacking_ownership_type": "for_all_players",
-    "restart_other_stacked_buffs_when_started": true,
-    "active_duration": "imperial_death_star_operations_active_duration_value",
-    "weapon_modifiers": [
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_range_modifier"
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_cooldown_modifier"
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_tracking_modifier"
-        },
-        {
-            "buff_weapon_modifier_id": "total_fire_control_active_damage_modifier"
-        },
-        {
-            "buff_weapon_modifier_id": "target_saturation_active_weapon_cooldown_modifier"
-        },
-        {
-            "buff_weapon_modifier_id": "target_saturation_active_weapon_tracking_modifier"
-        }
-    ],
-    "gui": {
-        "hud_icon": "imperial_death_star_total_fire_control_ability_hud_icon",
-        "name": "imperial_death_star_total_fire_control_ability_name",
-        "visibility_scope": "positive",
-        "tooltip_line_groups": [
-            {
-                "lines": [
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "total_fire_control_active_range_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "total_fire_control_active_cooldown_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "total_fire_control_active_tracking_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "total_fire_control_active_damage_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "target_saturation_active_weapon_cooldown_modifier"
-                    },
-                    {
-                        "rendering_type": "buff_weapon_modifier",
-                        "weapon_modifier_id": "target_saturation_active_weapon_tracking_modifier"
-                    }
-                ]
-            }
-        ]
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_cooldown_modifier"
+    },
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_tracking_modifier"
+    },
+    {
+      "buff_weapon_modifier_id": "total_fire_control_active_damage_modifier"
     }
+  ],
+  "gui": {
+    "hud_icon": "imperial_death_star_total_fire_control_ability_hud_icon",
+    "name": "imperial_death_star_total_fire_control_ability_name",
+    "visibility_scope": "positive",
+    "tooltip_line_groups": [
+      {
+        "lines": [
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "total_fire_control_active_range_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "total_fire_control_active_cooldown_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "total_fire_control_active_tracking_modifier"
+          },
+          {
+            "rendering_type": "buff_weapon_modifier",
+            "weapon_modifier_id": "total_fire_control_active_damage_modifier"
+          }
+        ]
+      }
+    ]
+  }
 }

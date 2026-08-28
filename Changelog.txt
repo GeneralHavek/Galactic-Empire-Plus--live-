@@ -1,34 +1,13 @@
-Version 3.4.1.2:
+Version 3.4.1.3:
 
-[Unit]      Fixed the unintended ability to build multiple Death Stars;
-[Unit]      Removed the garrison Victory I's ability to capture wreckage;
-[Sound]     Removed all combat notifications for garrison capitals except for the alarm when armor has been depleted;
-[Unit]      Added Hyperspace Destabilization ability to Imperial Starbase;
-[Unit]      Updated Tector ultimate ability to not spam out duplicate gui entries of buffs;
-[Unit]      Increased Tector ultimate ability active shield regeneration from +60/+85/+110/+140% to +500/+550/+600/+650%;
-[Unit]      Added additional functions to the hull and armor regen which should trigger in combat regen;
-[Unit]      Increased Tector ultimate 10 stack maximum damage reduction from -5%/-7%/-9/-12% to -10%/-12%/-15%/-20% while adding the missing syntax to only apply the mitigation while shields are active;
-[Unit]      Fixed issue causing Venator Mk2 ultimate reducing fire rate instead of increasing it;
-[GUI]       Fixed localization issue with Executor and ISD II abilities;
-[Unit]      Fixed Victory II 3rd ability increasing enemy turn rate instead of reducing it;
-[Unit]      Fixed ISD I ultimate ability to decrease allied hyperspace charge time instead of increasing it, tooltip changed to reflect it as a positive buff;
-[Unit]      Fixed Death Star 2nd ability not properly applying buffs when activated;
-[Unit]      Fixed Death Star 2nd ability applying an additive bonus instead of scalar bonus to max hull, max armor, max shield, and max antimatter 
-[Unit]      Moved Venator Mk2 fleet formation from rank 3/group 2 to rank 2/group 2;
-[Unit]      Moved ISD I, ISD II, and Tector from rank 3/group 2 to rank 1/group 2;
-[Unit]      Moved Victory from rank 3/group 2 to rank 2/group 2;
-[Unit]      Moved Procursator from rank 3/group 2 to rank 2/group 2;
-[Unit]      Moved Immobilizer from rank 1/group 0 to rank 2/group 2;
-[Unit]      Moved Ton-Falk from rank 1/group 0 to rank 3/group 2;
-[Unit]      Changed ISD I leader priority from 3 to 2;
-[Unit]      Changed ISD II leader priority from 4 to 3;
-[Unit]      Changed Lucrehulk leader priority from 4 to 3;
-[Unit]      Changed MTC leader priority from 1 to 0;
-[Unit]      Changed Pelta leader priority from 1 to 0;
-[Unit]      Changed Ton-Falk leader priority from 1 to 0;
-[Unit]      Changed XX-777 leader priority from 1 to 0;
-[Item]      Fixed issue that caused Advanced Logistics Protocols buff to not stack;
-[Item]      Increased the economy buff from Advanced Logistics Protocols from .5% to 2% per item
-[Item]      Removed shield burst from Backup Shield Generator (not a debuff as the Empire no longer uses shield burst at all);
-[Item]      Executor item Strategic Operations now correctly increases max antimatter, hull, and shields by 25%, 15%, and 15% respectively;
-[Research]  Fixed issue with Heart of the Galaxy research neutral pop assimilation rate and max allied population factor
+[Unit]      Fixed issue preventing Imperial Hegemony from working entirely on the Executor;
+[GUI]       Updated the Imperial Hegemony to better reflect which item configuration is being used;
+[GUI]       Updated Death Star item Weapon Operations to correctly reflect each weapon recieving an increase;
+[Gui]       Updated Death Star item Total Fire Control to show a consolidated buff total instead of multiple versions of the same buff;
+[Item]      Changed Death Star item Battle Station Alert to add +15 armor strength instead of +15% max armor to prevent armor values from yoyoing;
+[GUI]       Updated Death Star item Battle Station Alert to show a consolidated buff total instead of multiple version of the same buff;
+[GUI]       Updated Death Star buff Doctrine of Fear to show the debuff recieved by enemy forces;
+[GUI]       Updated Death Star ability Operation Readiness to properly show correct tooltips depending on which item configuration is used;
+[GUI]       Updated ISD II ability Tarkin Doctrine to reference the correct localization labels;
+[GUI]       Updated ISD II ability Tarkin Doctrine to use two place decimal percentages;
+[GUI]       Updated ISD II buff Imperial Ascendancy to actually show values for itself;

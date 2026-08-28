@@ -25,6 +25,46 @@
   "gui": {
     "hud_icon": "imperial_isd2_tarkin_doctrine_ability_hud_icon",
     "name": "imperial_isd2_imperial_ascendancy_name",
-    "visibility_scope": "positive"
+    "visibility_scope": "positive",
+    "tooltip_line_groups": [
+      {
+        "header_text": "tooltip.ability.bonus_per_stack",
+        "lines": [
+          {
+            "rendering_type": "single_value",
+            "label_text": "weapon_modifier.damage",
+            "value_id": "imperial_isd2_imperial_ascendancy_damage_value",
+            "value_float_format": "percentage_two_decimal_place_with_sign",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "weapon_modifier.tracking_speed",
+            "value_id": "imperial_isd2_imperial_ascendancy_tracking_value",
+            "value_float_format": "percentage_two_decimal_place_with_sign",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "weapon_modifier.cooldown_duration",
+            "value_id": "imperial_isd2_imperial_ascendancy_cooldown_value",
+            "value_float_format": "percentage_two_decimal_place_with_sign",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "unit_modifier.antimatter_restore_rate",
+            "value_id": "imperial_isd2_imperial_ascendancy_antimatter_regen_value",
+            "value_float_format": "percentage_two_decimal_place_with_sign",
+            "value_color": "positive"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.max_stack_count",
+            "value_id": "imperial_isd2_imperial_ascendancy_stack_limit_value"
+          }
+        ]
+      }
+    ]
   }
 }
