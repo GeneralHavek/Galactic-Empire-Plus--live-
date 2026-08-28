@@ -1,4 +1,4 @@
-Version 3.4.1.1:
+Version 3.4.1.2:
 
 [Unit]      Fixed the unintended ability to build multiple Death Stars;
 [Unit]      Removed the garrison Victory I's ability to capture wreckage;
@@ -26,4 +26,9 @@ Version 3.4.1.1:
 [Unit]      Changed MTC leader priority from 1 to 0;
 [Unit]      Changed Pelta leader priority from 1 to 0;
 [Unit]      Changed Ton-Falk leader priority from 1 to 0;
-[Unit]      Changed XX-777 leader priority from 1 to 0
+[Unit]      Changed XX-777 leader priority from 1 to 0;
+[Item]      Fixed issue that caused Advanced Logistics Protocols buff to not stack;
+[Item]      Increased the economy buff from Advanced Logistics Protocols from .5% to 2% per item
+[Item]      Removed shield burst from Backup Shield Generator (not a debuff as the Empire no longer uses shield burst at all);
+[Item]      Executor item Strategic Operations now correctly increases max antimatter, hull, and shields by 25%, 15%, and 15% respectively;
+[Research]  Fixed issue with Heart of the Galaxy research neutral pop assimilation rate and max allied population factor

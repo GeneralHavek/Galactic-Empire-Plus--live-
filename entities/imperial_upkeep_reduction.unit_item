@@ -1,22 +1,21 @@
 {
-    "version": 0,
-    "item_type": "ship_component",
-    "hud_icon": "imperial_unlock_unit_upkeep_research_subject_hud_icon",
-    "tooltip_icon": "imperial_unlock_unit_upkeep_research_subject_hud_icon",
-    "tooltip_picture": "imperial_unlock_unit_upkeep_research_subject_tooltip_picture",
-    "name": "unit_item_upkeep_reduction_name",
-    "description": "unit_item_upkeep_reduction_description",
-    "build_time": 100.0,
-    "price":
-    {
-        "credits": 1000.0
-    },
-    "required_unit_tags": [
-        "capital_ship",
-        "super_capital_ship",
-        "titan"
-    ],
-    "max_count_on_unit": 1,
-    "build_group_id": "utility",
-    "ability": "imperial_upkeep_reduction_unit_item"
+  "version": 0,
+  "item_type": "ship_component",
+  "hud_icon": "imperial_unlock_unit_upkeep_research_subject_hud_icon",
+  "tooltip_icon": "imperial_unlock_unit_upkeep_research_subject_hud_icon",
+  "tooltip_picture": "imperial_unlock_unit_upkeep_research_subject_tooltip_picture",
+  "name": "unit_item_upkeep_reduction_name",
+  "description": "unit_item_upkeep_reduction_description",
+  "build_time": 100.0,
+  "price": {
+    "credits": 1000.0
+  },
+  "required_unit_tags": [
+    "capital_ship",
+    "super_capital_ship",
+    "titan"
+  ],
+  "max_count_on_unit": 1,
+  "build_group_id": "utility",
+  "ability": "imperial_upkeep_reduction_unit_item"
 }

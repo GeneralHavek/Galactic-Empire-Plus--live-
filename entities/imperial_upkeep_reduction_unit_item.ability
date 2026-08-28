@@ -1,40 +1,37 @@
 {
-    "version": 0,
-    "action_data_source": "imperial_upkeep_reduction",
-    "level_source": "unit_item",
-    "passive_actions": {
-        "persistant_buff": "imperial_upkeep_reduction"
-    },
-    "gui": {
-        "tooltip_line_groups": [
-            {
-                "lines": [
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.credit_upkeep",
-                        "value_id": "capital_ship_credit_upkeep",
-                        "value_color": "positive",
-                        "value_float_format": "three_decimal_place_with_sign",
-                        "value_suffix": "per_second"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.metal_upkeep",
-                        "value_id": "capital_ship_metal_upkeep",
-                        "value_color": "positive",
-                        "value_float_format": "three_decimal_place_with_sign",
-                        "value_suffix": "per_second"
-                    },
-                    {
-                        "rendering_type": "single_value",
-                        "label_text": "tooltip.ability.crystal_upkeep",
-                        "value_id": "capital_ship_crystal_upkeep",
-                        "value_color": "positive",
-                        "value_float_format": "three_decimal_place_with_sign",
-                        "value_suffix": "per_second"
-                    }
-                ]
-            }
+  "version": 0,
+  "action_data_source": "imperial_upkeep_reduction",
+  "level_source": "unit_item",
+  "passive_actions": {
+    "persistant_buff": "imperial_upkeep_reduction"
+  },
+  "gui": {
+    "tooltip_line_groups": [
+      {
+        "lines": [
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.credit_upkeep",
+            "value_id": "capital_ship_credit_upkeep",
+            "value_color": "positive",
+            "value_float_format": "percentage_with_sign"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.metal_upkeep",
+            "value_id": "capital_ship_metal_upkeep",
+            "value_color": "positive",
+            "value_float_format": "percentage_with_sign"
+          },
+          {
+            "rendering_type": "single_value",
+            "label_text": "tooltip.ability.crystal_upkeep",
+            "value_id": "capital_ship_crystal_upkeep",
+            "value_color": "positive",
+            "value_float_format": "percentage_with_sign"
+          }
         ]
-    }
+      }
+    ]
+  }
 }
