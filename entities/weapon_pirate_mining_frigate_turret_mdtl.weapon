@@ -1,70 +1,70 @@
 {
-    "version": 0,
-    "name": "weapon_name.weapon_mtl",
-    "pitch_speed": 35.0,
-    "yaw_speed": 35.0,
-    "pitch_firing_tolerance": 2.5,
-    "yaw_firing_tolerance": 2.5,
-    "range": 7000.0,
-    "cooldown_duration": 8.0,
-    "uniforms_target_filter_id": "turbolaser",
-    "attack_target_type_groups": [
-        "light_corvette",
-        "lrm_flak",
-        "capital_supercapital_heavy",
-        "defense"
+  "version": 0,
+  "name": "weapon_name.weapon_mtl",
+  "pitch_speed": 35.0,
+  "yaw_speed": 35.0,
+  "pitch_firing_tolerance": 2.5,
+  "yaw_firing_tolerance": 2.5,
+  "range": 7000.0,
+  "cooldown_duration": 8.0,
+  "uniforms_target_filter_id": "turbolaser",
+  "attack_target_type_groups": [
+    "light_corvette",
+    "lrm_flak",
+    "capital_supercapital_heavy",
+    "defense"
+  ],
+  "weapon_type": "normal",
+  "damage_affect_type": "hull_and_armor_and_shields",
+  "damage": 31.333333333333332,
+  "penetration": 25.0,
+  "tags": [
+    "energy",
+    "turbolaser"
+  ],
+  "acquire_target_logic": "order_target_or_best_target_in_range",
+  "target_acquired_duration_required_to_fire": 0.85,
+  "firing": {
+    "firing_type": "projectile",
+    "travel_speed": 4000.0
+  },
+  "effects": {
+    "burst_pattern": [
+      0.0,
+      0.286,
+      0.571,
+      0.857,
+      1.143,
+      1.429,
+      1.714,
+      2.0
     ],
-    "weapon_type": "normal",
-    "damage_affect_type": "hull_and_armor_and_shields",
-    "damage": 25.0,
-    "penetration": 25.0,
-    "tags": [
-        "energy",
-        "turbolaser"
+    "muzzle_effect": "weapon_muzzle_mtl",
+    "projectile_travel_effect": "weapon_bolt_mtl",
+    "hit_hull_effect": "weapon_hit_hull_mtl",
+    "hit_shield_effect": "weapon_hit_shield_mtl",
+    "hit_shield_impact_radius_t": 0.35
+  },
+  "turret": {
+    "type": "biaxial",
+    "biaxial_base_mesh": "pirate_mining_frigate_turret_mdtl_mount",
+    "biaxial_barrel_mesh": "pirate_mining_frigate_turret_mdtl_barrel",
+    "barrel_position": [
+      -0.0,
+      1.43095,
+      0.0
     ],
-    "acquire_target_logic": "order_target_or_best_target_in_range",
-    "target_acquired_duration_required_to_fire": 0.85,
-    "firing": {
-        "firing_type": "projectile",
-        "travel_speed": 4000.0
-    },
-    "effects": {
-        "burst_pattern": [
-            0.0,
-            0.286,
-            0.571,
-            0.857,
-            1.143,
-            1.429,
-            1.714,
-            2.0
-        ],
-        "muzzle_effect": "weapon_muzzle_mtl",
-        "projectile_travel_effect": "weapon_bolt_mtl",
-        "hit_hull_effect": "weapon_hit_hull_mtl",
-        "hit_shield_effect": "weapon_hit_shield_mtl",
-        "hit_shield_impact_radius_t": 0.35
-    },
-    "turret": {
-        "type": "biaxial",
-        "biaxial_base_mesh": "pirate_mining_frigate_turret_mdtl_mount",
-        "biaxial_barrel_mesh": "pirate_mining_frigate_turret_mdtl_barrel",
-        "barrel_position": [
-            -0.0,
-            1.43095,
-            0.0
-        ],
-        "muzzle_positions": [
-            [
-                -1.089078,
-                0.000292,
-                7.021103
-            ],
-            [
-                1.097915,
-                0.000292,
-                7.021103
-            ]
-        ]
-    }
+    "muzzle_positions": [
+      [
+        -1.089078,
+        0.000292,
+        7.021103
+      ],
+      [
+        1.097915,
+        0.000292,
+        7.021103
+      ]
+    ]
+  }
 }

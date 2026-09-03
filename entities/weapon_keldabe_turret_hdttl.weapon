@@ -1,92 +1,92 @@
 {
-    "version": 0,
-    "name": "weapon_name.weapon_htlt",
-    "pitch_speed": 20.0,
-    "yaw_speed": 20.0,
-    "pitch_firing_tolerance": 2.5,
-    "yaw_firing_tolerance": 2.5,
-    "range": 9500.0,
-    "cooldown_duration": 15.0,
-    "uniforms_target_filter_id": "heavy_turbolaser",
-    "attack_target_type_groups": [
-        "light_corvette",
-        "lrm_flak",
-        "capital_supercapital_heavy",
-        "defense"
+  "version": 0,
+  "name": "weapon_name.weapon_htlt",
+  "pitch_speed": 20.0,
+  "yaw_speed": 20.0,
+  "pitch_firing_tolerance": 2.5,
+  "yaw_firing_tolerance": 2.5,
+  "range": 9500.0,
+  "cooldown_duration": 15.0,
+  "uniforms_target_filter_id": "heavy_turbolaser",
+  "attack_target_type_groups": [
+    "light_corvette",
+    "lrm_flak",
+    "capital_supercapital_heavy",
+    "defense"
+  ],
+  "weapon_type": "normal",
+  "damage_affect_type": "hull_and_armor_and_shields",
+  "damage": 18.0,
+  "penetration": 600.0,
+  "tags": [
+    "turbolaser",
+    "energy"
+  ],
+  "acquire_target_logic": "order_target_or_best_target_in_range",
+  "target_acquired_duration_required_to_fire": 0.85,
+  "firing": {
+    "firing_type": "projectile",
+    "travel_speed": 4000.0
+  },
+  "effects": {
+    "burst_pattern": [
+      0.0,
+      0.4,
+      0.8,
+      1.2,
+      1.6,
+      2.0,
+      2.4,
+      2.8,
+      3.2
     ],
-    "weapon_type": "normal",
-    "damage_affect_type": "hull_and_armor_and_shields",
-    "damage": 56.0,
-    "penetration": 600.0,
-    "tags": [
-        "turbolaser",
-        "energy"
+    "muzzle_picking_behavior": "sequential",
+    "muzzle_effect": "weapon_muzzle_htl",
+    "projectile_travel_effect": "weapon_bolt_htl",
+    "hit_hull_effect": "weapon_hit_hull_htl",
+    "hit_shield_effect": "weapon_hit_shield_htl",
+    "hit_shield_impact_radius_t": 0.35
+  },
+  "turret": {
+    "type": "biaxial",
+    "biaxial_base_mesh": "pirate_hdttl_mount",
+    "biaxial_barrel_mesh": "pirate_hdttl_barrel",
+    "barrel_position": [
+      0.003053,
+      3.097152,
+      3.867459
     ],
-    "acquire_target_logic": "order_target_or_best_target_in_range",
-    "target_acquired_duration_required_to_fire": 0.85,
-    "firing": {
-        "firing_type": "projectile",
-        "travel_speed": 4000.0
-    },
-    "effects": {
-        "burst_pattern": [
-            0.0,
-            0.4,
-            0.8,
-            1.2,
-            1.6,
-            2.0,
-            2.4,
-            2.8,
-            3.2
-        ],
-        "muzzle_picking_behavior": "sequential",
-        "muzzle_effect": "weapon_muzzle_htl",
-        "projectile_travel_effect": "weapon_bolt_htl",
-        "hit_hull_effect": "weapon_hit_hull_htl",
-        "hit_shield_effect": "weapon_hit_shield_htl",
-        "hit_shield_impact_radius_t": 0.35
-    },
-    "turret": {
-        "type": "biaxial",
-        "biaxial_base_mesh": "pirate_hdttl_mount",
-        "biaxial_barrel_mesh": "pirate_hdttl_barrel",
-        "barrel_position": [
-            0.003053,
-            3.097152,
-            3.867459
-        ],
-        "muzzle_positions": [
-            [
-                3.762966,
-                -0.02169,
-                13.893585
-            ],
-            [
-                2.724372,
-                -0.02169,
-                13.893585
-            ],
-            [
-                0.516416,
-                -0.02169,
-                13.893585
-            ],
-            [
-                -0.522178,
-                -0.02169,
-                13.893585
-            ],
-            [
-                -2.735057,
-                -0.021691,
-                13.893585
-            ],
-            [
-                -3.773651,
-                -0.021691,
-                13.893585
-            ]
-        ]
-    }
+    "muzzle_positions": [
+      [
+        3.762966,
+        -0.02169,
+        13.893585
+      ],
+      [
+        2.724372,
+        -0.02169,
+        13.893585
+      ],
+      [
+        0.516416,
+        -0.02169,
+        13.893585
+      ],
+      [
+        -0.522178,
+        -0.02169,
+        13.893585
+      ],
+      [
+        -2.735057,
+        -0.021691,
+        13.893585
+      ],
+      [
+        -3.773651,
+        -0.021691,
+        13.893585
+      ]
+    ]
+  }
 }
