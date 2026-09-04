@@ -1,621 +1,621 @@
 {
-  "version": 0,
-  "spatial": {
-    "radius": 121.725327,
-    "box": {
-      "center": [
-        1.1e-05,
-        6.17911,
-        -0.013721
-      ],
-      "extents": [
-        48.275299,
-        21.0625,
-        114.794998
-      ]
+    "version": 0,
+    "spatial": {
+        "radius": 121.725327,
+        "box": {
+            "center": [
+                1.1e-05,
+                6.17911,
+                -0.013721
+            ],
+            "extents": [
+                48.275299,
+                21.0625,
+                114.794998
+            ]
+        },
+        "collision_rank": 1
     },
-    "collision_rank": 1
-  },
-  "physics": {
-    "can_move_linear": true,
-    "max_linear_speed": 900.0,
-    "time_to_max_linear_speed": 6.5,
-    "arrival_tolerance_spatial_radius_scalar": 0.25,
-    "death_linear_speed_range": [
-      1.0,
-      2.0
-    ],
-    "can_move_angular": true,
-    "max_angular_speed": 20.0,
-    "time_to_max_angular_speed": 10.0,
-    "max_bank_angle": 35.0,
-    "death_angular_speed_range": [
-      5.0,
-      10.0
-    ],
-    "linear_acceleration_angle": 90.0,
-    "can_strafe_linear": true,
-    "strafe_max_linear_speed": 125.0,
-    "time_to_strafe_max_linear_speed": 10.0,
-    "strafe_max_linear_distance_spatial_radius_scalar": 0.5,
-    "strafe_start_angle": 0.0,
-    "strafe_stop_angle": 180.0,
-    "strafe_speed_start_angle": 10.0,
-    "strafe_max_start_turning_angle": 170.0
-  },
-  "hyperspace": {
-    "speed": 215000.0,
-    "speed_between_stars": 752500.0,
-    "charge_time": 8.0,
-    "charge_time_variance": 1.0,
-    "min_charge_angle": 10.0,
-    "max_charge_angle": 45.0
-  },
-  "move": {
-    "follow_distance": 250.0
-  },
-  "attack": {
-    "attack_pattern": {
-      "type": "stop_and_fire"
-    }
-  },
-  "ai": {
-    "attack_target_type_groups": [
-      "light_corvette",
-      "lrm_flak",
-      "capital_supercapital_heavy",
-      "defense"
-    ],
-    "attack_target_type_groups_to_ignore": [
-      "torpedo_strikecraft_corvette"
-    ],
-    "attack_target_type_groups_matching_weapon": "weapon_imp_turret_mqtl",
-    "auto_follow_target_priority": 5.0,
-    "pursuit": {
-      "min_target_speed": 100.0,
-      "min_distance_to_target": 2000.0
-    }
-  },
-  "ai_attack_target": {
-    "attack_priority": 50.0,
-    "is_always_a_threat": true,
-    "attack_target_type": "light"
-  },
-  "player_ai": {
-    "max_empire_owned_count_percentage": 0.1,
-    "max_count_to_fleet_supply_ratio": 250
-  },
-  "user_interface": {
-    "pip_type": "frigate",
-    "can_ever_be_selected": true,
-    "selection_priority": 300,
-    "has_sub_selection_grouping": true,
-    "selection_group_unit_type": "combat_ship",
-    "can_move": true,
-    "can_rotate": true,
-    "can_attack": true,
-    "can_show_distance_to_plane_line": true
-  },
-  "weapons": {
-    "weapons": [
-      {
-        "weapon": "weapon_imp_turret_mqtl",
-        "mesh_point": "child.med.000",
-        "weapon_position": [
-          -19.898308,
-          7.260453,
-          8.24799
+    "physics": {
+        "can_move_linear": true,
+        "max_linear_speed": 900.0,
+        "time_to_max_linear_speed": 6.5,
+        "arrival_tolerance_spatial_radius_scalar": 0.25,
+        "death_linear_speed_range": [
+            1.0,
+            2.0
         ],
-        "forward": [
-          0.001754,
-          -0.045308,
-          0.998972
+        "can_move_angular": true,
+        "max_angular_speed": 20.0,
+        "time_to_max_angular_speed": 10.0,
+        "max_bank_angle": 35.0,
+        "death_angular_speed_range": [
+            5.0,
+            10.0
         ],
-        "up": [
-          -0.100894,
-          0.993867,
-          0.045254
-        ],
-        "yaw_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        },
-        "pitch_arc": {
-          "min_angle": -75.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_imp_turret_mqtl",
-        "mesh_point": "child.med.001",
-        "weapon_position": [
-          19.898308,
-          7.260457,
-          8.247993
-        ],
-        "forward": [
-          -0.001755,
-          -0.045308,
-          0.998972
-        ],
-        "up": [
-          0.100894,
-          0.993867,
-          0.045254
-        ],
-        "yaw_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        },
-        "pitch_arc": {
-          "min_angle": -75.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_imp_turret_mqtl",
-        "mesh_point": "child.med.002",
-        "weapon_position": [
-          -10.581042,
-          -4.650533,
-          71.278458
-        ],
-        "forward": [
-          -0.0,
-          0.0,
-          1.0
-        ],
-        "up": [
-          0.0,
-          -1.0,
-          1e-06
-        ],
-        "yaw_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        },
-        "pitch_arc": {
-          "min_angle": -75.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_imp_turret_mqtl",
-        "mesh_point": "child.med.003",
-        "weapon_position": [
-          10.581031,
-          -4.650531,
-          71.278458
-        ],
-        "forward": [
-          -0.0,
-          0.0,
-          1.0
-        ],
-        "up": [
-          0.0,
-          -1.0,
-          1e-06
-        ],
-        "yaw_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        },
-        "pitch_arc": {
-          "min_angle": -75.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.000",
-        "weapon_position": [
-          -41.598419,
-          4.343318,
-          -12.356995
-        ],
-        "forward": [
-          -1.0,
-          0.0,
-          0.0
-        ],
-        "up": [
-          0.0,
-          1.0,
-          -0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -110.0,
-          "max_angle": 100.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.001",
-        "weapon_position": [
-          -41.598419,
-          -6.82622,
-          -12.356998
-        ],
-        "forward": [
-          -1.0,
-          -0.0,
-          -0.0
-        ],
-        "up": [
-          0.0,
-          -1.0,
-          0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -100.0,
-          "max_angle": 110.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.002",
-        "weapon_position": [
-          -26.538355,
-          3.210732,
-          55.136616
-        ],
-        "forward": [
-          -1.0,
-          0.0,
-          0.0
-        ],
-        "up": [
-          0.0,
-          1.0,
-          -0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -75.0,
-          "max_angle": 120.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.003",
-        "weapon_position": [
-          -26.538355,
-          -5.806005,
-          55.136616
-        ],
-        "forward": [
-          -1.0,
-          -0.0,
-          -0.0
-        ],
-        "up": [
-          0.0,
-          -1.0,
-          0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -120.0,
-          "max_angle": 75.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.004",
-        "weapon_position": [
-          41.598419,
-          4.343325,
-          -12.356987
-        ],
-        "forward": [
-          1.0,
-          0.0,
-          0.0
-        ],
-        "up": [
-          -0.0,
-          1.0,
-          -0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -110.0,
-          "max_angle": 100.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.005",
-        "weapon_position": [
-          41.598419,
-          -6.826212,
-          -12.356991
-        ],
-        "forward": [
-          1.0,
-          0.0,
-          0.0
-        ],
-        "up": [
-          0.0,
-          -1.0,
-          0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -100.0,
-          "max_angle": 110.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.006",
-        "weapon_position": [
-          26.538347,
-          3.210737,
-          55.136616
-        ],
-        "forward": [
-          1.0,
-          0.0,
-          0.0
-        ],
-        "up": [
-          -0.0,
-          1.0,
-          -0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -75.0,
-          "max_angle": 120.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_arquitens_turret_lqlc",
-        "mesh_point": "weapon.light.007",
-        "weapon_position": [
-          26.538347,
-          -5.806002,
-          55.136616
-        ],
-        "forward": [
-          1.0,
-          0.0,
-          0.0
-        ],
-        "up": [
-          0.0,
-          -1.0,
-          0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -120.0,
-          "max_angle": 75.0
-        },
-        "pitch_arc": {
-          "min_angle": -90.0,
-          "max_angle": 5.0
-        }
-      },
-      {
-        "weapon": "weapon_concussion_missile_arquitens",
-        "mesh_point": "weapon.torpedo.000",
-        "weapon_position": [
-          3.499996,
-          -1.227486,
-          113.845016
-        ],
-        "non_turret_muzzle_positions": [
-          [
-            3.499996,
-            -0.609986,
-            113.845016
-          ],
-          [
-            3.499996,
-            -1.844987,
-            113.845016
-          ]
-        ],
-        "forward": [
-          -0.0,
-          0.0,
-          1.0
-        ],
-        "up": [
-          -0.0,
-          1.0,
-          0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        },
-        "pitch_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        }
-      },
-      {
-        "weapon": "weapon_concussion_missile_arquitens",
-        "mesh_point": "weapon.torpedo.001",
-        "weapon_position": [
-          -3.500006,
-          -1.227487,
-          113.845016
-        ],
-        "non_turret_muzzle_positions": [
-          [
-            -3.500006,
-            -0.609987,
-            113.845016
-          ],
-          [
-            -3.500006,
-            -1.844987,
-            113.845016
-          ]
-        ],
-        "forward": [
-          -0.0,
-          0.0,
-          1.0
-        ],
-        "up": [
-          -0.0,
-          1.0,
-          0.0
-        ],
-        "yaw_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        },
-        "pitch_arc": {
-          "min_angle": -180.0,
-          "max_angle": 180.0
-        }
-      }
-    ],
-    "max_range_weapon_index": 0
-  },
-  "formation": {
-    "leader_priority": 0,
-    "offsets_per_formation_type": {
-      "ships_and_structures": {
-        "rank": 1,
-        "group": 0
-      }
-    }
-  },
-  "spawn_debris": {
-    "spawn_debris_time": 1.0,
-    "generic_group_name": "trader",
-    "generic_counts": {
-      "small_debris": [
-        4,
-        5
-      ]
-    }
-  },
-  "health": {
-    "release_time_after_death": 60.0,
-    "can_collide_duration_after_death": 0.8,
-    "durability": 75.0,
-    "can_ever_be_resurrected": true,
-    "levels": [
-      {
-        "max_hull_points": 500.0,
-        "hull_point_restore_rate": 1.5,
-        "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
-        "hull_point_restore_scalar_after_damage_taken": 0.0,
-        "max_armor_points": 120,
-        "armor_point_restore_rate": 1.2,
-        "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
-        "armor_point_restore_scalar_after_damage_taken": 0.0,
-        "armor_strength": 65.0,
-        "max_shield_points": 950.0,
-        "shield_point_restore_rate": 1.5,
-        "shield_point_restore_cooldown_duration_after_damage_taken": 0.0,
-        "shield_point_restore_scalar_after_damage_taken": 0.0,
-        "shield_burst_restore": {
-          "cooldown_duration": 20.0,
-          "restore_percentage": 0.35
-        },
-        "experience_given_on_death": 35.0
-      }
-    ]
-  },
-  "corruption": {
-    "max_corruption": 500.0,
-    "corruption_decay_rate": 10.0,
-    "corruption_decay_delay_duration_after_gain": 60.0,
-    "corruption_thresholds": [
-      0.1,
-      0.5,
-      0.9
-    ],
-    "negative_corruption_buffs": [
-      "trader_ship_corruption_penalty_mild",
-      "trader_ship_corruption_penalty_moderate",
-      "trader_ship_corruption_penalty_extreme"
-    ]
-  },
-  "build": {
-    "build_time": 18.0,
-    "price": {
-      "credits": 475.0,
-      "metal": 55.0,
-      "crystal": 40.0
+        "linear_acceleration_angle": 90.0,
+        "can_strafe_linear": true,
+        "strafe_max_linear_speed": 125.0,
+        "time_to_strafe_max_linear_speed": 10.0,
+        "strafe_max_linear_distance_spatial_radius_scalar": 0.5,
+        "strafe_start_angle": 0.0,
+        "strafe_stop_angle": 180.0,
+        "strafe_speed_start_angle": 10.0,
+        "strafe_max_start_turning_angle": 170.0
     },
-    "build_kind": "frigate",
-    "supply_cost": 8,
-    "build_group_id": "frigate"
-  },
-  "items": {
-    "levels": [
-      {
-        "max_ship_component_count": 2
-      }
-    ]
-  },
-  "unit_modifiers": [
-    {
-      "modifier_type": "detection_quality",
-      "value_behavior": "additive",
-      "value": 3.0
+    "hyperspace": {
+        "speed": 215000.0,
+        "speed_between_stars": 752500.0,
+        "charge_time": 8.0,
+        "charge_time_variance": 1.0,
+        "min_charge_angle": 10.0,
+        "max_charge_angle": 45.0
     },
-    {
-      "modifier_type": "detection_range",
-      "value_behavior": "additive",
-      "value": 10000.0
-    }
-  ],
-  "target_filter_unit_type": "frigate",
-  "tags": [
-    "frigate"
-  ],
-  "abilities": [
-    {
-      "abilities": [
-        "imperial_power_weapons"
-      ]
-    }
-  ],
-  "ship_roles": [
-    "attack_ship"
-  ],
-  "skin_groups": [
-    {
-      "skins": [
-        "imperial_arquitens"
-      ]
-    }
-  ],
-  "action_effect_size": "small_unit",
-  "can_join_fleet": true
+    "move": {
+        "follow_distance": 250.0
+    },
+    "attack": {
+        "attack_pattern": {
+            "type": "stop_and_fire"
+        }
+    },
+    "ai": {
+        "attack_target_type_groups": [
+            "light_corvette",
+            "lrm_flak",
+            "capital_supercapital_heavy",
+            "defense"
+        ],
+        "attack_target_type_groups_to_ignore": [
+            "torpedo_strikecraft_corvette"
+        ],
+        "attack_target_type_groups_matching_weapon": "weapon_imp_turret_mqtl",
+        "auto_follow_target_priority": 5.0,
+        "pursuit": {
+            "min_target_speed": 100.0,
+            "min_distance_to_target": 2000.0
+        }
+    },
+    "ai_attack_target": {
+        "attack_priority": 50.0,
+        "is_always_a_threat": true,
+        "attack_target_type": "light"
+    },
+    "player_ai": {
+        "max_empire_owned_count_percentage": 0.1,
+        "max_count_to_fleet_supply_ratio": 250
+    },
+    "user_interface": {
+        "pip_type": "frigate",
+        "can_ever_be_selected": true,
+        "selection_priority": 300,
+        "has_sub_selection_grouping": true,
+        "selection_group_unit_type": "combat_ship",
+        "can_move": true,
+        "can_rotate": true,
+        "can_attack": true,
+        "can_show_distance_to_plane_line": true
+    },
+    "weapons": {
+        "weapons": [
+            {
+                "weapon": "weapon_imp_turret_mqtl",
+                "mesh_point": "child.med.000",
+                "weapon_position": [
+                    -19.898308,
+                    7.260453,
+                    8.24799
+                ],
+                "forward": [
+                    0.001754,
+                    -0.045308,
+                    0.998972
+                ],
+                "up": [
+                    -0.100894,
+                    0.993867,
+                    0.045254
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_imp_turret_mqtl",
+                "mesh_point": "child.med.001",
+                "weapon_position": [
+                    19.898308,
+                    7.260457,
+                    8.247993
+                ],
+                "forward": [
+                    -0.001755,
+                    -0.045308,
+                    0.998972
+                ],
+                "up": [
+                    0.100894,
+                    0.993867,
+                    0.045254
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_imp_turret_mqtl",
+                "mesh_point": "child.med.002",
+                "weapon_position": [
+                    -10.581042,
+                    -4.650533,
+                    71.278458
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_imp_turret_mqtl",
+                "mesh_point": "child.med.003",
+                "weapon_position": [
+                    10.581031,
+                    -4.650531,
+                    71.278458
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    1e-06
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.000",
+                "weapon_position": [
+                    -41.598419,
+                    4.343318,
+                    -12.356995
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -110.0,
+                    "max_angle": 100.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.001",
+                "weapon_position": [
+                    -41.598419,
+                    -6.82622,
+                    -12.356998
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -100.0,
+                    "max_angle": 110.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.002",
+                "weapon_position": [
+                    -26.538355,
+                    3.210732,
+                    55.136616
+                ],
+                "forward": [
+                    -1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.003",
+                "weapon_position": [
+                    -26.538355,
+                    -5.806005,
+                    55.136616
+                ],
+                "forward": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -120.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.004",
+                "weapon_position": [
+                    41.598419,
+                    4.343325,
+                    -12.356987
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -110.0,
+                    "max_angle": 100.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.005",
+                "weapon_position": [
+                    41.598419,
+                    -6.826212,
+                    -12.356991
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -100.0,
+                    "max_angle": 110.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.006",
+                "weapon_position": [
+                    26.538347,
+                    3.210737,
+                    55.136616
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -75.0,
+                    "max_angle": 120.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_arquitens_turret_lqlc",
+                "mesh_point": "weapon.light.007",
+                "weapon_position": [
+                    26.538347,
+                    -5.806002,
+                    55.136616
+                ],
+                "forward": [
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                "up": [
+                    0.0,
+                    -1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -120.0,
+                    "max_angle": 75.0
+                },
+                "pitch_arc": {
+                    "min_angle": -90.0,
+                    "max_angle": 5.0
+                }
+            },
+            {
+                "weapon": "weapon_concussion_missile_arquitens",
+                "mesh_point": "weapon.torpedo.000",
+                "weapon_position": [
+                    3.499996,
+                    -1.227486,
+                    113.845016
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        3.499996,
+                        -0.609986,
+                        113.845016
+                    ],
+                    [
+                        3.499996,
+                        -1.844987,
+                        113.845016
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                }
+            },
+            {
+                "weapon": "weapon_concussion_missile_arquitens",
+                "mesh_point": "weapon.torpedo.001",
+                "weapon_position": [
+                    -3.500006,
+                    -1.227487,
+                    113.845016
+                ],
+                "non_turret_muzzle_positions": [
+                    [
+                        -3.500006,
+                        -0.609987,
+                        113.845016
+                    ],
+                    [
+                        -3.500006,
+                        -1.844987,
+                        113.845016
+                    ]
+                ],
+                "forward": [
+                    -0.0,
+                    0.0,
+                    1.0
+                ],
+                "up": [
+                    -0.0,
+                    1.0,
+                    0.0
+                ],
+                "yaw_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                },
+                "pitch_arc": {
+                    "min_angle": -180.0,
+                    "max_angle": 180.0
+                }
+            }
+        ],
+        "max_range_weapon_index": 0
+    },
+    "formation": {
+        "leader_priority": 0,
+        "offsets_per_formation_type": {
+            "ships_and_structures": {
+                "rank": 1,
+                "group": 0
+            }
+        }
+    },
+    "spawn_debris": {
+        "spawn_debris_time": 1.0,
+        "generic_group_name": "trader",
+        "generic_counts": {
+            "small_debris": [
+                4,
+                5
+            ]
+        }
+    },
+    "health": {
+        "release_time_after_death": 60.0,
+        "can_collide_duration_after_death": 0.8,
+        "durability": 75.0,
+        "can_ever_be_resurrected": true,
+        "levels": [
+            {
+                "max_hull_points": 500.0,
+                "hull_point_restore_rate": 1.5,
+                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "hull_point_restore_scalar_after_damage_taken": 0.0,
+                "max_armor_points": 120,
+                "armor_point_restore_rate": 1.2,
+                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+                "armor_point_restore_scalar_after_damage_taken": 0.0,
+                "armor_strength": 65.0,
+                "max_shield_points": 950.0,
+                "shield_point_restore_rate": 1.5,
+                "shield_point_restore_cooldown_duration_after_damage_taken": 0.0,
+                "shield_point_restore_scalar_after_damage_taken": 0.0,
+                "shield_burst_restore": {
+                    "cooldown_duration": 20.0,
+                    "restore_percentage": 0.35
+                },
+                "experience_given_on_death": 35.0
+            }
+        ]
+    },
+    "corruption": {
+        "max_corruption": 500.0,
+        "corruption_decay_rate": 10.0,
+        "corruption_decay_delay_duration_after_gain": 60.0,
+        "corruption_thresholds": [
+            0.1,
+            0.5,
+            0.9
+        ],
+        "negative_corruption_buffs": [
+            "imperial_ship_corruption_penalty_mild",
+            "imperial_ship_corruption_penalty_moderate",
+            "imperial_ship_corruption_penalty_extreme"
+        ]
+    },
+    "build": {
+        "build_time": 18.0,
+        "price": {
+            "credits": 475.0,
+            "metal": 55.0,
+            "crystal": 40.0
+        },
+        "build_kind": "frigate",
+        "supply_cost": 8,
+        "build_group_id": "frigate"
+    },
+    "items": {
+        "levels": [
+            {
+                "max_ship_component_count": 2
+            }
+        ]
+    },
+    "unit_modifiers": [
+        {
+            "modifier_type": "detection_quality",
+            "value_behavior": "additive",
+            "value": 3.0
+        },
+        {
+            "modifier_type": "detection_range",
+            "value_behavior": "additive",
+            "value": 10000.0
+        }
+    ],
+    "target_filter_unit_type": "frigate",
+    "tags": [
+        "frigate"
+    ],
+    "abilities": [
+        {
+            "abilities": [
+                "imperial_power_weapons"
+            ]
+        }
+    ],
+    "ship_roles": [
+        "attack_ship"
+    ],
+    "skin_groups": [
+        {
+            "skins": [
+                "imperial_arquitens"
+            ]
+        }
+    ],
+    "action_effect_size": "small_unit",
+    "can_join_fleet": true
 }

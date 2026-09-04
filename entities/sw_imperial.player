@@ -5637,9 +5637,9 @@
         0.9
     ],
     "negative_corruption_buffs": [
-        "trader_ship_corruption_penalty_mild",
-        "trader_ship_corruption_penalty_moderate",
-        "trader_ship_corruption_penalty_extreme"
+        "imperial_ship_corruption_penalty_mild",
+        "imperial_ship_corruption_penalty_moderate",
+        "imperial_ship_corruption_penalty_extreme"
     ],
     "default_starting_assets": {
         "credits": 6500,

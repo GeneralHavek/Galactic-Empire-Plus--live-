@@ -82,6 +82,14 @@
     "unit_build_group_name.battlecruiser": "战列巡洋舰",
     "unit_build_group_name.pirate_ship": "私掠船",
 
+    
+    "imperial_ship_corruption_penalty_mild_buff_name": "Administrative Corruption",
+    "imperial_ship_corruption_penalty_mild_buff_description": "Mild corruption increases ability antimatter costs and cooldown durations by 5%, while intensified Imperial surveillance increases detection range by 5%.",
+    "imperial_ship_corruption_penalty_moderate_buff_name": "Systemic Corruption",
+    "imperial_ship_corruption_penalty_moderate_buff_description": "Moderate corruption increases ability antimatter costs and cooldown durations by 10%, while intensified Imperial surveillance increases detection range by 10%.",
+    "imperial_ship_corruption_penalty_extreme_buff_name": "Institutional Corruption",
+    "imperial_ship_corruption_penalty_extreme_buff_description": "Extreme corruption increases ability antimatter costs and cooldown durations by 15%, while intensified Imperial surveillance increases detection range by 15%.",
+
     "sw_constructor_ship_name": "Y-45 Orbital Frigate",
     "sw_constructor_ship_description": "A civilian orbital frigate equipped with many assembly tools, it builds structures within range of the planet.",
     "sw_trade_complex_name": "Carden Trade Complex",

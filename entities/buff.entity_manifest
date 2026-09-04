@@ -169,6 +169,9 @@
         "imperial_death_star_systemic_terror",
         "imperial_death_star_target_saturation",
         "imperial_death_star_total_fire_control_active",
-        "imperial_death_star_total_fire_control_controller"
+        "imperial_death_star_total_fire_control_controller",
+        "imperial_ship_corruption_penalty_mild",
+        "imperial_ship_corruption_penalty_moderate",
+        "imperial_ship_corruption_penalty_extreme"
     ]
 }

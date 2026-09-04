@@ -79,6 +79,9 @@
         "imperial_allegiance_imperial_bulwark",
         "imperial_executor_imperial_hegemony",
         "imperial_executor_imperial_resolve",
-        "imperial_executor_sector_command"
+        "imperial_executor_sector_command",
+        "imperial_ship_corruption_penalty_mild",
+        "imperial_ship_corruption_penalty_moderate",
+        "imperial_ship_corruption_penalty_extreme"
     ]
 }

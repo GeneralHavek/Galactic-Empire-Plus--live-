@@ -9,15 +9,12 @@
     "player_race_name.zann": "Independent Traders",
     "player_faction_name.zann": "Independent Traders",
     "player_faction_description.zann": "Our galaxy was doomed when the Yuuzhen Vong appeared. The Empire, and even the Rebels, set aside their differences to fight this threat. They failed. The Emperor fled after betraying the Rebel Alliance, taking only those he deemed worthy of saving. We will not forget. We will not forgive.",
-
     "scenario.defend_the_imperial_outpost.name": "Defend the Imperial Outpost",
     "scenario.defend_the_imperial_outpost.uppercase_name": "DEFEND THE IMPERIAL OUTPOST",
     "scenario.defend_the_imperial_outpost.desc": "Grand Admiral, you are ordered to hold this sector for as long as possible to allow our forces to retreat so they can rebuild. The Emperor salutes your sacrifice and those of your men. Long live the Empire!",
     "scenario.defend_the_imperial_outpost.objective_description": "Objective: Survive...",
     "scenario.defend_the_imperial_outpost.start_window_description": "The Galactic Empire has found refuge here in this new galaxy, but there are always enemies seeking to destroy us. Grand Admiral, your promotion was out of necessity, but the Emperor believes that your sacrifice will not be in vain.\\n\\nVictory is not an option. Show the enemy the power of the Empire.\\n\\nOBJECTIVES:\\nYour sacrifice here will allow the main fleet to establish a permanent stronghold elsewhere. Long live the Empire!",
-    
     "imperial_city_planet_name": "Ecumenopolis Planet",
-
     "imperial_research_field_name_logistics": "LOGISTICS",
     "tooltip.ability.free_military_track_level": "Free Military Level",
     "tooltip.ability.dodge_chance": "Dodge Chance",
@@ -59,7 +56,6 @@
     "tooltip.label.crystal_income": "Crystal Income:",
     "tooltip.label.population_growth": "Population Growth:",
     "tooltip.label.culture_rate": "Culture Rate:",
-
     "weapon_tag_name.turbolaser": "Turbolaser",
     "weapon_tag_name.ion": "Ion Cannon",
     "weapon_tag_name.proton": "Proton Missiles",
@@ -76,21 +72,25 @@
     "unit_mutation.imperial_executor_assault_operations_equipped": "Assault Operations",
     "unit_mutation.imperial_executor_operational_logistics_equipped": "Operational Logistics",
     "unit_mutation.imperial_executor_strategic_operations_equipped": "Strategic Operations",
-
     "exotic.kalkite.name": "Kalkite",
     "exotic.kalkite.description": "A rare mineral first discovered on the planet Ghorman in deep substrate foliated deposits.",
     "tooltip.research_subject.arbitary_unlock_label.imperial_unlock_build_kalkite_exotic": "Kalkite Production",
-
     "unit_build_group_name.star_destroyer": "STAR DESTROYERS",
     "unit_build_group_name.super_star_destroyer": "SUPER STAR DESTROYER",
     "unit_build_group_name.battlecruiser": "BATTLECRUISER",
     "unit_build_group_name.pirate_ship": "PRIVATEERS",
+    
+    "imperial_ship_corruption_penalty_mild_buff_name": "Administrative Corruption",
+    "imperial_ship_corruption_penalty_mild_buff_description": "Mild corruption increases ability antimatter costs and cooldown durations by 5%, while intensified Imperial surveillance increases detection range by 5%.",
+    "imperial_ship_corruption_penalty_moderate_buff_name": "Systemic Corruption",
+    "imperial_ship_corruption_penalty_moderate_buff_description": "Moderate corruption increases ability antimatter costs and cooldown durations by 10%, while intensified Imperial surveillance increases detection range by 10%.",
+    "imperial_ship_corruption_penalty_extreme_buff_name": "Institutional Corruption",
+    "imperial_ship_corruption_penalty_extreme_buff_description": "Extreme corruption increases ability antimatter costs and cooldown durations by 15%, while intensified Imperial surveillance increases detection range by 15%.",
 
     "sw_constructor_ship_name": "Y-45 Orbital Frigate",
     "sw_constructor_ship_description": "A civilian orbital frigate equipped with many assembly tools, it builds structures within range of the planet.",
     "sw_trade_complex_name": "Carden Trade Complex",
     "sw_trade_complex_description": "Build Trade Ports to increase global Export Points and Export types. Allocate Export Points between Export types to customize your economy. Goods increase credit income while metal and crystal increase resource income.",
-
     "imperial_faction_victory_unit_item_name": "Imperial Supremacy",
     "imperial_faction_victory_unit_item_description": "The Emperor himself sits on his throne in the control room. All will bow before the power of this fully armed and operational battlestation.",
     "imperial_unlock_faction_victory_item_research_subject_name": "Imperial Supremacy",
@@ -122,7 +122,6 @@
     "imperial_strikecraft_ability_dodge_description": "The Empire has begun intensive new pilot programs designed to train existing and new pilots to better make use of the TIE line of strikecraft. Reports indicate trained pilots will be able to avoid point defense batteries with much greater success.",
     "imperial_venator_hangar_capacity_ability_name": "Carrier Doctrine",
     "imperial_venator_hangar_capacity_ability_description": "Opens the Venator's full flight deck and expands carrier operations, increasing its ability to launch, replace, and sustain strikecraft squadrons.",
-
     "imperial_planetary_shield_array_unit_item_name": "SDL-26 Planetary Shield Generator",
     "imperial_planetary_shield_array_unit_item_description": "A hold-over of previous tech used by the Galactic Empire; repurposed and refit with new materials found in this new universe. Casts a planet-wide defensive shield.",
     "unit_item_upkeep_reduction_name": "Advanced Logistics Protocols",
@@ -134,7 +133,7 @@
     "imperial_specialization_offense_firing_speed_unit_item_name": "Rapid Fire Targeting Solutions",
     "imperial_specialization_offense_firing_speed_unit_item_description": "An algorithm enhancing the cycle rate of turbolasers and ion cannons for firing faster volleys on target and with faster target acquisition, but decreasing overall range and power.",
     "imperial_specialization_offense_damage_range_unit_item_name": "High-Output Focused Targeting Algorithm",
-    "imperial_specialization_offense_damage_range_unit_item_description":"An algorithm that enhances first strike capabilities for turbolasers and ion cannons by decreasing the cycle rate of the power converters.",
+    "imperial_specialization_offense_damage_range_unit_item_description": "An algorithm that enhances first strike capabilities for turbolasers and ion cannons by decreasing the cycle rate of the power converters.",
     "imperial_specialization_offense_exploit_weakness_unit_item_name": "Enhanced Power Frequency Modulating Algorithm",
     "imperial_specialization_offense_exploit_weakness_unit_item_description": "An algorithm that allows for much greater fluctuation in turbolaser and ion cannon bolt frequency, allowing many shots to completely bypass the target's shields at the cost of fire rate and overall power output.",
     "imperial_specialization_defense_generator_unit_item_name": "Deflector Shield Integrity Matrix",
@@ -167,10 +166,8 @@
     "imperial_orbital_targeting_computer_unit_item_description": "Specialized targeting computers capable of networking with allied ships are installed to increase the amount of devastation inflicted by our bombardments of enemy planets.",
     "imperial_emperors_will_unit_item_name": "Emperor's Will",
     "imperial_emperors_will_unit_item_description": "The very will of the Emperor extends his influence to far off planets, which only requires the presence of the Imperial Navy to take effect. Long live the Empire!",
-
     "imperial_auxiliary_supply_depot_unit_item_name": "Sector Axiliary Supply Depot",
     "imperial_auxiliary_supply_depot_unit_item_description": "Establishes a dedicated supply hub to extend the operational range of auxiliary forces loyal to the Empire.",
-
     "imperial_laser_damage_0_research_subject_name": "Efficient Coils",
     "imperial_laser_damage_1_research_subject_name": "Focal Lens Calibration",
     "imperial_laser_damage_2_research_subject_name": "High Intensity Discharge",
@@ -198,21 +195,21 @@
     "imperial_turbolaser_range_research_subject_name": "Predictive Analytics",
     "imperial_turbolaser_range_research_subject_name_uppercase": "PREDICTIVE ANALYTICS",
     "imperial_turbolaser_range_research_subject_description": "New firing solution algorithms allow turbolaser and ion weapons to hit further targets with greater accuracy.",
-    "imperial_shields_0_research_subject_name" : "Efficient Generators",
-    "imperial_shields_1_research_subject_name" : "Lattice Projection",
-    "imperial_shields_2_research_subject_name" : "Frequency Algorithim Processing", 
-    "imperial_shields_3_research_subject_name" : "Rotating Deflector Frequencies", 
-    "imperial_shields_4_research_subject_name" : "Quarnium Deflector Shield Core", 
-    "imperial_shields_0_research_subject_name_uppercase" : "EFFICIENT GENERATORS", 
-    "imperial_shields_1_research_subject_name_uppercase" : "LATTICE PROJECTION", 
-    "imperial_shields_2_research_subject_name_uppercase" : "FREQUENCY ALGORITHIM PROCESSING", 
-    "imperial_shields_3_research_subject_name_uppercase" : "ROTATING DEFLECTOR FREQUENCIES", 
-    "imperial_shields_4_research_subject_name_uppercase" : "QUARNIUM DEFLECTOR SHIELD CORE",
-    "imperial_shields_0_research_subject_description" : "Imperial scientists have had a breakthrough in shield power generation, allowing for more stable and resilient shields.", 
-    "imperial_shields_1_research_subject_description" : "Placing deflector shield projection points at specific intervals reduces overall system feedback and power loss.", 
-    "imperial_shields_2_research_subject_description" : "New advances in computer processing power now allows us to modulate deflector frequencies with greater precision.", 
-    "imperial_shields_3_research_subject_description" : "We have begun changing the deflector shield frequencies while in combat to better counter the enemies increased firepower.", 
-    "imperial_shields_4_research_subject_description" : "Study of the rare element Quarnium has led to a breakthrough in deflector shield resiliency, as well as increased power generation.",
+    "imperial_shields_0_research_subject_name": "Efficient Generators",
+    "imperial_shields_1_research_subject_name": "Lattice Projection",
+    "imperial_shields_2_research_subject_name": "Frequency Algorithim Processing",
+    "imperial_shields_3_research_subject_name": "Rotating Deflector Frequencies",
+    "imperial_shields_4_research_subject_name": "Quarnium Deflector Shield Core",
+    "imperial_shields_0_research_subject_name_uppercase": "EFFICIENT GENERATORS",
+    "imperial_shields_1_research_subject_name_uppercase": "LATTICE PROJECTION",
+    "imperial_shields_2_research_subject_name_uppercase": "FREQUENCY ALGORITHIM PROCESSING",
+    "imperial_shields_3_research_subject_name_uppercase": "ROTATING DEFLECTOR FREQUENCIES",
+    "imperial_shields_4_research_subject_name_uppercase": "QUARNIUM DEFLECTOR SHIELD CORE",
+    "imperial_shields_0_research_subject_description": "Imperial scientists have had a breakthrough in shield power generation, allowing for more stable and resilient shields.",
+    "imperial_shields_1_research_subject_description": "Placing deflector shield projection points at specific intervals reduces overall system feedback and power loss.",
+    "imperial_shields_2_research_subject_description": "New advances in computer processing power now allows us to modulate deflector frequencies with greater precision.",
+    "imperial_shields_3_research_subject_description": "We have begun changing the deflector shield frequencies while in combat to better counter the enemies increased firepower.",
+    "imperial_shields_4_research_subject_description": "Study of the rare element Quarnium has led to a breakthrough in deflector shield resiliency, as well as increased power generation.",
     "imperial_asteroid_planet_explotation_research_subject_name": "Kessel Mines",
     "imperial_asteroid_planet_explotation_research_subject_name_uppercase": "KESSEL MINES",
     "imperial_asteroid_planet_explotation_research_subject_description": "Extensive mining structures on asteroids and moons are the lifeblood of the Empire. Re-education camps are well suited to this environment.",
@@ -225,9 +222,7 @@
     "imperial_orbital_bombardment_damage_1_research_subject_name": "Predictive Orbital Targeting Algorithm",
     "imperial_orbital_bombardment_damage_1_research_subject_name_uppercase": "PREDICTIVE ORBITAL TARGETING ALGORITHM",
     "imperial_orbital_bombardment_damage_1_research_subject_description": "Refined targeting algorithms allow our orbital weapons to predict the locations of hidden factories and munition depots with almost pinpoint accuracy.",
-
     "imperial_debris_isd": "Star Destroyer Debris",
-
     "imperial_shields_strikecraft_research_subject_name": "TIE Shields Refit",
     "imperial_shields_strikecraft_research_subject_name_uppercase": "TIE SHIELDS REFIT",
     "imperial_shields_strikecraft_research_subject_description": "Grand Admiral Thrawn has long championed the use of more a more robust fighter craft capable of sustaining multiple direct hits without endangering the pilot's safety. New reverse engineered alien shield technology has allowed us to place miniaturized deflector shield generators on the TIE Fighter, Interceptor, and Bomber without compromising engine or weapon power output.",
@@ -240,14 +235,12 @@
     "imperial_unlock_trade_weapon_subject_name": "Trade Militarization",
     "imperial_unlock_trade_weapon_subject_name_uppercase": "TRADE MILITARIZATION",
     "imperial_unlock_trade_weapon_subject_description": "Weapon emplacements are installed on our Trade Complexes to better protect trade lanes close to our planets.",
-
     "imperial_capital_ship_starting_level_0_research_subject_name": "Junior Officer Candidate Training",
     "imperial_capital_ship_starting_level_0_research_subject_name_uppercase": "JUNIOR OFFICER CANDIDATE TRAINING",
     "imperial_capital_ship_starting_level_0_research_subject_description": "The ISB has identified many junior officers and enlisted personnel which have excelled at their given roles. They are to undergo extensive academic, physical, and leadership training to further increase the Imperial Navy's efficacy in combat operations.",
     "imperial_capital_ship_starting_level_1_research_subject_name": "Senior Officer Candidate Training",
     "imperial_capital_ship_starting_level_1_research_subject_name_uppercase": "SENIOR OFFICER CANDIDATE TRAINING",
     "imperial_capital_ship_starting_level_1_research_subject_description": "The ISB has identified many enterprising junior officers and seasoned senior officers to promote and give additional comprehensive leadership and tactical training, allowing our newly completed capital-class ships to fight with a far higher level of competency.",
-
     "imperial_max_supply_0_research_subject_name": "Squadron Logistics",
     "imperial_max_supply_0_research_subject_name_uppercase": "SQUADRON LOGISTICS",
     "imperial_max_supply_0_research_subject_description": "Squadron logistics manage the supplies, fuel, and maintenance needed to keep a small group of starships combat-ready, ensuring every vessel can deploy at a moment’s notice.",
@@ -285,7 +278,6 @@
     "imperial_culture_rate_1_research_subject_description": "Deploys wide-spectrum propaganda campaigns designed to secure complete cultural dominance.",
     "imperial_unlock_culture_center_research_subject_name": "Holonet Array",
     "imperial_unlock_culture_center_research_subject_name_uppercase": "HOLONET ARRAY",
-
     "imperial_unit_upkeep_research_project_name": "Logistical Impact",
     "imperial_unlock_unit_upkeep_research_subject_name": "Logistical Impact",
     "imperial_unlock_unit_upkeep_research_subject_name_uppercase": "LOGISTICAL IMPACT",
@@ -436,7 +428,6 @@
     "imperial_upgrade_strikefighter_dodge_1_research_subject_name": "Elite Wing Commanders",
     "imperial_upgrade_strikefighter_dodge_1_research_subject_name_uppercase": "ELITE WING COMMANDERS",
     "imperial_upgrade_strikefighter_dodge_1_research_subject_description": "The best of the best are given more leeway when determining attack runs and strategies for their command. This is expected to further increase strikefighter survivability according to ISB estimates.",
-
     "imperial_unlock_garrison_recruitment_center_research_subject_name": "Planetary Defense Fleet",
     "imperial_unlock_garrison_recruitment_center_research_subject_name_uppercase": "PLANETARY DEFENSE FLEET",
     "imperial_unlock_garrison_recruitment_center_research_subject_description": "Integrates defense-fleet production orders into local shipyards, strengthening planetary security.",
@@ -459,7 +450,6 @@
     "imperial_trade_port_income_rate_1_research_subject_name": "Optimized Haul Protocols",
     "imperial_trade_port_income_rate_1_research_subject_name_uppercase": "OPTIMIZED HAUL PROTOCOLS",
     "imperial_trade_port_income_rate_1_research_subject_description": "Refines cargo routing and transfer algorithms, maximizing resource throughput across Imperial trade lanes",
-
     "imperial_fortification_specialist_research_subject_name": "Fortress Mandate",
     "imperial_fortification_specialist_research_subject_name_uppercase": "FORTRESS MANDATE",
     "imperial_fortification_specialist_research_subject_description": "A directive from Imperial High Command mobilizes our vast industrial resources, dramatically cutting the cost and build time of orbital defenses.",
@@ -513,7 +503,6 @@
     "imperial_unlock_fissile_plant_unit_item_research_subject_name_uppercase": "EXOTIC FABRICATION FOUNDRY",
     "imperial_fissile_plant_unit_item_name": "Exotic Fabrication Foundry",
     "imperial_fissile_plant_unit_item_description": "Employs Imperial quantum-phase engineering to increase conversion of exotic substrates into usable materials.",
-
     "imperial_pervasive_economy_research_subject_name": "Imperial Market Dividend",
     "imperial_pervasive_economy_research_subject_name_uppercase": "IMPERIAL MARKET DIVIDEND",
     "imperial_pervasive_economy_research_subject_description": "Extracts a small dividend from all non-Imperial credit income via embedded trade-network fees",
@@ -577,7 +566,6 @@
     "imperial_unlock_build_ultimate_exotic_research_subject_description": "Imperial field-stabilization arrays reconfigure raw matter streams, enabling direct Quarnium fabrication at exotic refineries.",
     "imperial_unlock_exotic_factory_structure_research_subject_name": "Substrate Refinery",
     "imperial_unlock_exotic_factory_structure_research_subject_name_uppercase": "SUBSTRATE REFINERY",
-
     "imperial_unlock_fulfillment_warehouse_unit_item_research_subject_name": "Imperial Export Expansion",
     "imperial_unlock_fulfillment_warehouse_unit_item_research_subject_name_uppercase": "IMPERIAL EXPORT EXPANSION",
     "imperial_fulfillment_warehouse_unit_item_name": "Imperial Export Hub",
@@ -658,7 +646,6 @@
     "imperial_surface_magnetic_planet_research_lab_unit_item_description": "Establishes a specialized Imperial Skunkworks to further increase military research.",
     "imperial_chemical_plant_unit_item_name": "Mycelial Extraction Refinery",
     "imperial_chemical_plant_unit_item_description": "Refines swamp mycelial biomass into valuable exports and exotic precursors, increasing credit income and accelerating exotic manufacturing.",
-
     "imperial_unlock_oceanic_domes_unit_item_research_subject_name": "Oceanic Cities",
     "imperial_unlock_oceanic_domes_unit_item_research_subject_name_uppercase": "OCEANIC CITIES",
     "imperial_unlock_oceanic_domes_unit_item_research_subject_description": "Our home galaxy contained many ocean planets with cities both above and below the surface. The first step to such complexes are structures built above water to allow landing craft easy access to deliver supplies and retrieve refined resources from the planet.",
@@ -722,7 +709,6 @@
     "imperial_upgrade_volcanic_biosphere_1_research_subject_name": "Volcanic Planet Mobilization",
     "imperial_upgrade_volcanic_biosphere_1_research_subject_name_uppercase": "VOLCANIC PLANET MOBILIZATION",
     "imperial_upgrade_volcanic_biosphere_1_research_subject_description": "Phase Two of planetary resource exploitation and infrastructure is now authorized.",
-
     "imperial_unlock_build_kalkite_exotic_research_subject_name": "Kalkite Production",
     "imperial_unlock_build_kalkite_exotic_research_subject_name_uppercase": "KALKITE PRODUCTION",
     "imperial_unlock_build_kalkite_exotic_research_subject_description": "Imperial researchers have discovered how to use quantum entanglements to synthesize Kalkite from existing exotic materials.",
@@ -757,7 +743,6 @@
     "imperial_population_structure_growth_ability_description": "Imperial administrative incentives and logistical support rapidly accelerate population growth.",
     "imperial_trade_ship_eco_boom_name": "Revenue Coordination",
     "imperial_trade_ship_eco_boom_description": "Imperial customs offices, tax authorities, and logistics bureaus synchronize the flow of goods and revenue across the Empire, ensuring that each active trade route contributes measurably to the war machine.",
-    
     "imperial_victory1_siege_missile_doctrine_ability_name": "Siege Missile Doctrine",
     "imperial_victory1_siege_missile_doctrine_ability_description": "Improves the Victory I's concussion missile cooldown and increases missile damage against larger and fortified targets. Missile hits also apply stacking Armor Fracture, progressively weakening enemy armor.",
     "imperial_victory1_target_suppression_ability_name": "Target Suppression",
@@ -810,7 +795,7 @@
     "imperial_isd2_tarkin_doctrine_ability_name": "Tarkin Doctrine",
     "imperial_isd2_tarkin_doctrine_ability_description": "Passively gains permanent Imperial Ascendancy stacks whenever qualifying enemy ships or starbases are destroyed in the same gravity well. Activate to temporarily amplify the ISD II's combat bonuses.",
     "imperial_isd2_imperial_ascendancy_name": "Imperial Ascendancy",
-    "imperial_isd2_tarkin_doctrine_active_name": "Tarkin Doctrine",    
+    "imperial_isd2_tarkin_doctrine_active_name": "Tarkin Doctrine",
     "imperial_allegiance_imperial_bulwark_ability_name": "Imperial Bulwark",
     "imperial_allegiance_imperial_bulwark_ability_description": "Passively improves shield regeneration, armor, and hull regeneration. Activate to greatly increase defensive regeneration and apply Oppressive Intent to all enemy ships in the gravity well, reducing their weapon range, tracking, and rate of fire.",
     "imperial_allegiance_imperial_bulwark_oppressive_intent_name": "Oppressive Intent",
@@ -855,7 +840,7 @@
     "imperial_death_star_peacekeeping_operations_ability_name": "Peacekeeping Operations",
     "imperial_death_star_coercive_presence_ability_name": "Coercive Presence",
     "imperial_death_star_coercive_presence_active_ability_name": "Coercive Presence",
-    "imperial_death_star_systemic_terror_ability_name": "Systemic Terror",    
+    "imperial_death_star_systemic_terror_ability_name": "Systemic Terror",
     "imperial_death_star_battlestation_operations_unit_item_name": "Battlestation Operations",
     "imperial_death_star_battlestation_operations_unit_item_description": "Configures the Death Star for maximum defensive capability, increasing maximum hull, maximum shields, armor, hull regeneration, and shield regeneration. Replaces Operational Readiness with Battlestation Alert.",
     "imperial_death_star_weapons_operations_unit_item_name": "Weapons Operations",
@@ -866,7 +851,6 @@
     "imperial_death_star_weapons_operations_mutation_name": "Weapons Operations",
     "imperial_death_star_peacekeeping_operations_mutation_name": "Peacekeeping Operations",
     "imperial_death_star_faction_victory_unit_item_description": "The Emperor himself sits upon his throne within the battlestation's command center. All will bow before the power of this fully armed and operational battlestation.",
-
     "imperial_dreadnought_name": "Dreadnought-class Heavy Cruiser",
     "imperial_dreadnought_name.garrison": "Garrison Dreadnought-class Heavy Cruiser",
     "imperial_dreadnought_description": "The Dreadnaught-class heavy cruiser is an older design that can take a massive beating before going down. A few of these cruisers are a match for most capital ships pound-for-pound.",
@@ -953,7 +937,6 @@
     "imperial_starbase_name": "Class-B Military Outpost",
     "imperial_starbase_loot_name": "Class-B Wreckage",
     "imperial_starbase_description": "While the Empire has many orbital structure designs, the Class-B Outpost has the size, durability, power, and modularity needed to defend any gravity well from most threats.",
-    
     "pirate_lucrehulk_name": "Lucrehulk-class Battleship",
     "pirate_lucrehulk_loot_name": "Lucrehulk Wreckage",
     "pirate_lucrehulk_description": "This converted freighter is bristling with weapon emplacements and is the most powerful capital ship in the CIS's arsenal. It also has an extremely large hangar space allowing for the deployment of a substantial number of strikecraft.",
@@ -987,7 +970,6 @@
     "pirate_deuteros_description": "Commissioned by Pantora to protect distant commercial interests, the Deuteros-class Cruiser combines exceptional firepower with long-range endurance. Surplus vessels have since found new life among independent traders and syndicate fleets seeking a warship capable of defending valuable cargo and projecting authority across contested space.",
     "pirate_rupture_name": "Rupture-class Support Cruiser",
     "pirate_rupture_description": "Originally developed with assistance from SoroSuub Corporation for long-range convoy support, the Rupture-class combines fleet coordination systems, disabling ion weaponry, and robust defensive armament. Its versatility and reliability have made it a favored support vessel among independent traders and syndicate fleets operating far from established authority.",
-
     "imperial_golan1_name": "Golan-1 Space Defense Platform",
     "imperial_golan1_description": "The Golan-1 defense platform was engineered to provide a powerful orbital defense hangar with equivalent firepower to a Star Destroyer.",
     "imperial_kontos_name": "Kontos-class Frigate",
@@ -1000,7 +982,6 @@
     "imperial_pelta_description": "The Pelta-class Frigate was the versatile workhorse of the Old Republic Navy, fitting into many roles. It has now been repurposed to provide the Imperial Navy much needed fleet support and fighter screens, while also being effective against smaller cruisers and frigates it might come across.",
     "imperial_culture_center_structure_name": "Holonet Array",
     "imperial_culture_center_structure_description": "An orbital platform with the sole purpose of increasing pro-Imperial sentiment and suppressing misinformation.",
-
     "imperial_shipyard_name": "Orbital Shipyard",
     "imperial_shipyard_description": "Allows construction of corvettes, frigates, and cruisers.",
     "imperial_heavy_shipyard_name": "Heavy Orbital Shipyard",
@@ -1019,14 +1000,12 @@
     "imperial_executor_heavy_weapons_unit_item_description": "The Executor is fully committed to direct-fire dominance, with its superstructure and power systems optimized for maximum turbolaser output and accuracy. This specialization sacrifices flexibility in favor of raw destructive capability, preventing the integration of alternate refit doctrines.",
     "imperial_executor_cic_unit_item_name": "Battlegroup Coordination Suite",
     "imperial_executor_cic_unit_item_description": "Command, control, and flight operations are expanded to transform the Executor into a fleet coordination centerpiece. By dedicating internal volume and systems to strikecraft support and battlegroup management, the vessel forgoes other refit paths in favor of strategic force projection.",
-
     "imperial_assault_concussion_missile_name": "Assault Concussion Missile",
     "imperial_assault_concussion_missile_description": "Large and slow conventional warhead.",
     "imperial_concussion_missile_name": "Concussion Missile",
     "imperial_concussion_missile_description": "Small and fast conventional warhead.",
     "imperial_proton_torpedo_name": "Proton Torpedo",
     "imperial_proton_torpedo_description": "Medium and slow energy warhead.",
-
     "player_ai_imp_taunt.1": "Behold the might of the Emperor's wrath — kneel or be ground into the hull plating of my Star Destroyer.",
     "player_ai_imp_taunt.2": "You bathe in the illusion of defiance. I will turn your final transmission into a warning that echoes across the galaxy — silence will be your epitaph.",
     "player_ai_imp_taunt.3": "You call yourselves masters of your own will. I call you targets. Prepare to be erased from the star charts.",
@@ -1037,11 +1016,9 @@
     "player_ai_imp_taunt.8": "This is not negotiation; it is extermination. We bring peace — the rest of you bring only the sound of your own defeat.",
     "player_ai_imp_taunt.9": "Behold the wedge of my Star Destroyer — that silhouette is the Emperor's verdict. When our batteries unleash, your shields will crumble, your shelters will smolder, and your rebellion will be erased from every chart and memory.",
     "player_ai_imp_taunt.10": "In every system you infest and under every rock you crawl beneath, the Empire will find you. We will scorch your worlds, shatter your fleets, and leave nothing but static where your defiance once screamed.",
-
     "player_ai_imp_alliance.1": "By the Emperor’s decree, this alliance is forged — not from trust, but necessity. Know this: when our purpose is fulfilled, you will kneel or be cast aside.",
     "player_ai_imp_alliance.2": "If Lord Vader commands unity, then unity you shall have — until the last rebel falls. After that, pray the Empire forgets your name.",
     "player_ai_imp_alliance.3": "The Emperor’s vision transcends my own ambition. I will suffer this alliance… for now. But when his will is complete, only the Empire shall remain.",
-
     "player_ai_imp_bounty_taunt.0": "By decree of the Imperial High Command, a bounty has been issued against {}. Let the lawless of this sector busy themselves with your correction.",
     "player_ai_imp_bounty_taunt.1": "The Empire has allocated funds to encourage...independent aggression against {}. Your stability is no longer our concern.",
     "player_ai_imp_bounty_taunt.2": "{} has been designated a destabilizing influence. Local raiders have been incentivized accordingly.",
@@ -1053,7 +1030,6 @@
     "player_ai_imp_bounty_taunt.8": "This action is not vengeance, {}. It is efficiency. -Lord Vader",
     "player_ai_imp_bounty_taunt.9": "Strategic funds have been reassigned. Raiders have been directed toward {} as a matter of priority.",
     "player_ai_imp_bounty_taunt.10": "Every empire believes itself secure, {}. Let us observe how long that illusion survives unchecked predation. -Emperor Palpatine",
-
     "weapon_name.weapon_hicb": "Heavy Ion Cannon Ball",
     "weapon_name.weapon_hict": "Heavy Ion Cannon Turret",
     "weapon_name.weapon_hic": "Heavy Ion Cannon",
@@ -1064,14 +1040,11 @@
     "weapon_name.weapon_lict": "Light Ion Cannon Turret",
     "weapon_name.weapon_lic": "Light Ion Cannon",
     "weapon_name.weapon_nk7": "NK-7 Ion Cannon",
-
     "weapon_name.weapon_hlc": "Heavy Laser Cannon",
     "weapon_name.weapon_mlc": "Laser Cannon",
     "weapon_name.weapon_llc": "Light Laser Cannon",
     "weapon_name.weapon_pdlc": "Point-Defense Battery",
-
     "weapon_name.weapon_flak": "Flak Battery",
-
     "weapon_name.weapon_htl": "Heavy Turbolaser",
     "weapon_name.weapon_htlb": "Heavy Turbolaser Ball",
     "weapon_name.weapon_htlt": "Heavy Turbolaser Turret",
@@ -1082,32 +1055,25 @@
     "weapon_name.weapon_ltl": "Light Turbolaser",
     "weapon_name.weapon_ltlb": "Light Turbolaser Ball",
     "weapon_name.weapon_ltlt": "Light Turbolaser Turret",
-    
     "weapon_name.weapon_xx9": "XX-9 Heavy Turbolaser Tower",
     "weapon_name.weapon_dby": "DBY-827 Turbolaser Battery",
     "weapon_name.weapon_mtllr": "Long Range Medium Turbolaser",
-
     "weapon_name.weapon_gatmd": "Twin-linked Gatling Mass Driver",
     "weapon_name.weapon_mmd": "Medium Mass Driver",
     "weapon_name.weapon_hdmd": "Heavy Mass Driver",
     "weapon_name.weapon_dorsal_turbo": "Plasma Turbocannon",
-    
     "weapon_name.weapon_proton": "Proton Torpedo",
     "weapon_name.weapon_missile": "Concussion Missile",
     "weapon_name.weapon_heavy_missile": "Assault Concussion Missile",
     "weapon_name.weapon_tie_bomb": "Proton Bomb",
-
     "weapon_name.planet_laser": "Bombardment Turbolaser",
     "weapon_name.planet_launcher": "Bombardment Launcher",
     "weapon_name.planet_invasion": "Stormtrooper Regiment",
-
     "research_text_filter_swamp": "swamp",
     "research_text_filter_magnetic": "magnetic",
     "research_text_filter_irradiated": "irradiated",
     "research_text_filter_garrison": "garrison",
-
     "death_star_name.imperial.00": "Death Star",
-
     "starbase_name.imperial.0": "Emperor's Wrath",
     "starbase_name.imperial.1": "Inevitable",
     "starbase_name.imperial.2": "Galaxy's End",
@@ -1118,7 +1084,6 @@
     "starbase_name.imperial.7": "Leviathan's Bane",
     "starbase_name.imperial.8": "Herald of Destruction",
     "starbase_name.imperial.9": "Bastion of Sorrow",
-
     "fleet_name.imperial.00": "TASK FORCE AUREK",
     "fleet_name.imperial.01": "TASK FORCE BESH",
     "fleet_name.imperial.02": "TASK FORCE CRESH",
@@ -1129,7 +1094,6 @@
     "fleet_name.imperial.07": "TASK FORCE ONITH",
     "fleet_name.imperial.08": "TASK FORCE FORN",
     "fleet_name.imperial.09": "TASK FORCE GREK",
-
     "player_ai_name.imperial.0": "Ciutric Hegemony",
     "player_ai_name.imperial.1": "Restored Empire",
     "player_ai_name.imperial.2": "Eriadu Authority",
@@ -1140,7 +1104,6 @@
     "player_ai_name.imperial.7": "Maw Command",
     "player_ai_name.imperial.8": "Thrawn's Confederation",
     "player_ai_name.imperial.9": "Constitutional Protectorate of Prakith",
-
     "player_ai_name.zann.0": "Zann Consortium",
     "player_ai_name.zann.1": "Imperial Tartan Defectors",
     "player_ai_name.zann.2": "Consortium Defilers",
@@ -1151,7 +1114,6 @@
     "player_ai_name.zann.7": "Order of Independent Trade",
     "player_ai_name.zann.8": "Nova Blades",
     "player_ai_name.zann.9": "Blood Razors",
-
     "capital_ship_name.imperial.00": "Accuser",
     "capital_ship_name.imperial.01": "Adamant",
     "capital_ship_name.imperial.02": "Adarga",
@@ -1241,7 +1203,6 @@
     "capital_ship_name.imperial.86": "Warrior",
     "capital_ship_name.imperial.87": "Whirlwind",
     "capital_ship_name.imperial.88": "Wolf's Claw",
-
     "titan_ship_name.imperial.00": "Annihilator",
     "titan_ship_name.imperial.01": "Arbitrator",
     "titan_ship_name.imperial.02": "Eclipse",
