@@ -169,7 +169,10 @@
     "imperial_orbital_targeting_computer_unit_item_name": "轨道目标计算机",
     "imperial_orbital_targeting_computer_unit_item_description": "安装专用目标计算机，可联网友军舰船，提升我方对敌行星轰炸的破坏力。",
     "imperial_emperors_will_unit_item_name": "皇帝意志",
-    "imperial_emperors_will_unit_item_description": "皇帝的意志将其影响力延伸至遥远行星，仅需帝国海军的存在即可生效。帝国万岁！",
+    "imperial_emperors_will_unit_item_description": "The very will of the Emperor extends his influence to far-off planets, requiring only the presence of the Imperial Navy to take effect. Even corruption serves his designs, as ambition, intrigue, and institutional decay are turned to the advantage of those who remain instruments of his will. Long live the Empire!",
+    "imperial_vaders_gaze_unit_item_name": "Vader's Gaze",
+    "imperial_vaders_gaze_unit_item_description": "Few things inspire greater diligence among Imperial officers than the knowledge that Darth Vader's attention has fallen upon them. Under his unforgiving scrutiny, hesitation gives way to decisive action, incompetence is swiftly corrected, and corruption is met with consequences few are willing to risk.",
+    
 
     "imperial_auxiliary_supply_depot_unit_item_name": "Sector Axiliary Supply Depot",
     "imperial_auxiliary_supply_depot_unit_item_description": "Establishes a dedicated supply hub to extend the operational range of auxiliary forces loyal to the Empire.",

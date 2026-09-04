@@ -137,7 +137,10 @@
     "imperial_planetary_shield_array_unit_item_name": "SDL-26 Planetary Shield Generator",
     "imperial_planetary_shield_array_unit_item_description": "A hold-over of previous tech used by the Galactic Empire. Repurposed and refit with new materials found here in this new universe. Casts a planet-wide defensive shield.",
     "imperial_emperors_will_unit_item_name": "Emperor's Will",
-    "imperial_emperors_will_unit_item_description": "The very will of the Emperor extends his influence to far off planets, needing only the very presence of the Imperial Navy to take effect. Long live the Empire!",
+    "imperial_emperors_will_unit_item_description": "The very will of the Emperor extends his influence to far-off planets, requiring only the presence of the Imperial Navy to take effect. Even corruption serves his designs, as ambition, intrigue, and institutional decay are turned to the advantage of those who remain instruments of his will. Long live the Empire!",
+    "imperial_vaders_gaze_unit_item_name": "Vader's Gaze",
+    "imperial_vaders_gaze_unit_item_description": "Few things inspire greater diligence among Imperial officers than the knowledge that Darth Vader's attention has fallen upon them. Under his unforgiving scrutiny, hesitation gives way to decisive action, incompetence is swiftly corrected, and corruption is met with consequences few are willing to risk.",
+    
     "unit_item_upkeep_reduction_name": "Advanced Logistics Protocols",
     "unit_item_upkeep_reduction_description": "Specialized protocols are inacted on the ship resulting in a marked decrease in resource waste and upkeep.",
     "unit_item_vrip_name": "V-RIP : Venator - Programme de Rétrofit et d'Amélioration",

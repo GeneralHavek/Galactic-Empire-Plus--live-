@@ -173,7 +173,10 @@
     "imperial_orbital_targeting_computer_unit_item_name": "궤도 조준 컴퓨터",
     "imperial_orbital_targeting_computer_unit_item_description": "아군 함선과 네트워크로 연결할 수 있는 특수 조준 컴퓨터를 설치하여 적 행성에 가하는 폭격의 파괴력을 증대시킵니다.",
     "imperial_emperors_will_unit_item_name": "황제의 의지",
-    "imperial_emperors_will_unit_item_description": "황제의 의지 그 자체가 멀리 떨어진 행성까지 그의 영향력을 확장하며, 효력을 발휘하기 위해서는 제국 해군의 존재만으로 충분합니다. 제국이여 영원하라!",
+    "imperial_emperors_will_unit_item_description": "The very will of the Emperor extends his influence to far-off planets, requiring only the presence of the Imperial Navy to take effect. Even corruption serves his designs, as ambition, intrigue, and institutional decay are turned to the advantage of those who remain instruments of his will. Long live the Empire!",
+    "imperial_vaders_gaze_unit_item_name": "Vader's Gaze",
+    "imperial_vaders_gaze_unit_item_description": "Few things inspire greater diligence among Imperial officers than the knowledge that Darth Vader's attention has fallen upon them. Under his unforgiving scrutiny, hesitation gives way to decisive action, incompetence is swiftly corrected, and corruption is met with consequences few are willing to risk.",
+    
 
     "imperial_auxiliary_supply_depot_unit_item_name": "Sector Axiliary Supply Depot",
     "imperial_auxiliary_supply_depot_unit_item_description": "Establishes a dedicated supply hub to extend the operational range of auxiliary forces loyal to the Empire.",

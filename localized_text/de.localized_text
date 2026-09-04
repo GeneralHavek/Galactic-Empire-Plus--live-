@@ -173,7 +173,10 @@
     "imperial_orbital_targeting_computer_unit_item_name": "Orbital Zielcomputer",
     "imperial_orbital_targeting_computer_unit_item_description": "Spezialisierte Zielsysteme, die mit verbündeten Schiffen vernetzt sind, maximieren die Zerstörungskraft unserer Orbitalschläge. Kein feindlicher Planet ist sicher vor der geballten Macht des Imperiums.",
 	"imperial_emperors_will_unit_item_name": "Wille des Imperators",
-	"imperial_emperors_will_unit_item_description": "Der Wille des Imperators erstreckt seine Macht selbst auf fernste Welten. Schon die bloße Präsenz der Imperialen Flotte genügt, um ihn Wirklichkeit werden zu lassen.",
+    "imperial_emperors_will_unit_item_description": "The very will of the Emperor extends his influence to far-off planets, requiring only the presence of the Imperial Navy to take effect. Even corruption serves his designs, as ambition, intrigue, and institutional decay are turned to the advantage of those who remain instruments of his will. Long live the Empire!",
+    "imperial_vaders_gaze_unit_item_name": "Vader's Gaze",
+    "imperial_vaders_gaze_unit_item_description": "Few things inspire greater diligence among Imperial officers than the knowledge that Darth Vader's attention has fallen upon them. Under his unforgiving scrutiny, hesitation gives way to decisive action, incompetence is swiftly corrected, and corruption is met with consequences few are willing to risk.",
+    
 
 	"imperial_laser_damage_0_research_subject_name": "Effiziente Spulen",
 	"imperial_laser_damage_1_research_subject_name": "Kalibrierung der Fokallinsen",
