@@ -4820,6 +4820,13 @@
       1500.0
     ]
   },
+  "unit_modifiers": [
+    {
+      "modifier_type": "min_detection_level",
+      "value_behavior": "additive",
+      "value": 1.0
+    }
+  ],
   "target_filter_unit_type": "starbase",
   "tags": [
     "starbase"

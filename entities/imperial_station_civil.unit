@@ -116,6 +116,18 @@
     "build_kind": "structure",
     "build_radius": 536.5303
   },
+  "unit_modifiers": [
+    {
+      "modifier_type": "detection_quality",
+      "value_behavior": "additive",
+      "value": 6.0
+    },
+    {
+      "modifier_type": "detection_range",
+      "value_behavior": "additive",
+      "value": 20000.0
+    }
+  ],
   "research_provider": {
     "provided_research_points": {
       "civilian": 2.0

@@ -583,6 +583,18 @@
       }
     ]
   },
+  "unit_modifiers": [
+    {
+      "modifier_type": "detection_quality",
+      "value_behavior": "additive",
+      "value": 3.0
+    },
+    {
+      "modifier_type": "detection_range",
+      "value_behavior": "additive",
+      "value": 10000.0
+    }
+  ],
   "target_filter_unit_type": "frigate",
   "tags": [
     "frigate"
