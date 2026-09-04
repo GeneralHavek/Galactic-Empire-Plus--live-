@@ -1058,6 +1058,7 @@
         "imperial_death_star_weapons_operations",
         "imperial_deploy_starbase",
         "imperial_emperors_will",
+        "imperial_vaders_gaze",
         "imperial_executor_assault_operations",
         "imperial_executor_operational_logistics",
         "imperial_executor_strategic_operations",
@@ -6759,6 +6760,50 @@
             "artifact_captured": {
                 "sound": "trader_narrator_artifact_captured",
                 "is_dialogue": true
+            },
+            "planet_track_upgrade_population_completed": {
+                "sound": "trader_narrator_planet_track_upgrade_population_completed",
+                "is_dialogue": true
+            },
+            "planet_track_upgrade_industry_completed": {
+                "sound": "trader_narrator_planet_track_upgrade_industry_completed",
+                "is_dialogue": true
+            },
+            "planet_track_upgrade_influence_completed": {
+                "sound": "trader_narrator_planet_track_upgrade_influence_completed",
+                "is_dialogue": true
+            },
+            "planet_track_upgrade_culture_completed": {
+                "sound": "trader_narrator_planet_track_upgrade_culture_completed",
+                "is_dialogue": true
+            },
+            "planet_track_upgrade_corruption_completed": {
+                "sound": "ui_default_error",
+                "is_dialogue": false
+            },
+            "planet_ready_to_shroud": {
+                "sound": "ui_default_error",
+                "is_dialogue": false
+            },
+            "planet_shrouded": {
+                "sound": "ui_default_error",
+                "is_dialogue": false
+            },
+            "enemy_planet_shrouding_started": {
+                "sound": "trader_narrator_enemy_planet_shrouding_started",
+                "is_dialogue": true
+            },
+            "enemy_planet_shrouded": {
+                "sound": "trader_narrator_enemy_planet_shrouded",
+                "is_dialogue": true
+            },
+            "cloaked_unit_detected": {
+                "sound": "trader_narrator_cloaked_unit_detected",
+                "is_dialogue": true
+            },
+            "insufficient_corruption": {
+                "sound": "ui_default_error",
+                "is_dialogue": false
             }
         },
         "unit_build_kind_sounds": [
@@ -6864,8 +6909,5 @@
             "optional_item_postfix": "tooltip.trader_optional_item_postfix",
             "optional_tooltip_line": "tooltip.trader_optional_tooltip_line"
         }
-    },
-    "unit_items": [
-        "imperial_vaders_gaze"
-    ]
+    }
 }
