@@ -1283,6 +1283,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 0,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -1429,6 +1437,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 0,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -1622,6 +1638,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -1780,6 +1804,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -1994,6 +2026,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -2260,6 +2300,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -2514,6 +2562,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -2760,6 +2816,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -2992,6 +3056,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 0,
+        "mining": 0,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -3211,6 +3283,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -3447,6 +3527,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -3617,6 +3705,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 0,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -3871,6 +3967,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -4068,6 +4172,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -4244,6 +4356,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -4505,6 +4625,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -4637,6 +4765,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 0,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -4860,6 +4996,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -5071,6 +5215,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
@@ -5298,6 +5450,14 @@
           {}
         ]
       },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 1,
+        "focus": 0
+      },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
         {
@@ -5451,6 +5611,14 @@
         "focus": [
           {}
         ]
+      },
+      "shroud_restricted_max_track_levels": {
+        "defense": 1,
+        "logistics": 1,
+        "commerce": 1,
+        "mining": 1,
+        "research": 0,
+        "focus": 0
       },
       "maintenance_cost_rates": [],
       "trade_capacity_levels": [
