@@ -1,131 +1,171 @@
 {
-    "version": 0,
-    "spatial": {
-        "radius": 3634.769287,
-        "box": {
-            "center": [592.541443, 262.041504, -260.072754],
-            "extents": [2433.525391, 1715.682007, 2909.955566]
-        },
-        "can_be_displaced_on_collision": false
+  "version": 0,
+  "spatial": {
+    "radius": 3634.769287,
+    "box": {
+      "center": [
+        592.541443,
+        262.041504,
+        -260.072754
+      ],
+      "extents": [
+        2433.525391,
+        1715.682007,
+        2909.955566
+      ]
     },
-    "physics": {},
-    "ai":
+    "can_be_displaced_on_collision": false
+  },
+  "physics": {},
+  "ai": {
+    "attack_target_type_groups_to_ignore": [
+      "torpedo_strikecraft"
+    ]
+  },
+  "ai_attack_target": {
+    "attack_priority": 25.0,
+    "is_always_a_threat": false,
+    "attack_target_type": "defense"
+  },
+  "player_ai": {
+    "max_count_at_planet": {
+      "type": "per_used_military_slots_at_planet",
+      "per_count": 20,
+      "max_value": 2.0
+    }
+  },
+  "user_interface": {
+    "can_be_controlled_by_selected_planet": true,
+    "pip_type": "titan",
+    "can_ever_be_selected": true,
+    "selection_priority": 100,
+    "has_sub_selection_grouping": true,
+    "selection_group_unit_type": "factory_structure"
+  },
+  "structure": {
+    "slot_type": "civilian",
+    "slots_required": 3,
+    "roles": [
+      "unit_factory"
+    ],
+    "build_group_id": "civilian",
+    "abilities_for_range_in_build_rendering": [
+      "imperial_orbital_shipyard_repair"
+    ]
+  },
+  "formation": {
+    "leader_priority": 3,
+    "offsets_per_formation_type": {
+      "ships_and_structures": {
+        "rank": 4,
+        "group": 5
+      }
+    }
+  },
+  "spawn_debris": {
+    "spawn_debris_time": 1.0,
+    "generic_group_name": "trader",
+    "generic_counts": {
+      "small_debris": [
+        14,
+        18
+      ],
+      "large_debris": [
+        3,
+        5
+      ]
+    }
+  },
+  "health": {
+    "release_time_after_death": 60.0,
+    "can_collide_duration_after_death": 3.8,
+    "durability": 600.0,
+    "levels": [
+      {
+        "max_hull_points": 5500.0,
+        "hull_point_restore_rate": 6.0,
+        "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
+        "max_armor_points": 3000.0,
+        "armor_point_restore_rate": 4.8,
+        "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
+        "armor_strength": 100.0,
+        "experience_given_on_death": 75.0
+      }
+    ]
+  },
+  "corruption": {
+    "max_corruption": 3000.0,
+    "corruption_decay_rate": 25.0,
+    "corruption_decay_delay_duration_after_gain": 60.0,
+    "corruption_thresholds": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "antimatter": {
+    "max_antimatter": 300.0,
+    "antimatter_restore_rate": 1.0
+  },
+  "unit_factory": {
+    "build_kinds": [
+      "titan",
+      "capital_ship",
+      "super_capital_ship",
+      "mem_limited_capital"
+    ],
+    "default_rally_point_offset": [
+      0.0,
+      0.0,
+      5500.0
+    ],
+    "base_build_point": {
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        -0.0,
+        1.0,
+        0.0,
+        -0.0,
+        -0.0,
+        1.0
+      ]
+    }
+  },
+  "build": {
+    "build_time": 120.0,
+    "price": {
+      "credits": 2000.0,
+      "metal": 500.0,
+      "crystal": 500.0
+    },
+    "build_kind": "structure",
+    "build_radius": 3793.400391
+  },
+  "target_filter_unit_type": "structure",
+  "tags": [
+    "structure"
+  ],
+  "abilities": [
     {
-        "attack_target_type_groups_to_ignore": [
-            "torpedo_strikecraft"
-        ]
-    },
-    "ai_attack_target": {
-        "attack_priority": 25.0,
-        "is_always_a_threat": false,
-        "attack_target_type": "defense"
-    },
-    "player_ai": {
-        "max_count_at_planet": {
-            "type": "per_used_military_slots_at_planet",
-            "per_count": 20,
-            "max_value": 2.0
-        }
-    },
-    "user_interface": {
-        "can_be_controlled_by_selected_planet": true,
-        "pip_type": "titan",
-        "can_ever_be_selected": true,
-        "selection_priority": 100,
-        "has_sub_selection_grouping": true,
-        "selection_group_unit_type": "factory_structure"
-    },
-    "structure": {
-        "slot_type": "civilian",
-        "slots_required": 3,
-        "roles": [
-            "unit_factory"
-        ],
-        "build_group_id": "civilian",
-        "abilities_for_range_in_build_rendering": [
-            "imperial_orbital_shipyard_repair"
-        ]
-    },
-    "formation": {
-        "leader_priority": 3,
-        "offsets_per_formation_type": {
-            "ships_and_structures": {
-                "rank": 4,
-                "group": 5
-            }
-        }
-    },
-    "spawn_debris": {
-        "spawn_debris_time": 1.0,
-        "generic_group_name": "trader",
-        "generic_counts": {
-            "small_debris": [14, 18],
-            "large_debris": [3, 5]
-        }
-    },
-    "health": {
-        "release_time_after_death": 60.0,
-        "can_collide_duration_after_death": 3.80,
-        "durability": 600.0,
-        "levels": [
-            {
-                "max_hull_points": 5500.0,
-                "hull_point_restore_rate": 6.0,
-                "hull_point_restore_cooldown_duration_after_damage_taken": 60.0,
-                "max_armor_points": 3000.0,
-                "armor_point_restore_rate": 4.80,
-                "armor_point_restore_cooldown_duration_after_damage_taken": 60.0,
-                "armor_strength": 100.0,
-                "experience_given_on_death": 75.0
-            }
-        ]
-    },
-    "antimatter":
+      "abilities": [
+        "imperial_orbital_shipyard_repair"
+      ]
+    }
+  ],
+  "virtual_supply_cost": 20,
+  "skin_groups": [
     {
-        "max_antimatter": 300.0,
-        "antimatter_restore_rate": 1.0
-    },
-    "unit_factory": {
-        "build_kinds": [
-            "titan",
-            "capital_ship",
-            "super_capital_ship",
-            "mem_limited_capital"
-        ],
-        "default_rally_point_offset": [0.0, 0.0, 5500.0],
-        "base_build_point": {
-            "position": [0.0, 0.0, -0.0],
-            "rotation": [1.0, 0.0, 0.0, -0.0, 1.0, 0.0, -0.0, -0.0, 1.0]
-        }
-    },
-    "build": {
-        "build_time": 120.0,
-        "price": {
-            "credits": 2000.0,
-            "metal": 500.0,
-            "crystal": 500.0
-        },
-        "build_kind": "structure",
-        "build_radius": 3793.400391
-    },
-    "target_filter_unit_type": "structure",
-    "tags": [
-        "structure"
-    ],
-    "abilities": [
-        {
-            "abilities": [
-                "imperial_orbital_shipyard_repair"
-            ]
-        }
-    ],
-    "virtual_supply_cost": 20,
-    "skin_groups": [
-        {
-            "skins": [
-                "imperial_shipyard_heavy"
-            ]
-        }
-    ],
-    "action_effect_size": "large_unit"
+      "skins": [
+        "imperial_shipyard_heavy"
+      ]
+    }
+  ],
+  "action_effect_size": "large_unit"
 }

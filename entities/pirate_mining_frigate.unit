@@ -495,6 +495,16 @@
       }
     ]
   },
+  "corruption": {
+    "max_corruption": 500.0,
+    "corruption_decay_rate": 10.0,
+    "corruption_decay_delay_duration_after_gain": 60.0,
+    "corruption_thresholds": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
   "build": {
     "build_time": 25.0,
     "price": {
