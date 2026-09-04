@@ -2,7 +2,5 @@
     "pickable_players": [
         "sw_imperial"
     ],
-    "dlc_only_pickable_players": [
-        
-    ]
+    "dlc_pickable_players": []
 }

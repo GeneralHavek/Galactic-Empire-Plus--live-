@@ -54,5 +54,8 @@
                 -0.15
             ]
         }
+    ],
+    "required_item_access_tags": [
+        "imperial_executor"
     ]
 }
