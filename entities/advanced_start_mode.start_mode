@@ -4,250 +4,311 @@
     "display_name": "start_mode.advanced.name",
     "description": "start_mode.advanced.description",
     "faction_configurations": [
-    {
-        "player_definition_id": "sw_imperial",
-        "starting_assets":
         {
-            "credits": 15000.0,
-            "metal": 4500.0,
-            "crystal": 3500.0
-        },
-        "starting_exotics": [
-        {
-            "exotic_type": "offense",
-            "count": 3
-        },
-        {
-            "exotic_type": "defense",
-            "count": 3
-        },
-        {
-            "exotic_type": "utility",
-            "count": 3
-        },
-        {
-            "exotic_type": "economic",
-            "count": 3
-        }],
-        "home_planet":
-        {
-            "starting_units_in_gravity_well":
-            {
-                "required_units": [
+            "player_definition_id": "sw_imperial",
+            "starting_assets": {
+                "credits": 15000.0,
+                "metal": 4500.0,
+                "crystal": 3500.0
+            },
+            "starting_exotics": [
                 {
-                    "unit": "imperial_station_civil",
-                    "count": [3, 3]
+                    "exotic_type": "offense",
+                    "count": 3
                 },
                 {
-                    "unit": "imperial_station_military",
-                    "count": [3, 3]
+                    "exotic_type": "defense",
+                    "count": 3
                 },
                 {
-                    "unit": "imperial_starbase",
-                    "count": [1, 1],
-                        "options": {
-                            "items": [
-                                "imperial_starbase_structural_integrity_0"
+                    "exotic_type": "utility",
+                    "count": 3
+                },
+                {
+                    "exotic_type": "economic",
+                    "count": 3
+                }
+            ],
+            "home_planet": {
+                "starting_units_in_gravity_well": {
+                    "required_units": [
+                        {
+                            "unit": "imperial_station_civil",
+                            "count": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "unit": "imperial_station_military",
+                            "count": [
+                                3,
+                                3
+                            ]
+                        },
+                        {
+                            "unit": "imperial_starbase",
+                            "count": [
+                                1,
+                                1
+                            ],
+                            "options": {
+                                "items": [
+                                    "imperial_starbase_structural_integrity_0"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "starting_units_in_formations": [
+                    {
+                        "required_units": [
+                            {
+                                "unit": "imperial_shipyard",
+                                "count": [
+                                    1,
+                                    1
+                                ]
+                            },
+                            {
+                                "unit": "imperial_shipyard_heavy",
+                                "count": [
+                                    1,
+                                    1
+                                ]
+                            },
+                            {
+                                "unit": "imperial_arquitens",
+                                "count": [
+                                    9,
+                                    9
+                                ]
+                            },
+                            {
+                                "unit": "imperial_velox",
+                                "count": [
+                                    9,
+                                    9
+                                ]
+                            },
+                            {
+                                "unit": "imperial_gladiator",
+                                "count": [
+                                    3,
+                                    3
+                                ]
+                            },
+                            {
+                                "unit": "imperial_mtc",
+                                "count": [
+                                    2,
+                                    2
+                                ]
+                            },
+                            {
+                                "unit": "imperial_vindicator",
+                                "count": [
+                                    3,
+                                    3
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "home_planet_track_levels": {
+                    "logistics": 5,
+                    "defense": 5,
+                    "commerce": 3,
+                    "mining": 3,
+                    "research": 2,
+                    "focus": 0,
+                    "corruption": 0,
+                    "industry": 0,
+                    "influence": 0,
+                    "culture": 0,
+                    "population": 0,
+                    "surveying": 0
+                },
+                "starting_units_in_hyperspace": {},
+                "home_planet_starting_population": [
+                    500,
+                    500
+                ],
+                "home_planet_starting_items": [
+                    "imperial_homeworld_heart_of_the_galaxy"
+                ]
+            },
+            "starting_player_inventory_items": [],
+            "additional_starting_planets": {
+                "count": 3,
+                "allowed_planet_types": [
+                    {
+                        "planet_type": "terran",
+                        "priority": 100
+                    },
+                    {
+                        "planet_type": "oceanic",
+                        "priority": 90
+                    },
+                    {
+                        "planet_type": "desert",
+                        "priority": 85
+                    },
+                    {
+                        "planet_type": "crystalline",
+                        "priority": 80
+                    },
+                    {
+                        "planet_type": "ferrous",
+                        "priority": 75
+                    },
+                    {
+                        "planet_type": "magnetic",
+                        "priority": 75
+                    },
+                    {
+                        "planet_type": "swamp",
+                        "priority": 70
+                    },
+                    {
+                        "planet_type": "hive_asteroid",
+                        "priority": 65
+                    },
+                    {
+                        "planet_type": "ice",
+                        "priority": 65
+                    },
+                    {
+                        "planet_type": "volcanic",
+                        "priority": 60
+                    },
+                    {
+                        "planet_type": "ice_asteroid",
+                        "priority": 55
+                    },
+                    {
+                        "planet_type": "asteroid",
+                        "priority": 50
+                    }
+                ],
+                "max_jumps": 2,
+                "include_star_phase_lanes": false,
+                "include_wormhole_phase_lanes": false,
+                "starting_planet_track_levels": {
+                    "logistics": 1,
+                    "defense": 1,
+                    "commerce": 1,
+                    "mining": 1,
+                    "research": 0,
+                    "focus": 0,
+                    "corruption": 0,
+                    "industry": 0,
+                    "influence": 0,
+                    "culture": 0,
+                    "population": 0,
+                    "surveying": 0
+                },
+                "granted_planets_units_in_gravity_wells": {
+                    "required_units": [
+                        {
+                            "unit": "imperial_station_civil",
+                            "count": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "unit": "imperial_station_military",
+                            "count": [
+                                1,
+                                1
+                            ]
+                        },
+                        {
+                            "unit": "imperial_gunpod",
+                            "count": [
+                                3,
+                                3
                             ]
                         }
-                }]
-            },
-            "starting_units_in_formations": [
-            {
-                "required_units": [
-                {
-                    "unit": "imperial_shipyard",
-                    "count": [1, 1]
+                    ]
                 },
-                {
-                    "unit": "imperial_shipyard_heavy",
-                    "count": [1, 1]
-                },
-                {
-                    "unit": "imperial_arquitens",
-                    "count": [9, 9]
-                },
-                {
-                    "unit": "imperial_velox",
-                    "count": [9, 9]
-                },
-                {
-                    "unit": "imperial_gladiator",
-                    "count": [3, 3]
-                },
-                {
-                    "unit": "imperial_mtc",
-                    "count": [2, 2]
-                },
-                {
-                    "unit": "imperial_vindicator",
-                    "count": [3, 3]
-                }]
-            }],
-            "home_planet_track_levels":
-            {
-                "logistics": 5,
-                "defense": 5,
-                "commerce": 3,
-                "mining": 3,
-                "research": 2,
-                "focus": 0,
-                "surveying": 0
+                "granted_planets_units_in_formations": [
+                    {
+                        "required_units": [
+                            {
+                                "unit": "imperial_velox",
+                                "count": [
+                                    3,
+                                    3
+                                ]
+                            },
+                            {
+                                "unit": "imperial_indictor",
+                                "count": [
+                                    2,
+                                    2
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "granted_planet_starting_items": []
             },
-            "starting_units_in_hyperspace":
-            {},
-            "home_planet_starting_items": ["imperial_homeworld_heart_of_the_galaxy"]
-        },
-        "additional_starting_planets":
-        {
-            "count": 3,
-            "allowed_planet_types": [
-            {
-                "planet_type": "terran",
-                "priority": 100
-            },
-            {
-                "planet_type": "oceanic",
-                "priority": 90
-            },
-            {
-                "planet_type": "desert",
-                "priority": 85
-            },
-            {
-                "planet_type": "crystalline",
-                "priority": 80
-            },
-            {
-                "planet_type": "ferrous",
-                "priority": 75
-            },
-            {
-                "planet_type": "magnetic",
-                "priority": 75
-            },
-            {
-                "planet_type": "swamp",
-                "priority": 70
-            },
-            {
-                "planet_type": "hive_asteroid",
-                "priority": 65
-            },
-            {
-                "planet_type": "ice",
-                "priority": 65
-            },
-            {
-                "planet_type": "volcanic",
-                "priority": 60
-            },
-            {
-                "planet_type": "ice_asteroid",
-                "priority": 55
-            },
-            {
-                "planet_type": "asteroid",
-                "priority": 50
-            }],
-            "max_jumps": 2,
-            "include_star_phase_lanes": false,
-            "include_wormhole_phase_lanes": false,
-            "starting_planet_track_levels":
-            {
-                "logistics": 1,
-                "defense": 1,
-                "commerce": 1,
-                "mining": 1,
-                "research": 0,
-                "focus": 0,
-                "surveying": 0
-            },
-            "granted_planets_units_in_gravity_wells":
-            {
-                "required_units": [
-                {
-                    "unit": "imperial_station_civil",
-                    "count": [1, 1]
-                },
-                {
-                    "unit": "imperial_station_military",
-                    "count": [1, 1]
-                },
-                {
-                    "unit": "imperial_gunpod",
-                    "count": [3, 3]
-                }]
-            },
-            "granted_planets_units_in_formations": [
-            {
-                "required_units": [
-                {
-                    "unit": "imperial_velox",
-                    "count": [3, 3]
-                },
-                {
-                    "unit": "imperial_indictor",
-                    "count": [2, 2]
-                }]
-            }],
-            "granted_planet_starting_items": []
-        },
-        "starting_research":
-        {
-            "starting_civilian_tier": 3,
-            "starting_military_tier": 3,
-            "starting_research_subjects": [
-                "imperial_laser_damage_0",
-                "imperial_laser_damage_1",
-                "imperial_capital_ship_starting_level_0",
-                "imperial_hull_damage_reduction_0",
-                "imperial_hull_damage_reduction_1",
-                "imperial_max_hull_points_0",
-                "imperial_max_hull_points_1",
-                "imperial_max_supply_0",
-                "imperial_max_supply_1",
-                "imperial_max_supply_2",
-                "imperial_mining_track_crystal_rate_0",
-                "imperial_mining_track_metal_rate_0",
-                "imperial_missile_weapon_damage_0",
-                "imperial_unlock_vigil",
-                "imperial_unlock_kontos",
-                "imperial_unlock_victoryii",
-                "imperial_unlock_rep_venator",
-                "imperial_unlock_vrip",
-                "imperial_upgrade_crystalline_biosphere_0",
-                "imperial_unlock_culture_center",
-                "imperial_upgrade_desert_biosphere_0",
-                "imperial_unlock_exotic_factory_structure",
-                "imperial_upgrade_ferrous_biosphere_0",
-                "imperial_unlock_golan1",
-                "imperial_unlock_golan1_pdlc_weapon",
-                "imperial_unlock_vindicator",
-                "imperial_upgrade_ice_biosphere_0",
-                "imperial_upgrade_irradiated_biosphere_0",
-                "imperial_unlock_isd1",
-                "imperial_upgrade_magnetic_biosphere_0",
-                "imperial_unlock_gladiator",
-                "imperial_upgrade_oceanic_biosphere_0",
-                "imperial_unlock_phase_lane_detector",
-                "imperial_unlock_phase_lane_detector_extended_range",
-                "imperial_unlock_resource_extractor_structures",
-                "imperial_unlock_orbital_shipyard_repair_ability",
-                "imperial_unlock_mtc",
-                "imperial_unlock_isd2",
-                "imperial_unlock_acclamator_2",
-                "imperial_unlock_lancer",
-                "imperial_unlock_starbase",
-                "imperial_upgrade_swamp_biosphere_0",
-                "imperial_unlock_trade_port",
-                "imperial_upgrade_volcanic_biosphere_0",
-                "imperial_upgrade_consumables_0",
-                "imperial_upgrade_influence_0",
-                "imperial_upgrade_influence_1",
-                "imperial_upgrade_loot_experience_gain"
-            ]
-        },
-        "free_starting_capital_ship": true
-    }]
+            "starting_research": {
+                "starting_civilian_tier": 3,
+                "starting_military_tier": 3,
+                "starting_research_subjects": [
+                    "imperial_laser_damage_0",
+                    "imperial_laser_damage_1",
+                    "imperial_capital_ship_starting_level_0",
+                    "imperial_hull_damage_reduction_0",
+                    "imperial_hull_damage_reduction_1",
+                    "imperial_max_hull_points_0",
+                    "imperial_max_hull_points_1",
+                    "imperial_max_supply_0",
+                    "imperial_max_supply_1",
+                    "imperial_max_supply_2",
+                    "imperial_mining_track_crystal_rate_0",
+                    "imperial_mining_track_metal_rate_0",
+                    "imperial_missile_weapon_damage_0",
+                    "imperial_unlock_vigil",
+                    "imperial_unlock_kontos",
+                    "imperial_unlock_victoryii",
+                    "imperial_unlock_rep_venator",
+                    "imperial_unlock_vrip",
+                    "imperial_upgrade_crystalline_biosphere_0",
+                    "imperial_unlock_culture_center",
+                    "imperial_upgrade_desert_biosphere_0",
+                    "imperial_unlock_exotic_factory_structure",
+                    "imperial_upgrade_ferrous_biosphere_0",
+                    "imperial_unlock_golan1",
+                    "imperial_unlock_golan1_pdlc_weapon",
+                    "imperial_unlock_vindicator",
+                    "imperial_upgrade_ice_biosphere_0",
+                    "imperial_upgrade_irradiated_biosphere_0",
+                    "imperial_unlock_isd1",
+                    "imperial_upgrade_magnetic_biosphere_0",
+                    "imperial_unlock_gladiator",
+                    "imperial_upgrade_oceanic_biosphere_0",
+                    "imperial_unlock_phase_lane_detector",
+                    "imperial_unlock_phase_lane_detector_extended_range",
+                    "imperial_unlock_resource_extractor_structures",
+                    "imperial_unlock_orbital_shipyard_repair_ability",
+                    "imperial_unlock_mtc",
+                    "imperial_unlock_isd2",
+                    "imperial_unlock_acclamator_2",
+                    "imperial_unlock_lancer",
+                    "imperial_unlock_starbase",
+                    "imperial_upgrade_swamp_biosphere_0",
+                    "imperial_unlock_trade_port",
+                    "imperial_upgrade_volcanic_biosphere_0",
+                    "imperial_upgrade_consumables_0",
+                    "imperial_upgrade_influence_0",
+                    "imperial_upgrade_influence_1",
+                    "imperial_upgrade_loot_experience_gain"
+                ]
+            }
+        }
+    ]
 }

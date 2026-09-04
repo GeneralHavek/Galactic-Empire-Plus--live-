@@ -1,15 +1,3 @@
-Version 3.4.1.3:
+Version 3.5.0.0:
 
-[Unit]      Fixed issue preventing Imperial Hegemony from working entirely on the Executor;
-[GUI]       Updated the Imperial Hegemony to better reflect which item configuration is being used;
-[GUI]       Updated Death Star item Weapon Operations to correctly reflect each weapon recieving an increase;
-[Gui]       Updated Death Star item Total Fire Control to show a consolidated buff total instead of multiple versions of the same buff;
-[Item]      Changed Death Star item Battle Station Alert to add +15 armor strength instead of +15% max armor to prevent armor values from yoyoing;
-[GUI]       Updated Death Star item Battle Station Alert to show a consolidated buff total instead of multiple version of the same buff;
-[GUI]       Updated Death Star buff Doctrine of Fear to show the debuff recieved by enemy forces;
-[GUI]       Updated Death Star ability Operation Readiness to properly show correct tooltips depending on which item configuration is used;
-[GUI]       Updated ISD II ability Tarkin Doctrine to reference the correct localization labels;
-[GUI]       Updated ISD II ability Tarkin Doctrine to use two place decimal percentages;
-[GUI]       Updated ISD II buff Imperial Ascendancy to actually show values for itself;
-[GUI]       Updated Victory II abilities Power Disruption, System Destabilization, and Target Exploitation to no longer show multiple versions of the same buff;
-[GUI]       Updated Victory I abilities Armor Fracture and System Disruption to no longer show multiple versions of the same buff
+[Misc]      Updated GEP to new Sins 2 mechanics
