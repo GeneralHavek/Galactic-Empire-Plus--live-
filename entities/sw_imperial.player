@@ -6864,5 +6864,8 @@
             "optional_item_postfix": "tooltip.trader_optional_item_postfix",
             "optional_tooltip_line": "tooltip.trader_optional_tooltip_line"
         }
-    }
+    },
+    "unit_items": [
+        "imperial_vaders_gaze"
+    ]
 }

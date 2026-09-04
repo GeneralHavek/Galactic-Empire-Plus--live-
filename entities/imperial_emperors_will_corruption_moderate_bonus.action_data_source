@@ -1,0 +1,49 @@
+{
+    "version": 0,
+    "action_values": [
+        {
+            "action_value_id": "emperors_will_corruption_bonus_refresh_duration_value",
+            "action_value": {
+                "values": [
+                    1.25
+                ]
+            }
+        },
+        {
+            "action_value_id": "emperors_will_corruption_weapon_damage_value",
+            "action_value": {
+                "values": [
+                    0.1
+                ]
+            }
+        },
+        {
+            "action_value_id": "emperors_will_corruption_antimatter_restore_rate_value",
+            "action_value": {
+                "values": [
+                    0.1
+                ]
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "emperors_will_corruption_weapon_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "emperors_will_corruption_weapon_damage_value"
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "emperors_will_corruption_antimatter_restore_rate_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "antimatter_restore_rate",
+                "value_behavior": "scalar",
+                "value_id": "emperors_will_corruption_antimatter_restore_rate_value"
+            }
+        }
+    ]
+}

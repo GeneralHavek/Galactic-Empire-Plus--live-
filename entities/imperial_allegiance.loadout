@@ -216,7 +216,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 1
                         }
                     ]
@@ -279,7 +279,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 1
                         }
                     ]
@@ -321,7 +321,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 1
                         }
                     ]
@@ -351,7 +351,7 @@
                     "slot_index": 7,
                     "candidates": [
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 4
                         },
                         {
@@ -401,7 +401,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 1
                         }
                     ]
@@ -464,7 +464,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 1
                         }
                     ]
@@ -506,7 +506,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_vaders_gaze",
                             "priority": 1
                         }
                     ]
@@ -536,11 +536,11 @@
                     "slot_index": 7,
                     "candidates": [
                         {
-                            "item": "imperial_war_reporter",
+                            "item": "imperial_vaders_gaze",
                             "priority": 4
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_war_reporter",
                             "priority": 3
                         },
                         {

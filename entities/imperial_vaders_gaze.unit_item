@@ -1,0 +1,51 @@
+{
+    "version": 0,
+    "item_type": "ship_component",
+    "hud_icon": "imperial_vaders_gaze_unit_item_hud_icon",
+    "tooltip_icon": "imperial_vaders_gaze_unit_item_tooltip_icon",
+    "tooltip_picture": "imperial_vaders_gaze_unit_item_tooltip_picture",
+    "name": "imperial_vaders_gaze_unit_item_name",
+    "description": "imperial_vaders_gaze_unit_item_description",
+    "build_time": 45.0,
+    "price": {
+        "credits": 625.0,
+        "metal": 175.0,
+        "crystal": 315.0
+    },
+    "required_unit_tags": [
+        "capital_ship",
+        "super_capital_ship",
+        "titan"
+    ],
+    "max_count_on_unit": 1,
+    "other_item_requirements": {
+        "mutually_exclusive_items": [
+            "imperial_emperors_will"
+        ]
+    },
+    "build_group_id": "offense",
+    "weapon_modifiers": [
+        {
+            "modifier_type": "damage",
+            "value_behavior": "scalar",
+            "values": [
+                0.05
+            ]
+        },
+        {
+            "modifier_type": "tracking_speed",
+            "value_behavior": "scalar",
+            "values": [
+                0.05
+            ]
+        },
+        {
+            "modifier_type": "cooldown_duration",
+            "value_behavior": "scalar",
+            "values": [
+                -0.05
+            ]
+        }
+    ],
+    "ability": "imperial_vaders_gaze_unit_item"
+}

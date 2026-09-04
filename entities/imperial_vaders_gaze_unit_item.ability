@@ -1,0 +1,96 @@
+{
+    "version": 0,
+    "action_data_source": "imperial_vaders_gaze_unit_item",
+    "level_source": "unit_item",
+    "active_actions": {
+        "cooldown_time": "vaders_gaze_cooldown_time_value",
+        "antimatter_cost": "vaders_gaze_antimatter_cost_value",
+        "actions": {
+            "actions": [
+                {
+                    "constraint": {
+                        "constraint_type": "unit_passes_unit_constraint",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "unit_constraint": {
+                            "constraint_type": "can_purge_corruption",
+                            "minimum_purge_amount": 100.0
+                        }
+                    },
+                    "action_type": "use_unit_operators_on_single_unit",
+                    "destination_unit": {
+                        "unit_type": "current_spawner"
+                    },
+                    "operators": [
+                        {
+                            "operator_type": "apply_buff",
+                            "buff": "imperial_vaders_gaze_purge"
+                        }
+                    ]
+                }
+            ]
+        },
+        "auto_cast": {
+            "enabled_by_default_behavior": "never",
+            "caster_constraint": {
+                "constraint_type": "unit_passes_unit_constraint",
+                "unit": {
+                    "unit_type": "current_spawner"
+                },
+                "unit_constraint": {
+                    "constraint_type": "can_purge_corruption",
+                    "minimum_purge_amount": 100.0
+                }
+            }
+        },
+        "ai_only_auto_cast": {
+            "enabled_by_default_behavior": "always",
+            "caster_constraint": {
+                "constraint_type": "composite_and",
+                "constraints": [
+                    {
+                        "constraint_type": "corruption_threshold_is_reached",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        }
+                    },
+                    {
+                        "constraint_type": "unit_passes_unit_constraint",
+                        "unit": {
+                            "unit_type": "current_spawner"
+                        },
+                        "unit_constraint": {
+                            "constraint_type": "can_purge_corruption",
+                            "minimum_purge_amount": 100.0
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "gui": {
+        "hud_icon": "imperial_vaders_gaze_unit_item_hud_icon",
+        "tooltip_icon": "imperial_vaders_gaze_unit_item_tooltip_icon",
+        "name": "imperial_vaders_gaze_unit_item_name",
+        "description": "imperial_vaders_gaze_unit_item_description",
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.corruption_purged",
+                        "value_id": "vaders_gaze_current_corruption_value",
+                        "value_color": "positive"
+                    },
+                    {
+                        "rendering_type": "single_value",
+                        "label_text": "tooltip.ability.active_duration",
+                        "value_id": "vaders_gaze_bonus_duration_value",
+                        "value_suffix": "seconds"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -58,6 +58,7 @@
         "imperial_executor_strategic_operations",
         "imperial_death_star_battlestation_operations",
         "imperial_death_star_peacekeeping_operations",
-        "imperial_death_star_weapons_operations"
+        "imperial_death_star_weapons_operations",
+        "imperial_vaders_gaze"
     ]
 }

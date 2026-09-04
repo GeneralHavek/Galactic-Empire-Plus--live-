@@ -7,8 +7,7 @@
     "name": "imperial_emperors_will_unit_item_name",
     "description": "imperial_emperors_will_unit_item_description",
     "build_time": 45.0,
-    "price":
-    {
+    "price": {
         "credits": 625.0,
         "metal": 175.0,
         "crystal": 315.0
@@ -20,5 +19,13 @@
     ],
     "max_count_on_unit": 1,
     "build_group_id": "utility",
-    "ability": "imperial_emperors_will_unit_item"
+    "ability": "imperial_emperors_will_unit_item",
+    "unit_mutations": [
+        "imperial_has_emperors_will"
+    ],
+    "other_item_requirements": {
+        "mutually_exclusive_items": [
+            "imperial_vaders_gaze"
+        ]
+    }
 }

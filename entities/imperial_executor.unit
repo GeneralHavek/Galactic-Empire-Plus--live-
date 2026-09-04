@@ -11557,7 +11557,12 @@
         "max_corruption": 10000.0,
         "corruption_decay_rate": 50.0,
         "corruption_decay_delay_duration_after_gain": 60.0,
-        "show_main_view_icon_alert_fill": true
+        "show_main_view_icon_alert_fill": true,
+        "positive_corruption_buffs": [
+            "imperial_emperors_will_corruption_mild",
+            "imperial_emperors_will_corruption_moderate",
+            "imperial_emperors_will_corruption_extreme"
+        ]
     },
     "antimatter": {
         "max_antimatter": 0.0,

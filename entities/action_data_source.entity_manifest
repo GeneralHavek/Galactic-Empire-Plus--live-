@@ -82,6 +82,10 @@
         "imperial_executor_sector_command",
         "imperial_ship_corruption_penalty_mild",
         "imperial_ship_corruption_penalty_moderate",
-        "imperial_ship_corruption_penalty_extreme"
+        "imperial_ship_corruption_penalty_extreme",
+        "imperial_vaders_gaze_unit_item",
+        "imperial_emperors_will_corruption_mild_bonus",
+        "imperial_emperors_will_corruption_moderate_bonus",
+        "imperial_emperors_will_corruption_extreme_bonus"
     ]
 }

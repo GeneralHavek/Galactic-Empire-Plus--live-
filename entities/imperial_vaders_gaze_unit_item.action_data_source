@@ -1,0 +1,120 @@
+{
+    "version": 0,
+    "per_buff_memory_declaration": {
+        "float_variable_ids": [
+            "purged_corruption"
+        ]
+    },
+    "action_values": [
+        {
+            "action_value_id": "vaders_gaze_antimatter_cost_value",
+            "action_value": {
+                "values": [
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_cooldown_time_value",
+            "action_value": {
+                "values": [
+                    120.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_minimum_purge_amount_value",
+            "action_value": {
+                "values": [
+                    100.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_current_corruption_value",
+            "action_value": {
+                "transform_type": "per_current_corruption",
+                "transform_unit": {
+                    "unit_type": "current_spawner"
+                },
+                "values": [
+                    1.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_purge_execution_duration_value",
+            "action_value": {
+                "values": [
+                    0.1
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_bonus_duration_value",
+            "action_value": {
+                "values": [
+                    30.0
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_damage_taken_scalar_value",
+            "action_value": {
+                "transform_type": "current_buff_memory_value",
+                "memory_float_variable_id": "purged_corruption",
+                "values": [
+                    -2e-05
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_weapon_damage_scalar_value",
+            "action_value": {
+                "transform_type": "current_buff_memory_value",
+                "memory_float_variable_id": "purged_corruption",
+                "values": [
+                    1e-05
+                ]
+            }
+        },
+        {
+            "action_value_id": "vaders_gaze_weapon_cooldown_scalar_value",
+            "action_value": {
+                "transform_type": "current_buff_memory_value",
+                "memory_float_variable_id": "purged_corruption",
+                "values": [
+                    -1e-05
+                ]
+            }
+        }
+    ],
+    "buff_unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "vaders_gaze_damage_taken_modifier",
+            "buff_unit_modifier": {
+                "modifier_type": "damage_taken",
+                "value_behavior": "scalar",
+                "value_id": "vaders_gaze_damage_taken_scalar_value"
+            }
+        }
+    ],
+    "buff_weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "vaders_gaze_weapon_damage_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "damage",
+                "value_behavior": "scalar",
+                "value_id": "vaders_gaze_weapon_damage_scalar_value"
+            }
+        },
+        {
+            "buff_weapon_modifier_id": "vaders_gaze_weapon_cooldown_modifier",
+            "buff_weapon_modifier": {
+                "modifier_type": "cooldown_duration",
+                "value_behavior": "scalar",
+                "value_id": "vaders_gaze_weapon_cooldown_scalar_value"
+            }
+        }
+    ]
+}

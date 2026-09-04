@@ -398,7 +398,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_salvage_kit",
                             "priority": 1
                         }
                     ]
@@ -512,7 +512,7 @@
                     "slot_index": 7,
                     "candidates": [
                         {
-                            "item": "imperial_missile_armor",
+                            "item": "imperial_vaders_gaze",
                             "priority": 4
                         },
                         {
@@ -520,7 +520,7 @@
                             "priority": 3
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_missile_armor",
                             "priority": 2
                         },
                         {

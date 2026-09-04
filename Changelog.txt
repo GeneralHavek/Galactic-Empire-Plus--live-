@@ -2,6 +2,9 @@ Version 3.5.0.0:
 
 [Misc]      Updated GEP to new Sins 2 mechanics;
 [Corruption]    Implemented custom Imperial corruption buffs, going from mild/moderate/extreme the Empire's ability antimatter costs, ability cooldowns, and detection range are increased by +5%/+10%/+15%;
+[Item]      Updated Emperor's Will to passively increase combat effectiveness on ships affected by corruption, item added to loadouts;
+[Item]      Updated Emperor's Will item icon to only include the Emperor;
+[Item]      Introduced new Vader's Gaze item which provides bonuses based on corruption purge, item added to loadouts;
 [Unit]      Reverted zero slot extractors back to 1 slot;
 [Unit]      Reduced Imperial extractor resource rate from .65 to .60;
 [Unit]      Increased Imperial extractor max hull from 1500 to 2000;

@@ -1,0 +1,52 @@
+{
+    "version": 0,
+    "active_duration": "vaders_gaze_bonus_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "vaders_gaze_damage_taken_modifier"
+        }
+    ],
+    "weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "vaders_gaze_weapon_damage_modifier"
+        },
+        {
+            "buff_weapon_modifier_id": "vaders_gaze_weapon_cooldown_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_vaders_gaze_unit_item_hud_icon",
+        "name": "imperial_vaders_gaze_unit_item_name",
+        "description": "imperial_vaders_gaze_unit_item_description",
+        "visibility_scope": "positive",
+        "is_visible_within_unit_tooltip": true,
+        "show_duplicate_buffs": false,
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "vaders_gaze_damage_taken_modifier",
+                        "is_resolved_value": true
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "vaders_gaze_weapon_damage_modifier",
+                        "is_resolved_value": true
+                    },
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "vaders_gaze_weapon_cooldown_modifier",
+                        "is_resolved_value": true
+                    }
+                ]
+            }
+        ]
+    }
+}

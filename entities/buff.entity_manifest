@@ -172,6 +172,14 @@
         "imperial_death_star_total_fire_control_controller",
         "imperial_ship_corruption_penalty_mild",
         "imperial_ship_corruption_penalty_moderate",
-        "imperial_ship_corruption_penalty_extreme"
+        "imperial_ship_corruption_penalty_extreme",
+        "imperial_vaders_gaze_purge",
+        "imperial_vaders_gaze_aftermath",
+        "imperial_emperors_will_corruption_mild",
+        "imperial_emperors_will_corruption_moderate",
+        "imperial_emperors_will_corruption_extreme",
+        "imperial_emperors_will_corruption_mild_bonus",
+        "imperial_emperors_will_corruption_moderate_bonus",
+        "imperial_emperors_will_corruption_extreme_bonus"
     ]
 }

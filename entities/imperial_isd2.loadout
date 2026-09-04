@@ -23,15 +23,15 @@
                             "priority": 4
                         },
                         {
-                            "item": "imperial_antimatter_engine",
+                            "item": "imperial_vaders_gaze",
                             "priority": 3
                         },
                         {
-                            "item": "imperial_combat_repair_system",
+                            "item": "imperial_antimatter_engine",
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_combat_repair_system",
                             "priority": 1
                         }
                     ]
@@ -73,7 +73,7 @@
                             "priority": 2
                         },
                         {
-                            "item": "imperial_emperors_will",
+                            "item": "imperial_combat_repair_system",
                             "priority": 1
                         }
                     ]

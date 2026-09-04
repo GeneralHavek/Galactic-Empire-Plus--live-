@@ -1,0 +1,42 @@
+{
+    "version": 0,
+    "active_duration": "emperors_will_corruption_bonus_refresh_duration_value",
+    "stacking_limit": {
+        "stacking_limit": "fixed_one",
+        "stacking_limit_met_behavior": "replace_existing_buff"
+    },
+    "stacking_ownership_type": "for_all_players",
+    "restart_other_stacked_buffs_when_started": true,
+    "unit_modifiers": [
+        {
+            "buff_unit_modifier_id": "emperors_will_corruption_antimatter_restore_rate_modifier"
+        }
+    ],
+    "weapon_modifiers": [
+        {
+            "buff_weapon_modifier_id": "emperors_will_corruption_weapon_damage_modifier"
+        }
+    ],
+    "gui": {
+        "hud_icon": "imperial_emperors_will_unit_item_hud_icon",
+        "name": "imperial_emperors_will_unit_item_name",
+        "description": "imperial_emperors_will_unit_item_description",
+        "visibility_scope": "positive",
+        "is_visible_within_unit_tooltip": true,
+        "show_duplicate_buffs": false,
+        "tooltip_line_groups": [
+            {
+                "lines": [
+                    {
+                        "rendering_type": "buff_weapon_modifier",
+                        "weapon_modifier_id": "emperors_will_corruption_weapon_damage_modifier"
+                    },
+                    {
+                        "rendering_type": "buff_unit_modifier",
+                        "unit_modifier_id": "emperors_will_corruption_antimatter_restore_rate_modifier"
+                    }
+                ]
+            }
+        ]
+    }
+}
