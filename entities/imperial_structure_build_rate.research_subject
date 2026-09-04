@@ -3,23 +3,33 @@
     "domain": "civilian",
     "tier": 2,
     "field": "civilian_industry",
-    "field_coord": [4, 7],
+    "field_coord": [
+        4,
+        7
+    ],
     "research_time": 225.0,
-    "price":
-    {
+    "price": {
         "credits": 1200.0,
         "metal": 200.0,
         "crystal": 300.0
     },
     "prerequisites": [
-        ["imperial_structure_price_decrease"]
+        [
+            "imperial_structure_price_decrease"
+        ]
     ],
     "planet_modifiers": [
-    {
-        "modifier_type": "structure_build_time",
-        "value_behavior": "scalar",
-        "value": -0.25
-    }],
+        {
+            "modifier_type": "structure_build_time",
+            "value_behavior": "scalar",
+            "value": -0.25
+        },
+        {
+            "modifier_type": "max_civilian_structure_slots",
+            "value_behavior": "additive",
+            "value": 1.0
+        }
+    ],
     "name": "imperial_structure_build_rate_research_subject_name",
     "name_uppercase": "imperial_structure_build_rate_research_subject_name_uppercase",
     "description": "imperial_structure_build_rate_research_subject_description",
