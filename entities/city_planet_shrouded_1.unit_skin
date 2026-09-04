@@ -11,14 +11,15 @@
                 "hud_icon": "imperial_city_planet_hud_icon",
                 "hud_picture": "imperial_city_planet_hud_picture",
                 "tooltip_icon": "imperial_city_planet_tooltip_icon",
-                "name": "imperial_city_planet_name",
+                "name": "city_planet_shrouded_name",
                 "description": ""
             },
             "planet_mesh": {
                 "mesh": "planet_corusc_1",
                 "city": {
                     "shader": "planet_city",
-                    "city_material": "terran_planet_city"
+                    "city_material": "planet_city_shrouded_1_city",
+                    "min_city_level": 1.0
                 },
                 "atmosphere": {
                     "shader": "planet_atmosphere",
@@ -64,13 +65,10 @@
                         }
                     }
                 ],
-                "flair_effects": [
-                    {
-                        "mesh_point_name": "center",
-                        "particle_effect": "dlc3_planet_shroud_planet",
-                        "constraint": "is_shrouding"
-                    }
-                ]
+                "shrouding_effects": {
+                    "shrouding_end_effect": "dlc3_planet_shroud_planet_shrouding_end",
+                    "shrouding_end_sound": "dlc3_planet_shroud_planet_shrouding_end"
+                }
             },
             "light": {
                 "type": "point_infinite",
@@ -82,6 +80,5 @@
     "gravity_well_props": [
         "sparse_asteroids",
         "sparse_clouds"
-    ],
-    "shrouded_skin": "city_planet_shrouded_1"
+    ]
 }
